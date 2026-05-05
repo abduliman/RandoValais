@@ -26,7 +26,12 @@
     </a>
     <div class="nav-links" id="navLinks">
       <a href="#home" data-page="home" data-i18n="nav.home">Accueil</a>
-      <a href="#hikes" data-page="hikes" data-i18n="nav.hikes">Randonnées</a>
+      <div class="nav-dropdown">
+        <a href="#hikes" data-page="hikes" data-i18n="nav.hikes">Randonnées</a>
+        <div class="nav-dropdown-content">
+          <a href="#bisses" data-page="bisses" onclick="goToBisses(event)">Les Bisses</a>
+        </div>
+      </div>
       <a href="#map" data-page="map" data-i18n="nav.map">Carte</a>
       <a href="#favorites" data-page="favorites" data-i18n="nav.favorites">Favoris</a>
       <a href="#admin" data-page="admin" id="navAdminLink" style="display:none;color:var(--red)">⚙️ Admin</a>

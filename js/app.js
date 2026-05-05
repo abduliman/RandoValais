@@ -109,6 +109,15 @@ function goToProfile() {
   window.location.hash = 'profile';
 }
 
+function goToBisses(e) {
+  if (e) e.preventDefault();
+  const user = Storage.getUser();
+  if (!user) { showPage('login'); return; }
+  currentCategory = 'Bisses';
+  showPage('hikes');
+  window.location.hash = 'bisses';
+}
+
 function setupNav() {
   window.addEventListener('hashchange', () => {
     const hash = window.location.hash.slice(1);
@@ -116,7 +125,11 @@ function setupNav() {
       currentHikeId = parseInt(hash.split('-')[1]);
       showPage('detail');
       renderDetail(currentHikeId);
+    } else if (hash === 'bisses') {
+      currentCategory = 'Bisses';
+      showPage('hikes');
     } else if (['home','hikes','map','favorites','profile','admin'].includes(hash)) {
+      if (hash === 'hikes') currentCategory = 'all'; // reset if going to normal hikes
       showPage(hash);
     }
   });
@@ -133,11 +146,15 @@ function setupNav() {
       currentHikeId = parseInt(hash.split('-')[1]);
       showPage('detail');
       renderDetail(currentHikeId);
+    } else if (hash === 'bisses') {
+      currentCategory = 'Bisses';
+      showPage('hikes');
     } else {
       showPage(hash);
     }
   }
 }
+
 
 function toggleMenu() {
   document.getElementById('navLinks').classList.toggle('open');
