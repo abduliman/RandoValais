@@ -8,6 +8,8 @@ let slideInterval = null;
 let currentSlide = 0;
 let currentDifficulty = 'all';
 let currentCategory = 'all';
+let hikesMap = null;
+let hikesMapMarkers = [];
 const EMOJI_HIKES = ['🏔️','🌲','⛰️','🏞️','🌄','🍃','🦅','🌿','🏕️','🍇','💎','🌉'];
 
 
@@ -399,6 +401,8 @@ function renderHikes(filter) {
     renderCategoryFilters();
     updateI18n();
     
+    updateHikesMap(hikes);
+    
     // Fallback: force visibility of the hikes container just in case
     grid.style.setProperty('display', 'grid', 'important');
     grid.style.setProperty('visibility', 'visible', 'important');
@@ -407,6 +411,52 @@ function renderHikes(filter) {
   } catch (err) {
     console.error("Critical error in renderHikes:", err);
     grid.innerHTML = `<p style="text-align:center;color:red;grid-column:1/-1;padding:3rem">Erreur lors du chargement des randonnées.</p>`;
+  }
+}
+
+function updateHikesMap(hikesToDisplay) {
+  const mapEl = document.getElementById('hikesMap');
+  if (!mapEl) return;
+
+  if (!hikesMap) {
+    hikesMap = L.map('hikesMap').setView([46.22, 7.35], 9);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap contributors'
+    }).addTo(hikesMap);
+  }
+
+  hikesMapMarkers.forEach(m => hikesMap.removeLayer(m));
+  hikesMapMarkers = [];
+
+  if (hikesToDisplay.length === 0) return;
+
+  const bounds = L.latLngBounds();
+  let hasPoints = false;
+
+  hikesToDisplay.forEach(h => {
+    if (h.coords && h.coords.length === 2) {
+      const color = DIFFICULTY_COLORS[h.difficulty] || '#3B82F6';
+      const customIcon = L.divIcon({
+        className: 'custom-div-icon',
+        html: `<div style="background-color:${color}; width:20px; height:20px; border-radius:50%; border:2px solid white; box-shadow: 0 0 5px rgba(0,0,0,0.5);"></div>`,
+        iconSize: [24, 24],
+        iconAnchor: [12, 12]
+      });
+
+      const marker = L.marker(h.coords, { icon: customIcon }).addTo(hikesMap);
+      marker.bindPopup(`<b>${tHike(h.name)}</b><br><span style="color:${color};font-weight:bold">${h.difficulty}</span>`);
+      marker.on('click', () => { openHike(h.id); });
+      hikesMapMarkers.push(marker);
+      bounds.extend(h.coords);
+      hasPoints = true;
+    }
+  });
+
+  if (hasPoints) {
+    setTimeout(() => {
+      hikesMap.invalidateSize();
+      hikesMap.fitBounds(bounds, { padding: [30, 30], maxZoom: 12 });
+    }, 100);
   }
 }
 

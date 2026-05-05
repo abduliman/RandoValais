@@ -75303,3 +75303,17 @@ const HIKES = [
     "id": 235
   }
 ];
+
+const DIFFICULTY_COLORS = { 'Facile': '#4CAF50', 'Moyen': '#FF9800', 'Difficile': '#F44336' };
+const CATEGORY_COLORS = {
+    'Itinéraires randonnées': '#1B6B3A',
+    'Bisses': '#3B82F6',
+    'Tours': '#8E44AD',
+    'Sentiers découvertes': '#F39C12',
+    'Trail running': '#E74C3C'
+};
+const DIFFICULTY_LABELS = {
+    'Facile': { fr: 'Facile', de: 'Leicht', en: 'Easy' },
+    'Moyen': { fr: 'Moyen', de: 'Mittel', en: 'Medium' },
+    'Difficile': { fr: 'Difficile', de: 'Schwer', en: 'Hard' }
+};
