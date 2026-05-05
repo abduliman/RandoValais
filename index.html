@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RandoValais — Découvrez les plus belles randonnées du Valais, Suisse. Consultez, aimez, commentez et partagez vos photos de randonnées.">
+  <style>
+    @keyframes countUp { from { transform: translateY(10px); } to { transform: translateY(0); } }
+  </style>
+  <title>RandoValais — Randonner en Valais, c'est magique !</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="mainNav">
+    <a href="#home" class="nav-logo" onclick="showPage('home')">
+      <img src="assets/images/logo.png" alt="RandoValais">
+      <span class="nav-subtitle" data-i18n="subtitle">Randonner en Valais, c'est magique !</span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" data-page="home" data-i18n="nav.home">Accueil</a>
+      <a href="#hikes" data-page="hikes" data-i18n="nav.hikes">Randonnées</a>
+      <a href="#map" data-page="map" data-i18n="nav.map">Carte</a>
+      <a href="#favorites" data-page="favorites" data-i18n="nav.favorites">Favoris</a>
+      <a href="#admin" data-page="admin" id="navAdminLink" style="display:none;color:var(--red)">⚙️ Admin</a>
+    </div>
+    <div class="nav-right">
+      <button class="dark-toggle" id="darkToggle" onclick="toggleDarkMode()" title="Mode sombre">🌙</button>
+      <button class="lang-btn" id="langBtn" onclick="cycleLang()">FR</button>
+      <a href="#profile" class="nav-profile" id="navProfileBtn" onclick="goToProfile()">👤</a>
+      <button class="nav-burger" id="burgerBtn" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- LOGIN / REGISTER PAGE -->
+  <div class="page login-page" id="loginPage">
+    <div class="login-card">
+      <img src="assets/images/logo.png" alt="RandoValais" style="height:100px;width:auto;object-fit:contain;margin-bottom:1rem">
+      <h2>RandoValais</h2>
+      <p class="subtitle">Rejoignez la communauté RandoValais</p>
+      <!-- Tabs -->
+      <div class="auth-tabs">
+        <button class="auth-tab active" onclick="switchAuthTab('login')">Se connecter</button>
+        <button class="auth-tab" onclick="switchAuthTab('register')">S'inscrire</button>
+      </div>
+      <!-- Login Form -->
+      <div id="authLoginForm">
+        <input type="email" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Mot de passe">
+        <div id="loginError" class="auth-error"></div>
+        <button class="login-submit" onclick="doLogin()">Se connecter</button>
+      </div>
+      <!-- Register Form -->
+      <div id="authRegisterForm" style="display:none">
+        <input type="text" id="regName" placeholder="Nom d'utilisateur" minlength="2">
+        <input type="email" id="regEmail" placeholder="Email">
+        <input type="password" id="regPassword" placeholder="Mot de passe (min. 4 caractères)">
+        <input type="password" id="regPasswordConfirm" placeholder="Confirmer le mot de passe">
+        <div id="regError" class="auth-error"></div>
+        <button class="login-submit" onclick="doRegister()">Créer mon compte</button>
+      </div>
+      <div class="login-divider">ou</div>
+      <button class="login-guest" onclick="doGuest()">Continuer en invité</button>
+      <p class="admin-hint">Admin: admin@randovalais.ch / admin2026</p>
+    </div>
+  </div>
+
+  <!-- HOME PAGE -->
+  <div class="page" id="homePage">
+    <!-- Hero with slideshow -->
+    <section class="hero" id="hero">
+      <div class="hero-slideshow" id="heroSlideshow"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-badge">🇨🇭 Valais, Suisse</div>
+        <h1 id="heroTitle">RandoValais</h1>
+        <p class="hero-description" id="heroDescription">Découvrez les plus beaux bisses des Alpes suisses. Un guide complet avec itinéraires détaillés, cartes interactives et conseils d'expert pour vos randonnées en Valais.</p>
+        <a href="#hikes" class="hero-cta" data-i18n="hero.cta" onclick="navigateTo('hikes')">
+          Découvrir les randonnées →
+        </a>
+        <div class="hero-stats">
+          <div class="hero-stat"><span class="number" data-count="12">0</span><span class="label" data-i18n="hero.stats_hikes">Randonnées</span></div>
+          <div class="hero-stat"><span class="number" data-count="120">0</span><span class="label" data-i18n="hero.stats_km">km de sentiers</span></div>
+          <div class="hero-stat"><span class="number" data-count="8400">0</span><span class="label" data-i18n="hero.stats_elev">m de dénivelé</span></div>
+        </div>
+      </div>
+      <!-- Slideshow indicators -->
+      <div class="hero-indicators" id="heroIndicators"></div>
+    </section>
+
+    <!-- Featured hikes -->
+    <section class="section" id="featuredSection">
+      <div class="section-header">
+        <h2 data-i18n="hikes.title">Coups de cœur</h2>
+        <p>Les randonnées les plus populaires</p>
+        <div class="divider"></div>
+      </div>
+      <div class="hikes-grid" id="featuredGrid"></div>
+    </section>
+  </div>
+
+  <!-- HIKES PAGE -->
+  <div class="page" id="hikesPage" style="padding-top:90px;min-height:100vh">
+    <section class="section">
+      <div class="section-header">
+        <h2 data-i18n="hikes.title">Nos Randonnées</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="filters" id="filtersBar">
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Rechercher une randonnée..." oninput="filterHikes()">
+        </div>
+        <div class="filter-group" id="categoryFilters"></div>
+        <div class="filter-group" id="difficultyFilters"></div>
+      </div>
+      <div class="hikes-grid" id="hikesGrid"></div>
+    </section>
+  </div>
+
+  <!-- DETAIL PAGE -->
+  <div class="page detail-page" id="detailPage">
+    <a class="detail-back" onclick="goBack()">← <span data-i18n="detail.back">Retour</span></a>
+    <div class="detail-hero" id="detailHero">
+      <div class="detail-hero-overlay"></div>
+      <div class="detail-hero-content">
+        <h1 id="detailTitle"></h1>
+        <div class="region-tag">📍 <span id="detailRegion"></span></div>
+      </div>
+    </div>
+    <div class="detail-content">
+      <div class="detail-grid">
+        <div>
+          <!-- Info -->
+          <div class="info-card">
+            <div class="info-grid" id="detailInfo"></div>
+            <div class="action-btns">
+              <button class="btn-like" id="detailLikeBtn" onclick="toggleDetailLike()">❤️ <span data-i18n="detail.like">J'aime</span> <span id="detailLikeCount"></span></button>
+              <button class="btn-fav" id="detailFavBtn" onclick="toggleDetailFav()">⭐ <span id="detailFavText" data-i18n="detail.addFav">Favoris</span></button>
+            </div>
+            <!-- Share buttons -->
+            <div class="share-bar" id="shareBar">
+              <span style="font-size:0.85rem;color:var(--gray);font-weight:500">Partager :</span>
+              <button class="share-btn whatsapp" onclick="shareHike('whatsapp')" title="WhatsApp">💬</button>
+              <button class="share-btn email" onclick="shareHike('email')" title="Email">📧</button>
+              <button class="share-btn copy" onclick="shareHike('copy')" title="Copier le lien">🔗</button>
+            </div>
+            <h3 data-i18n="detail.description">Description</h3>
+            <p id="detailDesc" style="margin:1rem 0;color:var(--gray)"></p>
+            <h3 data-i18n="detail.access">Accès</h3>
+            <p id="detailAccess" style="margin:1rem 0;color:var(--gray)"></p>
+          </div>
+          <!-- Trail Map -->
+          <div class="info-card trail-map-card" style="margin-top:2rem">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem">
+              <h3>🗺️ Itinéraire sur la carte</h3>
+              <span id="detailSeason" style="font-size:0.85rem;color:var(--gray)"></span>
+            </div>
+            <div id="detailMiniMap" style="height:400px;border-radius:var(--radius-sm);overflow:hidden"></div>
+            <div class="download-bar" style="margin-top:1rem">
+              <button class="dl-btn gpx" onclick="downloadTrack('gpx')">📥 Télécharger GPX</button>
+              <button class="dl-btn kml" onclick="downloadTrack('kml')">📥 Télécharger KML</button>
+            </div>
+          </div>
+          <!-- Points of Interest -->
+          <div class="info-card poi-section" style="margin-top:2rem">
+            <h3>📍 <span data-i18n="poi.title">Points d'intérêt</span></h3>
+            <div class="poi-filters" id="poiFilters"></div>
+            <div class="poi-list" id="poiList"><p style="color:var(--gray);text-align:center">Chargement...</p></div>
+          </div>
+          <!-- Comments -->
+          <div class="info-card comments-section" style="margin-top:2rem">
+            <h3>💬 <span data-i18n="comments.title">Commentaires</span></h3>
+            <div class="comment-form" id="commentForm">
+              <input type="text" id="commentName" placeholder="Votre pseudo">
+              <div class="star-rating" id="starRating">
+                <span onclick="setRating(1)">★</span><span onclick="setRating(2)">★</span>
+                <span onclick="setRating(3)">★</span><span onclick="setRating(4)">★</span>
+                <span onclick="setRating(5)">★</span>
+              </div>
+              <textarea id="commentText" placeholder="Votre commentaire..."></textarea>
+              <button class="btn-submit" onclick="submitComment()" data-i18n="comments.submit">Publier</button>
+            </div>
+            <div id="commentsList"></div>
+          </div>
+        </div>
+        <div class="detail-sidebar">
+          <!-- Weather Widget -->
+          <div class="info-card weather-card" style="margin-bottom:2rem">
+            <h3>🌤️ Météo en direct</h3>
+            <div id="weatherWidget"><p style="color:var(--gray);font-size:0.85rem">Chargement météo...</p></div>
+          </div>
+
+          <!-- Calories & Stats -->
+          <div class="info-card" style="margin-bottom:2rem">
+            <h3>🔥 Effort estimé</h3>
+            <div id="caloriesWidget"></div>
+          </div>
+          <!-- Equipment Checklist -->
+          <div class="info-card" style="margin-bottom:2rem">
+            <h3>🎒 Équipement recommandé</h3>
+            <div id="equipmentList"></div>
+          </div>
+          <!-- Photos -->
+          <div class="info-card">
+            <h3>📸 <span data-i18n="photos.title">Photos</span></h3>
+            <div class="photos-grid" id="photosGrid"></div>
+            <input type="file" id="photoInput" accept="image/*" style="display:none" onchange="uploadPhoto(event)">
+          </div>
+        </div>
+      </div>
+      <!-- Similar Hikes -->
+      <div class="similar-section" id="similarHikes" style="margin-top:3rem">
+        <h3>🏔️ Randonnées similaires</h3>
+        <div class="hikes-grid" id="similarGrid" style="margin-top:1rem"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAP PAGE -->
+  <div class="page" id="mapPage">
+    <div class="map-container">
+      <div id="map"></div>
+    </div>
+  </div>
+
+  <!-- FAVORITES PAGE -->
+  <div class="page favs-page" id="favoritesPage">
+    <section class="section">
+      <div class="section-header">
+        <h2 data-i18n="favorites.title">Mes Favoris</h2>
+        <div class="divider"></div>
+      </div>
+      <div id="favsContent"></div>
+    </section>
+  </div>
+
+  <!-- PROFILE PAGE -->
+  <div class="page profile-page" id="profilePage">
+    <section class="section">
+      <div class="profile-card" id="profileCard"></div>
+    </section>
+  </div>
+
+  <!-- ADMIN DASHBOARD -->
+  <div class="page admin-page" id="adminPage">
+    <section class="section" style="padding-top:120px">
+      <div class="section-header">
+        <h2>⚙️ Dashboard Admin</h2>
+        <p>Gérer les utilisateurs et modérer le contenu</p>
+        <div class="divider"></div>
+      </div>
+      <!-- Admin Stats -->
+      <div class="admin-stats" id="adminStats"></div>
+      <!-- Admin Tabs -->
+      <div class="admin-tabs">
+        <button class="admin-tab active" onclick="switchAdminTab('pending')">📝 En attente</button>
+        <button class="admin-tab" onclick="switchAdminTab('users')">👥 Utilisateurs</button>
+        <button class="admin-tab" onclick="switchAdminTab('all-comments')">💬 Commentaires</button>
+      </div>
+      <div class="admin-content" id="adminContent"></div>
+    </section>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+    <button class="lightbox-close">✕</button>
+    <img id="lightboxImg" src="" alt="">
+  </div>
+
+  <!-- RESERVATION MODAL -->
+  <div class="modal-overlay" id="reservationModal">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeReservation()">✕</button>
+      <h3 id="resModalTitle">📧 Réservation</h3>
+      <p id="resModalInfo" style="color:var(--gray);margin:0.5rem 0 1rem"></p>
+      <form onsubmit="sendReservation(event)">
+        <input type="text" id="resName" placeholder="Votre nom" required>
+        <input type="email" id="resEmail" placeholder="Votre email" required>
+        <input type="date" id="resDate" required>
+        <input type="number" id="resGuests" placeholder="Nombre de personnes" min="1" max="20" value="2">
+        <textarea id="resMessage" placeholder="Message (optionnel)" rows="3"></textarea>
+        <button type="submit" class="btn-submit" style="width:100%">📧 Envoyer la demande</button>
+      </form>
+      <p id="resContact" style="margin-top:1rem;font-size:0.85rem;color:var(--gray)"></p>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <!-- EMERGENCY -->
+  <button class="emergency-btn" id="emergencyBtn" onclick="toggleEmergency()" title="Urgence">🆘</button>
+  <div class="emergency-panel" id="emergencyPanel">
+    <h4>🆘 Numéros d'urgence</h4>
+    <div class="emergency-item">
+      <div>🚁</div>
+      <div><a href="tel:1414">1414</a><br><span>REGA (hélicoptère)</span></div>
+    </div>
+    <div class="emergency-item">
+      <div>🚔</div>
+      <div><a href="tel:117">117</a><br><span>Police</span></div>
+    </div>
+    <div class="emergency-item">
+      <div>🚑</div>
+      <div><a href="tel:144">144</a><br><span>Ambulance</span></div>
+    </div>
+    <div class="emergency-item">
+      <div>⛰️</div>
+      <div><a href="tel:140">140</a><br><span>Secours en montagne</span></div>
+    </div>
+    <div class="emergency-item">
+      <div>📍</div>
+      <div><a href="#" onclick="shareLocation()">Partager ma position</a><br><span>Envoyer par SMS</span></div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="mainFooter" style="display:none">
+    <p>🏔️ RandoValais — <span data-i18n="footer.made">Fait avec ❤️ en Valais</span></p>
+    <p style="margin-top:0.5rem">© 2026 RandoValais. <span data-i18n="footer.rights">Tous droits réservés</span>.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/data.js?v=2"></script>
+  <script src="js/i18n.js?v=2"></script>
+  <script src="js/storage.js?v=2"></script>
+  <script src="js/poi.js?v=2"></script>
+  <script src="js/app.js?v=2"></script>
+</body>
+</html>
