@@ -738,7 +738,7 @@ function initMiniMap(hike) {
   if (miniMap) { miniMap.remove(); miniMap = null; }
   miniMap = L.map(container, { zoomControl: false, attributionControl: false }).setView(hike.coords, 14);
   L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxZoom: 17 }).addTo(miniMap);
-  const color = DIFFICULTY_COLORS[hike.difficulty];
+  const color = 'red'; // Changed to red itinerary as requested
   if (hike.trail && hike.trail.length > 1) {
     L.polyline(hike.trail, { color: color, weight: 4, opacity: 0.9 }).addTo(miniMap);
     miniMap.fitBounds(L.polyline(hike.trail).getBounds().pad(0.2));

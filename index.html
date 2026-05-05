@@ -145,27 +145,27 @@
     <div class="detail-content">
       <div class="detail-grid">
         <div>
-          <!-- Info -->
-          <div class="info-card">
-            <div class="info-grid" id="detailInfo"></div>
-            <div class="action-btns">
+          <!-- Description & Access -->
+          <div class="info-card" style="margin-bottom:2rem">
+            <h3 data-i18n="detail.description">Description</h3>
+            <p id="detailDesc" style="margin:1rem 0;color:var(--gray)"></p>
+            <h3 data-i18n="detail.access">Accès</h3>
+            <p id="detailAccess" style="margin:1rem 0;color:var(--gray)"></p>
+            <div class="action-btns" style="margin-top:1.5rem">
               <button class="btn-like" id="detailLikeBtn" onclick="toggleDetailLike()">❤️ <span data-i18n="detail.like">J'aime</span> <span id="detailLikeCount"></span></button>
               <button class="btn-fav" id="detailFavBtn" onclick="toggleDetailFav()">⭐ <span id="detailFavText" data-i18n="detail.addFav">Favoris</span></button>
             </div>
             <!-- Share buttons -->
-            <div class="share-bar" id="shareBar">
+            <div class="share-bar" id="shareBar" style="margin-bottom:0">
               <span style="font-size:0.85rem;color:var(--gray);font-weight:500">Partager :</span>
               <button class="share-btn whatsapp" onclick="shareHike('whatsapp')" title="WhatsApp">💬</button>
               <button class="share-btn email" onclick="shareHike('email')" title="Email">📧</button>
               <button class="share-btn copy" onclick="shareHike('copy')" title="Copier le lien">🔗</button>
             </div>
-            <h3 data-i18n="detail.description">Description</h3>
-            <p id="detailDesc" style="margin:1rem 0;color:var(--gray)"></p>
-            <h3 data-i18n="detail.access">Accès</h3>
-            <p id="detailAccess" style="margin:1rem 0;color:var(--gray)"></p>
           </div>
+          
           <!-- Trail Map -->
-          <div class="info-card trail-map-card" style="margin-top:2rem">
+          <div class="info-card trail-map-card" style="margin-bottom:2rem">
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem">
               <h3>🗺️ Itinéraire sur la carte</h3>
               <span id="detailSeason" style="font-size:0.85rem;color:var(--gray)"></span>
@@ -175,6 +175,12 @@
               <button class="dl-btn gpx" onclick="downloadTrack('gpx')">📥 Télécharger GPX</button>
               <button class="dl-btn kml" onclick="downloadTrack('kml')">📥 Télécharger KML</button>
             </div>
+          </div>
+
+          <!-- Technical Info -->
+          <div class="info-card" style="margin-bottom:2rem">
+            <h3 style="margin-bottom:1.5rem;color:var(--green-dark)">Informations Techniques</h3>
+            <div class="info-grid" id="detailInfo" style="margin-bottom:0"></div>
           </div>
           <!-- Points of Interest -->
           <div class="info-card poi-section" style="margin-top:2rem">
