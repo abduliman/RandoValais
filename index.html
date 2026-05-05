@@ -145,6 +145,19 @@
     <div class="detail-content">
       <div class="detail-grid">
         <div>
+          <!-- Trail Map -->
+          <div class="info-card trail-map-card" style="margin-bottom:2rem">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem">
+              <h3>🗺️ Itinéraire sur la carte</h3>
+              <span id="detailSeason" style="font-size:0.85rem;color:var(--gray)"></span>
+            </div>
+            <div id="detailMiniMap" style="height:400px;border-radius:var(--radius-sm);overflow:hidden"></div>
+            <div class="download-bar" style="margin-top:1rem">
+              <button class="dl-btn gpx" onclick="downloadTrack('gpx')">📥 Télécharger GPX</button>
+              <button class="dl-btn kml" onclick="downloadTrack('kml')">📥 Télécharger KML</button>
+            </div>
+          </div>
+
           <!-- Description & Access -->
           <div class="info-card" style="margin-bottom:2rem">
             <h3 data-i18n="detail.description">Description</h3>
@@ -161,19 +174,6 @@
               <button class="share-btn whatsapp" onclick="shareHike('whatsapp')" title="WhatsApp">💬</button>
               <button class="share-btn email" onclick="shareHike('email')" title="Email">📧</button>
               <button class="share-btn copy" onclick="shareHike('copy')" title="Copier le lien">🔗</button>
-            </div>
-          </div>
-          
-          <!-- Trail Map -->
-          <div class="info-card trail-map-card" style="margin-bottom:2rem">
-            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem">
-              <h3>🗺️ Itinéraire sur la carte</h3>
-              <span id="detailSeason" style="font-size:0.85rem;color:var(--gray)"></span>
-            </div>
-            <div id="detailMiniMap" style="height:400px;border-radius:var(--radius-sm);overflow:hidden"></div>
-            <div class="download-bar" style="margin-top:1rem">
-              <button class="dl-btn gpx" onclick="downloadTrack('gpx')">📥 Télécharger GPX</button>
-              <button class="dl-btn kml" onclick="downloadTrack('kml')">📥 Télécharger KML</button>
             </div>
           </div>
 
