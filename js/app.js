@@ -14,6 +14,9 @@ const EMOJI_HIKES = ['🏔️','🌲','⛰️','🏞️','🌄','🍃','🦅','�
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
   try {
+    const loader = document.getElementById('loadingIndicator');
+    if (loader) loader.style.display = 'none';
+
     Storage.initDemo();
     initApp();
     setupNav();
