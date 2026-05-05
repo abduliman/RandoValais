@@ -1057,34 +1057,34 @@ function renderCalories(hike) {
 
 // ===== EQUIPMENT CHECKLIST =====
 const EQUIPMENT = {
-  base: [
+  Facile: [
+    { icon: '🥾', name: 'Chaussures de marche', essential: true },
+    { icon: '💧', name: 'Eau (min. 1L)', essential: true },
+    { icon: '📱', name: 'Téléphone chargé', essential: true },
+    { icon: '🧴', name: 'Crème solaire SPF 50', essential: false },
+    { icon: '🧢', name: 'Casquette / chapeau', essential: false },
+    { icon: '🍫', name: 'En-cas', essential: false }
+  ],
+  Moyen: [
     { icon: '🥾', name: 'Chaussures de randonnée', essential: true },
-    { icon: '🧴', name: 'Crème solaire SPF 50', essential: true },
+    { icon: '🧥', name: 'Veste coupe-vent/imperméable', essential: true },
     { icon: '💧', name: 'Eau (min. 1.5L)', essential: true },
     { icon: '🗺️', name: 'Carte / App GPS', essential: true },
-    { icon: '🧢', name: 'Casquette / chapeau', essential: false },
-    { icon: '🍫', name: 'Barres énergétiques', essential: false },
     { icon: '📱', name: 'Téléphone chargé', essential: true },
+    { icon: '🦯', name: 'Bâtons de randonnée', essential: false },
     { icon: '🩹', name: 'Trousse premiers secours', essential: false }
   ],
-  T2: [
+  Difficile: [
+    { icon: '🥾', name: 'Chaussures de montagne', essential: true },
     { icon: '🧥', name: 'Veste imperméable', essential: true },
-    { icon: '🦯', name: 'Bâtons de randonnée', essential: false }
-  ],
-  T3: [
-    { icon: '🧥', name: 'Veste imperméable', essential: true },
-    { icon: '🦯', name: 'Bâtons de randonnée', essential: true },
-    { icon: '🧤', name: 'Gants + bonnet', essential: false },
-    { icon: '🔦', name: 'Lampe frontale', essential: false }
-  ],
-  T4: [
-    { icon: '🧥', name: 'Veste imperméable Gore-Tex', essential: true },
     { icon: '🦯', name: 'Bâtons de randonnée', essential: true },
     { icon: '🧤', name: 'Gants + bonnet', essential: true },
     { icon: '🔦', name: 'Lampe frontale', essential: true },
-    { icon: '⛏️', name: 'Crampons légers', essential: true },
-    { icon: '🧗', name: 'Casque (recommandé)', essential: false },
-    { icon: '🫕', name: 'Repas chaud (thermos)', essential: false }
+    { icon: '💧', name: 'Eau (min. 2L)', essential: true },
+    { icon: '🗺️', name: 'Carte / App GPS', essential: true },
+    { icon: '📱', name: 'Téléphone chargé', essential: true },
+    { icon: '🩹', name: 'Trousse premiers secours', essential: true },
+    { icon: '🧗', name: 'Casque (recommandé)', essential: false }
   ]
 };
 
@@ -1092,7 +1092,7 @@ function renderEquipment(hike) {
   const el = document.getElementById('equipmentList');
   if (!el) return;
 
-  const items = [...EQUIPMENT.base, ...(EQUIPMENT[hike.difficulty] || [])];
+  const items = EQUIPMENT[hike.difficulty] || [];
   el.innerHTML = '<div class="equip-list">' + items.map(item =>
     `<div class="equip-item">
       <span class="equip-check">✓</span>
