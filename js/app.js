@@ -11,7 +11,7 @@ let currentCategory = 'all';
 let hikesMap = null;
 let hikesMapMarkers = [];
 const EMOJI_HIKES = ['🏔️','🌲','⛰️','🏞️','🌄','🍃','🦅','🌿','🏕️','🍇','💎','🌉'];
-
+const SWISS_SCALE = { 'Facile': 'T1', 'Moyen': 'T2 / T3', 'Difficile': 'T4+' };
 
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
@@ -322,7 +322,7 @@ function createHikeCard(hike) {
       <div class="hike-card-img">
         <img src="${hike.image}" alt="${tHike(hike.name)}" loading="lazy">
         <span class="hike-badge" style="background:${CATEGORY_COLORS[hike.category] || '#666'}">${hike.category}</span>
-        <span class="hike-badge" style="background:${diffColor}">${tHike(DIFFICULTY_LABELS[hike.difficulty])}</span>
+        <span class="hike-badge" style="background:${diffColor}">${tHike(DIFFICULTY_LABELS[hike.difficulty])} = ${SWISS_SCALE[hike.difficulty] || ''}</span>
         <button class="hike-fav-btn ${fav?'active':''}" onclick="event.stopPropagation();toggleCardFav(${hike.id},this)">
           ${fav ? '⭐' : '☆'}
         </button>
@@ -444,7 +444,7 @@ function updateHikesMap(hikesToDisplay) {
       });
 
       const marker = L.marker(h.coords, { icon: customIcon }).addTo(hikesMap);
-      marker.bindPopup(`<b>${tHike(h.name)}</b><br><span style="color:${color};font-weight:bold">${h.difficulty}</span>`);
+      marker.bindPopup(`<b>${tHike(h.name)}</b><br><span style="color:${color};font-weight:bold">${h.difficulty} = ${SWISS_SCALE[h.difficulty] || ''}</span>`);
       marker.on('click', () => { openHike(h.id); });
       hikesMapMarkers.push(marker);
       bounds.extend(h.coords);
@@ -531,7 +531,7 @@ function renderDetail(id) {
     <div class="info-item"><div class="icon">🔺</div><div class="value">${hike.altitude.max}m</div><div class="label">${t('detail.altMax')}</div></div>
     <div class="info-item" style="background:${DIFFICULTY_COLORS[hike.difficulty]}22">
       <div class="icon" style="color:${DIFFICULTY_COLORS[hike.difficulty]}">●</div>
-      <div class="value" style="color:${DIFFICULTY_COLORS[hike.difficulty]}">${hike.difficulty}</div>
+      <div class="value" style="color:${DIFFICULTY_COLORS[hike.difficulty]}">${hike.difficulty} = ${SWISS_SCALE[hike.difficulty] || ''}</div>
       <div class="label">${hike.difficulty}</div>
     </div>
   `;
