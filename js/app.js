@@ -420,8 +420,9 @@ function updateHikesMap(hikesToDisplay) {
 
   if (!hikesMap) {
     hikesMap = L.map('hikesMap').setView([46.22, 7.35], 9);
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© OpenStreetMap contributors'
+    L.tileLayer('https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg', {
+      attribution: '&copy; <a href="https://www.swisstopo.admin.ch/">swisstopo</a>',
+      maxZoom: 18
     }).addTo(hikesMap);
   }
 
@@ -695,9 +696,9 @@ function initMap() {
   if (leafletMap) { leafletMap.invalidateSize(); return; }
 
   leafletMap = L.map('map').setView([46.19, 7.45], 9);
-  L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-    attribution: '© OpenTopoMap, © OpenStreetMap',
-    maxZoom: 17
+  L.tileLayer('https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg', {
+    attribution: '&copy; <a href="https://www.swisstopo.admin.ch/">swisstopo</a>',
+    maxZoom: 18
   }).addTo(leafletMap);
 
   HIKES.forEach(hike => {
@@ -737,7 +738,10 @@ function initMiniMap(hike) {
   if (!container) return;
   if (miniMap) { miniMap.remove(); miniMap = null; }
   miniMap = L.map(container, { zoomControl: false, attributionControl: false }).setView(hike.coords, 14);
-  L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', { maxZoom: 17 }).addTo(miniMap);
+  L.tileLayer('https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg', { 
+    attribution: '&copy; <a href="https://www.swisstopo.admin.ch/">swisstopo</a>',
+    maxZoom: 18 
+  }).addTo(miniMap);
   const color = 'red'; // Changed to red itinerary as requested
   if (hike.trail && hike.trail.length > 1) {
     L.polyline(hike.trail, { color: color, weight: 4, opacity: 0.9 }).addTo(miniMap);
