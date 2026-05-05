@@ -446,6 +446,7 @@ function updateHikesMap(hikesToDisplay) {
 
       const marker = L.marker(h.coords, { icon: customIcon }).addTo(hikesMap);
       marker.bindPopup(`<b>${tHike(h.name)}</b><br><span style="color:${color};font-weight:bold">${h.difficulty} = ${SWISS_SCALE[h.difficulty] || ''}</span>`);
+      marker.bindTooltip(`<b>${tHike(h.name)}</b>`);
       marker.on('click', () => { openHike(h.id); });
       hikesMapMarkers.push(marker);
       bounds.extend(h.coords);
