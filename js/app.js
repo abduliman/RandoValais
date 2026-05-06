@@ -1051,17 +1051,16 @@ async function fetchWeather(hike) {
     const sunset = data.daily.sunset[0].split('T')[1];
 
     let html = `<div class="weather-now">
-      <div class="big-icon" style="color:#F59E0B">${nowIcon}</div>
+      <div class="big-icon" style="color:#F59E0B;font-size:3.5rem">${nowIcon}</div>
       <div style="flex:1">
-        <div class="big-temp">${Math.round(c.temperature_2m)}°C</div>
+        <div class="big-temp"><i data-lucide="thermometer" style="width:28px;height:28px;vertical-align:middle;margin-right:4px;color:#EF4444"></i>${Math.round(c.temperature_2m)}°C</div>
         <div class="weather-summary-icons">
           <div class="ws-item" title="Vent"><i data-lucide="wind" style="color:#3B82F6"></i> <span>${c.wind_speed_10m} km/h</span></div>
           <div class="ws-item" title="Précipitations"><i data-lucide="umbrella" style="color:#60A5FA"></i> <span>${data.daily.precipitation_probability_max[0]}%</span></div>
           <div class="ws-item" title="Humidité"><i data-lucide="droplet" style="color:#34D399"></i> <span>${c.relative_humidity_2m}%</span></div>
           <div class="ws-item" title="Nuages"><i data-lucide="cloud" style="color:#94A3B8"></i> <span>${c.cloud_cover}%</span></div>
           <div class="ws-item" title="Indice UV"><i data-lucide="sun-medium" style="color:#FACC15"></i> <span>UV ${data.daily.uv_index_max[0]}</span></div>
-          <div class="ws-item" title="Lever du soleil"><i data-lucide="sunrise" style="color:#F59E0B"></i> <span>${sunrise}</span></div>
-          <div class="ws-item" title="Coucher du soleil"><i data-lucide="sunset" style="color:#8B5CF6"></i> <span>${sunset}</span></div>
+          <div class="ws-item" title="Lever/Coucher"><i data-lucide="sunrise" style="color:#F59E0B"></i> <span>${sunrise}</span> · <i data-lucide="sunset" style="color:#8B5CF6"></i> <span>${sunset}</span></div>
         </div>
       </div>
     </div>`;
@@ -1069,12 +1068,15 @@ async function fetchWeather(hike) {
     html += '<div class="weather-grid">';
     for (let i = 1; i < Math.min(5, data.daily.time.length); i++) {
       const d = new Date(data.daily.time[i]);
-      const icon = WEATHER_ICONS[data.daily.weather_code[i]] || '<i data-lucide="sun-dim" class="icon-inline"></i>';
+      const icon = WEATHER_ICONS[data.daily.weather_code[i]] || '<i data-lucide="sun-dim"></i>';
       html += `<div class="weather-day">
         <div class="day">${days[d.getDay()]}</div>
-        <div class="icon" style="color:#3B82F6">${icon}</div>
-        <div class="temp"><strong>${Math.round(data.daily.temperature_2m_max[i])}°</strong> <span style="opacity:0.6">${Math.round(data.daily.temperature_2m_min[i])}°</span></div>
-        <div class="rain" style="color:#3B82F6"><i data-lucide="umbrella" class="icon-inline"></i> ${data.daily.precipitation_probability_max[i]}%</div>
+        <div class="icon" style="color:#3B82F6;margin:8px 0">${icon}</div>
+        <div class="temp">
+          <span style="color:#EF4444"><i data-lucide="arrow-up" style="width:10px;height:10px"></i>${Math.round(data.daily.temperature_2m_max[i])}°</span> 
+          <span style="color:#3B82F6"><i data-lucide="arrow-down" style="width:10px;height:10px"></i>${Math.round(data.daily.temperature_2m_min[i])}°</span>
+        </div>
+        <div class="rain" style="color:#3B82F6"><i data-lucide="umbrella" style="width:12px;height:12px"></i> ${data.daily.precipitation_probability_max[i]}%</div>
       </div>`;
     }
     html += '</div>';
