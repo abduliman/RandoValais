@@ -15864,14 +15864,14 @@ const HIKES = [
     "difficulty": "Facile",
     "category": "Itinéraires",
     "duration": "3:25 h",
-    "distance": 0,
+    "distance": 11.2,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 520,
+      "down": 520
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1350,
+      "max": 1740
     },
     "season": {
       "fr": "Juin - Octobre",
