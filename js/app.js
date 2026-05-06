@@ -1144,7 +1144,6 @@ function renderEquipment(hike) {
     `<div class="equip-item">
       <span class="equip-check">✓</span>
       <span>${item.icon} ${item.name}</span>
-      ${item.essential ? '<span class="equip-essential">Essentiel</span>' : ''}
     </div>`
   ).join('') + '</div>';
 }
