@@ -143,7 +143,7 @@ button { cursor: pointer; font-family: var(--font-body); border: none; }
 .hero h1 {
   font-size: clamp(2.5rem, 6vw, 4.5rem); color: #E29200;
   margin-bottom: 0.5rem; font-weight: 800;
-  text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .hero-description {
   font-size: clamp(0.95rem, 2vw, 1.15rem); color: rgba(255,255,255,0.9);
@@ -169,7 +169,10 @@ button { cursor: pointer; font-family: var(--font-body); border: none; }
   padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.15);
 }
 .hero-stat { text-align: center; color: var(--white); }
-.hero-stat .number { font-family: var(--font-head); font-size: 2.5rem; font-weight: 800; display: block; color: #FF0000; }
+.hero-stat .number { 
+  font-family: var(--font-head); font-size: 2.5rem; font-weight: 800; display: block; color: #FF0000; 
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+}
 .hero-stat .label { font-size: 0.85rem; opacity: 0.9; color: #E29200; }
 
 /* SECTION */
