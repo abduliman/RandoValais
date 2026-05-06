@@ -1,17 +1,17 @@
 // RandoValais — Points of Interest System
 const POI_CATEGORIES = {
-  transport:   { icon: '🚌', color: '#1565C0', label: { fr: 'Transport public', de: 'Öffentlicher Verkehr', en: 'Public transport' } },
-  restaurant:  { icon: '🍽️', color: '#E65100', label: { fr: 'Restaurant', de: 'Restaurant', en: 'Restaurant' } },
-  hotel:       { icon: '🏨', color: '#6A1B9A', label: { fr: 'Hébergement', de: 'Unterkunft', en: 'Accommodation' } },
-  viewpoint:   { icon: '👁️', color: '#00838F', label: { fr: 'Point de vue', de: 'Aussichtspunkt', en: 'Viewpoint' } },
-  bridge:      { icon: '🌉', color: '#4E342E', label: { fr: 'Pont / Passerelle', de: 'Brücke / Steg', en: 'Bridge / Walkway' } },
-  vertigo:     { icon: '⚠️', color: '#D32F2F', label: { fr: 'Sujet au vertige', de: 'Schwindelgefahr', en: 'Vertigo risk' } },
-  refreshment: { icon: '🍺', color: '#F9A825', label: { fr: 'Buvette / Refuge', de: 'Berghütte', en: 'Mountain hut' } },
-  museum:      { icon: '🏛️', color: '#5D4037', label: { fr: 'Musée / Culture', de: 'Museum / Kultur', en: 'Museum / Culture' } },
-  waterfall:   { icon: '💧', color: '#0288D1', label: { fr: 'Cascade / Source', de: 'Wasserfall / Quelle', en: 'Waterfall / Spring' } },
-  parking:     { icon: '🅿️', color: '#455A64', label: { fr: 'Parking', de: 'Parkplatz', en: 'Parking' } },
-  info:        { icon: 'ℹ️', color: '#1976D2', label: { fr: 'Info / Panneau', de: 'Info / Tafel', en: 'Info / Sign' } },
-  lake:        { icon: '🏞️', color: '#0097A7', label: { fr: 'Lac', de: 'See', en: 'Lake' } }
+  transport:   { icon: '<i data-lucide="bus"></i>', color: '#3B82F6', label: { fr: 'Transport public', de: 'Öffentlicher Verkehr', en: 'Public transport' } },
+  restaurant:  { icon: '<i data-lucide="utensils"></i>', color: '#EF4444', label: { fr: 'Restaurant', de: 'Restaurant', en: 'Restaurant' } },
+  hotel:       { icon: '<i data-lucide="hotel"></i>', color: '#8B5CF6', label: { fr: 'Hébergement', de: 'Unterkunft', en: 'Accommodation' } },
+  viewpoint:   { icon: '<i data-lucide="eye"></i>', color: '#06B6D4', label: { fr: 'Point de vue', de: 'Aussichtspunkt', en: 'Viewpoint' } },
+  bridge:      { icon: '<i data-lucide="bridge"></i>', color: '#78350F', label: { fr: 'Pont / Passerelle', de: 'Brücke / Steg', en: 'Bridge / Walkway' } },
+  vertigo:     { icon: '<i data-lucide="triangle-alert"></i>', color: '#EF4444', label: { fr: 'Sujet au vertige', de: 'Schwindelgefahr', en: 'Vertigo risk' } },
+  refreshment: { icon: '<i data-lucide="coffee"></i>', color: '#F59E0B', label: { fr: 'Buvette / Refuge', de: 'Berghütte', en: 'Mountain hut' } },
+  museum:      { icon: '<i data-lucide="building-2"></i>', color: '#5D4037', label: { fr: 'Musée / Culture', de: 'Museum / Kultur', en: 'Museum / Culture' } },
+  waterfall:   { icon: '<i data-lucide="droplets"></i>', color: '#3B82F6', label: { fr: 'Cascade / Source', de: 'Wasserfall / Quelle', en: 'Waterfall / Spring' } },
+  parking:     { icon: '<i data-lucide="car"></i>', color: '#475569', label: { fr: 'Parking', de: 'Parkplatz', en: 'Parking' } },
+  info:        { icon: '<i data-lucide="info"></i>', color: '#3B82F6', label: { fr: 'Info / Panneau', de: 'Info / Tafel', en: 'Info / Sign' } },
+  lake:        { icon: '<i data-lucide="waves"></i>', color: '#0EA5E9', label: { fr: 'Lac', de: 'See', en: 'Lake' } }
 };
 
 // Static POIs for each hike (curated, known points)

@@ -201,6 +201,8 @@ function updateI18n() {
   // Update hero description
   const heroDesc = document.getElementById('heroDescription');
   if (heroDesc) heroDesc.textContent = t('hero.description');
+
+  if (typeof lucide !== 'undefined') lucide.createIcons();
 }
 
 // ===== HERO SLIDESHOW =====
@@ -353,11 +355,11 @@ function createHikeCard(hike) {
       </div>
       <div class="hike-card-body">
         <h3>${tHike(hike.name)}</h3>
-        <div class="region"><i data-lucide="map-pin"></i> ${hike.region}</div>
+        <div class="region"><i data-lucide="map-pin" style="color:var(--gray)"></i> ${hike.region}</div>
         <div class="hike-meta">
-          <span><i data-lucide="clock" class="icon-inline"></i> ${hike.duration}</span>
-          <span><i data-lucide="ruler" class="icon-inline"></i> ${hike.distance} km</span>
-          <span><i data-lucide="arrow-up" class="icon-inline"></i> +${hike.elevation.up}m</span>
+          <span><i data-lucide="timer" style="color:#3B82F6"></i> ${hike.duration}</span>
+          <span><i data-lucide="map" style="color:#10B981"></i> ${hike.distance} km</span>
+          <span><i data-lucide="trending-up" style="color:#F59E0B"></i> +${hike.elevation.up}m</span>
         </div>
       </div>
       <div class="hike-card-footer">
@@ -922,14 +924,14 @@ function renderPOIList(pois, container) {
     return;
   }
   container.innerHTML = filtered.map((poi, i) => {
-    const cat = POI_CATEGORIES[poi.type] || { icon: '<i data-lucide="map-pin" class="icon-inline"></i>', color: '#666' };
+    const cat = POI_CATEGORIES[poi.type] || { icon: '<i data-lucide="map-pin"></i>', color: '#666' };
     const info = tHike(poi.info) || '';
     let actions = '';
     if (poi.email) {
       actions += `<button class="poi-action-btn email" onclick="event.stopPropagation();openReservation('${poi.name}','${poi.email}','${poi.phone||''}','${info.replace(/'/g,"\\'")}')"><i data-lucide="mail"></i> Réserver</button>`;
     }
     if (poi.phone) {
-      actions += `<a class="poi-action-btn phone" href="tel:${poi.phone}" onclick="event.stopPropagation()"><i data-lucide="phone" class="icon-inline"></i> ${poi.phone}</a>`;
+      actions += `<a class="poi-action-btn phone" href="tel:${poi.phone}" onclick="event.stopPropagation()"><i data-lucide="phone"></i> ${poi.phone}</a>`;
     }
     return `<div class="poi-item fade-in" style="animation-delay:${i*0.05}s">
       <div class="poi-icon" style="background:${cat.color}22;color:${cat.color}">${cat.icon}</div>
@@ -940,6 +942,7 @@ function renderPOIList(pois, container) {
       </div>
     </div>`;
   }).join('');
+  if (typeof lucide !== 'undefined') lucide.createIcons();
 }
 
 // ===== RESERVATION MODAL =====
@@ -1081,6 +1084,7 @@ async function fetchWeather(hike) {
     }
     html += '</div>';
     widget.innerHTML = html;
+    if (typeof lucide !== 'undefined') lucide.createIcons();
   } catch (e) {
     widget.innerHTML = '<p style="color:var(--gray);font-size:0.85rem">Météo indisponible</p>';
   }
@@ -1175,10 +1179,11 @@ function renderEquipment(hike) {
   const items = allItems.filter(item => item.essential);
   el.innerHTML = '<div class="equip-list">' + items.map(item =>
     `<div class="equip-item">
-      <span class="equip-check">✓</span>
+      <i data-lucide="check-circle-2" style="color:#10B981;width:16px;height:16px"></i>
       <span>${item.icon} ${item.name}</span>
     </div>`
   ).join('') + '</div>';
+  if (typeof lucide !== 'undefined') lucide.createIcons();
 }
 
 // ===== SHARE =====
