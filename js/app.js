@@ -1055,10 +1055,10 @@ async function fetchWeather(hike) {
       <div style="flex:1">
         <div class="big-temp">${Math.round(c.temperature_2m)}°C</div>
         <div class="weather-summary-icons">
-          <div class="ws-item" title="Vent"><i data-lucide="wind" style="color:#3B82F6"></i> <span>${c.wind_speed_10m} km/h</span></div>
-          <div class="ws-item" title="Précipitations"><i data-lucide="cloud-rain" style="color:#60A5FA"></i> <span>${data.daily.precipitation_probability_max[0]}%</span></div>
-          <div class="ws-item" title="Soleil"><i data-lucide="sunrise" style="color:#F59E0B"></i> <span>${sunrise}</span></div>
-          <div class="ws-item" title="Coucher"><i data-lucide="sunset" style="color:#8B5CF6"></i> <span>${sunset}</span></div>
+          <div class="ws-item" title="Vent"><img src="assets/images/weather/wind.png" alt="Vent" class="ws-img"> <span>${c.wind_speed_10m} km/h</span></div>
+          <div class="ws-item" title="Précipitations"><img src="assets/images/weather/rain.png" alt="Pluie" class="ws-img"> <span>${data.daily.precipitation_probability_max[0]}%</span></div>
+          <div class="ws-item" title="Soleil"><img src="assets/images/weather/sun.png" alt="Soleil" class="ws-img"> <span>${sunrise}</span></div>
+          <div class="ws-item" title="Nuages"><img src="assets/images/weather/cloud.png" alt="Nuages" class="ws-img"> <span>Variable</span></div>
         </div>
       </div>
     </div>`;
