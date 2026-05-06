@@ -578,10 +578,17 @@ button { cursor: pointer; font-family: var(--font-body); border: none; }
 }
 .weather-now .big-icon svg { width: 50px; height: 50px; }
 .weather-now .big-temp { font-size: 2.5rem; font-weight: 800; color: var(--dark); font-family: var(--font-head); line-height: 1; }
-.weather-summary-icons { display: flex; gap: 1rem; margin-top: 10px; flex-wrap: wrap; }
-.ws-item { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--gray); font-weight: 600; }
-.ws-img { width: 24px; height: 24px; object-fit: contain; }
-.ws-item svg { width: 16px; height: 16px; }
+.weather-summary-icons { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+  gap: 12px; margin-top: 15px; 
+}
+.ws-item { 
+  display: flex; align-items: center; gap: 8px; font-size: 0.85rem; 
+  color: var(--gray); font-weight: 600; padding: 6px 10px;
+  background: var(--snow); border-radius: 8px;
+}
+.ws-item i, .ws-item svg { width: 18px; height: 18px; stroke-width: 2px; }
 .weather-now .details { font-size: 0.85rem; color: var(--gray); }
 
 /* CALORIES WIDGET */

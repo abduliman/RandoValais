@@ -1037,7 +1037,7 @@ async function fetchWeather(hike) {
   const alt = hike.altitude?.max || 1500;
 
   try {
-    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&elevation=${alt}&current=temperature_2m,weather_code,wind_speed_10m&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,sunrise,sunset&timezone=Europe/Zurich&forecast_days=5`;
+    const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&elevation=${alt}&current=temperature_2m,weather_code,wind_speed_10m,relative_humidity_2m,cloud_cover&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,uv_index_max,sunrise,sunset&timezone=Europe/Zurich&forecast_days=5`;
     const resp = await fetch(url);
     const data = await resp.json();
     const lang = localStorage.getItem('rv_lang') || 'fr';
@@ -1056,9 +1056,12 @@ async function fetchWeather(hike) {
         <div class="big-temp">${Math.round(c.temperature_2m)}°C</div>
         <div class="weather-summary-icons">
           <div class="ws-item" title="Vent"><i data-lucide="wind" style="color:#3B82F6"></i> <span>${c.wind_speed_10m} km/h</span></div>
-          <div class="ws-item" title="Précipitations"><i data-lucide="cloud-rain" style="color:#60A5FA"></i> <span>${data.daily.precipitation_probability_max[0]}%</span></div>
-          <div class="ws-item" title="Soleil"><i data-lucide="sunrise" style="color:#F59E0B"></i> <span>${sunrise}</span></div>
-          <div class="ws-item" title="Coucher"><i data-lucide="sunset" style="color:#8B5CF6"></i> <span>${sunset}</span></div>
+          <div class="ws-item" title="Précipitations"><i data-lucide="umbrella" style="color:#60A5FA"></i> <span>${data.daily.precipitation_probability_max[0]}%</span></div>
+          <div class="ws-item" title="Humidité"><i data-lucide="droplet" style="color:#34D399"></i> <span>${c.relative_humidity_2m}%</span></div>
+          <div class="ws-item" title="Nuages"><i data-lucide="cloud" style="color:#94A3B8"></i> <span>${c.cloud_cover}%</span></div>
+          <div class="ws-item" title="Indice UV"><i data-lucide="sun-medium" style="color:#FACC15"></i> <span>UV ${data.daily.uv_index_max[0]}</span></div>
+          <div class="ws-item" title="Lever du soleil"><i data-lucide="sunrise" style="color:#F59E0B"></i> <span>${sunrise}</span></div>
+          <div class="ws-item" title="Coucher du soleil"><i data-lucide="sunset" style="color:#8B5CF6"></i> <span>${sunset}</span></div>
         </div>
       </div>
     </div>`;
