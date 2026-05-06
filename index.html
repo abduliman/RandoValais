@@ -10,6 +10,7 @@
   <title>RandoValais — Randonner en Valais, c'est magique !</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
   <div id="loadingIndicator" style="text-align:center; padding: 100px 20px; font-family: sans-serif; color: #666;">
@@ -34,12 +35,12 @@
       </div>
       <a href="#map" data-page="map" data-i18n="nav.map">Carte</a>
       <a href="#favorites" data-page="favorites" data-i18n="nav.favorites">Favoris</a>
-      <a href="#admin" data-page="admin" id="navAdminLink" style="display:none;color:var(--red)">⚙️ Admin</a>
+      <a href="#admin" data-page="admin" id="navAdminLink" style="display:none;color:var(--red)"><i data-lucide="settings" class="icon-inline"></i> Admin</a>
     </div>
     <div class="nav-right">
-      <button class="dark-toggle" id="darkToggle" onclick="toggleDarkMode()" title="Mode sombre">🌙</button>
+      <button class="dark-toggle" id="darkToggle" onclick="toggleDarkMode()" title="Mode sombre"><i data-lucide="moon"></i></button>
       <button class="lang-btn" id="langBtn" onclick="cycleLang()">FR</button>
-      <a href="#profile" class="nav-profile" id="navProfileBtn" onclick="goToProfile()">👤</a>
+      <a href="#profile" class="nav-profile" id="navProfileBtn" onclick="goToProfile()"><i data-lucide="user"></i></a>
       <button class="nav-burger" id="burgerBtn" onclick="toggleMenu()">
         <span></span><span></span><span></span>
       </button>
@@ -139,7 +140,7 @@
       <div class="detail-hero-overlay"></div>
       <div class="detail-hero-content">
         <h1 id="detailTitle"></h1>
-        <div class="region-tag">📍 <span id="detailRegion"></span></div>
+        <div class="region-tag"><i data-lucide="map-pin"></i> <span id="detailRegion"></span></div>
       </div>
     </div>
     <div class="detail-content">
@@ -148,13 +149,13 @@
           <!-- Trail Map -->
           <div class="info-card trail-map-card" style="margin-bottom:2rem">
             <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem">
-              <h3>🗺️ Itinéraire sur la carte</h3>
+              <h3><i data-lucide="map"></i> Itinéraire sur la carte</h3>
               <span id="detailSeason" style="font-size:0.85rem;color:var(--gray)"></span>
             </div>
             <div id="detailMiniMap" style="height:400px;border-radius:var(--radius-sm);overflow:hidden"></div>
             <div class="download-bar" style="margin-top:1rem">
-              <button class="dl-btn gpx" onclick="downloadTrack('gpx')">📥 Télécharger GPX</button>
-              <button class="dl-btn kml" onclick="downloadTrack('kml')">📥 Télécharger KML</button>
+              <button class="dl-btn gpx" onclick="downloadTrack('gpx')"><i data-lucide="download"></i> Télécharger GPX</button>
+              <button class="dl-btn kml" onclick="downloadTrack('kml')"><i data-lucide="download"></i> Télécharger KML</button>
             </div>
           </div>
 
@@ -171,9 +172,9 @@
             <!-- Share buttons -->
             <div class="share-bar" id="shareBar" style="margin-bottom:0">
               <span style="font-size:0.85rem;color:var(--gray);font-weight:500">Partager :</span>
-              <button class="share-btn whatsapp" onclick="shareHike('whatsapp')" title="WhatsApp">💬</button>
-              <button class="share-btn email" onclick="shareHike('email')" title="Email">📧</button>
-              <button class="share-btn copy" onclick="shareHike('copy')" title="Copier le lien">🔗</button>
+              <button class="share-btn whatsapp" onclick="shareHike('whatsapp')" title="WhatsApp"><i data-lucide="message-square"></i></button>
+              <button class="share-btn email" onclick="shareHike('email')" title="Email"><i data-lucide="mail"></i></button>
+              <button class="share-btn copy" onclick="shareHike('copy')" title="Copier le lien"><i data-lucide="link"></i></button>
             </div>
           </div>
 
@@ -184,13 +185,13 @@
           </div>
           <!-- Points of Interest -->
           <div class="info-card poi-section" style="margin-top:2rem">
-            <h3>📍 <span data-i18n="poi.title">Points d'intérêt</span></h3>
+            <h3><i data-lucide="map-pin"></i> <span data-i18n="poi.title">Points d'intérêt</span></h3>
             <div class="poi-filters" id="poiFilters"></div>
             <div class="poi-list" id="poiList"><p style="color:var(--gray);text-align:center">Chargement...</p></div>
           </div>
           <!-- Comments -->
           <div class="info-card comments-section" style="margin-top:2rem">
-            <h3>💬 <span data-i18n="comments.title">Commentaires</span></h3>
+            <h3><i data-lucide="message-square"></i> <span data-i18n="comments.title">Commentaires</span></h3>
             <div class="comment-form" id="commentForm">
               <input type="text" id="commentName" placeholder="Votre pseudo">
               <div class="star-rating" id="starRating">
@@ -207,23 +208,23 @@
         <div class="detail-sidebar">
           <!-- Weather Widget -->
           <div class="info-card weather-card" style="margin-bottom:2rem">
-            <h3>🌤️ Météo en direct</h3>
+            <h3><i data-lucide="sun-dim" class="icon-inline"></i> Météo en direct</h3>
             <div id="weatherWidget"><p style="color:var(--gray);font-size:0.85rem">Chargement météo...</p></div>
           </div>
 
           <!-- Calories & Stats -->
           <div class="info-card" style="margin-bottom:2rem">
-            <h3>🔥 Effort estimé</h3>
+            <h3><i data-lucide="flame" class="icon-inline"></i> Effort estimé</h3>
             <div id="caloriesWidget"></div>
           </div>
           <!-- Equipment Checklist -->
           <div class="info-card" style="margin-bottom:2rem">
-            <h3>🎒 Équipement recommandé</h3>
+            <h3><i data-lucide="backpack" class="icon-inline"></i> Équipement recommandé</h3>
             <div id="equipmentList"></div>
           </div>
           <!-- Photos -->
           <div class="info-card">
-            <h3>📸 <span data-i18n="photos.title">Photos</span></h3>
+            <h3><i data-lucide="camera" class="icon-inline"></i> <span data-i18n="photos.title">Photos</span></h3>
             <div class="photos-grid" id="photosGrid"></div>
             <input type="file" id="photoInput" accept="image/*" style="display:none" onchange="uploadPhoto(event)">
           </div>
@@ -231,7 +232,7 @@
       </div>
       <!-- Similar Hikes -->
       <div class="similar-section" id="similarHikes" style="margin-top:3rem">
-        <h3>🏔️ Randonnées similaires</h3>
+        <h3><i data-lucide="mountain" class="icon-inline"></i> Randonnées similaires</h3>
         <div class="hikes-grid" id="similarGrid" style="margin-top:1rem"></div>
       </div>
     </div>
@@ -266,7 +267,7 @@
   <div class="page admin-page" id="adminPage">
     <section class="section" style="padding-top:120px">
       <div class="section-header">
-        <h2>⚙️ Dashboard Admin</h2>
+        <h2><i data-lucide="layout-dashboard" class="icon-inline"></i> Dashboard Admin</h2>
         <p>Gérer les utilisateurs et modérer le contenu</p>
         <div class="divider"></div>
       </div>
@@ -274,9 +275,9 @@
       <div class="admin-stats" id="adminStats"></div>
       <!-- Admin Tabs -->
       <div class="admin-tabs">
-        <button class="admin-tab active" onclick="switchAdminTab('pending')">📝 En attente</button>
-        <button class="admin-tab" onclick="switchAdminTab('users')">👥 Utilisateurs</button>
-        <button class="admin-tab" onclick="switchAdminTab('all-comments')">💬 Commentaires</button>
+        <button class="admin-tab active" onclick="switchAdminTab('pending')"><i data-lucide="pen-tool" class="icon-inline"></i> En attente</button>
+        <button class="admin-tab" onclick="switchAdminTab('users')"><i data-lucide="users" class="icon-inline"></i> Utilisateurs</button>
+        <button class="admin-tab" onclick="switchAdminTab('all-comments')"><i data-lucide="message-square"></i> Commentaires</button>
       </div>
       <div class="admin-content" id="adminContent"></div>
     </section>
@@ -292,7 +293,7 @@
   <div class="modal-overlay" id="reservationModal">
     <div class="modal-card">
       <button class="modal-close" onclick="closeReservation()">✕</button>
-      <h3 id="resModalTitle">📧 Réservation</h3>
+      <h3 id="resModalTitle"><i data-lucide="mail"></i> Réservation</h3>
       <p id="resModalInfo" style="color:var(--gray);margin:0.5rem 0 1rem"></p>
       <form onsubmit="sendReservation(event)">
         <input type="text" id="resName" placeholder="Votre nom" required>
@@ -300,7 +301,7 @@
         <input type="date" id="resDate" required>
         <input type="number" id="resGuests" placeholder="Nombre de personnes" min="1" max="20" value="2">
         <textarea id="resMessage" placeholder="Message (optionnel)" rows="3"></textarea>
-        <button type="submit" class="btn-submit" style="width:100%">📧 Envoyer la demande</button>
+        <button type="submit" class="btn-submit" style="width:100%"><i data-lucide="mail"></i> Envoyer la demande</button>
       </form>
       <p id="resContact" style="margin-top:1rem;font-size:0.85rem;color:var(--gray)"></p>
     </div>
@@ -314,30 +315,30 @@
   <div class="emergency-panel" id="emergencyPanel">
     <h4>🆘 Numéros d'urgence</h4>
     <div class="emergency-item">
-      <div>🚁</div>
+      <div><i data-lucide="plane" class="icon-inline"></i></div>
       <div><a href="tel:1414">1414</a><br><span>REGA (hélicoptère)</span></div>
     </div>
     <div class="emergency-item">
-      <div>🚔</div>
+      <div><i data-lucide="shield-alert" class="icon-inline"></i></div>
       <div><a href="tel:117">117</a><br><span>Police</span></div>
     </div>
     <div class="emergency-item">
-      <div>🚑</div>
+      <div><i data-lucide="cross" class="icon-inline"></i></div>
       <div><a href="tel:144">144</a><br><span>Ambulance</span></div>
     </div>
     <div class="emergency-item">
-      <div>⛰️</div>
+      <div><i data-lucide="mountain-snow" class="icon-inline"></i></div>
       <div><a href="tel:140">140</a><br><span>Secours en montagne</span></div>
     </div>
     <div class="emergency-item">
-      <div>📍</div>
+      <div><i data-lucide="map-pin"></i></div>
       <div><a href="#" onclick="shareLocation()">Partager ma position</a><br><span>Envoyer par SMS</span></div>
     </div>
   </div>
 
   <!-- FOOTER -->
   <footer class="footer" id="mainFooter" style="display:none">
-    <p>🏔️ RandoValais — <span data-i18n="footer.made">Fait avec ❤️ en Valais</span></p>
+    <p><i data-lucide="mountain" class="icon-inline"></i> RandoValais — <span data-i18n="footer.made">Fait avec ❤️ en Valais</span></p>
     <p style="margin-top:0.5rem">© 2026 RandoValais. <span data-i18n="footer.rights">Tous droits réservés</span>.</p>
   </footer>
 
@@ -347,5 +348,6 @@
   <script src="js/storage.js"></script>
   <script src="js/poi.js"></script>
   <script src="js/app.js"></script>
+  <script>lucide.createIcons();</script>
 </body>
 </html>

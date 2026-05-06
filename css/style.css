@@ -752,3 +752,6 @@ body.dark-mode .admin-stat { background: #1E293B; border-color: rgba(255,255,255
   .detail-hero h1 { font-size: 1.8rem; }
   .section { padding: 3rem 1rem; }
 }
+
+/* Lucide Icons */
+.icon-inline { display: inline-block; vertical-align: -0.125em; width: 1.2em; height: 1.2em; stroke-width: 2; margin-right: 0.2rem; }

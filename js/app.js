@@ -10,7 +10,7 @@ let currentDifficulty = 'all';
 let currentCategory = 'all';
 let hikesMap = null;
 let hikesMapMarkers = [];
-const EMOJI_HIKES = ['🏔️','🌲','⛰️','🏞️','🌄','🍃','🦅','🌿','🏕️','🍇','💎','🌉'];
+const EMOJI_HIKES = ['<i data-lucide="mountain" class="icon-inline"></i>','🌲','<i data-lucide="mountain-snow" class="icon-inline"></i>','🏞️','🌄','🍃','🦅','🌿','🏕️','🍇','💎','🌉'];
 const SWISS_SCALE = { 'Facile': 'T1', 'Moyen': 'T2 / T3', 'Difficile': 'T4+' };
 
 // ===== INIT =====
@@ -249,7 +249,7 @@ function doLogin() {
     updateNavProfile(res.user);
     showPage('home');
     navigateTo('home');
-    showToast(`Bon retour, ${res.user.name} ! 🏔️`);
+    showToast(`Bon retour, ${res.user.name} ! <i data-lucide="mountain" class="icon-inline"></i>`);
   } else {
     document.getElementById('loginError').textContent = res.error;
   }
@@ -287,7 +287,7 @@ function doGuest() {
 
 function updateNavProfile(user) {
   const btn = document.getElementById('navProfileBtn');
-  if (user && btn) { btn.textContent = user.avatar || '👤'; }
+  if (user && btn) { btn.textContent = user.avatar || '<i data-lucide="user"></i>'; }
 }
 
 // Ensure first page is rendered even if hash is empty
@@ -329,16 +329,16 @@ function createHikeCard(hike) {
       </div>
       <div class="hike-card-body">
         <h3>${tHike(hike.name)}</h3>
-        <div class="region">📍 ${hike.region}</div>
+        <div class="region"><i data-lucide="map-pin"></i> ${hike.region}</div>
         <div class="hike-meta">
-          <span>⏱️ ${hike.duration}</span>
-          <span>📏 ${hike.distance} km</span>
-          <span>⬆️ +${hike.elevation.up}m</span>
+          <span><i data-lucide="clock" class="icon-inline"></i> ${hike.duration}</span>
+          <span><i data-lucide="ruler" class="icon-inline"></i> ${hike.distance} km</span>
+          <span><i data-lucide="arrow-up" class="icon-inline"></i> +${hike.elevation.up}m</span>
         </div>
       </div>
       <div class="hike-card-footer">
         <div class="hike-likes ${liked?'liked':''}">❤️ ${likeCount}</div>
-        <div style="font-size:0.8rem;color:var(--gray)">💬 ${Storage.getComments(hike.id).length}</div>
+        <div style="font-size:0.8rem;color:var(--gray)"><i data-lucide="message-square"></i> ${Storage.getComments(hike.id).length}</div>
       </div>
     </div>`;
 }
@@ -525,10 +525,10 @@ function renderDetail(id) {
 
   // Info grid
   document.getElementById('detailInfo').innerHTML = `
-    <div class="info-item"><div class="icon">⏱️</div><div class="value">${hike.duration}</div><div class="label">${t('hikes.duration')}</div></div>
-    <div class="info-item"><div class="icon">📏</div><div class="value">${hike.distance} km</div><div class="label">${t('hikes.distance')}</div></div>
-    <div class="info-item"><div class="icon">⬆️</div><div class="value">+${hike.elevation.up}m</div><div class="label">${t('hikes.elevation')}</div></div>
-    <div class="info-item"><div class="icon">⬇️</div><div class="value">-${hike.elevation.down}m</div><div class="label">${t('hikes.elevation')}</div></div>
+    <div class="info-item"><div class="icon"><i data-lucide="clock" class="icon-inline"></i></div><div class="value">${hike.duration}</div><div class="label">${t('hikes.duration')}</div></div>
+    <div class="info-item"><div class="icon"><i data-lucide="ruler" class="icon-inline"></i></div><div class="value">${hike.distance} km</div><div class="label">${t('hikes.distance')}</div></div>
+    <div class="info-item"><div class="icon"><i data-lucide="arrow-up" class="icon-inline"></i></div><div class="value">+${hike.elevation.up}m</div><div class="label">${t('hikes.elevation')}</div></div>
+    <div class="info-item"><div class="icon"><i data-lucide="arrow-down" class="icon-inline"></i></div><div class="value">-${hike.elevation.down}m</div><div class="label">${t('hikes.elevation')}</div></div>
     <div class="info-item"><div class="icon">🔻</div><div class="value">${hike.altitude.min}m</div><div class="label">${t('detail.altMin')}</div></div>
     <div class="info-item"><div class="icon">🔺</div><div class="value">${hike.altitude.max}m</div><div class="label">${t('detail.altMax')}</div></div>
     <div class="info-item" style="background:${DIFFICULTY_COLORS[hike.difficulty]}22">
@@ -636,7 +636,7 @@ function submitComment() {
   document.getElementById('commentText').value = '';
   setRating(0);
   renderComments(currentHikeId);
-  showToast('💬 Commentaire publié !');
+  showToast('<i data-lucide="message-square"></i> Commentaire publié !');
 }
 
 // ===== PHOTOS =====
@@ -674,7 +674,7 @@ function uploadPhoto(event) {
       const data = canvas.toDataURL('image/jpeg', 0.7);
       Storage.addPhoto(currentHikeId, { data, caption: '' });
       renderPhotos(currentHikeId);
-      showToast('📸 Photo ajoutée !');
+      showToast('<i data-lucide="camera" class="icon-inline"></i> Photo ajoutée !');
     };
     img.src = e.target.result;
   };
@@ -726,8 +726,8 @@ function initMap() {
         <div style="font-family:Outfit,sans-serif;min-width:220px">
           <img src="${hike.image}" alt="" style="width:100%;height:120px;object-fit:cover;border-radius:8px;margin-bottom:8px">
           <strong style="font-size:15px">${tHike(hike.name)}</strong><br>
-          <span style="color:#666">📍 ${hike.region}</span><br>
-          <span style="font-size:13px">⏱️ ${hike.duration} · 📏 ${hike.distance}km · ⬆️+${hike.elevation.up}m</span><br>
+          <span style="color:#666"><i data-lucide="map-pin"></i> ${hike.region}</span><br>
+          <span style="font-size:13px"><i data-lucide="clock" class="icon-inline"></i> ${hike.duration} · <i data-lucide="ruler" class="icon-inline"></i> ${hike.distance}km · <i data-lucide="arrow-up" class="icon-inline"></i>+${hike.elevation.up}m</span><br>
           <a href="#hike-${hike.id}" style="color:#2D5016;font-weight:600;display:inline-block;margin-top:8px;font-size:14px">Voir détails →</a>
         </div>
       `, { maxWidth: 260 });
@@ -868,7 +868,7 @@ function renderPOIFilters(pois, container) {
   if (!container) return;
   const types = ['all', ...new Set(pois.map(p => p.type))];
   container.innerHTML = types.map(type => {
-    const cat = type === 'all' ? { icon: '📋', color: '#666' } : (POI_CATEGORIES[type] || { icon: '📌', color: '#666' });
+    const cat = type === 'all' ? { icon: '📋', color: '#666' } : (POI_CATEGORIES[type] || { icon: '<i data-lucide="map-pin" class="icon-inline"></i>', color: '#666' });
     const label = type === 'all' ? t('hikes.filterAll') : tHike(cat.label);
     return `<button class="poi-filter-btn ${type === activePOIFilter ? 'active' : ''}"
       style="${type === activePOIFilter ? 'background:' + cat.color : ''}"
@@ -891,14 +891,14 @@ function renderPOIList(pois, container) {
     return;
   }
   container.innerHTML = filtered.map((poi, i) => {
-    const cat = POI_CATEGORIES[poi.type] || { icon: '📌', color: '#666' };
+    const cat = POI_CATEGORIES[poi.type] || { icon: '<i data-lucide="map-pin" class="icon-inline"></i>', color: '#666' };
     const info = tHike(poi.info) || '';
     let actions = '';
     if (poi.email) {
-      actions += `<button class="poi-action-btn email" onclick="event.stopPropagation();openReservation('${poi.name}','${poi.email}','${poi.phone||''}','${info.replace(/'/g,"\\'")}')">📧 Réserver</button>`;
+      actions += `<button class="poi-action-btn email" onclick="event.stopPropagation();openReservation('${poi.name}','${poi.email}','${poi.phone||''}','${info.replace(/'/g,"\\'")}')"><i data-lucide="mail"></i> Réserver</button>`;
     }
     if (poi.phone) {
-      actions += `<a class="poi-action-btn phone" href="tel:${poi.phone}" onclick="event.stopPropagation()">📞 ${poi.phone}</a>`;
+      actions += `<a class="poi-action-btn phone" href="tel:${poi.phone}" onclick="event.stopPropagation()"><i data-lucide="phone" class="icon-inline"></i> ${poi.phone}</a>`;
     }
     return `<div class="poi-item fade-in" style="animation-delay:${i*0.05}s">
       <div class="poi-icon" style="background:${cat.color}22;color:${cat.color}">${cat.icon}</div>
@@ -916,11 +916,11 @@ let currentResPoi = null;
 
 function openReservation(name, email, phone, info) {
   currentResPoi = { name, email, phone };
-  document.getElementById('resModalTitle').textContent = `📧 ${name}`;
+  document.getElementById('resModalTitle').textContent = `<i data-lucide="mail"></i> ${name}`;
   document.getElementById('resModalInfo').textContent = info;
   document.getElementById('resContact').innerHTML =
-    `📧 <a href="mailto:${email}" style="color:var(--green)">${email}</a>` +
-    (phone ? ` · 📞 <a href="tel:${phone}" style="color:var(--green)">${phone}</a>` : '');
+    `<i data-lucide="mail"></i> <a href="mailto:${email}" style="color:var(--green)">${email}</a>` +
+    (phone ? ` · <i data-lucide="phone" class="icon-inline"></i> <a href="tel:${phone}" style="color:var(--green)">${phone}</a>` : '');
 
   // Pre-fill user info
   const user = Storage.getUser();
@@ -956,9 +956,9 @@ function sendReservation(event) {
   const subject = encodeURIComponent(`Réservation — ${currentResPoi.name} — ${date}`);
   const body = encodeURIComponent(
     `Bonjour,\n\nJe souhaite effectuer une réservation :\n\n` +
-    `📅 Date : ${date}\n` +
-    `👥 Personnes : ${guests}\n` +
-    `🏔️ Randonnée : ${hikeName}\n\n` +
+    `<i data-lucide="calendar" class="icon-inline"></i> Date : ${date}\n` +
+    `<i data-lucide="users" class="icon-inline"></i> Personnes : ${guests}\n` +
+    `<i data-lucide="mountain" class="icon-inline"></i> Randonnée : ${hikeName}\n\n` +
     `${message ? 'Message : ' + message + '\n\n' : ''}` +
     `Cordialement,\n${name}\n${email}\n\n` +
     `— Envoyé via RandoValais`
@@ -966,11 +966,11 @@ function sendReservation(event) {
 
   window.open(`mailto:${currentResPoi.email}?subject=${subject}&body=${body}`, '_blank');
   closeReservation();
-  showToast('📧 Email de réservation ouvert !');
+  showToast('<i data-lucide="mail"></i> Email de réservation ouvert !');
 }
 
 // ===== WEATHER (Open-Meteo API — free, no key) =====
-const WEATHER_ICONS = {0:'☀️',1:'🌤️',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌧️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',71:'🌨️',73:'🌨️',75:'❄️',77:'❄️',80:'🌦️',81:'🌧️',82:'⛈️',85:'🌨️',86:'❄️',95:'⛈️',96:'⛈️',99:'⛈️'};
+const WEATHER_ICONS = {0:'☀️',1:'<i data-lucide="sun-dim" class="icon-inline"></i>',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌧️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',71:'🌨️',73:'🌨️',75:'❄️',77:'❄️',80:'🌦️',81:'🌧️',82:'⛈️',85:'🌨️',86:'❄️',95:'⛈️',96:'⛈️',99:'⛈️'};
 const DAY_NAMES = {fr:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'],de:['So','Mo','Di','Mi','Do','Fr','Sa'],en:['Sun','Mon','Tue','Wed','Thu','Fri','Sat']};
 
 async function fetchWeather(hike) {
@@ -988,7 +988,7 @@ async function fetchWeather(hike) {
     const days = DAY_NAMES[lang] || DAY_NAMES.fr;
 
     const c = data.current;
-    const nowIcon = WEATHER_ICONS[c.weather_code] || '🌤️';
+    const nowIcon = WEATHER_ICONS[c.weather_code] || '<i data-lucide="sun-dim" class="icon-inline"></i>';
     
     // Sunrise/Sunset for today
     const sunrise = data.daily.sunrise[0].split('T')[1];
@@ -999,19 +999,19 @@ async function fetchWeather(hike) {
       <div>
         <div class="big-temp">${Math.round(c.temperature_2m)}°C</div>
         <div class="details">💨 ${c.wind_speed_10m} km/h · Alt. ${alt}m</div>
-        <div class="details" style="margin-top:4px">🌅 ${sunrise} · 🌇 ${sunset}</div>
+        <div class="details" style="margin-top:4px"><i data-lucide="sunrise" class="icon-inline"></i> ${sunrise} · <i data-lucide="sunset" class="icon-inline"></i> ${sunset}</div>
       </div>
     </div>`;
 
     html += '<div class="weather-grid">';
     for (let i = 1; i < Math.min(5, data.daily.time.length); i++) {
       const d = new Date(data.daily.time[i]);
-      const icon = WEATHER_ICONS[data.daily.weather_code[i]] || '🌤️';
+      const icon = WEATHER_ICONS[data.daily.weather_code[i]] || '<i data-lucide="sun-dim" class="icon-inline"></i>';
       html += `<div class="weather-day">
         <div class="day">${days[d.getDay()]}</div>
         <div class="icon">${icon}</div>
         <div class="temp">${Math.round(data.daily.temperature_2m_max[i])}°/${Math.round(data.daily.temperature_2m_min[i])}°</div>
-        <div class="rain">💧 ${data.daily.precipitation_probability_max[i]}%</div>
+        <div class="rain"><i data-lucide="droplets" class="icon-inline"></i> ${data.daily.precipitation_probability_max[i]}%</div>
       </div>`;
     }
     html += '</div>';
@@ -1038,22 +1038,22 @@ function renderCalories(hike) {
 
   el.innerHTML = `<div class="calories-grid">
     <div class="calorie-item">
-      <div class="cal-icon">🔥</div>
+      <div class="cal-icon"><i data-lucide="flame" class="icon-inline"></i></div>
       <div class="cal-value">${calories}</div>
       <div class="cal-label">kcal estimées</div>
     </div>
     <div class="calorie-item">
-      <div class="cal-icon">💧</div>
+      <div class="cal-icon"><i data-lucide="droplets" class="icon-inline"></i></div>
       <div class="cal-value">${water}L</div>
       <div class="cal-label">eau recommandée</div>
     </div>
     <div class="calorie-item">
-      <div class="cal-icon">👣</div>
+      <div class="cal-icon"><i data-lucide="footprints" class="icon-inline"></i></div>
       <div class="cal-value">${(steps/1000).toFixed(1)}k</div>
       <div class="cal-label">pas estimés</div>
     </div>
     <div class="calorie-item">
-      <div class="cal-icon">⏱️</div>
+      <div class="cal-icon"><i data-lucide="clock" class="icon-inline"></i></div>
       <div class="cal-value">${hike.duration}</div>
       <div class="cal-label">temps de marche</div>
     </div>
@@ -1063,33 +1063,33 @@ function renderCalories(hike) {
 // ===== EQUIPMENT CHECKLIST =====
 const EQUIPMENT = {
   Facile: [
-    { icon: '🥾', name: 'Chaussures de marche', essential: true },
-    { icon: '💧', name: 'Eau (min. 1L)', essential: true },
-    { icon: '📱', name: 'Téléphone chargé', essential: true },
-    { icon: '🧴', name: 'Crème solaire SPF 50', essential: false },
-    { icon: '🧢', name: 'Casquette / chapeau', essential: false },
-    { icon: '🍫', name: 'En-cas', essential: false }
+    { icon: '<i data-lucide="footprints" class="icon-inline"></i>', name: 'Chaussures de marche', essential: true },
+    { icon: '<i data-lucide="droplets" class="icon-inline"></i>', name: 'Eau (min. 1L)', essential: true },
+    { icon: '<i data-lucide="smartphone" class="icon-inline"></i>', name: 'Téléphone chargé', essential: true },
+    { icon: '<i data-lucide="flask-conical" class="icon-inline"></i>', name: 'Crème solaire SPF 50', essential: false },
+    { icon: '<i data-lucide="sun" class="icon-inline"></i>', name: 'Casquette / chapeau', essential: false },
+    { icon: '<i data-lucide="cookie" class="icon-inline"></i>', name: 'En-cas', essential: false }
   ],
   Moyen: [
-    { icon: '🥾', name: 'Chaussures de randonnée', essential: true },
-    { icon: '🧥', name: 'Veste coupe-vent/imperméable', essential: true },
-    { icon: '💧', name: 'Eau (min. 1.5L)', essential: true },
-    { icon: '🗺️', name: 'Carte / App GPS', essential: true },
-    { icon: '📱', name: 'Téléphone chargé', essential: true },
-    { icon: '🦯', name: 'Bâtons de randonnée', essential: false },
+    { icon: '<i data-lucide="footprints" class="icon-inline"></i>', name: 'Chaussures de randonnée', essential: true },
+    { icon: '<i data-lucide="shirt" class="icon-inline"></i>', name: 'Veste coupe-vent/imperméable', essential: true },
+    { icon: '<i data-lucide="droplets" class="icon-inline"></i>', name: 'Eau (min. 1.5L)', essential: true },
+    { icon: '<i data-lucide="map"></i>', name: 'Carte / App GPS', essential: true },
+    { icon: '<i data-lucide="smartphone" class="icon-inline"></i>', name: 'Téléphone chargé', essential: true },
+    { icon: '<i data-lucide="activity" class="icon-inline"></i>', name: 'Bâtons de randonnée', essential: false },
     { icon: '🩹', name: 'Trousse premiers secours', essential: false }
   ],
   Difficile: [
-    { icon: '🥾', name: 'Chaussures de montagne', essential: true },
-    { icon: '🧥', name: 'Veste imperméable', essential: true },
-    { icon: '🦯', name: 'Bâtons de randonnée', essential: true },
-    { icon: '🧤', name: 'Gants + bonnet', essential: true },
-    { icon: '🔦', name: 'Lampe frontale', essential: true },
-    { icon: '💧', name: 'Eau (min. 2L)', essential: true },
-    { icon: '🗺️', name: 'Carte / App GPS', essential: true },
-    { icon: '📱', name: 'Téléphone chargé', essential: true },
+    { icon: '<i data-lucide="footprints" class="icon-inline"></i>', name: 'Chaussures de montagne', essential: true },
+    { icon: '<i data-lucide="shirt" class="icon-inline"></i>', name: 'Veste imperméable', essential: true },
+    { icon: '<i data-lucide="activity" class="icon-inline"></i>', name: 'Bâtons de randonnée', essential: true },
+    { icon: '<i data-lucide="hand" class="icon-inline"></i>', name: 'Gants + bonnet', essential: true },
+    { icon: '<i data-lucide="flashlight" class="icon-inline"></i>', name: 'Lampe frontale', essential: true },
+    { icon: '<i data-lucide="droplets" class="icon-inline"></i>', name: 'Eau (min. 2L)', essential: true },
+    { icon: '<i data-lucide="map"></i>', name: 'Carte / App GPS', essential: true },
+    { icon: '<i data-lucide="smartphone" class="icon-inline"></i>', name: 'Téléphone chargé', essential: true },
     { icon: '🩹', name: 'Trousse premiers secours', essential: true },
-    { icon: '🧗', name: 'Casque (recommandé)', essential: false }
+    { icon: '<i data-lucide="person-standing" class="icon-inline"></i>', name: 'Casque (recommandé)', essential: false }
   ]
 };
 
@@ -1114,7 +1114,7 @@ function shareHike(method) {
 
   const name = tHike(hike.name);
   const url = window.location.origin + '/#hike-' + hike.id;
-  const text = `🏔️ ${name} — ${hike.duration}, ${hike.distance}km, +${hike.elevation.up}m\n📍 ${hike.region}, Valais\n\n`;
+  const text = `<i data-lucide="mountain" class="icon-inline"></i> ${name} — ${hike.duration}, ${hike.distance}km, +${hike.elevation.up}m\n<i data-lucide="map-pin"></i> ${hike.region}, Valais\n\n`;
 
   switch (method) {
     case 'whatsapp':
@@ -1124,7 +1124,7 @@ function shareHike(method) {
       window.open(`mailto:?subject=${encodeURIComponent('Randonnée: ' + name)}&body=${encodeURIComponent(text + url)}`, '_blank');
       break;
     case 'copy':
-      navigator.clipboard.writeText(url).then(() => showToast('🔗 Lien copié !'));
+      navigator.clipboard.writeText(url).then(() => showToast('<i data-lucide="link"></i> Lien copié !'));
       break;
   }
 }
@@ -1165,13 +1165,13 @@ function downloadTrack(format) {
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-    showToast(`📥 ${format.toUpperCase()} téléchargé !`);
+    showToast(`<i data-lucide="download"></i> ${format.toUpperCase()} téléchargé !`);
     return;
   }
 
   // Fallback for Bisses without local files
   if (!hike.trail || hike.trail.length < 2) {
-    showToast('❌ Fichier ' + format.toUpperCase() + ' non disponible pour cette randonnée');
+    showToast('<i data-lucide="x-circle" class="icon-inline"></i> Fichier ' + format.toUpperCase() + ' non disponible pour cette randonnée');
     return;
   }
 
@@ -1186,7 +1186,7 @@ function downloadTrack(format) {
   a.download = `RandoValais_${name}.${format}`;
   a.click();
   URL.revokeObjectURL(url);
-  showToast(`📥 ${format.toUpperCase()} téléchargé (généré) !`);
+  showToast(`<i data-lucide="download"></i> ${format.toUpperCase()} téléchargé (généré) !`);
 }
 
 function generateGPX(hike, name, desc) {
@@ -1268,17 +1268,17 @@ function renderAdmin() {
   
   stats.innerHTML = `
     <div class="admin-stat">
-      <div class="stat-icon">👥</div>
+      <div class="stat-icon"><i data-lucide="users" class="icon-inline"></i></div>
       <div class="stat-value">${allUsers.length}</div>
       <div class="stat-label">Utilisateurs</div>
     </div>
     <div class="admin-stat">
-      <div class="stat-icon">📝</div>
+      <div class="stat-icon"><i data-lucide="pen-tool" class="icon-inline"></i></div>
       <div class="stat-value">${pendingComments.length}</div>
       <div class="stat-label">En attente</div>
     </div>
     <div class="admin-stat">
-      <div class="stat-icon">💬</div>
+      <div class="stat-icon"><i data-lucide="message-square"></i></div>
       <div class="stat-value">${Storage.getAllCommentsCount()}</div>
       <div class="stat-label">Approuvés</div>
     </div>
@@ -1366,7 +1366,7 @@ function toggleDarkMode() {
   document.body.classList.toggle('dark-mode');
   const isDark = document.body.classList.contains('dark-mode');
   localStorage.setItem('rv_dark_mode', isDark);
-  document.getElementById('darkToggle').textContent = isDark ? '☀️' : '🌙';
+  document.getElementById('darkToggle').textContent = isDark ? '☀️' : '<i data-lucide="moon"></i>';
 }
 
 function toggleEmergency() {
