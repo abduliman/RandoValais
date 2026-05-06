@@ -4,7 +4,7 @@ const I18N = {
     siteTitle: "RandoValais",
     subtitle: "Randonner en Valais, c'est magique !",
     nav: { home: "Accueil", hikes: "Randonnées", favorites: "Favoris", map: "Carte", profile: "Profil" },
-    hero: { cta: "Découvrir les randonnées", stats_hikes: "Randonnées", stats_km: "km de sentiers", stats_elev: "m de dénivelé", description: "Découvrez les plus beaux bisses des Alpes suisses. Un guide complet avec itinéraires détaillés, cartes interactives et conseils d'expert pour vos randonnées en Valais." },
+    hero: { cta: "Découvrir les randonnées", stats_hikes: "Randonnées", stats_km: "km de sentiers", stats_elev: "dénivelation [m]", description: "Découvrez les plus beaux bisses des Alpes suisses. Un guide complet avec itinéraires détaillés, cartes interactives et conseils d'expert pour vos randonnées en Valais." },
     hikes: { title: "Nos Randonnées", search: "Rechercher une randonnée...", filterAll: "Toutes", duration: "Durée", elevation: "Dénivelé", distance: "Distance", difficulty: "Difficulté", sort: "Trier par", sortPop: "Popularité", sortDiff: "Difficulté", sortDur: "Durée", region: "Région", noResults: "Aucune randonnée trouvée" },
     detail: { info: "Informations", description: "Description", access: "Accès", comments: "Commentaires", photos: "Photos", like: "J'aime", liked: "Aimé", addFav: "Ajouter aux favoris", removeFav: "Retirer des favoris", altMin: "Alt. min", altMax: "Alt. max", season: "Saison", back: "Retour" },
     comments: { title: "Commentaires", add: "Ajouter un commentaire", name: "Votre pseudo", text: "Votre commentaire...", rating: "Note", submit: "Publier", noComments: "Aucun commentaire. Soyez le premier !" },
