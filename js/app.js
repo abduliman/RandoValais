@@ -1001,31 +1001,12 @@ function sendReservation(event) {
 }
 
 // ===== WEATHER (Open-Meteo API — free, no key) =====
-const WEATHER_ICONS = {
-  0:'<i data-lucide="sun" class="icon-inline"></i>',
-  1:'<i data-lucide="sun-dim" class="icon-inline"></i>',
-  2:'<i data-lucide="cloud" class="icon-inline"></i>',
-  3:'<i data-lucide="cloudy" class="icon-inline"></i>',
-  45:'<i data-lucide="cloud-fog" class="icon-inline"></i>',
-  48:'<i data-lucide="cloud-fog" class="icon-inline"></i>',
-  51:'<i data-lucide="cloud-drizzle" class="icon-inline"></i>',
-  53:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
-  55:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
-  61:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
-  63:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
-  65:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
-  71:'<i data-lucide="snowflake" class="icon-inline"></i>',
-  73:'<i data-lucide="snowflake" class="icon-inline"></i>',
-  75:'<i data-lucide="snowflake" class="icon-inline"></i>',
-  77:'<i data-lucide="snowflake" class="icon-inline"></i>',
-  80:'<i data-lucide="cloud-drizzle" class="icon-inline"></i>',
-  81:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
-  82:'<i data-lucide="cloud-lightning" class="icon-inline"></i>',
-  85:'<i data-lucide="snowflake" class="icon-inline"></i>',
-  86:'<i data-lucide="snowflake" class="icon-inline"></i>',
-  95:'<i data-lucide="cloud-lightning" class="icon-inline"></i>',
-  96:'<i data-lucide="cloud-lightning" class="icon-inline"></i>',
-  99:'<i data-lucide="cloud-lightning" class="icon-inline"></i>'
+const WEATHER_IMAGES = {
+  0: 'sun.png', 1: 'sun.png', 2: 'cloud.png', 3: 'cloud.png',
+  45: 'cloud.png', 48: 'cloud.png', 51: 'rain.png', 53: 'rain.png', 55: 'rain.png',
+  61: 'rain.png', 63: 'rain.png', 65: 'rain.png', 71: 'snow.png', 73: 'snow.png',
+  75: 'snow.png', 77: 'snow.png', 80: 'rain.png', 81: 'rain.png', 82: 'storm.png',
+  85: 'snow.png', 86: 'snow.png', 95: 'storm.png', 96: 'storm.png', 99: 'storm.png'
 };
 const DAY_NAMES = {fr:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'],de:['So','Mo','Di','Mi','Do','Fr','Sa'],en:['Sun','Mon','Tue','Wed','Thu','Fri','Sat']};
 
@@ -1044,14 +1025,14 @@ async function fetchWeather(hike) {
     const days = DAY_NAMES[lang] || DAY_NAMES.fr;
 
     const c = data.current;
-    const nowIcon = WEATHER_ICONS[c.weather_code] || '<i data-lucide="sun-dim" class="icon-inline"></i>';
+    const nowImg = WEATHER_IMAGES[c.weather_code] || 'sun.png';
     
     // Sunrise/Sunset for today
     const sunrise = data.daily.sunrise[0].split('T')[1];
     const sunset = data.daily.sunset[0].split('T')[1];
 
     let html = `<div class="weather-now">
-      <div class="big-icon" style="color:#F59E0B">${nowIcon}</div>
+      <div class="big-icon"><img src="assets/images/weather/${nowImg}" alt="Météo" style="width:60px;height:60px;object-fit:contain"></div>
       <div style="flex:1">
         <div class="big-temp">${Math.round(c.temperature_2m)}°C</div>
         <div class="weather-summary-icons">
@@ -1066,10 +1047,10 @@ async function fetchWeather(hike) {
     html += '<div class="weather-grid">';
     for (let i = 1; i < Math.min(5, data.daily.time.length); i++) {
       const d = new Date(data.daily.time[i]);
-      const icon = WEATHER_ICONS[data.daily.weather_code[i]] || '<i data-lucide="sun-dim" class="icon-inline"></i>';
+      const img = WEATHER_IMAGES[data.daily.weather_code[i]] || 'sun.png';
       html += `<div class="weather-day">
         <div class="day">${days[d.getDay()]}</div>
-        <div class="icon" style="color:#3B82F6">${icon}</div>
+        <div class="icon"><img src="assets/images/weather/${img}" alt="Météo" style="width:32px;height:32px;object-fit:contain;margin:4px 0"></div>
         <div class="temp"><strong>${Math.round(data.daily.temperature_2m_max[i])}°</strong> <span style="opacity:0.6">${Math.round(data.daily.temperature_2m_min[i])}°</span></div>
         <div class="rain" style="color:#3B82F6"><i data-lucide="umbrella" class="icon-inline"></i> ${data.daily.precipitation_probability_max[i]}%</div>
       </div>`;
