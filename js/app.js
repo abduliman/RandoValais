@@ -555,14 +555,14 @@ function renderDetail(id) {
     }
 
     document.getElementById('detailInfo').innerHTML = `
-      <div class="info-item"><div class="icon" style="background:#E3F2FD;color:#1976D2"><i data-lucide="timer"></i></div><div class="value">${hike.duration}</div><div class="label">${t('hikes.duration')}</div></div>
-      <div class="info-item"><div class="icon" style="background:#E8F5E9;color:#2E7D32"><i data-lucide="map"></i></div><div class="value">${hike.distance} km</div><div class="label">${t('hikes.distance')}</div></div>
-      <div class="info-item"><div class="icon" style="background:#FFF3E0;color:#EF6C00"><i data-lucide="trending-up"></i></div><div class="value">+${hike.elevation.up}m</div><div class="label">${t('hikes.elevation')}</div></div>
-      <div class="info-item"><div class="icon" style="background:#FFEBEE;color:#C62828"><i data-lucide="trending-down"></i></div><div class="value">-${hike.elevation.down}m</div><div class="label">${t('hikes.elevation')}</div></div>
-      <div class="info-item"><div class="icon" style="background:#F3E5F5;color:#7B1FA2"><i data-lucide="arrow-down-to-line"></i></div><div class="value">${hike.altitude.min}m</div><div class="label">${t('detail.altMin')}</div></div>
-      <div class="info-item"><div class="icon" style="background:#E8EAF6;color:#283593"><i data-lucide="arrow-up-to-line"></i></div><div class="value">${hike.altitude.max}m</div><div class="label">${t('detail.altMax')}</div></div>
-      <div class="info-item" style="background:${DIFFICULTY_COLORS[hike.difficulty]}15">
-        <div class="icon" style="background:${DIFFICULTY_COLORS[hike.difficulty]}25;color:${DIFFICULTY_COLORS[hike.difficulty]}"><i data-lucide="gauge"></i></div>
+      <div class="info-item"><div class="icon" style="color:#3B82F6"><i data-lucide="timer" class="icon-inline"></i></div><div class="value">${hike.duration}</div><div class="label">${t('hikes.duration')}</div></div>
+      <div class="info-item"><div class="icon" style="color:#10B981"><i data-lucide="map" class="icon-inline"></i></div><div class="value">${hike.distance} km</div><div class="label">${t('hikes.distance')}</div></div>
+      <div class="info-item"><div class="icon" style="color:#F59E0B"><i data-lucide="trending-up" class="icon-inline"></i></div><div class="value">+${hike.elevation.up}m</div><div class="label">${t('hikes.elevation')}</div></div>
+      <div class="info-item"><div class="icon" style="color:#EF4444"><i data-lucide="trending-down" class="icon-inline"></i></div><div class="value">-${hike.elevation.down}m</div><div class="label">${t('hikes.elevation')}</div></div>
+      <div class="info-item"><div class="icon" style="color:#6366F1"><i data-lucide="arrow-down-to-line" class="icon-inline"></i></div><div class="value">${hike.altitude.min}m</div><div class="label">${t('detail.altMin')}</div></div>
+      <div class="info-item"><div class="icon" style="color:#8B5CF6"><i data-lucide="arrow-up-to-line" class="icon-inline"></i></div><div class="value">${hike.altitude.max}m</div><div class="label">${t('detail.altMax')}</div></div>
+      <div class="info-item" style="background:${DIFFICULTY_COLORS[hike.difficulty]}22">
+        <div class="icon" style="color:${DIFFICULTY_COLORS[hike.difficulty]}"><i data-lucide="gauge" class="icon-inline"></i></div>
         <div class="value" style="color:${DIFFICULTY_COLORS[hike.difficulty]}">${hike.difficulty}</div>
         <div class="label">Difficulté</div>
       </div>
@@ -1002,30 +1002,30 @@ function sendReservation(event) {
 
 // ===== WEATHER (Open-Meteo API — free, no key) =====
 const WEATHER_ICONS = {
-  0:'<i data-lucide="sun"></i>',
-  1:'<i data-lucide="sun-dim"></i>',
-  2:'<i data-lucide="cloud"></i>',
-  3:'<i data-lucide="cloudy"></i>',
-  45:'<i data-lucide="cloud-fog"></i>',
-  48:'<i data-lucide="cloud-fog"></i>',
-  51:'<i data-lucide="cloud-drizzle"></i>',
-  53:'<i data-lucide="cloud-rain"></i>',
-  55:'<i data-lucide="cloud-rain"></i>',
-  61:'<i data-lucide="cloud-rain"></i>',
-  63:'<i data-lucide="cloud-rain"></i>',
-  65:'<i data-lucide="cloud-rain"></i>',
-  71:'<i data-lucide="snowflake"></i>',
-  73:'<i data-lucide="snowflake"></i>',
-  75:'<i data-lucide="snowflake"></i>',
-  77:'<i data-lucide="snowflake"></i>',
-  80:'<i data-lucide="cloud-drizzle"></i>',
-  81:'<i data-lucide="cloud-rain"></i>',
-  82:'<i data-lucide="cloud-lightning"></i>',
-  85:'<i data-lucide="snowflake"></i>',
-  86:'<i data-lucide="snowflake"></i>',
-  95:'<i data-lucide="cloud-lightning"></i>',
-  96:'<i data-lucide="cloud-lightning"></i>',
-  99:'<i data-lucide="cloud-lightning"></i>'
+  0:'<i data-lucide="sun" class="icon-inline"></i>',
+  1:'<i data-lucide="sun-dim" class="icon-inline"></i>',
+  2:'<i data-lucide="cloud" class="icon-inline"></i>',
+  3:'<i data-lucide="cloudy" class="icon-inline"></i>',
+  45:'<i data-lucide="cloud-fog" class="icon-inline"></i>',
+  48:'<i data-lucide="cloud-fog" class="icon-inline"></i>',
+  51:'<i data-lucide="cloud-drizzle" class="icon-inline"></i>',
+  53:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
+  55:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
+  61:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
+  63:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
+  65:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
+  71:'<i data-lucide="snowflake" class="icon-inline"></i>',
+  73:'<i data-lucide="snowflake" class="icon-inline"></i>',
+  75:'<i data-lucide="snowflake" class="icon-inline"></i>',
+  77:'<i data-lucide="snowflake" class="icon-inline"></i>',
+  80:'<i data-lucide="cloud-drizzle" class="icon-inline"></i>',
+  81:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
+  82:'<i data-lucide="cloud-lightning" class="icon-inline"></i>',
+  85:'<i data-lucide="snowflake" class="icon-inline"></i>',
+  86:'<i data-lucide="snowflake" class="icon-inline"></i>',
+  95:'<i data-lucide="cloud-lightning" class="icon-inline"></i>',
+  96:'<i data-lucide="cloud-lightning" class="icon-inline"></i>',
+  99:'<i data-lucide="cloud-lightning" class="icon-inline"></i>'
 };
 const DAY_NAMES = {fr:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'],de:['So','Mo','Di','Mi','Do','Fr','Sa'],en:['Sun','Mon','Tue','Wed','Thu','Fri','Sat']};
 
@@ -1044,21 +1044,21 @@ async function fetchWeather(hike) {
     const days = DAY_NAMES[lang] || DAY_NAMES.fr;
 
     const c = data.current;
-    const nowIcon = WEATHER_ICONS[c.weather_code] || '<i data-lucide="sun-dim"></i>';
+    const nowIcon = WEATHER_ICONS[c.weather_code] || '<i data-lucide="sun-dim" class="icon-inline"></i>';
     
     // Sunrise/Sunset for today
     const sunrise = data.daily.sunrise[0].split('T')[1];
     const sunset = data.daily.sunset[0].split('T')[1];
 
     let html = `<div class="weather-now">
-      <div class="big-icon" style="color:#F59E0B;font-size:3rem">${nowIcon}</div>
+      <div class="big-icon" style="color:#F59E0B">${nowIcon}</div>
       <div style="flex:1">
         <div class="big-temp">${Math.round(c.temperature_2m)}°C</div>
         <div class="weather-summary-icons">
-          <div class="ws-item" title="Vent"><i data-lucide="wind" style="color:#3B82F6"></i> <span>${c.wind_speed_10m} km/h</span></div>
-          <div class="ws-item" title="Précipitations"><i data-lucide="cloud-rain" style="color:#60A5FA"></i> <span>${data.daily.precipitation_probability_max[0]}%</span></div>
-          <div class="ws-item" title="Soleil"><i data-lucide="sunrise" style="color:#F59E0B"></i> <span>${sunrise}</span></div>
-          <div class="ws-item" title="Nuages"><i data-lucide="cloudy" style="color:#94A3B8"></i> <span>Variable</span></div>
+          <div class="ws-item" title="Vent"><img src="assets/images/weather/wind.png" alt="Vent" class="ws-img"> <span>${c.wind_speed_10m} km/h</span></div>
+          <div class="ws-item" title="Précipitations"><img src="assets/images/weather/rain.png" alt="Pluie" class="ws-img"> <span>${data.daily.precipitation_probability_max[0]}%</span></div>
+          <div class="ws-item" title="Soleil"><img src="assets/images/weather/sun.png" alt="Soleil" class="ws-img"> <span>${sunrise}</span></div>
+          <div class="ws-item" title="Nuages"><img src="assets/images/weather/cloud.png" alt="Nuages" class="ws-img"> <span>Variable</span></div>
         </div>
       </div>
     </div>`;
@@ -1066,10 +1066,10 @@ async function fetchWeather(hike) {
     html += '<div class="weather-grid">';
     for (let i = 1; i < Math.min(5, data.daily.time.length); i++) {
       const d = new Date(data.daily.time[i]);
-      const icon = WEATHER_ICONS[data.daily.weather_code[i]] || '<i data-lucide="sun-dim"></i>';
+      const icon = WEATHER_ICONS[data.daily.weather_code[i]] || '<i data-lucide="sun-dim" class="icon-inline"></i>';
       html += `<div class="weather-day">
         <div class="day">${days[d.getDay()]}</div>
-        <div class="icon" style="color:#3B82F6;margin:8px 0">${icon}</div>
+        <div class="icon" style="color:#3B82F6">${icon}</div>
         <div class="temp"><strong>${Math.round(data.daily.temperature_2m_max[i])}°</strong> <span style="opacity:0.6">${Math.round(data.daily.temperature_2m_min[i])}°</span></div>
         <div class="rain" style="color:#3B82F6"><i data-lucide="umbrella" class="icon-inline"></i> ${data.daily.precipitation_probability_max[i]}%</div>
       </div>`;
