@@ -1153,33 +1153,40 @@ function renderSimilarHikes(currentHike) {
 // ===== GPX / KML DOWNLOAD =====
 function downloadTrack(format) {
   const hike = HIKES.find(h => h.id === currentHikeId);
-  if (!hike || !hike.trail || hike.trail.length < 2) {
-    showToast('❌ Pas de tracé disponible');
+  if (!hike) return;
+
+  const fileUrl = format === 'gpx' ? hike.gpxFile : hike.kmlFile;
+  const name = tHike(hike.name).replace(/[^a-zA-Z0-9àéèêëïôùûü]/g, '_');
+  
+  if (fileUrl) {
+    const a = document.createElement('a');
+    a.href = fileUrl;
+    a.download = `RandoValais_${name}.${format}`;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    showToast(`📥 ${format.toUpperCase()} téléchargé !`);
     return;
   }
 
-  const name = tHike(hike.name);
-  const desc = tHike(hike.description);
-  let content, mime, ext;
-
-  if (format === 'gpx') {
-    content = generateGPX(hike, name, desc);
-    mime = 'application/gpx+xml';
-    ext = 'gpx';
-  } else {
-    content = generateKML(hike, name, desc);
-    mime = 'application/vnd.google-earth.kml+xml';
-    ext = 'kml';
+  // Fallback for Bisses without local files
+  if (!hike.trail || hike.trail.length < 2) {
+    showToast('❌ Fichier ' + format.toUpperCase() + ' non disponible pour cette randonnée');
+    return;
   }
+
+  const desc = tHike(hike.description);
+  let content = format === 'gpx' ? generateGPX(hike, name, desc) : generateKML(hike, name, desc);
+  const mime = format === 'gpx' ? 'application/gpx+xml' : 'application/vnd.google-earth.kml+xml';
 
   const blob = new Blob([content], { type: mime });
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `RandoValais_${name.replace(/[^a-zA-Z0-9àéèêëïôùûü]/g, '_')}.${ext}`;
+  a.download = `RandoValais_${name}.${format}`;
   a.click();
   URL.revokeObjectURL(url);
-  showToast(`📥 ${ext.toUpperCase()} téléchargé !`);
+  showToast(`📥 ${format.toUpperCase()} téléchargé (généré) !`);
 }
 
 function generateGPX(hike, name, desc) {

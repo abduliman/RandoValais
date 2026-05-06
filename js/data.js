@@ -1,1437 +1,19 @@
 const HIKES = [
   {
-    "id": 2,
-    "name": {
-      "fr": "Lac de Derborence",
-      "de": "Derbonence See",
-      "en": "Lake Derborence"
-    },
-    "region": "Conthey",
-    "difficulty": "Facile",
-    "category": "Itinéraires randonnées",
-    "duration": "1h30",
-    "distance": 4,
-    "elevation": {
-      "up": 100,
-      "down": 100
-    },
-    "altitude": {
-      "min": 1400,
-      "max": 1500
-    },
-    "season": {
-      "fr": "Juin - Octobre",
-      "de": "Juni - Oktober",
-      "en": "June - October"
-    },
-    "coords": [
-      46.2833,
-      7.2167
-    ],
-    "trail": [
-      [
-        46.2905,
-        7.2015
-      ],
-      [
-        46.289,
-        7.2028
-      ],
-      [
-        46.2878,
-        7.2045
-      ],
-      [
-        46.2865,
-        7.2058
-      ],
-      [
-        46.2852,
-        7.2075
-      ],
-      [
-        46.2845,
-        7.2095
-      ],
-      [
-        46.2838,
-        7.2112
-      ],
-      [
-        46.2832,
-        7.213
-      ],
-      [
-        46.2828,
-        7.215
-      ],
-      [
-        46.2825,
-        7.2168
-      ],
-      [
-        46.283,
-        7.2188
-      ],
-      [
-        46.2835,
-        7.2205
-      ],
-      [
-        46.284,
-        7.2218
-      ],
-      [
-        46.2843,
-        7.2235
-      ],
-      [
-        46.2838,
-        7.225
-      ],
-      [
-        46.283,
-        7.2262
-      ],
-      [
-        46.2822,
-        7.227
-      ],
-      [
-        46.2815,
-        7.2255
-      ],
-      [
-        46.281,
-        7.2235
-      ],
-      [
-        46.2808,
-        7.2215
-      ],
-      [
-        46.2812,
-        7.2195
-      ],
-      [
-        46.282,
-        7.2175
-      ],
-      [
-        46.283,
-        7.2155
-      ],
-      [
-        46.2842,
-        7.2138
-      ],
-      [
-        46.2855,
-        7.212
-      ],
-      [
-        46.2868,
-        7.2105
-      ],
-      [
-        46.288,
-        7.2088
-      ],
-      [
-        46.2892,
-        7.2065
-      ],
-      [
-        46.29,
-        7.204
-      ],
-      [
-        46.2905,
-        7.2015
-      ]
-    ],
-    "description": {
-      "fr": "Le lac de Derborence est un joyau naturel niché au cœur d'une réserve protégée. Né d'un éboulement au XVIIIe siècle, ce lac turquoise est entouré d'une forêt vierge unique en Suisse. Le tour du lac est accessible à tous et offre une immersion totale dans une nature préservée.",
-      "de": "Der Derbonencesee ist ein Naturjuwel im Herzen eines Schutzgebiets. Der türkisfarbene See entstand durch einen Bergsturz im 18. Jahrhundert und ist von einem einzigartigen Urwald umgeben.",
-      "en": "Lake Derborence is a natural gem nestled in the heart of a protected reserve. Born from a landslide in the 18th century, this turquoise lake is surrounded by a virgin forest unique in Switzerland."
-    },
-    "access": {
-      "fr": "Route depuis Sion via Conthey",
-      "de": "Strasse von Sitten über Conthey",
-      "en": "Road from Sion via Conthey"
-    },
-    "image": "assets/images/lac-derborence.png"
-  },
-  {
-    "id": 3,
-    "name": {
-      "fr": "5 Seenweg (Zermatt)",
-      "de": "5-Seenweg (Zermatt)",
-      "en": "5 Lakes Trail (Zermatt)"
-    },
-    "region": "Zermatt",
-    "difficulty": "Moyen",
-    "category": "Itinéraires randonnées",
-    "duration": "3h00",
-    "distance": 9,
-    "elevation": {
-      "up": 400,
-      "down": 400
-    },
-    "altitude": {
-      "min": 2200,
-      "max": 2600
-    },
-    "season": {
-      "fr": "Juillet - Septembre",
-      "de": "Juli - September",
-      "en": "July - September"
-    },
-    "coords": [
-      46.0207,
-      7.7491
-    ],
-    "trail": [
-      [
-        46.0453,
-        7.7685
-      ],
-      [
-        46.044,
-        7.767
-      ],
-      [
-        46.0425,
-        7.7655
-      ],
-      [
-        46.041,
-        7.7642
-      ],
-      [
-        46.0395,
-        7.7628
-      ],
-      [
-        46.038,
-        7.7612
-      ],
-      [
-        46.0368,
-        7.76
-      ],
-      [
-        46.0355,
-        7.7585
-      ],
-      [
-        46.034,
-        7.7572
-      ],
-      [
-        46.0325,
-        7.7558
-      ],
-      [
-        46.0312,
-        7.7542
-      ],
-      [
-        46.0298,
-        7.7528
-      ],
-      [
-        46.0285,
-        7.7515
-      ],
-      [
-        46.027,
-        7.75
-      ],
-      [
-        46.0258,
-        7.7488
-      ],
-      [
-        46.0245,
-        7.7475
-      ],
-      [
-        46.0232,
-        7.7462
-      ],
-      [
-        46.0218,
-        7.7448
-      ],
-      [
-        46.0205,
-        7.7435
-      ],
-      [
-        46.0192,
-        7.7422
-      ],
-      [
-        46.018,
-        7.741
-      ],
-      [
-        46.0168,
-        7.7398
-      ],
-      [
-        46.0155,
-        7.7385
-      ]
-    ],
-    "description": {
-      "fr": "Le 5-Seenweg est un parcours emblématique qui relie cinq lacs alpins aux eaux cristallines avec le Cervin en toile de fond permanente. Chaque lac offre un reflet différent du mythique sommet. Un incontournable pour tout randonneur visitant Zermatt.",
-      "de": "Der 5-Seenweg ist eine ikonische Route, die fünf Bergseen mit kristallklarem Wasser verbindet, mit dem Matterhorn als ständiger Kulisse.",
-      "en": "The 5 Lakes Trail is an iconic route linking five alpine lakes with crystal-clear waters, with the Matterhorn as a permanent backdrop."
-    },
-    "access": {
-      "fr": "Téléphérique Rothorn depuis Zermatt",
-      "de": "Seilbahn Rothorn ab Zermatt",
-      "en": "Rothorn cable car from Zermatt"
-    },
-    "image": "assets/images/5-seenweg.png"
-  },
-  {
-    "id": 4,
-    "name": {
-      "fr": "Tour du Mont-Noble",
-      "de": "Rundwanderung Mont Noble",
-      "en": "Mont Noble Tour"
-    },
-    "region": "Val d'Hérens",
-    "difficulty": "Difficile",
-    "category": "Itinéraires randonnées",
-    "duration": "5h00",
-    "distance": 14,
-    "elevation": {
-      "up": 900,
-      "down": 900
-    },
-    "altitude": {
-      "min": 1500,
-      "max": 2654
-    },
-    "season": {
-      "fr": "Juin - Octobre",
-      "de": "Juni - Oktober",
-      "en": "June - October"
-    },
-    "coords": [
-      46.2333,
-      7.4333
-    ],
-    "trail": [
-      [
-        46.225,
-        7.42
-      ],
-      [
-        46.2262,
-        7.4218
-      ],
-      [
-        46.2275,
-        7.4238
-      ],
-      [
-        46.2285,
-        7.4258
-      ],
-      [
-        46.2298,
-        7.4275
-      ],
-      [
-        46.2308,
-        7.429
-      ],
-      [
-        46.2318,
-        7.4305
-      ],
-      [
-        46.2328,
-        7.4318
-      ],
-      [
-        46.2338,
-        7.433
-      ],
-      [
-        46.2348,
-        7.4342
-      ],
-      [
-        46.2355,
-        7.4358
-      ],
-      [
-        46.2362,
-        7.4372
-      ],
-      [
-        46.237,
-        7.4385
-      ],
-      [
-        46.2378,
-        7.4395
-      ],
-      [
-        46.2385,
-        7.4405
-      ],
-      [
-        46.239,
-        7.4415
-      ],
-      [
-        46.2388,
-        7.443
-      ],
-      [
-        46.238,
-        7.444
-      ],
-      [
-        46.237,
-        7.4445
-      ],
-      [
-        46.2358,
-        7.4438
-      ],
-      [
-        46.2348,
-        7.4425
-      ],
-      [
-        46.2338,
-        7.4412
-      ],
-      [
-        46.2325,
-        7.4398
-      ],
-      [
-        46.2312,
-        7.4385
-      ],
-      [
-        46.23,
-        7.437
-      ],
-      [
-        46.2288,
-        7.4355
-      ],
-      [
-        46.2275,
-        7.4338
-      ],
-      [
-        46.2265,
-        7.432
-      ],
-      [
-        46.2258,
-        7.43
-      ],
-      [
-        46.2252,
-        7.4275
-      ],
-      [
-        46.2248,
-        7.425
-      ],
-      [
-        46.2245,
-        7.4225
-      ],
-      [
-        46.2248,
-        7.421
-      ]
-    ],
-    "description": {
-      "fr": "Le Mont Noble (2654m) offre un panorama à 360° sur les Alpes valaisannes. La montée progressive traverse alpages fleuris et crêtes panoramiques. Au sommet, la vue s'étend du Mont Blanc au Cervin en passant par les Dents du Midi.",
-      "de": "Der Mont Noble (2654m) bietet ein 360°-Panorama auf die Walliser Alpen. Der Aufstieg führt durch blühende Alpweiden und Panoramagrate.",
-      "en": "Mont Noble (2654m) offers a 360° panorama of the Valaisan Alps. The progressive ascent crosses flowery alpine meadows and panoramic ridges."
-    },
-    "access": {
-      "fr": "Route depuis Sion jusqu'à Nax",
-      "de": "Strasse von Sitten nach Nax",
-      "en": "Road from Sion to Nax"
-    },
-    "image": "assets/images/mont-noble.png"
-  },
-  {
-    "id": 5,
-    "name": {
-      "fr": "Bisses de Nendaz",
-      "de": "Suonen von Nendaz",
-      "en": "Nendaz Bisses"
-    },
-    "region": "Nendaz",
-    "difficulty": "Facile",
-    "category": "Itinéraires randonnées",
-    "duration": "2h00",
-    "distance": 7,
-    "elevation": {
-      "up": 150,
-      "down": 150
-    },
-    "altitude": {
-      "min": 1300,
-      "max": 1450
-    },
-    "season": {
-      "fr": "Mai - Novembre",
-      "de": "Mai - November",
-      "en": "May - November"
-    },
-    "coords": [
-      46.1833,
-      7.3
-    ],
-    "trail": [
-      [
-        46.1872,
-        7.281
-      ],
-      [
-        46.1868,
-        7.2835
-      ],
-      [
-        46.1862,
-        7.2858
-      ],
-      [
-        46.1855,
-        7.2878
-      ],
-      [
-        46.1848,
-        7.2895
-      ],
-      [
-        46.184,
-        7.2912
-      ],
-      [
-        46.1835,
-        7.2932
-      ],
-      [
-        46.183,
-        7.295
-      ],
-      [
-        46.1825,
-        7.2968
-      ],
-      [
-        46.182,
-        7.2985
-      ],
-      [
-        46.1815,
-        7.3005
-      ],
-      [
-        46.181,
-        7.3025
-      ],
-      [
-        46.1808,
-        7.3045
-      ],
-      [
-        46.1805,
-        7.3062
-      ],
-      [
-        46.1802,
-        7.308
-      ],
-      [
-        46.18,
-        7.3098
-      ],
-      [
-        46.1798,
-        7.3118
-      ],
-      [
-        46.1795,
-        7.3135
-      ],
-      [
-        46.179,
-        7.3152
-      ],
-      [
-        46.1785,
-        7.317
-      ],
-      [
-        46.1778,
-        7.3188
-      ],
-      [
-        46.1772,
-        7.3205
-      ]
-    ],
-    "description": {
-      "fr": "Nendaz est la capitale des bisses ! Ce réseau de sentiers longe d'anciens canaux d'irrigation à travers forêts de mélèzes et prairies alpines. Le Bisse Vieux et le Grand Bisse offrent des promenades paisibles avec vue sur la vallée du Rhône et les sommets environnants.",
-      "de": "Nendaz ist die Hauptstadt der Suonen! Dieses Wegnetz folgt alten Bewässerungskanälen durch Lärchenwälder und Alpwiesen.",
-      "en": "Nendaz is the capital of bisses! This network of trails follows ancient irrigation channels through larch forests and alpine meadows."
-    },
-    "access": {
-      "fr": "Bus ou voiture depuis Sion",
-      "de": "Bus oder Auto ab Sitten",
-      "en": "Bus or car from Sion"
-    },
-    "image": "assets/images/bisses-nendaz.png"
-  },
-  {
-    "id": 6,
-    "name": {
-      "fr": "Gorges de la Dala",
-      "de": "Dalaschlucht",
-      "en": "Dala Gorges"
-    },
-    "region": "Loèche-les-Bains",
-    "difficulty": "Moyen",
-    "category": "Itinéraires randonnées",
-    "duration": "2h30",
-    "distance": 5.5,
-    "elevation": {
-      "up": 350,
-      "down": 350
-    },
-    "altitude": {
-      "min": 1100,
-      "max": 1450
-    },
-    "season": {
-      "fr": "Mai - Octobre",
-      "de": "Mai - Oktober",
-      "en": "May - October"
-    },
-    "coords": [
-      46.3833,
-      7.6333
-    ],
-    "trail": [
-      [
-        46.3712,
-        7.6185
-      ],
-      [
-        46.3725,
-        7.6198
-      ],
-      [
-        46.3738,
-        7.6212
-      ],
-      [
-        46.3748,
-        7.6228
-      ],
-      [
-        46.3758,
-        7.6245
-      ],
-      [
-        46.3768,
-        7.6258
-      ],
-      [
-        46.3778,
-        7.6272
-      ],
-      [
-        46.3788,
-        7.6288
-      ],
-      [
-        46.3798,
-        7.6302
-      ],
-      [
-        46.3808,
-        7.6315
-      ],
-      [
-        46.3818,
-        7.6328
-      ],
-      [
-        46.3825,
-        7.6342
-      ],
-      [
-        46.3832,
-        7.6355
-      ],
-      [
-        46.384,
-        7.6368
-      ],
-      [
-        46.3848,
-        7.638
-      ],
-      [
-        46.3855,
-        7.6392
-      ],
-      [
-        46.3862,
-        7.6402
-      ],
-      [
-        46.3868,
-        7.6412
-      ],
-      [
-        46.3875,
-        7.642
-      ],
-      [
-        46.3882,
-        7.6428
-      ]
-    ],
-    "description": {
-      "fr": "Les gorges de la Dala offrent un spectacle naturel saisissant. Le sentier serpente entre des parois rocheuses impressionnantes, franchissant des passerelles suspendues au-dessus du torrent tumultueux. L'arrivée à Loèche-les-Bains permet de terminer par un bain thermal bien mérité.",
-      "de": "Die Dalaschlucht bietet ein beeindruckendes Naturschauspiel. Der Weg schlängelt sich zwischen imposanten Felswänden und überquert Hängebrücken über den tosenden Wildbach.",
-      "en": "The Dala Gorges offer a striking natural spectacle. The trail winds between impressive rock walls, crossing suspension bridges over the tumultuous torrent."
-    },
-    "access": {
-      "fr": "Train jusqu'à Loèche, bus jusqu'à Loèche-les-Bains",
-      "de": "Zug nach Leuk, Bus nach Leukerbad",
-      "en": "Train to Leuk, bus to Leukerbad"
-    },
-    "image": "assets/images/gorges-dala.png"
-  },
-  {
-    "id": 7,
-    "name": {
-      "fr": "Cabane de la Dent Blanche",
-      "de": "Dent Blanche Hütte",
-      "en": "Dent Blanche Cabin"
-    },
-    "region": "Val d'Hérens",
-    "difficulty": "Difficile",
-    "category": "Itinéraires randonnées",
-    "duration": "6h00",
-    "distance": 12,
-    "elevation": {
-      "up": 1200,
-      "down": 200
-    },
-    "altitude": {
-      "min": 2050,
-      "max": 3507
-    },
-    "season": {
-      "fr": "Juillet - Septembre",
-      "de": "Juli - September",
-      "en": "July - September"
-    },
-    "coords": [
-      46.05,
-      7.5167
-    ],
-    "trail": [
-      [
-        46.0815,
-        7.5395
-      ],
-      [
-        46.0802,
-        7.5382
-      ],
-      [
-        46.0788,
-        7.5368
-      ],
-      [
-        46.0775,
-        7.5355
-      ],
-      [
-        46.0762,
-        7.5342
-      ],
-      [
-        46.0748,
-        7.5328
-      ],
-      [
-        46.0735,
-        7.5315
-      ],
-      [
-        46.0722,
-        7.5302
-      ],
-      [
-        46.0708,
-        7.5288
-      ],
-      [
-        46.0695,
-        7.5275
-      ],
-      [
-        46.0682,
-        7.5262
-      ],
-      [
-        46.0668,
-        7.5248
-      ],
-      [
-        46.0655,
-        7.5238
-      ],
-      [
-        46.0642,
-        7.5228
-      ],
-      [
-        46.0628,
-        7.5218
-      ],
-      [
-        46.0615,
-        7.5208
-      ],
-      [
-        46.0602,
-        7.5198
-      ],
-      [
-        46.0588,
-        7.519
-      ],
-      [
-        46.0575,
-        7.5182
-      ],
-      [
-        46.0562,
-        7.5175
-      ],
-      [
-        46.0548,
-        7.517
-      ],
-      [
-        46.0535,
-        7.5168
-      ],
-      [
-        46.0522,
-        7.5165
-      ],
-      [
-        46.051,
-        7.5162
-      ]
-    ],
-    "description": {
-      "fr": "L'ascension vers la cabane de la Dent Blanche est une aventure alpine exigeante mais inoubliable. Le sentier traverse moraines et glaciers miniatures avec des vues spectaculaires sur la Dent Blanche (4357m) et le Grand Cornier. Nuit en cabane recommandée.",
-      "de": "Der Aufstieg zur Dent Blanche Hütte ist ein anspruchsvolles aber unvergessliches alpines Abenteuer mit spektakulärem Blick auf die Dent Blanche (4357m).",
-      "en": "The ascent to the Dent Blanche cabin is a demanding but unforgettable alpine adventure with spectacular views of the Dent Blanche (4357m)."
-    },
-    "access": {
-      "fr": "Bus depuis Sion jusqu'à Ferpècle",
-      "de": "Bus von Sitten nach Ferpècle",
-      "en": "Bus from Sion to Ferpècle"
-    },
-    "image": "assets/images/cabane-dent-blanche.png"
-  },
-  {
-    "id": 8,
-    "name": {
-      "fr": "Chemin des Chamois",
-      "de": "Gemsenweg",
-      "en": "Chamois Trail"
-    },
-    "region": "Champéry",
-    "difficulty": "Difficile",
-    "category": "Itinéraires randonnées",
-    "duration": "4h00",
-    "distance": 10,
-    "elevation": {
-      "up": 700,
-      "down": 700
-    },
-    "altitude": {
-      "min": 1050,
-      "max": 1800
-    },
-    "season": {
-      "fr": "Juin - Octobre",
-      "de": "Juni - Oktober",
-      "en": "June - October"
-    },
-    "coords": [
-      46.175,
-      6.87
-    ],
-    "trail": [
-      [
-        46.17,
-        6.86
-      ],
-      [
-        46.1708,
-        6.8618
-      ],
-      [
-        46.1715,
-        6.8635
-      ],
-      [
-        46.1722,
-        6.8652
-      ],
-      [
-        46.1728,
-        6.8668
-      ],
-      [
-        46.1735,
-        6.8685
-      ],
-      [
-        46.174,
-        6.87
-      ],
-      [
-        46.1745,
-        6.8715
-      ],
-      [
-        46.1748,
-        6.8732
-      ],
-      [
-        46.1752,
-        6.8748
-      ],
-      [
-        46.1755,
-        6.8765
-      ],
-      [
-        46.1758,
-        6.878
-      ],
-      [
-        46.1762,
-        6.8795
-      ],
-      [
-        46.1765,
-        6.881
-      ],
-      [
-        46.1768,
-        6.8825
-      ],
-      [
-        46.177,
-        6.884
-      ],
-      [
-        46.1772,
-        6.8855
-      ],
-      [
-        46.1775,
-        6.887
-      ],
-      [
-        46.1778,
-        6.8885
-      ],
-      [
-        46.178,
-        6.89
-      ]
-    ],
-    "description": {
-      "fr": "Le Chemin des Chamois offre une traversée sauvage avec vue imprenable sur les Dents du Midi. Le sentier traverse forêts denses et alpages isolés où il n'est pas rare de croiser chamois et marmottes. Un vrai retour à la nature.",
-      "de": "Der Gemsenweg bietet eine wilde Durchquerung mit atemberaubendem Blick auf die Dents du Midi. Auf dem Weg kann man oft Gämsen und Murmeltiere beobachten.",
-      "en": "The Chamois Trail offers a wild traverse with breathtaking views of the Dents du Midi. It's not uncommon to spot chamois and marmots along the way."
-    },
-    "access": {
-      "fr": "Train AOMC jusqu'à Champéry",
-      "de": "Zug AOMC bis Champéry",
-      "en": "AOMC train to Champéry"
-    },
-    "image": "assets/images/chemin-chamois.png"
-  },
-  {
-    "id": 9,
-    "name": {
-      "fr": "Tour des Muverans",
-      "de": "Muverans Rundtour",
-      "en": "Muverans Tour"
-    },
-    "region": "Ovronnaz",
-    "difficulty": "Difficile",
-    "category": "Itinéraires randonnées",
-    "duration": "2 jours",
-    "distance": 28,
-    "elevation": {
-      "up": 1600,
-      "down": 1600
-    },
-    "altitude": {
-      "min": 1350,
-      "max": 2903
-    },
-    "season": {
-      "fr": "Juillet - Septembre",
-      "de": "Juli - September",
-      "en": "July - September"
-    },
-    "coords": [
-      46.2167,
-      7.1
-    ],
-    "trail": [
-      [
-        46.21,
-        7.09
-      ],
-      [
-        46.2108,
-        7.0918
-      ],
-      [
-        46.2118,
-        7.0935
-      ],
-      [
-        46.2128,
-        7.0952
-      ],
-      [
-        46.2138,
-        7.0968
-      ],
-      [
-        46.2145,
-        7.0985
-      ],
-      [
-        46.2152,
-        7.1002
-      ],
-      [
-        46.216,
-        7.1018
-      ],
-      [
-        46.2168,
-        7.1035
-      ],
-      [
-        46.2175,
-        7.105
-      ],
-      [
-        46.218,
-        7.1068
-      ],
-      [
-        46.2185,
-        7.1085
-      ],
-      [
-        46.219,
-        7.1102
-      ],
-      [
-        46.2195,
-        7.1118
-      ],
-      [
-        46.22,
-        7.1135
-      ],
-      [
-        46.2205,
-        7.115
-      ],
-      [
-        46.221,
-        7.1165
-      ],
-      [
-        46.2212,
-        7.118
-      ],
-      [
-        46.2208,
-        7.1195
-      ],
-      [
-        46.22,
-        7.1208
-      ],
-      [
-        46.219,
-        7.1215
-      ],
-      [
-        46.2178,
-        7.121
-      ],
-      [
-        46.2168,
-        7.1198
-      ],
-      [
-        46.2158,
-        7.1182
-      ],
-      [
-        46.2148,
-        7.1165
-      ],
-      [
-        46.2138,
-        7.1148
-      ],
-      [
-        46.2128,
-        7.113
-      ],
-      [
-        46.2118,
-        7.1112
-      ],
-      [
-        46.211,
-        7.1095
-      ],
-      [
-        46.2105,
-        7.1075
-      ],
-      [
-        46.2102,
-        7.1055
-      ],
-      [
-        46.21,
-        7.1035
-      ],
-      [
-        46.2098,
-        7.1015
-      ],
-      [
-        46.2098,
-        7.0995
-      ],
-      [
-        46.2098,
-        7.0975
-      ],
-      [
-        46.21,
-        7.095
-      ],
-      [
-        46.21,
-        7.0925
-      ],
-      [
-        46.21,
-        7.09
-      ]
-    ],
-    "description": {
-      "fr": "Le Tour des Muverans est un trek de 2 jours qui fait le tour du massif des Muverans. Deux nuits en cabane (Rambert et Fenestral) ponctuent cette boucle qui traverse des paysages variés : alpages, pierriers, cols panoramiques et lacs d'altitude.",
-      "de": "Die Muverans Rundtour ist ein 2-tägiger Trek rund um das Muverans-Massiv mit Übernachtungen in den Hütten Rambert und Fenestral.",
-      "en": "The Muverans Tour is a 2-day trek around the Muverans massif with overnight stays at the Rambert and Fenestral cabins."
-    },
-    "access": {
-      "fr": "Bus depuis Leytron jusqu'à Ovronnaz",
-      "de": "Bus von Leytron nach Ovronnaz",
-      "en": "Bus from Leytron to Ovronnaz"
-    },
-    "image": "assets/images/tour-muverans.png"
-  },
-  {
-    "id": 11,
-    "name": {
-      "fr": "Lac Bleu d'Arolla",
-      "de": "Blauer See von Arolla",
-      "en": "Blue Lake of Arolla"
-    },
-    "region": "Val d'Hérens",
-    "difficulty": "Moyen",
-    "category": "Itinéraires randonnées",
-    "duration": "1h30",
-    "distance": 4.5,
-    "elevation": {
-      "up": 200,
-      "down": 200
-    },
-    "altitude": {
-      "min": 2000,
-      "max": 2200
-    },
-    "season": {
-      "fr": "Juin - Octobre",
-      "de": "Juni - Oktober",
-      "en": "June - October"
-    },
-    "coords": [
-      46.0333,
-      7.4833
-    ],
-    "trail": [
-      [
-        46.0428,
-        7.4935
-      ],
-      [
-        46.0422,
-        7.4928
-      ],
-      [
-        46.0415,
-        7.492
-      ],
-      [
-        46.0408,
-        7.4912
-      ],
-      [
-        46.0402,
-        7.4905
-      ],
-      [
-        46.0395,
-        7.4898
-      ],
-      [
-        46.0388,
-        7.489
-      ],
-      [
-        46.0382,
-        7.4882
-      ],
-      [
-        46.0375,
-        7.4875
-      ],
-      [
-        46.0368,
-        7.4868
-      ],
-      [
-        46.0362,
-        7.486
-      ],
-      [
-        46.0355,
-        7.4852
-      ],
-      [
-        46.0348,
-        7.4845
-      ],
-      [
-        46.0342,
-        7.4838
-      ],
-      [
-        46.0335,
-        7.483
-      ],
-      [
-        46.033,
-        7.4825
-      ]
-    ],
-    "description": {
-      "fr": "Le Lac Bleu d'Arolla porte bien son nom : ses eaux d'un bleu intense reflètent les glaciers environnants. Ce petit joyau est accessible en une courte randonnée depuis Arolla. Le cadre minéral et glaciaire crée une atmosphère unique, presque irréelle.",
-      "de": "Der Blaue See von Arolla trägt seinen Namen zu Recht: Sein intensives Blau spiegelt die umliegenden Gletscher wider.",
-      "en": "The Blue Lake of Arolla lives up to its name: its intense blue waters reflect the surrounding glaciers."
-    },
-    "access": {
-      "fr": "Bus depuis Sion jusqu'à Arolla",
-      "de": "Bus von Sitten nach Arolla",
-      "en": "Bus from Sion to Arolla"
-    },
-    "image": "assets/images/lac-bleu-arolla.png"
-  },
-  {
-    "id": 12,
-    "name": {
-      "fr": "Pont suspendu de Randa",
-      "de": "Hängebrücke Randa",
-      "en": "Randa Suspension Bridge"
-    },
-    "region": "Zermatt",
-    "difficulty": "Moyen",
-    "category": "Itinéraires randonnées",
-    "duration": "3h30",
-    "distance": 8,
-    "elevation": {
-      "up": 500,
-      "down": 500
-    },
-    "altitude": {
-      "min": 1400,
-      "max": 1900
-    },
-    "season": {
-      "fr": "Juin - Octobre",
-      "de": "Juni - Oktober",
-      "en": "June - October"
-    },
-    "coords": [
-      46.0994,
-      7.7836
-    ],
-    "trail": [
-      [
-        46.112,
-        7.7965
-      ],
-      [
-        46.1112,
-        7.7958
-      ],
-      [
-        46.1105,
-        7.7948
-      ],
-      [
-        46.1098,
-        7.794
-      ],
-      [
-        46.109,
-        7.7932
-      ],
-      [
-        46.1082,
-        7.7925
-      ],
-      [
-        46.1075,
-        7.7918
-      ],
-      [
-        46.1068,
-        7.791
-      ],
-      [
-        46.106,
-        7.7902
-      ],
-      [
-        46.1052,
-        7.7895
-      ],
-      [
-        46.1045,
-        7.7888
-      ],
-      [
-        46.1038,
-        7.788
-      ],
-      [
-        46.103,
-        7.7872
-      ],
-      [
-        46.1022,
-        7.7865
-      ],
-      [
-        46.1015,
-        7.7858
-      ],
-      [
-        46.1008,
-        7.785
-      ],
-      [
-        46.1,
-        7.7842
-      ],
-      [
-        46.0992,
-        7.7835
-      ],
-      [
-        46.0985,
-        7.7828
-      ],
-      [
-        46.0978,
-        7.782
-      ],
-      [
-        46.097,
-        7.7815
-      ]
-    ],
-    "description": {
-      "fr": "Le pont suspendu Charles Kuonen, long de 494 mètres, est le plus long pont suspendu piéton du monde. Suspendu à 85 mètres au-dessus du sol, il offre des vues spectaculaires sur le Cervin, le Weisshorn et la vallée de Zermatt. Frissons garantis !",
-      "de": "Die Charles Kuonen Hängebrücke ist mit 494 Metern die längste Fussgänger-Hängebrücke der Welt, 85 Meter über dem Boden mit Blick auf das Matterhorn.",
-      "en": "The Charles Kuonen suspension bridge, 494 meters long, is the world's longest pedestrian suspension bridge, 85 meters above the ground with views of the Matterhorn."
-    },
-    "access": {
-      "fr": "Train jusqu'à Randa (ligne Zermatt)",
-      "de": "Zug nach Randa (Linie Zermatt)",
-      "en": "Train to Randa (Zermatt line)"
-    },
-    "image": "assets/images/pont-randa.png"
-  },
-  {
-    "id": 100,
+    "id": 1,
     "name": {
       "fr": "Tour du Val d’Anniviers : Grimentz – Vercorin (étape 4)",
       "de": "Tour du Val d’Anniviers : Grimentz – Vercorin (étape 4)",
       "en": "Tour du Val d’Anniviers : Grimentz – Vercorin (étape 4)"
     },
-    "region": "Grimentz",
+    "region": "",
     "difficulty": "Moyen",
-    "category": "Itinéraires randonnées",
-    "duration": "4h30",
-    "distance": 12.93,
+    "category": "Itinéraires",
+    "duration": "4:30 h",
+    "distance": 0,
     "elevation": {
-      "up": 869,
-      "down": 393
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -1443,97 +25,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.36877587292105,
-      7.558358561027985
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Tour du Val d’Anniviers : Grimentz – Vercorin (étape 4)",
-      "de": "Wanderung aus valais.ch extrahiert. Tour du Val d’Anniviers : Grimentz – Vercorin (étape 4)",
-      "en": "Hike extracted from valais.ch. Tour du Val d’Anniviers : Grimentz – Vercorin (étape 4)"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La diversité étonnante du Val d'Anniviers se révèle sur ce sentier de randonnée d'altitude qui relie les deux villages de Grimentz et Vercorin. Grimentz se trouve presque au centre du Valais et se caractérise par ses maisons anciennes en bois ainsi que par les sommets environnants. Vercorin, quant à lui, est situé sur un plateau ensoleillé au-dessus du Rhône, offrant une belle vue en amont et en aval de la vallée.\\n\\nLa randonnée <strong>panoramique</strong> entre les villages suit le flanc ouest du Val d'Anniviers. Il y a bien une montée raide au début et une descente raide à la fin, mais entre les deux, la randonnée se déroule agréablement au-dessus de la limite des arbres avec de superbes panoramas. Tu traverses des alpages, des prairies fleuries et des forêts odorantes avec de bonnes chances d'observer la faune <strong>sauvage</strong>.\\n\\nLes deux villages célèbrent leur culture et leur patrimoine de manière très différente. Par exemple, Grimentz a créé des sentiers thématiques, les thèmes allant des géraniums aux légendes locales, en passant par les animaux sauvages ou l'histoire du village. Les visiteurs ont aussi la possibilité de fabriquer leur propre pain de seigle traditionnel, de goûter le vin glaciaire local dans un bâtiment du 16e siècle et de visiter un moulin à eau en fonctionnement.\\n\\nVercorin propose une sélection de galeries d'art et de musées, l'un d'eux étant dédié à l'artiste Edouard Vallet, qui a vécu plusieurs années à Vercorin. Des événements annuels très populaires incluent la R&Art, une exposition d'art contemporain, et le Verco Jazz Festival. Vercorin offre aussi plusieurs sentiers thématiques, comme le chemin « De Chalais aux Chalets » ou le sentier de la marmotte avec des jeux familiaux amusants. À la fin de notre randonnée, à Sigeroulaz, se trouve le parc aventure « Forêt Aventures ».\\n\\nLe parcours relie les deux villages de Grimentz et Vercorin, commence par une montée raide et se termine par une longue descente. Il est possible de faire une variante plus courte en utilisant le téléphérique, soit au départ, soit à l'arrivée.\\n\\nSi tu souhaites faire la randonnée complète, le point de départ se trouve à la station du téléphérique à Grimentz. Au début, le chemin suit encore la trajectoire du téléphérique, mais à mi-chemin, il monte en zigzag vers la droite et atteint un sentier qui mène vers le nord en direction des alpages.\\n\\nAprès une longue traversée des hauts versants, tu atteins d'abord Orzival à 2100 m d'altitude, puis plus tard Tracuit à 1898 m. Le sentier continue vers Sigeroulaz, la station intermédiaire du téléphérique Vercorin - Crêt du Midi, et descend enfin abruptement vers Vercorin.\\n\\nSi tu préfères une variante plus facile de la randonnée, prends le téléphérique de Grimentz à Bendolla, traverse les versants raides pour rejoindre la route près de Chiesso Blanc. Pour éviter la descente raide à la fin de la randonnée, prends à Sigeroulaz le téléphérique jusqu'à Vercorin.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informe-toi sur les recommandations et règles. Évalue bien tes propres compétences et ta condition physique. L’utilisation des différents itinéraires se fait toujours sous ta propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La diversité étonnante du Val d'Anniviers se révèle sur ce sentier de randonnée d'altitude qui relie les deux villages de Grimentz et Vercorin. Grimentz se trouve presque au centre du Valais et se caractérise par ses maisons anciennes en bois ainsi que par les sommets environnants. Vercorin, quant à lui, est situé sur un plateau ensoleillé au-dessus du Rhône, offrant une belle vue en amont et en aval de la vallée.\\n\\nLa randonnée <strong>panoramique</strong> entre les villages suit le flanc ouest du Val d'Anniviers. Il y a bien une montée raide au début et une descente raide à la fin, mais entre les deux, la randonnée se déroule agréablement au-dessus de la limite des arbres avec de superbes panoramas. Tu traverses des alpages, des prairies fleuries et des forêts odorantes avec de bonnes chances d'observer la faune <strong>sauvage</strong>.\\n\\nLes deux villages célèbrent leur culture et leur patrimoine de manière très différente. Par exemple, Grimentz a créé des sentiers thématiques, les thèmes allant des géraniums aux légendes locales, en passant par les animaux sauvages ou l'histoire du village. Les visiteurs ont aussi la possibilité de fabriquer leur propre pain de seigle traditionnel, de goûter le vin glaciaire local dans un bâtiment du 16e siècle et de visiter un moulin à eau en fonctionnement.\\n\\nVercorin propose une sélection de galeries d'art et de musées, l'un d'eux étant dédié à l'artiste Edouard Vallet, qui a vécu plusieurs années à Vercorin. Des événements annuels très populaires incluent la R&Art, une exposition d'art contemporain, et le Verco Jazz Festival. Vercorin offre aussi plusieurs sentiers thématiques, comme le chemin « De Chalais aux Chalets » ou le sentier de la marmotte avec des jeux familiaux amusants. À la fin de notre randonnée, à Sigeroulaz, se trouve le parc aventure « Forêt Aventures ».\\n\\nLe parcours relie les deux villages de Grimentz et Vercorin, commence par une montée raide et se termine par une longue descente. Il est possible de faire une variante plus courte en utilisant le téléphérique, soit au départ, soit à l'arrivée.\\n\\nSi tu souhaites faire la randonnée complète, le point de départ se trouve à la station du téléphérique à Grimentz. Au début, le chemin suit encore la trajectoire du téléphérique, mais à mi-chemin, il monte en zigzag vers la droite et atteint un sentier qui mène vers le nord en direction des alpages.\\n\\nAprès une longue traversée des hauts versants, tu atteins d'abord Orzival à 2100 m d'altitude, puis plus tard Tracuit à 1898 m. Le sentier continue vers Sigeroulaz, la station intermédiaire du téléphérique Vercorin - Crêt du Midi, et descend enfin abruptement vers Vercorin.\\n\\nSi tu préfères une variante plus facile de la randonnée, prends le téléphérique de Grimentz à Bendolla, traverse les versants raides pour rejoindre la route près de Chiesso Blanc. Pour éviter la descente raide à la fin de la randonnée, prends à Sigeroulaz le téléphérique jusqu'à Vercorin.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informe-toi sur les recommandations et règles. Évalue bien tes propres compétences et ta condition physique. L’utilisation des différents itinéraires se fait toujours sous ta propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La diversité étonnante du Val d'Anniviers se révèle sur ce sentier de randonnée d'altitude qui relie les deux villages de Grimentz et Vercorin. Grimentz se trouve presque au centre du Valais et se caractérise par ses maisons anciennes en bois ainsi que par les sommets environnants. Vercorin, quant à lui, est situé sur un plateau ensoleillé au-dessus du Rhône, offrant une belle vue en amont et en aval de la vallée.\\n\\nLa randonnée <strong>panoramique</strong> entre les villages suit le flanc ouest du Val d'Anniviers. Il y a bien une montée raide au début et une descente raide à la fin, mais entre les deux, la randonnée se déroule agréablement au-dessus de la limite des arbres avec de superbes panoramas. Tu traverses des alpages, des prairies fleuries et des forêts odorantes avec de bonnes chances d'observer la faune <strong>sauvage</strong>.\\n\\nLes deux villages célèbrent leur culture et leur patrimoine de manière très différente. Par exemple, Grimentz a créé des sentiers thématiques, les thèmes allant des géraniums aux légendes locales, en passant par les animaux sauvages ou l'histoire du village. Les visiteurs ont aussi la possibilité de fabriquer leur propre pain de seigle traditionnel, de goûter le vin glaciaire local dans un bâtiment du 16e siècle et de visiter un moulin à eau en fonctionnement.\\n\\nVercorin propose une sélection de galeries d'art et de musées, l'un d'eux étant dédié à l'artiste Edouard Vallet, qui a vécu plusieurs années à Vercorin. Des événements annuels très populaires incluent la R&Art, une exposition d'art contemporain, et le Verco Jazz Festival. Vercorin offre aussi plusieurs sentiers thématiques, comme le chemin « De Chalais aux Chalets » ou le sentier de la marmotte avec des jeux familiaux amusants. À la fin de notre randonnée, à Sigeroulaz, se trouve le parc aventure « Forêt Aventures ».\\n\\nLe parcours relie les deux villages de Grimentz et Vercorin, commence par une montée raide et se termine par une longue descente. Il est possible de faire une variante plus courte en utilisant le téléphérique, soit au départ, soit à l'arrivée.\\n\\nSi tu souhaites faire la randonnée complète, le point de départ se trouve à la station du téléphérique à Grimentz. Au début, le chemin suit encore la trajectoire du téléphérique, mais à mi-chemin, il monte en zigzag vers la droite et atteint un sentier qui mène vers le nord en direction des alpages.\\n\\nAprès une longue traversée des hauts versants, tu atteins d'abord Orzival à 2100 m d'altitude, puis plus tard Tracuit à 1898 m. Le sentier continue vers Sigeroulaz, la station intermédiaire du téléphérique Vercorin - Crêt du Midi, et descend enfin abruptement vers Vercorin.\\n\\nSi tu préfères une variante plus facile de la randonnée, prends le téléphérique de Grimentz à Bendolla, traverse les versants raides pour rejoindre la route près de Chiesso Blanc. Pour éviter la descente raide à la fin de la randonnée, prends à Sigeroulaz le téléphérique jusqu'à Vercorin.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informe-toi sur les recommandations et règles. Évalue bien tes propres compétences et ta condition physique. L’utilisation des différents itinéraires se fait toujours sous ta propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/1.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 101,
+    "id": 2,
     "name": {
       "fr": "Chemin de crête Schalb-Jungu",
       "de": "Chemin de crête Schalb-Jungu",
       "en": "Chemin de crête Schalb-Jungu"
     },
-    "region": "Grächen",
-    "difficulty": "Moyen",
-    "category": "Itinéraires randonnées",
-    "duration": "2h50",
-    "distance": 7.02,
-    "elevation": {
-      "up": 785,
-      "down": 341
-    },
-    "altitude": {
-      "min": 1000,
-      "max": 2000
-    },
-    "season": {
-      "fr": "Juin - Octobre",
-      "de": "Juni - Oktober",
-      "en": "June - October"
-    },
-    "coords": [
-      46.29303908059914,
-      7.742366344855023
-    ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
-    "description": {
-      "fr": "Randonnée extraite de valais.ch. Chemin de crête Schalb-Jungu",
-      "de": "Wanderung aus valais.ch extrahiert. Chemin de crête Schalb-Jungu",
-      "en": "Hike extracted from valais.ch. Chemin de crête Schalb-Jungu"
-    },
-    "access": {
-      "fr": "En transport public",
-      "de": "Mit öffentlichen Verkehrsmitteln",
-      "en": "By public transport"
-    },
-    "image": "assets/images/placeholder.jpg"
-  },
-  {
-    "id": 103,
-    "name": {
-      "fr": "Tour du Val d’Anniviers",
-      "de": "Tour du Val d’Anniviers",
-      "en": "Tour du Val d’Anniviers"
-    },
-    "region": "Chandolin",
-    "difficulty": "Moyen",
-    "category": "Tours",
-    "duration": "0h00",
+    "region": "",
+    "difficulty": "Facile",
+    "category": "Itinéraires",
+    "duration": "2:50 h",
     "distance": 0,
     "elevation": {
-      "up": 225,
-      "down": 348
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -1545,46 +69,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.30844895071349,
-      7.572395740729041
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Tour du Val d’Anniviers",
-      "de": "Wanderung aus valais.ch extrahiert. Tour du Val d’Anniviers",
-      "en": "Hike extracted from valais.ch. Tour du Val d’Anniviers"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Des liaisons régulières en train de toute la Suisse à Visp, puis correspondance avec le Matterhorn Gotthard Bahn qui vous conduit jusqu'à Kalpetran. Depuis Kalpetran, prenez la télécabine jusqu'à Embd. Avec la télécabine semi-ouverte unique jusqu'à Schalb. À la fin de la randonnée, la télécabine vous mène de Jungen à St. Niklaus. De là, le Matterhorn Gotthard Bahn circule régulièrement vers Visp – Brig avec des correspondances vers toute la Suisse.\\n\\nLes horaires des trains et les correspondances de la télécabine de Schalb sont disponibles sur www.sbb.ch\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Des liaisons régulières en train de toute la Suisse à Visp, puis correspondance avec le Matterhorn Gotthard Bahn qui vous conduit jusqu'à Kalpetran. Depuis Kalpetran, prenez la télécabine jusqu'à Embd. Avec la télécabine semi-ouverte unique jusqu'à Schalb. À la fin de la randonnée, la télécabine vous mène de Jungen à St. Niklaus. De là, le Matterhorn Gotthard Bahn circule régulièrement vers Visp – Brig avec des correspondances vers toute la Suisse.\\n\\nLes horaires des trains et les correspondances de la télécabine de Schalb sont disponibles sur www.sbb.ch\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Des liaisons régulières en train de toute la Suisse à Visp, puis correspondance avec le Matterhorn Gotthard Bahn qui vous conduit jusqu'à Kalpetran. Depuis Kalpetran, prenez la télécabine jusqu'à Embd. Avec la télécabine semi-ouverte unique jusqu'à Schalb. À la fin de la randonnée, la télécabine vous mène de Jungen à St. Niklaus. De là, le Matterhorn Gotthard Bahn circule régulièrement vers Visp – Brig avec des correspondances vers toute la Suisse.\\n\\nLes horaires des trains et les correspondances de la télécabine de Schalb sont disponibles sur www.sbb.ch\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/2.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 104,
+    "id": 3,
     "name": {
       "fr": "À travers la vallée originelle « La combe de l’A »",
       "de": "À travers la vallée originelle « La combe de l’A »",
       "en": "À travers la vallée originelle « La combe de l’A »"
     },
-    "region": "Liddes/Vichères",
+    "region": "",
     "difficulty": "Difficile",
-    "category": "Itinéraires randonnées",
-    "duration": "7h30",
-    "distance": 21.16,
+    "category": "Itinéraires",
+    "duration": "7:30 h",
+    "distance": 0,
     "elevation": {
-      "up": 342,
-      "down": 388
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -1596,46 +113,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.29289191728987,
-      7.491122124737649
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. À travers la vallée originelle « La combe de l’A »",
-      "de": "Wanderung aus valais.ch extrahiert. À travers la vallée originelle « La combe de l’A »",
-      "en": "Hike extracted from valais.ch. À travers la vallée originelle « La combe de l’A »"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La « Combe de l’A » est une vallée latérale située entre le Val de Ferret et le Val d’Entremont et qui s'élève jusqu'au col du Grand St-Bernard. Le Val d’Entremont était pendant des siècles une importante route de transit et donc très fréquenté. La « Combe de l’A », en revanche, est restée intacte et est conservée sous sa forme originelle jusqu’à aujourd’hui. La vallée est aujourd'hui une zone protégée et un habitat pour la flore et la faune alpine, s'étendant de 1 400 m d'altitude à 3 000 m.\\n\\nCette randonnée offre des conditions idéales pour découvrir la faune alpine, avec un peu de chance vous verrez les animaux suivants : bouquetins, cerfs, marmottes, corbeaux et aigles royaux. Des panneaux d'information le long du parcours expliquent comment le paysage a été façonné par l'eau, la neige et la glace au fil des années.\\n\\nLa partie supérieure de la vallée est recouverte de neige pendant longtemps, mais au printemps tardif, la vallée sort de son sommeil hivernal et brille d'une <strong>magnifique</strong> palette de couleurs. En automne, surtout au lever et au coucher du soleil, se produit un spectacle particulier : la saison des amours des cerfs commence, et ils se font entendre par leurs appels caractéristiques.\\n\\nLe chemin traverse une variété de paysages alpins : forêt, zones humides, pâturages, prairies sèches et monte régulièrement au-dessus de la limite des arbres. Le point culminant de la randonnée est offert à la toute fin : au « Col du Névé de la Rousse » (2 751 m), vous avez une vue <strong>spectaculaire</strong> sur le Val Ferret et le massif du Mont-Blanc.\\n\\nLe parcours retourne au point de départ par le même chemin. Environ à mi-parcours se trouve une cabane de montagne, la Cabane de la Tsisette, où un personnel accueillant sert des snacks et des repas de fin juin à mi-octobre.\\n\\nÀ quelques mètres de la station du télésiège, un grand panneau en bois indique le chemin vers la vallée « Combe de l’A ». Dans la première partie, le chemin traverse une forêt où les pentes sont franchies, jusqu'à ce que vous atteigniez finalement le ruisseau de montagne « Torrent de l’A ». De là, le parcours remonte le vallon en longeant le ruisseau. Juste avant la cabane de montagne, vous le traversez à nouveau. Une autre montée à travers de vastes alpages dans la région de Vouasse mène à la dernière section jusqu'au col « Col du Névé de la Rousse », qui établit la liaison avec le Val Ferret.\\n\\nRevenez par le même chemin pour retourner au point de départ de la randonnée.\\n\\nSi vous arrivez en transports publics, le départ et la fin de la randonnée se situent à Liddes. De là, vous descendez, traversez le ruisseau et atteignez enfin le hameau de Dranse. Suivez le sentier pédestre jusqu'à Vichères vers le parking près du télésiège. Prévoyez 1,5 heure supplémentaire par trajet.\\n\\nTrain jusqu'à Martigny, correspondance avec le train St-Bernard Express en direction de Le Châble. Correspondance à Sembrancher avec le train pour Orsières. Là, montez dans le car postal, qui vous conduit à Liddes. Les horaires détaillés des trains et cars postaux se trouvent sur sbb.ch.\\n\\nLe point de départ et d'arrivée de la randonnée est à Liddes, ce qui représente encore 4,5 km supplémentaires (1,5 heure) par trajet.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L'utilisation des différents parcours se fait en principe à vos risques et périls.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La « Combe de l’A » est une vallée latérale située entre le Val de Ferret et le Val d’Entremont et qui s'élève jusqu'au col du Grand St-Bernard. Le Val d’Entremont était pendant des siècles une importante route de transit et donc très fréquenté. La « Combe de l’A », en revanche, est restée intacte et est conservée sous sa forme originelle jusqu’à aujourd’hui. La vallée est aujourd'hui une zone protégée et un habitat pour la flore et la faune alpine, s'étendant de 1 400 m d'altitude à 3 000 m.\\n\\nCette randonnée offre des conditions idéales pour découvrir la faune alpine, avec un peu de chance vous verrez les animaux suivants : bouquetins, cerfs, marmottes, corbeaux et aigles royaux. Des panneaux d'information le long du parcours expliquent comment le paysage a été façonné par l'eau, la neige et la glace au fil des années.\\n\\nLa partie supérieure de la vallée est recouverte de neige pendant longtemps, mais au printemps tardif, la vallée sort de son sommeil hivernal et brille d'une <strong>magnifique</strong> palette de couleurs. En automne, surtout au lever et au coucher du soleil, se produit un spectacle particulier : la saison des amours des cerfs commence, et ils se font entendre par leurs appels caractéristiques.\\n\\nLe chemin traverse une variété de paysages alpins : forêt, zones humides, pâturages, prairies sèches et monte régulièrement au-dessus de la limite des arbres. Le point culminant de la randonnée est offert à la toute fin : au « Col du Névé de la Rousse » (2 751 m), vous avez une vue <strong>spectaculaire</strong> sur le Val Ferret et le massif du Mont-Blanc.\\n\\nLe parcours retourne au point de départ par le même chemin. Environ à mi-parcours se trouve une cabane de montagne, la Cabane de la Tsisette, où un personnel accueillant sert des snacks et des repas de fin juin à mi-octobre.\\n\\nÀ quelques mètres de la station du télésiège, un grand panneau en bois indique le chemin vers la vallée « Combe de l’A ». Dans la première partie, le chemin traverse une forêt où les pentes sont franchies, jusqu'à ce que vous atteigniez finalement le ruisseau de montagne « Torrent de l’A ». De là, le parcours remonte le vallon en longeant le ruisseau. Juste avant la cabane de montagne, vous le traversez à nouveau. Une autre montée à travers de vastes alpages dans la région de Vouasse mène à la dernière section jusqu'au col « Col du Névé de la Rousse », qui établit la liaison avec le Val Ferret.\\n\\nRevenez par le même chemin pour retourner au point de départ de la randonnée.\\n\\nSi vous arrivez en transports publics, le départ et la fin de la randonnée se situent à Liddes. De là, vous descendez, traversez le ruisseau et atteignez enfin le hameau de Dranse. Suivez le sentier pédestre jusqu'à Vichères vers le parking près du télésiège. Prévoyez 1,5 heure supplémentaire par trajet.\\n\\nTrain jusqu'à Martigny, correspondance avec le train St-Bernard Express en direction de Le Châble. Correspondance à Sembrancher avec le train pour Orsières. Là, montez dans le car postal, qui vous conduit à Liddes. Les horaires détaillés des trains et cars postaux se trouvent sur sbb.ch.\\n\\nLe point de départ et d'arrivée de la randonnée est à Liddes, ce qui représente encore 4,5 km supplémentaires (1,5 heure) par trajet.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L'utilisation des différents parcours se fait en principe à vos risques et périls.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La « Combe de l’A » est une vallée latérale située entre le Val de Ferret et le Val d’Entremont et qui s'élève jusqu'au col du Grand St-Bernard. Le Val d’Entremont était pendant des siècles une importante route de transit et donc très fréquenté. La « Combe de l’A », en revanche, est restée intacte et est conservée sous sa forme originelle jusqu’à aujourd’hui. La vallée est aujourd'hui une zone protégée et un habitat pour la flore et la faune alpine, s'étendant de 1 400 m d'altitude à 3 000 m.\\n\\nCette randonnée offre des conditions idéales pour découvrir la faune alpine, avec un peu de chance vous verrez les animaux suivants : bouquetins, cerfs, marmottes, corbeaux et aigles royaux. Des panneaux d'information le long du parcours expliquent comment le paysage a été façonné par l'eau, la neige et la glace au fil des années.\\n\\nLa partie supérieure de la vallée est recouverte de neige pendant longtemps, mais au printemps tardif, la vallée sort de son sommeil hivernal et brille d'une <strong>magnifique</strong> palette de couleurs. En automne, surtout au lever et au coucher du soleil, se produit un spectacle particulier : la saison des amours des cerfs commence, et ils se font entendre par leurs appels caractéristiques.\\n\\nLe chemin traverse une variété de paysages alpins : forêt, zones humides, pâturages, prairies sèches et monte régulièrement au-dessus de la limite des arbres. Le point culminant de la randonnée est offert à la toute fin : au « Col du Névé de la Rousse » (2 751 m), vous avez une vue <strong>spectaculaire</strong> sur le Val Ferret et le massif du Mont-Blanc.\\n\\nLe parcours retourne au point de départ par le même chemin. Environ à mi-parcours se trouve une cabane de montagne, la Cabane de la Tsisette, où un personnel accueillant sert des snacks et des repas de fin juin à mi-octobre.\\n\\nÀ quelques mètres de la station du télésiège, un grand panneau en bois indique le chemin vers la vallée « Combe de l’A ». Dans la première partie, le chemin traverse une forêt où les pentes sont franchies, jusqu'à ce que vous atteigniez finalement le ruisseau de montagne « Torrent de l’A ». De là, le parcours remonte le vallon en longeant le ruisseau. Juste avant la cabane de montagne, vous le traversez à nouveau. Une autre montée à travers de vastes alpages dans la région de Vouasse mène à la dernière section jusqu'au col « Col du Névé de la Rousse », qui établit la liaison avec le Val Ferret.\\n\\nRevenez par le même chemin pour retourner au point de départ de la randonnée.\\n\\nSi vous arrivez en transports publics, le départ et la fin de la randonnée se situent à Liddes. De là, vous descendez, traversez le ruisseau et atteignez enfin le hameau de Dranse. Suivez le sentier pédestre jusqu'à Vichères vers le parking près du télésiège. Prévoyez 1,5 heure supplémentaire par trajet.\\n\\nTrain jusqu'à Martigny, correspondance avec le train St-Bernard Express en direction de Le Châble. Correspondance à Sembrancher avec le train pour Orsières. Là, montez dans le car postal, qui vous conduit à Liddes. Les horaires détaillés des trains et cars postaux se trouvent sur sbb.ch.\\n\\nLe point de départ et d'arrivée de la randonnée est à Liddes, ce qui représente encore 4,5 km supplémentaires (1,5 heure) par trajet.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L'utilisation des différents parcours se fait en principe à vos risques et périls.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/3.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 105,
+    "id": 4,
     "name": {
       "fr": "Sentier Edelweiss (Höhbalmen) (n° 30)",
       "de": "Sentier Edelweiss (Höhbalmen) (n° 30)",
       "en": "Sentier Edelweiss (Höhbalmen) (n° 30)"
     },
-    "region": "Zermatt",
+    "region": "",
     "difficulty": "Difficile",
-    "category": "Itinéraires randonnées",
-    "duration": "7h40",
-    "distance": 20.1,
+    "category": "Itinéraires",
+    "duration": "7:40 h",
+    "distance": 0,
     "elevation": {
-      "up": 760,
-      "down": 971
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -1647,46 +157,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.354063570564456,
-      7.360534785766154
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Sentier Edelweiss (Höhbalmen) (n° 30)",
-      "de": "Wanderung aus valais.ch extrahiert. Sentier Edelweiss (Höhbalmen) (n° 30)",
-      "en": "Hike extracted from valais.ch. Sentier Edelweiss (Höhbalmen) (n° 30)"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>(Temps de randonnée approximatif dans le sens inverse 8 h 30)\\n\\nMerci de ne pas nourrir les chamois à cou noir et les moutons à nez noir.Sur Höhbalmen et en direction de Hohliecht : surveillez les aigles. Parfois, ils y planent en cercles.\\n\\nCette activité vous est proposée par Zermatt - Matterhorn. Valais/Wallis Promotion n'est pas responsable du contenu proposé.\\n\\nVia Valais Mountain Lodge Ze Seewjinu - Zermatt (étape 9)\\n\\nVia Valais Randa - Mountain Lodge Ze Seewjinu (étape 8)\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>(Temps de randonnée approximatif dans le sens inverse 8 h 30)\\n\\nMerci de ne pas nourrir les chamois à cou noir et les moutons à nez noir.Sur Höhbalmen et en direction de Hohliecht : surveillez les aigles. Parfois, ils y planent en cercles.\\n\\nCette activité vous est proposée par Zermatt - Matterhorn. Valais/Wallis Promotion n'est pas responsable du contenu proposé.\\n\\nVia Valais Mountain Lodge Ze Seewjinu - Zermatt (étape 9)\\n\\nVia Valais Randa - Mountain Lodge Ze Seewjinu (étape 8)\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>(Temps de randonnée approximatif dans le sens inverse 8 h 30)\\n\\nMerci de ne pas nourrir les chamois à cou noir et les moutons à nez noir.Sur Höhbalmen et en direction de Hohliecht : surveillez les aigles. Parfois, ils y planent en cercles.\\n\\nCette activité vous est proposée par Zermatt - Matterhorn. Valais/Wallis Promotion n'est pas responsable du contenu proposé.\\n\\nVia Valais Mountain Lodge Ze Seewjinu - Zermatt (étape 9)\\n\\nVia Valais Randa - Mountain Lodge Ze Seewjinu (étape 8)\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/4.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 106,
+    "id": 5,
     "name": {
       "fr": "Sentier Panorama 4000",
       "de": "Sentier Panorama 4000",
       "en": "Sentier Panorama 4000"
     },
-    "region": "Crans-Montana",
+    "region": "",
     "difficulty": "Moyen",
-    "category": "Itinéraires randonnées",
-    "duration": "4h20",
-    "distance": 13.42,
+    "category": "Itinéraires",
+    "duration": "4:20 h",
+    "distance": 0,
     "elevation": {
-      "up": 551,
-      "down": 333
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -1698,46 +201,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.38137480493832,
-      7.501030054203939
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Sentier Panorama 4000",
-      "de": "Wanderung aus valais.ch extrahiert. Sentier Panorama 4000",
-      "en": "Hike extracted from valais.ch. Sentier Panorama 4000"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cry d'Er, station supérieure du téléphérique (2252m)\\n\\nTrain jusqu’à Sierre. 350 m à pied jusqu’à la station inférieure du funiculaire en direction de Montana. Le funiculaire est accessible depuis la gare de Sierre en suivant le marquage rouge au sol. Pour se rendre à la station inférieure du téléphérique Cry d’Er à Crans-Montana, prenez soit le bus en direction de Crans-sur-Sierre (arrêt Téléphérique), soit à pied (env. 2 km, 20 min). Trajet en téléphérique jusqu’à Cry d’Er. Après la randonnée, prenez le bus d’Aminona à la station supérieure du funiculaire à Montana et retournez à Sierre. Les horaires détaillés des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les utilisateurs puissent en profiter, il est indispensable de partager cet espace avec respect pour la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours est toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nRandonnée pour le 100ème anniversaire à Crans-Montana\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cry d'Er, station supérieure du téléphérique (2252m)\\n\\nTrain jusqu’à Sierre. 350 m à pied jusqu’à la station inférieure du funiculaire en direction de Montana. Le funiculaire est accessible depuis la gare de Sierre en suivant le marquage rouge au sol. Pour se rendre à la station inférieure du téléphérique Cry d’Er à Crans-Montana, prenez soit le bus en direction de Crans-sur-Sierre (arrêt Téléphérique), soit à pied (env. 2 km, 20 min). Trajet en téléphérique jusqu’à Cry d’Er. Après la randonnée, prenez le bus d’Aminona à la station supérieure du funiculaire à Montana et retournez à Sierre. Les horaires détaillés des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les utilisateurs puissent en profiter, il est indispensable de partager cet espace avec respect pour la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours est toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nRandonnée pour le 100ème anniversaire à Crans-Montana\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cry d'Er, station supérieure du téléphérique (2252m)\\n\\nTrain jusqu’à Sierre. 350 m à pied jusqu’à la station inférieure du funiculaire en direction de Montana. Le funiculaire est accessible depuis la gare de Sierre en suivant le marquage rouge au sol. Pour se rendre à la station inférieure du téléphérique Cry d’Er à Crans-Montana, prenez soit le bus en direction de Crans-sur-Sierre (arrêt Téléphérique), soit à pied (env. 2 km, 20 min). Trajet en téléphérique jusqu’à Cry d’Er. Après la randonnée, prenez le bus d’Aminona à la station supérieure du funiculaire à Montana et retournez à Sierre. Les horaires détaillés des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les utilisateurs puissent en profiter, il est indispensable de partager cet espace avec respect pour la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours est toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nRandonnée pour le 100ème anniversaire à Crans-Montana\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/5.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 107,
+    "id": 6,
     "name": {
       "fr": "Tour du Val d’Hérens : Grande Dixence – Arolla (étape 2)",
       "de": "Tour du Val d’Hérens : Grande Dixence – Arolla (étape 2)",
       "en": "Tour du Val d’Hérens : Grande Dixence – Arolla (étape 2)"
     },
-    "region": "Evolène",
+    "region": "",
     "difficulty": "Difficile",
-    "category": "Itinéraires randonnées",
-    "duration": "6h15",
-    "distance": 17.93,
+    "category": "Itinéraires",
+    "duration": "6:15 h",
+    "distance": 0,
     "elevation": {
-      "up": 589,
-      "down": 893
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -1749,46 +245,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.241097011140326,
-      7.453473356716913
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Tour du Val d’Hérens : Grande Dixence – Arolla (étape 2)",
-      "de": "Wanderung aus valais.ch extrahiert. Tour du Val d’Hérens : Grande Dixence – Arolla (étape 2)",
-      "en": "Hike extracted from valais.ch. Tour du Val d’Hérens : Grande Dixence – Arolla (étape 2)"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La deuxième étape du parcours de 5 jours du Tour du Val d'Hérens relie deux vallées : le Val d'Hérémence et le Val d'Arolla. La première partie est une section plate le long des rives du Lac des Dix. Ensuite, une montée raide conduit au col de Riedmatten qui relie les deux vallées. La dernière partie de la randonnée est une descente continue jusqu'au village d'Arolla.\\n\\nLa randonnée commence au sommet du barrage de la Grande Dixence, le plus haut barrage-poids du monde. Vous longerez la rive ouest du réservoir jusqu’à son extrémité sud, qui peut contenir 400 milliards de litres d'eau. L'ouvrage en lui-même est impressionnant, et son environnement de sommets enneigés et de glaciers le rend encore plus <strong>spectaculaire</strong>.\\n\\nDepuis la fin du lac, le chemin monte raide jusqu'au col de Riedmatten, un passage rendu célèbre par la course de ski-alpinisme la plus dure au monde. Lors de la Patrouille des Glaciers, qui a lieu tous les deux ans, des équipes de trois personnes parcourent la distance entre Zermatt et Verbier en ski de randonnée. Le passage très raide et étroit du col de Riedmatten (2918 m) est l'un des plus grands défis de la course – en été, son franchissement ne pose néanmoins aucun problème aux randonneurs expérimentés.\\n\\nLa route descend ensuite vers le village d'Arolla dans la vallée voisine du Val d'Hérens.\\n\\nSi vous avez suffisamment de temps, une visite au centre d'information du barrage vaut le détour pour en apprendre plus sur la géologie, la faune de la région, ainsi que sur le barrage. La plus grande centrale hydroélectrique de Suisse se compose d'un vaste réseau de réservoirs, tunnels, stations de pompage et centrales électriques.\\n\\nLa deuxième étape du Tour du Val d'Hérens commence au sommet du barrage et suit la rive ouest du lac. Au début, elle traverse plusieurs tunnels puis continue à travers des prairies ouvertes. À la fin du réservoir, vous marchez brièvement le long de la rive sud avant que la montée raide vers le Col de Riedmatten (2918 m d'altitude) ne mobilise toutes vos forces.\\n\\nEn alternative, la crête peut aussi être franchie environ 200 m plus au sud au Pas de Chèvres (2854 m d'altitude). Pour emprunter cet itinéraire équipé d'échelles, une bonne aisance à pied et l'absence de vertige sont requises. Les deux chemins se rejoignent peu après le passage et la route descend de façon raide mais régulière vers Arolla.\\n\\nCe parcours n’a pas été approuvé par le canton du Valais selon la loi sur les chemins de loisir. L'utilisation des parcours et des informations sur ce site web relève de la responsabilité de chaque utilisateur. Les conditions locales peuvent entraîner des modifications du parcours. Nous n’assumons aucune responsabilité quant à l’exactitude et à l’exhaustivité des informations sur le site.\\n\\nLa montagne est un lieu de joie à partager et à respecter. Le monde alpin est un espace pour se retrouver et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs loisirs dans les meilleures conditions. Informez-vous des recommandations et des règles. Estimez bien vos compétences et votre condition physique. L’utilisation des différents parcours s’effectue en principe à vos propres risques.\\n\\nLes offices du tourisme du Val d'Hérens mettent à votre disposition des informations et brochures pour la randonnée dans la destination.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La deuxième étape du parcours de 5 jours du Tour du Val d'Hérens relie deux vallées : le Val d'Hérémence et le Val d'Arolla. La première partie est une section plate le long des rives du Lac des Dix. Ensuite, une montée raide conduit au col de Riedmatten qui relie les deux vallées. La dernière partie de la randonnée est une descente continue jusqu'au village d'Arolla.\\n\\nLa randonnée commence au sommet du barrage de la Grande Dixence, le plus haut barrage-poids du monde. Vous longerez la rive ouest du réservoir jusqu’à son extrémité sud, qui peut contenir 400 milliards de litres d'eau. L'ouvrage en lui-même est impressionnant, et son environnement de sommets enneigés et de glaciers le rend encore plus <strong>spectaculaire</strong>.\\n\\nDepuis la fin du lac, le chemin monte raide jusqu'au col de Riedmatten, un passage rendu célèbre par la course de ski-alpinisme la plus dure au monde. Lors de la Patrouille des Glaciers, qui a lieu tous les deux ans, des équipes de trois personnes parcourent la distance entre Zermatt et Verbier en ski de randonnée. Le passage très raide et étroit du col de Riedmatten (2918 m) est l'un des plus grands défis de la course – en été, son franchissement ne pose néanmoins aucun problème aux randonneurs expérimentés.\\n\\nLa route descend ensuite vers le village d'Arolla dans la vallée voisine du Val d'Hérens.\\n\\nSi vous avez suffisamment de temps, une visite au centre d'information du barrage vaut le détour pour en apprendre plus sur la géologie, la faune de la région, ainsi que sur le barrage. La plus grande centrale hydroélectrique de Suisse se compose d'un vaste réseau de réservoirs, tunnels, stations de pompage et centrales électriques.\\n\\nLa deuxième étape du Tour du Val d'Hérens commence au sommet du barrage et suit la rive ouest du lac. Au début, elle traverse plusieurs tunnels puis continue à travers des prairies ouvertes. À la fin du réservoir, vous marchez brièvement le long de la rive sud avant que la montée raide vers le Col de Riedmatten (2918 m d'altitude) ne mobilise toutes vos forces.\\n\\nEn alternative, la crête peut aussi être franchie environ 200 m plus au sud au Pas de Chèvres (2854 m d'altitude). Pour emprunter cet itinéraire équipé d'échelles, une bonne aisance à pied et l'absence de vertige sont requises. Les deux chemins se rejoignent peu après le passage et la route descend de façon raide mais régulière vers Arolla.\\n\\nCe parcours n’a pas été approuvé par le canton du Valais selon la loi sur les chemins de loisir. L'utilisation des parcours et des informations sur ce site web relève de la responsabilité de chaque utilisateur. Les conditions locales peuvent entraîner des modifications du parcours. Nous n’assumons aucune responsabilité quant à l’exactitude et à l’exhaustivité des informations sur le site.\\n\\nLa montagne est un lieu de joie à partager et à respecter. Le monde alpin est un espace pour se retrouver et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs loisirs dans les meilleures conditions. Informez-vous des recommandations et des règles. Estimez bien vos compétences et votre condition physique. L’utilisation des différents parcours s’effectue en principe à vos propres risques.\\n\\nLes offices du tourisme du Val d'Hérens mettent à votre disposition des informations et brochures pour la randonnée dans la destination.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La deuxième étape du parcours de 5 jours du Tour du Val d'Hérens relie deux vallées : le Val d'Hérémence et le Val d'Arolla. La première partie est une section plate le long des rives du Lac des Dix. Ensuite, une montée raide conduit au col de Riedmatten qui relie les deux vallées. La dernière partie de la randonnée est une descente continue jusqu'au village d'Arolla.\\n\\nLa randonnée commence au sommet du barrage de la Grande Dixence, le plus haut barrage-poids du monde. Vous longerez la rive ouest du réservoir jusqu’à son extrémité sud, qui peut contenir 400 milliards de litres d'eau. L'ouvrage en lui-même est impressionnant, et son environnement de sommets enneigés et de glaciers le rend encore plus <strong>spectaculaire</strong>.\\n\\nDepuis la fin du lac, le chemin monte raide jusqu'au col de Riedmatten, un passage rendu célèbre par la course de ski-alpinisme la plus dure au monde. Lors de la Patrouille des Glaciers, qui a lieu tous les deux ans, des équipes de trois personnes parcourent la distance entre Zermatt et Verbier en ski de randonnée. Le passage très raide et étroit du col de Riedmatten (2918 m) est l'un des plus grands défis de la course – en été, son franchissement ne pose néanmoins aucun problème aux randonneurs expérimentés.\\n\\nLa route descend ensuite vers le village d'Arolla dans la vallée voisine du Val d'Hérens.\\n\\nSi vous avez suffisamment de temps, une visite au centre d'information du barrage vaut le détour pour en apprendre plus sur la géologie, la faune de la région, ainsi que sur le barrage. La plus grande centrale hydroélectrique de Suisse se compose d'un vaste réseau de réservoirs, tunnels, stations de pompage et centrales électriques.\\n\\nLa deuxième étape du Tour du Val d'Hérens commence au sommet du barrage et suit la rive ouest du lac. Au début, elle traverse plusieurs tunnels puis continue à travers des prairies ouvertes. À la fin du réservoir, vous marchez brièvement le long de la rive sud avant que la montée raide vers le Col de Riedmatten (2918 m d'altitude) ne mobilise toutes vos forces.\\n\\nEn alternative, la crête peut aussi être franchie environ 200 m plus au sud au Pas de Chèvres (2854 m d'altitude). Pour emprunter cet itinéraire équipé d'échelles, une bonne aisance à pied et l'absence de vertige sont requises. Les deux chemins se rejoignent peu après le passage et la route descend de façon raide mais régulière vers Arolla.\\n\\nCe parcours n’a pas été approuvé par le canton du Valais selon la loi sur les chemins de loisir. L'utilisation des parcours et des informations sur ce site web relève de la responsabilité de chaque utilisateur. Les conditions locales peuvent entraîner des modifications du parcours. Nous n’assumons aucune responsabilité quant à l’exactitude et à l’exhaustivité des informations sur le site.\\n\\nLa montagne est un lieu de joie à partager et à respecter. Le monde alpin est un espace pour se retrouver et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs loisirs dans les meilleures conditions. Informez-vous des recommandations et des règles. Estimez bien vos compétences et votre condition physique. L’utilisation des différents parcours s’effectue en principe à vos propres risques.\\n\\nLes offices du tourisme du Val d'Hérens mettent à votre disposition des informations et brochures pour la randonnée dans la destination.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/6.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 108,
+    "id": 7,
     "name": {
       "fr": "Chemin des villages d’Evolène",
       "de": "Chemin des villages d’Evolène",
       "en": "Chemin des villages d’Evolène"
     },
-    "region": "Evolène",
+    "region": "",
     "difficulty": "Facile",
-    "category": "Itinéraires randonnées",
-    "duration": "3h25",
-    "distance": 11.09,
+    "category": "Itinéraires",
+    "duration": "3:25 h",
+    "distance": 0,
     "elevation": {
-      "up": 501,
-      "down": 797
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -1800,46 +289,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.24106766983345,
-      7.492702466856932
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Chemin des villages d’Evolène",
-      "de": "Wanderung aus valais.ch extrahiert. Chemin des villages d’Evolène",
-      "en": "Hike extracted from valais.ch. Chemin des villages d’Evolène"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Un groupe de villages historiques bien conservés forme le cœur de la partie supérieure de la Val d’Hérens. Les deux plus grands villages, Evolène et Les Haudères, se trouvent entre des pâturages dans le fond de la vallée. Les trois autres villages, La Forclaz, La Sage et Villaz, sont situés en terrasses environ 300 mètres plus haut. Les villages ont restauré avec soin les chalets et granges en bois historiques et les décorent magnifiquement de fleurs en été. Evolène a été élu en 2012 le plus beau village de la Suisse francophone et, comme Les Haudères, fait partie des lieux historiques protégés de Suisse. Entourés de pâturages alpins et de forêts parfumées, ils ont conservé leur charme historique au fil des années. Les pâturages autour des villages sont le domicile originel des vaches noires d’Eringer, dont le nom dérive de la région. Elles sont devenues un symbole bien connu du Valais. Les vaches déterminent la hiérarchie dans le troupeau par des combats – souvent, les randonneurs peuvent observer ce spectacle naturel dans les alpages. En plus des combats naturels, des combats de vaches en arène sont organisés, créant un événement festif et convivial avec raclette, autant pour les habitants que pour les touristes.\\n\\nLa Val d’Hérens est également connue pour sa géologie. Grâce au « GéoGuide Val d’Hérens », disponible en application ou en version imprimée, les visiteurs peuvent découvrir les roches et les minéraux sur place (www.evolene-geologie.ch). À Les Haudères, les visiteurs peuvent aussi visiter le centre de géologie et glaciologie avec une exposition permanente.\\n\\nDes liaisons ferroviaires régulières relient toute la Suisse à Sion. De là, le car postal passe par Les Haudères (changement nécessaire) jusqu’à Evolène. Les horaires des trains et des cars postaux sont disponibles sur sbb.ch.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est essentiel de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L’utilisation des différentes routes se fait toujours à vos propres risques.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nTour du Val d’Hérens : Grande Dixence – Arolla (étape 2)\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Un groupe de villages historiques bien conservés forme le cœur de la partie supérieure de la Val d’Hérens. Les deux plus grands villages, Evolène et Les Haudères, se trouvent entre des pâturages dans le fond de la vallée. Les trois autres villages, La Forclaz, La Sage et Villaz, sont situés en terrasses environ 300 mètres plus haut. Les villages ont restauré avec soin les chalets et granges en bois historiques et les décorent magnifiquement de fleurs en été. Evolène a été élu en 2012 le plus beau village de la Suisse francophone et, comme Les Haudères, fait partie des lieux historiques protégés de Suisse. Entourés de pâturages alpins et de forêts parfumées, ils ont conservé leur charme historique au fil des années. Les pâturages autour des villages sont le domicile originel des vaches noires d’Eringer, dont le nom dérive de la région. Elles sont devenues un symbole bien connu du Valais. Les vaches déterminent la hiérarchie dans le troupeau par des combats – souvent, les randonneurs peuvent observer ce spectacle naturel dans les alpages. En plus des combats naturels, des combats de vaches en arène sont organisés, créant un événement festif et convivial avec raclette, autant pour les habitants que pour les touristes.\\n\\nLa Val d’Hérens est également connue pour sa géologie. Grâce au « GéoGuide Val d’Hérens », disponible en application ou en version imprimée, les visiteurs peuvent découvrir les roches et les minéraux sur place (www.evolene-geologie.ch). À Les Haudères, les visiteurs peuvent aussi visiter le centre de géologie et glaciologie avec une exposition permanente.\\n\\nDes liaisons ferroviaires régulières relient toute la Suisse à Sion. De là, le car postal passe par Les Haudères (changement nécessaire) jusqu’à Evolène. Les horaires des trains et des cars postaux sont disponibles sur sbb.ch.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est essentiel de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L’utilisation des différentes routes se fait toujours à vos propres risques.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nTour du Val d’Hérens : Grande Dixence – Arolla (étape 2)\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Un groupe de villages historiques bien conservés forme le cœur de la partie supérieure de la Val d’Hérens. Les deux plus grands villages, Evolène et Les Haudères, se trouvent entre des pâturages dans le fond de la vallée. Les trois autres villages, La Forclaz, La Sage et Villaz, sont situés en terrasses environ 300 mètres plus haut. Les villages ont restauré avec soin les chalets et granges en bois historiques et les décorent magnifiquement de fleurs en été. Evolène a été élu en 2012 le plus beau village de la Suisse francophone et, comme Les Haudères, fait partie des lieux historiques protégés de Suisse. Entourés de pâturages alpins et de forêts parfumées, ils ont conservé leur charme historique au fil des années. Les pâturages autour des villages sont le domicile originel des vaches noires d’Eringer, dont le nom dérive de la région. Elles sont devenues un symbole bien connu du Valais. Les vaches déterminent la hiérarchie dans le troupeau par des combats – souvent, les randonneurs peuvent observer ce spectacle naturel dans les alpages. En plus des combats naturels, des combats de vaches en arène sont organisés, créant un événement festif et convivial avec raclette, autant pour les habitants que pour les touristes.\\n\\nLa Val d’Hérens est également connue pour sa géologie. Grâce au « GéoGuide Val d’Hérens », disponible en application ou en version imprimée, les visiteurs peuvent découvrir les roches et les minéraux sur place (www.evolene-geologie.ch). À Les Haudères, les visiteurs peuvent aussi visiter le centre de géologie et glaciologie avec une exposition permanente.\\n\\nDes liaisons ferroviaires régulières relient toute la Suisse à Sion. De là, le car postal passe par Les Haudères (changement nécessaire) jusqu’à Evolène. Les horaires des trains et des cars postaux sont disponibles sur sbb.ch.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est essentiel de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L’utilisation des différentes routes se fait toujours à vos propres risques.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nTour du Val d’Hérens : Grande Dixence – Arolla (étape 2)\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/7.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 109,
+    "id": 8,
     "name": {
       "fr": "Randonnée circulaire à la Cabane des Aiguilles Rouges et au Lac Bleu",
       "de": "Randonnée circulaire à la Cabane des Aiguilles Rouges et au Lac Bleu",
       "en": "Randonnée circulaire à la Cabane des Aiguilles Rouges et au Lac Bleu"
     },
-    "region": "Arolla",
+    "region": "",
     "difficulty": "Difficile",
-    "category": "Itinéraires randonnées",
-    "duration": "5h30",
-    "distance": 14.01,
+    "category": "Itinéraires",
+    "duration": "5:30 h",
+    "distance": 0,
     "elevation": {
-      "up": 596,
-      "down": 846
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -1851,97 +333,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.24908076663322,
-      7.384125033371546
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Randonnée circulaire à la Cabane des Aiguilles Rouges et au Lac Bleu",
-      "de": "Wanderung aus valais.ch extrahiert. Randonnée circulaire à la Cabane des Aiguilles Rouges et au Lac Bleu",
-      "en": "Hike extracted from valais.ch. Randonnée circulaire à la Cabane des Aiguilles Rouges et au Lac Bleu"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée au-dessus d'Arolla promet une expérience passionnante en terrain alpin avec des vues spectaculaires, une géologie fascinante et une flore alpine riche.\\n\\nLa randonnée commence à Arolla, le village qui a reçu son nom du mélèze (en français = arolle). Le bois aromatique de cet arbre est censé aider à s'endormir : on fabrique des lits avec son bois, ainsi que des coussins avec les copeaux produits. L'arbre se propage grâce au casse-noix moucheté. Cet oiseau ouvre les cônes de mélèze avec son bec et enterre les graines comme réserve hivernale. Il oublie parfois l'emplacement de ses réserves – ce qui permet à certaines graines de pousser lentement en arbres.\\n\\nLe chemin monte depuis le village et passe bientôt la limite de la forêt, où l'ascension continue en direction de la Cabane des Aiguilles Rouges. La cabane est située au pied de la chaîne impressionnante des « Aiguilles Rouges d’Arolla » et offre aux visiteurs une vue à couper le souffle sur la vallée.\\n\\nUn peu plus bas, vous atteignez le Lac Bleu, entouré de mélèzes. Une source alimentée par l'eau glaciaire se trouve juste au-dessus du lac de montagne. L'eau tombe sous forme de cascade directement dans le lac bleu.\\n\\nLa dernière partie de la randonnée de retour à Arolla suit un chemin à thème géologique, qui montre la diversité des roches et minéraux de la vallée. Les visiteurs disposent d'une carte ou d'une application gratuite « GéoGuide Val d’Hérens ». Le bureau du tourisme d'Arolla met également à disposition du matériel cartographique supplémentaire.\\n\\nLe chemin commence par une montée en zigzag depuis le village d'Arolla et monte ensuite régulièrement sur plus de 800 mètres de dénivelé jusqu'à la cabane Cabane des Aiguilles Rouges à 2821 m d'altitude. Une petite pause rafraîchissante à la cabane est bienvenue ici. Après une autre courte montée, commence directement la descente raide vers le Lac Bleu. En direction sud, le chemin longe la limite de la forêt pour revenir à Arolla.\\n\\nLe dernier tronçon du Lac Bleu à Arolla suit l'excursion B du livre « GéoGuide Val d’Hérens »\\n\\nLiaisons ferroviaires régulières depuis toute la Suisse vers Sion. De là, le car postal via Les Haudères (changement nécessaire) jusqu'à Arolla. Les horaires des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un espace de rencontre et de moments inoubliables à vivre ensemble – que ce soit à vélo ou à pied. Pour que tous les utilisateurs en profitent, il est essentiel de partager cet espace dans le respect de la nature et de l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres compétences et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nVia Valais Cabane des Aiguilles Rouges - Cabane des Becs de Bosson (Étape 3)\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée au-dessus d'Arolla promet une expérience passionnante en terrain alpin avec des vues spectaculaires, une géologie fascinante et une flore alpine riche.\\n\\nLa randonnée commence à Arolla, le village qui a reçu son nom du mélèze (en français = arolle). Le bois aromatique de cet arbre est censé aider à s'endormir : on fabrique des lits avec son bois, ainsi que des coussins avec les copeaux produits. L'arbre se propage grâce au casse-noix moucheté. Cet oiseau ouvre les cônes de mélèze avec son bec et enterre les graines comme réserve hivernale. Il oublie parfois l'emplacement de ses réserves – ce qui permet à certaines graines de pousser lentement en arbres.\\n\\nLe chemin monte depuis le village et passe bientôt la limite de la forêt, où l'ascension continue en direction de la Cabane des Aiguilles Rouges. La cabane est située au pied de la chaîne impressionnante des « Aiguilles Rouges d’Arolla » et offre aux visiteurs une vue à couper le souffle sur la vallée.\\n\\nUn peu plus bas, vous atteignez le Lac Bleu, entouré de mélèzes. Une source alimentée par l'eau glaciaire se trouve juste au-dessus du lac de montagne. L'eau tombe sous forme de cascade directement dans le lac bleu.\\n\\nLa dernière partie de la randonnée de retour à Arolla suit un chemin à thème géologique, qui montre la diversité des roches et minéraux de la vallée. Les visiteurs disposent d'une carte ou d'une application gratuite « GéoGuide Val d’Hérens ». Le bureau du tourisme d'Arolla met également à disposition du matériel cartographique supplémentaire.\\n\\nLe chemin commence par une montée en zigzag depuis le village d'Arolla et monte ensuite régulièrement sur plus de 800 mètres de dénivelé jusqu'à la cabane Cabane des Aiguilles Rouges à 2821 m d'altitude. Une petite pause rafraîchissante à la cabane est bienvenue ici. Après une autre courte montée, commence directement la descente raide vers le Lac Bleu. En direction sud, le chemin longe la limite de la forêt pour revenir à Arolla.\\n\\nLe dernier tronçon du Lac Bleu à Arolla suit l'excursion B du livre « GéoGuide Val d’Hérens »\\n\\nLiaisons ferroviaires régulières depuis toute la Suisse vers Sion. De là, le car postal via Les Haudères (changement nécessaire) jusqu'à Arolla. Les horaires des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un espace de rencontre et de moments inoubliables à vivre ensemble – que ce soit à vélo ou à pied. Pour que tous les utilisateurs en profitent, il est essentiel de partager cet espace dans le respect de la nature et de l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres compétences et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nVia Valais Cabane des Aiguilles Rouges - Cabane des Becs de Bosson (Étape 3)\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée au-dessus d'Arolla promet une expérience passionnante en terrain alpin avec des vues spectaculaires, une géologie fascinante et une flore alpine riche.\\n\\nLa randonnée commence à Arolla, le village qui a reçu son nom du mélèze (en français = arolle). Le bois aromatique de cet arbre est censé aider à s'endormir : on fabrique des lits avec son bois, ainsi que des coussins avec les copeaux produits. L'arbre se propage grâce au casse-noix moucheté. Cet oiseau ouvre les cônes de mélèze avec son bec et enterre les graines comme réserve hivernale. Il oublie parfois l'emplacement de ses réserves – ce qui permet à certaines graines de pousser lentement en arbres.\\n\\nLe chemin monte depuis le village et passe bientôt la limite de la forêt, où l'ascension continue en direction de la Cabane des Aiguilles Rouges. La cabane est située au pied de la chaîne impressionnante des « Aiguilles Rouges d’Arolla » et offre aux visiteurs une vue à couper le souffle sur la vallée.\\n\\nUn peu plus bas, vous atteignez le Lac Bleu, entouré de mélèzes. Une source alimentée par l'eau glaciaire se trouve juste au-dessus du lac de montagne. L'eau tombe sous forme de cascade directement dans le lac bleu.\\n\\nLa dernière partie de la randonnée de retour à Arolla suit un chemin à thème géologique, qui montre la diversité des roches et minéraux de la vallée. Les visiteurs disposent d'une carte ou d'une application gratuite « GéoGuide Val d’Hérens ». Le bureau du tourisme d'Arolla met également à disposition du matériel cartographique supplémentaire.\\n\\nLe chemin commence par une montée en zigzag depuis le village d'Arolla et monte ensuite régulièrement sur plus de 800 mètres de dénivelé jusqu'à la cabane Cabane des Aiguilles Rouges à 2821 m d'altitude. Une petite pause rafraîchissante à la cabane est bienvenue ici. Après une autre courte montée, commence directement la descente raide vers le Lac Bleu. En direction sud, le chemin longe la limite de la forêt pour revenir à Arolla.\\n\\nLe dernier tronçon du Lac Bleu à Arolla suit l'excursion B du livre « GéoGuide Val d’Hérens »\\n\\nLiaisons ferroviaires régulières depuis toute la Suisse vers Sion. De là, le car postal via Les Haudères (changement nécessaire) jusqu'à Arolla. Les horaires des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un espace de rencontre et de moments inoubliables à vivre ensemble – que ce soit à vélo ou à pied. Pour que tous les utilisateurs en profitent, il est essentiel de partager cet espace dans le respect de la nature et de l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres compétences et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nVia Valais Cabane des Aiguilles Rouges - Cabane des Becs de Bosson (Étape 3)\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/8.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 110,
+    "id": 9,
     "name": {
       "fr": "Tour du Val d’Hérens : Cabane Becs de Bosson - Nax (étape 5)",
       "de": "Tour du Val d’Hérens : Cabane Becs de Bosson - Nax (étape 5)",
       "en": "Tour du Val d’Hérens : Cabane Becs de Bosson - Nax (étape 5)"
     },
-    "region": "Nax",
+    "region": "",
     "difficulty": "Moyen",
-    "category": "Itinéraires randonnées",
-    "duration": "3h45",
-    "distance": 13.36,
-    "elevation": {
-      "up": 205,
-      "down": 915
-    },
-    "altitude": {
-      "min": 1000,
-      "max": 2000
-    },
-    "season": {
-      "fr": "Juin - Octobre",
-      "de": "Juni - Oktober",
-      "en": "June - October"
-    },
-    "coords": [
-      46.314450894925926,
-      7.692153367327287
-    ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
-    "description": {
-      "fr": "Randonnée extraite de valais.ch. Tour du Val d’Hérens : Cabane Becs de Bosson - Nax (étape 5)",
-      "de": "Wanderung aus valais.ch extrahiert. Tour du Val d’Hérens : Cabane Becs de Bosson - Nax (étape 5)",
-      "en": "Hike extracted from valais.ch. Tour du Val d’Hérens : Cabane Becs de Bosson - Nax (étape 5)"
-    },
-    "access": {
-      "fr": "En transport public",
-      "de": "Mit öffentlichen Verkehrsmitteln",
-      "en": "By public transport"
-    },
-    "image": "assets/images/placeholder.jpg"
-  },
-  {
-    "id": 111,
-    "name": {
-      "fr": "Tour du Wildhorn",
-      "de": "Tour du Wildhorn",
-      "en": "Tour du Wildhorn"
-    },
-    "region": "Savièse",
-    "difficulty": "Moyen",
-    "category": "Tours",
-    "duration": "0h00",
+    "category": "Itinéraires",
+    "duration": "3:45 h",
     "distance": 0,
     "elevation": {
-      "up": 343,
-      "down": 979
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -1953,97 +377,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.20086507401958,
-      7.666613105823693
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Tour du Wildhorn",
-      "de": "Wanderung aus valais.ch extrahiert. Tour du Wildhorn",
-      "en": "Hike extracted from valais.ch. Tour du Wildhorn"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée constitue la cinquième et dernière étape de la randonnée de plusieurs jours à travers le Val d'Hérens (Tour pédestre du Val d'Hérens).\\n\\nLa randonnée commence à la Cabane des Becs de Bosson à 2985 m d'altitude, située sous le sommet du Becs de Bosson (3149 m). La cabane, rénovée en 2012, offre des couchages en dortoir ainsi qu'une vue <strong>panoramique</strong> sur de nombreux sommets à plus de 4000 mètres dans le Valais.\\n\\nLe point de départ peut être atteint via l'étape précédente de la Tour du Val d'Hérens depuis La Sage. En alternative, l'ascension vers la cabane des Becs de Bosson peut aussi se faire depuis l'ouest à partir de St. Martin ou Evolène, ou depuis l'est par le Val d'Anniviers (par ex. depuis Grimentz).\\n\\nDepuis la cabane, le chemin descend dans le Vallon de Réchy, une vallée discrète située entre le Val d'Hérens et le Val d'Anniviers. Le paysage <strong>sauvage</strong> et protégé abrite de nombreux animaux sauvages. Le sentier longe des tourbières et suit un ruisseau de montagne sinueux qui disparaît peu plus loin dans le sol.\\n\\nLa deuxième partie du chemin longe le flanc sud du Mont Noble jusqu'au Val d'Hérens : d'abord à travers des alpages, puis par la forêt jusqu'à Nax. Nax est situé sur une terrasse au-dessus de la vallée du Rhône et offre des vues époustouflantes.\\n\\nLa randonnée fait partie de la Tour du Val d'Hérens de cinq jours, mais peut aussi être réalisée en deux jours de La Sage à Nax.\\n\\nLa cabane des Becs de Bosson est accessible uniquement à pied. Partez de La Sage dans le Val d’Hérens ou du Val d’Anniviers pour rejoindre la cabane. Ces points de départ sont desservis par le car postal.\\n\\nÀ la fin de la randonnée, le car postal de Nax vous ramène à Sion. Les horaires des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontres et d’expériences inoubliables à vivre ensemble – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous des recommandations et règles. Évaluez bien vos compétences et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée constitue la cinquième et dernière étape de la randonnée de plusieurs jours à travers le Val d'Hérens (Tour pédestre du Val d'Hérens).\\n\\nLa randonnée commence à la Cabane des Becs de Bosson à 2985 m d'altitude, située sous le sommet du Becs de Bosson (3149 m). La cabane, rénovée en 2012, offre des couchages en dortoir ainsi qu'une vue <strong>panoramique</strong> sur de nombreux sommets à plus de 4000 mètres dans le Valais.\\n\\nLe point de départ peut être atteint via l'étape précédente de la Tour du Val d'Hérens depuis La Sage. En alternative, l'ascension vers la cabane des Becs de Bosson peut aussi se faire depuis l'ouest à partir de St. Martin ou Evolène, ou depuis l'est par le Val d'Anniviers (par ex. depuis Grimentz).\\n\\nDepuis la cabane, le chemin descend dans le Vallon de Réchy, une vallée discrète située entre le Val d'Hérens et le Val d'Anniviers. Le paysage <strong>sauvage</strong> et protégé abrite de nombreux animaux sauvages. Le sentier longe des tourbières et suit un ruisseau de montagne sinueux qui disparaît peu plus loin dans le sol.\\n\\nLa deuxième partie du chemin longe le flanc sud du Mont Noble jusqu'au Val d'Hérens : d'abord à travers des alpages, puis par la forêt jusqu'à Nax. Nax est situé sur une terrasse au-dessus de la vallée du Rhône et offre des vues époustouflantes.\\n\\nLa randonnée fait partie de la Tour du Val d'Hérens de cinq jours, mais peut aussi être réalisée en deux jours de La Sage à Nax.\\n\\nLa cabane des Becs de Bosson est accessible uniquement à pied. Partez de La Sage dans le Val d’Hérens ou du Val d’Anniviers pour rejoindre la cabane. Ces points de départ sont desservis par le car postal.\\n\\nÀ la fin de la randonnée, le car postal de Nax vous ramène à Sion. Les horaires des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontres et d’expériences inoubliables à vivre ensemble – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous des recommandations et règles. Évaluez bien vos compétences et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée constitue la cinquième et dernière étape de la randonnée de plusieurs jours à travers le Val d'Hérens (Tour pédestre du Val d'Hérens).\\n\\nLa randonnée commence à la Cabane des Becs de Bosson à 2985 m d'altitude, située sous le sommet du Becs de Bosson (3149 m). La cabane, rénovée en 2012, offre des couchages en dortoir ainsi qu'une vue <strong>panoramique</strong> sur de nombreux sommets à plus de 4000 mètres dans le Valais.\\n\\nLe point de départ peut être atteint via l'étape précédente de la Tour du Val d'Hérens depuis La Sage. En alternative, l'ascension vers la cabane des Becs de Bosson peut aussi se faire depuis l'ouest à partir de St. Martin ou Evolène, ou depuis l'est par le Val d'Anniviers (par ex. depuis Grimentz).\\n\\nDepuis la cabane, le chemin descend dans le Vallon de Réchy, une vallée discrète située entre le Val d'Hérens et le Val d'Anniviers. Le paysage <strong>sauvage</strong> et protégé abrite de nombreux animaux sauvages. Le sentier longe des tourbières et suit un ruisseau de montagne sinueux qui disparaît peu plus loin dans le sol.\\n\\nLa deuxième partie du chemin longe le flanc sud du Mont Noble jusqu'au Val d'Hérens : d'abord à travers des alpages, puis par la forêt jusqu'à Nax. Nax est situé sur une terrasse au-dessus de la vallée du Rhône et offre des vues époustouflantes.\\n\\nLa randonnée fait partie de la Tour du Val d'Hérens de cinq jours, mais peut aussi être réalisée en deux jours de La Sage à Nax.\\n\\nLa cabane des Becs de Bosson est accessible uniquement à pied. Partez de La Sage dans le Val d’Hérens ou du Val d’Anniviers pour rejoindre la cabane. Ces points de départ sont desservis par le car postal.\\n\\nÀ la fin de la randonnée, le car postal de Nax vous ramène à Sion. Les horaires des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontres et d’expériences inoubliables à vivre ensemble – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous des recommandations et règles. Évaluez bien vos compétences et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/9.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 112,
-    "name": {
-      "fr": "Sentier botanique \"mille fleurs\"",
-      "de": "Sentier botanique \"mille fleurs\"",
-      "en": "Sentier botanique \"mille fleurs\""
-    },
-    "region": "Ovronnaz",
-    "difficulty": "Moyen",
-    "category": "Sentiers découvertes",
-    "duration": "0h00",
-    "distance": 0,
-    "elevation": {
-      "up": 487,
-      "down": 546
-    },
-    "altitude": {
-      "min": 1000,
-      "max": 2000
-    },
-    "season": {
-      "fr": "Juin - Octobre",
-      "de": "Juni - Oktober",
-      "en": "June - October"
-    },
-    "coords": [
-      46.365506646138044,
-      7.613585586275466
-    ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
-    "description": {
-      "fr": "Randonnée extraite de valais.ch. Sentier botanique \"mille fleurs\"",
-      "de": "Wanderung aus valais.ch extrahiert. Sentier botanique \"mille fleurs\"",
-      "en": "Hike extracted from valais.ch. Sentier botanique \"mille fleurs\""
-    },
-    "access": {
-      "fr": "En transport public",
-      "de": "Mit öffentlichen Verkehrsmitteln",
-      "en": "By public transport"
-    },
-    "image": "assets/images/placeholder.jpg"
-  },
-  {
-    "id": 113,
+    "id": 10,
     "name": {
       "fr": "Monts ensoleillés de Leuk",
       "de": "Monts ensoleillés de Leuk",
       "en": "Monts ensoleillés de Leuk"
     },
-    "region": "Gampel-Bratsch-Jeizinen",
+    "region": "",
     "difficulty": "Facile",
-    "category": "Itinéraires randonnées",
-    "duration": "3h20",
-    "distance": 11.64,
+    "category": "Itinéraires",
+    "duration": "3:20 h",
+    "distance": 0,
     "elevation": {
-      "up": 714,
-      "down": 730
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -2055,46 +421,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.22105419859217,
-      7.653641630656621
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Monts ensoleillés de Leuk",
-      "de": "Wanderung aus valais.ch extrahiert. Monts ensoleillés de Leuk",
-      "en": "Hike extracted from valais.ch. Monts ensoleillés de Leuk"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La randonnée commence dans le village de montagne Jeizinen à 1500 m d'altitude, accessible depuis Gampel par téléphérique. Après environ 20 minutes, vous atteignez le village historique d'Engersch avec sa ruelle principale étroite et les charmants chalets en bois disposés tout autour.\\n\\nSuit ensuite une descente raide vers Erschmatt. Dans la zone Undri Zälg, vous passez devant le jardin de variétés du centre seigle d'Erschmatt, où l'on cultive d'anciennes plantes cultivées, en particulier le seigle.\\n\\nLe seigle était autrefois la céréale principalement cultivée dans les villages de montagne valaisans. En raison de sa robustesse face au froid, il pouvait être cultivé jusqu'à 2000 mètres d'altitude dans le Valais. Le seigle était utilisé pour la préparation du pain de seigle valaisan. Ce pain était cuit dans de grands fours villageois allumés deux à trois fois par an. Le pain typique pouvait se conserver plusieurs mois.\\n\\nSuit à nouveau une descente raide vers le ravin Feschel, dont le \"Pont Haut\" enjambe la Feschelju située environ 100 mètres plus bas. Le pont datant du XVIe siècle a une histoire légendaire similaire à son homologue du ravin de Schöllenen et est également appelé Pont du Diable.\\n\\nPar le chemin Obere Lichten, vous parvenez à Brentjong au-dessus de Leuk, surtout connu pour sa station terrestre satellite et très visible. Dans les années 1970, la station était considérée comme une merveille technique. Après avoir été vendue à une entreprise américaine, des soupçons d'espionnage sont apparus. Outre le propriétaire actuel allemand, la Confédération y mène aussi des activités de renseignement.\\n\\nPour terminer la randonnée, vous descendez à travers les vignobles vers la ville historique de Leuk. Outre le charmant centre-ville, une visite du château, restauré par le célèbre architecte Mario Botta, vaut la peine.\\n\\nAprès le départ de Jeizinen, le parcours passe par le village d'Engersch jusqu'à Erschmatt. Dans la zone Undri Zälg, vous passez devant l'un des jardins de variétés du centre seigle d'Erschmatt et traversez ensuite le village de montagne avant de descendre vers le Pont Haut au-dessus du ravin Feschel.\\n\\nPar le chemin Obere Lichten, vous atteignez la station terrestre satellite à Brentjong. À la fin de la randonnée, vous descendez à travers les vignes aménagées sur le terrain escarpé jusqu'à la petite ville de Leuk. La randonnée se termine à la gare de Leuk, située en dessous de la ville sur la rive du Rhône.\\n\\nJeizinen, station d'arrivée du téléphérique (1520m)\\n\\nEn plus du jardin de variétés, le centre seigle propose plusieurs activités autour du seigle : par exemple, l'expérience de cuisson où vous pouvez préparer, cuire votre propre pain de seigle et l'emmener chez vous. En outre, vous pouvez commander d'anciennes variétés de seigle d'Erschmatt et les cultiver dans votre propre jardin.\\n\\nTrains régionaux réguliers le long de la ligne du Simplon jusqu'à Gampel. De là, soit à pied, soit en bus jusqu'à la station aval du téléphérique Gampel – Jeizinen.\\n\\nDepuis Sion ou Brig : autoroute A9 ou route cantonale 9 jusqu'à Gampel.\\n\\nDepuis Berne : autoroute A6 jusqu’à Spiez, puis route cantonale en direction de Kandersteg. Traversée en voiture par le train de Kandersteg à Goppenstein. Ensuite, route cantonale jusqu’à Gampel.\\n\\nParkings à la station aval du téléphérique Gampel-Jeizinen. Suivez le système local d’orientation des places de parc à Gampel.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un endroit où l’on se rencontre et vit des moments inoubliables ensemble – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est essentiel de partager cet espace avec respect pour la nature et l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. L’emprunt des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La randonnée commence dans le village de montagne Jeizinen à 1500 m d'altitude, accessible depuis Gampel par téléphérique. Après environ 20 minutes, vous atteignez le village historique d'Engersch avec sa ruelle principale étroite et les charmants chalets en bois disposés tout autour.\\n\\nSuit ensuite une descente raide vers Erschmatt. Dans la zone Undri Zälg, vous passez devant le jardin de variétés du centre seigle d'Erschmatt, où l'on cultive d'anciennes plantes cultivées, en particulier le seigle.\\n\\nLe seigle était autrefois la céréale principalement cultivée dans les villages de montagne valaisans. En raison de sa robustesse face au froid, il pouvait être cultivé jusqu'à 2000 mètres d'altitude dans le Valais. Le seigle était utilisé pour la préparation du pain de seigle valaisan. Ce pain était cuit dans de grands fours villageois allumés deux à trois fois par an. Le pain typique pouvait se conserver plusieurs mois.\\n\\nSuit à nouveau une descente raide vers le ravin Feschel, dont le \"Pont Haut\" enjambe la Feschelju située environ 100 mètres plus bas. Le pont datant du XVIe siècle a une histoire légendaire similaire à son homologue du ravin de Schöllenen et est également appelé Pont du Diable.\\n\\nPar le chemin Obere Lichten, vous parvenez à Brentjong au-dessus de Leuk, surtout connu pour sa station terrestre satellite et très visible. Dans les années 1970, la station était considérée comme une merveille technique. Après avoir été vendue à une entreprise américaine, des soupçons d'espionnage sont apparus. Outre le propriétaire actuel allemand, la Confédération y mène aussi des activités de renseignement.\\n\\nPour terminer la randonnée, vous descendez à travers les vignobles vers la ville historique de Leuk. Outre le charmant centre-ville, une visite du château, restauré par le célèbre architecte Mario Botta, vaut la peine.\\n\\nAprès le départ de Jeizinen, le parcours passe par le village d'Engersch jusqu'à Erschmatt. Dans la zone Undri Zälg, vous passez devant l'un des jardins de variétés du centre seigle d'Erschmatt et traversez ensuite le village de montagne avant de descendre vers le Pont Haut au-dessus du ravin Feschel.\\n\\nPar le chemin Obere Lichten, vous atteignez la station terrestre satellite à Brentjong. À la fin de la randonnée, vous descendez à travers les vignes aménagées sur le terrain escarpé jusqu'à la petite ville de Leuk. La randonnée se termine à la gare de Leuk, située en dessous de la ville sur la rive du Rhône.\\n\\nJeizinen, station d'arrivée du téléphérique (1520m)\\n\\nEn plus du jardin de variétés, le centre seigle propose plusieurs activités autour du seigle : par exemple, l'expérience de cuisson où vous pouvez préparer, cuire votre propre pain de seigle et l'emmener chez vous. En outre, vous pouvez commander d'anciennes variétés de seigle d'Erschmatt et les cultiver dans votre propre jardin.\\n\\nTrains régionaux réguliers le long de la ligne du Simplon jusqu'à Gampel. De là, soit à pied, soit en bus jusqu'à la station aval du téléphérique Gampel – Jeizinen.\\n\\nDepuis Sion ou Brig : autoroute A9 ou route cantonale 9 jusqu'à Gampel.\\n\\nDepuis Berne : autoroute A6 jusqu’à Spiez, puis route cantonale en direction de Kandersteg. Traversée en voiture par le train de Kandersteg à Goppenstein. Ensuite, route cantonale jusqu’à Gampel.\\n\\nParkings à la station aval du téléphérique Gampel-Jeizinen. Suivez le système local d’orientation des places de parc à Gampel.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un endroit où l’on se rencontre et vit des moments inoubliables ensemble – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est essentiel de partager cet espace avec respect pour la nature et l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. L’emprunt des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La randonnée commence dans le village de montagne Jeizinen à 1500 m d'altitude, accessible depuis Gampel par téléphérique. Après environ 20 minutes, vous atteignez le village historique d'Engersch avec sa ruelle principale étroite et les charmants chalets en bois disposés tout autour.\\n\\nSuit ensuite une descente raide vers Erschmatt. Dans la zone Undri Zälg, vous passez devant le jardin de variétés du centre seigle d'Erschmatt, où l'on cultive d'anciennes plantes cultivées, en particulier le seigle.\\n\\nLe seigle était autrefois la céréale principalement cultivée dans les villages de montagne valaisans. En raison de sa robustesse face au froid, il pouvait être cultivé jusqu'à 2000 mètres d'altitude dans le Valais. Le seigle était utilisé pour la préparation du pain de seigle valaisan. Ce pain était cuit dans de grands fours villageois allumés deux à trois fois par an. Le pain typique pouvait se conserver plusieurs mois.\\n\\nSuit à nouveau une descente raide vers le ravin Feschel, dont le \"Pont Haut\" enjambe la Feschelju située environ 100 mètres plus bas. Le pont datant du XVIe siècle a une histoire légendaire similaire à son homologue du ravin de Schöllenen et est également appelé Pont du Diable.\\n\\nPar le chemin Obere Lichten, vous parvenez à Brentjong au-dessus de Leuk, surtout connu pour sa station terrestre satellite et très visible. Dans les années 1970, la station était considérée comme une merveille technique. Après avoir été vendue à une entreprise américaine, des soupçons d'espionnage sont apparus. Outre le propriétaire actuel allemand, la Confédération y mène aussi des activités de renseignement.\\n\\nPour terminer la randonnée, vous descendez à travers les vignobles vers la ville historique de Leuk. Outre le charmant centre-ville, une visite du château, restauré par le célèbre architecte Mario Botta, vaut la peine.\\n\\nAprès le départ de Jeizinen, le parcours passe par le village d'Engersch jusqu'à Erschmatt. Dans la zone Undri Zälg, vous passez devant l'un des jardins de variétés du centre seigle d'Erschmatt et traversez ensuite le village de montagne avant de descendre vers le Pont Haut au-dessus du ravin Feschel.\\n\\nPar le chemin Obere Lichten, vous atteignez la station terrestre satellite à Brentjong. À la fin de la randonnée, vous descendez à travers les vignes aménagées sur le terrain escarpé jusqu'à la petite ville de Leuk. La randonnée se termine à la gare de Leuk, située en dessous de la ville sur la rive du Rhône.\\n\\nJeizinen, station d'arrivée du téléphérique (1520m)\\n\\nEn plus du jardin de variétés, le centre seigle propose plusieurs activités autour du seigle : par exemple, l'expérience de cuisson où vous pouvez préparer, cuire votre propre pain de seigle et l'emmener chez vous. En outre, vous pouvez commander d'anciennes variétés de seigle d'Erschmatt et les cultiver dans votre propre jardin.\\n\\nTrains régionaux réguliers le long de la ligne du Simplon jusqu'à Gampel. De là, soit à pied, soit en bus jusqu'à la station aval du téléphérique Gampel – Jeizinen.\\n\\nDepuis Sion ou Brig : autoroute A9 ou route cantonale 9 jusqu'à Gampel.\\n\\nDepuis Berne : autoroute A6 jusqu’à Spiez, puis route cantonale en direction de Kandersteg. Traversée en voiture par le train de Kandersteg à Goppenstein. Ensuite, route cantonale jusqu’à Gampel.\\n\\nParkings à la station aval du téléphérique Gampel-Jeizinen. Suivez le système local d’orientation des places de parc à Gampel.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un endroit où l’on se rencontre et vit des moments inoubliables ensemble – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est essentiel de partager cet espace avec respect pour la nature et l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. L’emprunt des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/10.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 115,
+    "id": 11,
     "name": {
       "fr": "Ascension de l'Eggerhorn et descente dans la vallée de Binn",
       "de": "Ascension de l'Eggerhorn et descente dans la vallée de Binn",
       "en": "Ascension de l'Eggerhorn et descente dans la vallée de Binn"
     },
-    "region": "Binn",
+    "region": "",
     "difficulty": "Difficile",
-    "category": "Itinéraires randonnées",
-    "duration": "6h45",
-    "distance": 14.8,
+    "category": "Itinéraires",
+    "duration": "6:45 h",
+    "distance": 0,
     "elevation": {
-      "up": 651,
-      "down": 834
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -2106,46 +465,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.23285406683693,
-      7.687523421680315
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Ascension de l'Eggerhorn et descente dans la vallée de Binn",
-      "de": "Wanderung aus valais.ch extrahiert. Ascension de l'Eggerhorn et descente dans la vallée de Binn",
-      "en": "Hike extracted from valais.ch. Ascension de l'Eggerhorn et descente dans la vallée de Binn"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée enivrante vers l'Eggerhorn (2503 m) commence dans la vallée du Rhône et se termine par la descente dans la vallée <strong>sauvage</strong> de Binn. Les contrastes tout au long du chemin ainsi que la vue sur les sommets valaisans autour des deux vallées rendent la randonnée inoubliable.\\n\\nLe parcours se trouve entièrement dans le parc paysager de la vallée de Binn, réputé pour ses paysages intacts, sa diversité géologique et sa faune et flore saines. Les villages historiques semblent presque figés dans le temps car ils ont été largement épargnés par la construction des routes modernes et des itinéraires de trafic. Certains des villages ont déjà reçu plusieurs récompenses pour la bonne conservation des bâtiments et constructions.\\n\\nLa randonnée commence à Ernen, l'un des premiers villages de Suisse à avoir obtenu le Prix Wakker pour la préservation du patrimoine architectural. Au cours des dernières années, Ernen s'est fait un nom comme village de musique en proposant tout l'été des concerts d'artistes internationaux de musique classique.\\n\\nAprès la montée constante à travers les forêts au-dessus d'Ernen, le parcours devient un peu plus agréable en montant sur les prairies de l'alpage Frid. Ensuite, le chemin devient à nouveau plus raide, mais vous serez récompensé par le panorama époustouflant depuis le sommet de l'Eggerhorn.\\n\\nEnsuite, la route mène dans un autre monde : la vallée <strong>sauvage</strong> de Binn, qui jusqu'à la construction du tunnel en 1965 était complètement isolée du monde extérieur pendant les mois d'hiver. La disposition historique des chalets et granges en bois traditionnels est pleine de charme. Notre parcours descend de l'Eggerhorn, traverse les pâturages et mène au hameau d'Imfeld (également connu sous le nom de « Fäld »). Une route alternative descend en zigzag plus raide vers Binn. Les deux lieux font partie des villages historiques les mieux conservés du Valais.\\n\\nDepuis le centre du village d'Ernen, le chemin monte constamment à travers la forêt adjacente, puis continue jusqu'aux alpages. Ensuite, on suit l'échine de la montagne en direction de l'est à travers des prairies ouvertes, avant que le parcours ne traverse un dernier segment forestier menant à la limite des arbres. De là, une montée raide mène au sommet de l'Eggerhorn.\\n\\nLa descente se poursuit ensuite vers la vallée de Binn. Le chemin le plus direct descend en zigzag jusqu'au village de Binn, une alternative populaire pour cette randonnée. Notre parcours, cependant, bifurque à gauche à environ 2 000 m d'altitude, traverse les pentes sur environ 1 km, puis descend abruptement vers les pâturages ouverts de Nacke. Ici, vers 1 800 m, notre chemin tourne à nouveau à gauche et conduit ensuite vers l'est à travers les pentes jusqu'à Imfeld.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables, que ce soit à vélo ou à pied. Pour que tous les utilisateurs puissent en profiter, il est indispensable de respecter cet espace au regard de la nature et de l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. L'emprunt des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nÀ travers le parc paysager de Binn : Imfeld–lac de Mässer–Binn\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée enivrante vers l'Eggerhorn (2503 m) commence dans la vallée du Rhône et se termine par la descente dans la vallée <strong>sauvage</strong> de Binn. Les contrastes tout au long du chemin ainsi que la vue sur les sommets valaisans autour des deux vallées rendent la randonnée inoubliable.\\n\\nLe parcours se trouve entièrement dans le parc paysager de la vallée de Binn, réputé pour ses paysages intacts, sa diversité géologique et sa faune et flore saines. Les villages historiques semblent presque figés dans le temps car ils ont été largement épargnés par la construction des routes modernes et des itinéraires de trafic. Certains des villages ont déjà reçu plusieurs récompenses pour la bonne conservation des bâtiments et constructions.\\n\\nLa randonnée commence à Ernen, l'un des premiers villages de Suisse à avoir obtenu le Prix Wakker pour la préservation du patrimoine architectural. Au cours des dernières années, Ernen s'est fait un nom comme village de musique en proposant tout l'été des concerts d'artistes internationaux de musique classique.\\n\\nAprès la montée constante à travers les forêts au-dessus d'Ernen, le parcours devient un peu plus agréable en montant sur les prairies de l'alpage Frid. Ensuite, le chemin devient à nouveau plus raide, mais vous serez récompensé par le panorama époustouflant depuis le sommet de l'Eggerhorn.\\n\\nEnsuite, la route mène dans un autre monde : la vallée <strong>sauvage</strong> de Binn, qui jusqu'à la construction du tunnel en 1965 était complètement isolée du monde extérieur pendant les mois d'hiver. La disposition historique des chalets et granges en bois traditionnels est pleine de charme. Notre parcours descend de l'Eggerhorn, traverse les pâturages et mène au hameau d'Imfeld (également connu sous le nom de « Fäld »). Une route alternative descend en zigzag plus raide vers Binn. Les deux lieux font partie des villages historiques les mieux conservés du Valais.\\n\\nDepuis le centre du village d'Ernen, le chemin monte constamment à travers la forêt adjacente, puis continue jusqu'aux alpages. Ensuite, on suit l'échine de la montagne en direction de l'est à travers des prairies ouvertes, avant que le parcours ne traverse un dernier segment forestier menant à la limite des arbres. De là, une montée raide mène au sommet de l'Eggerhorn.\\n\\nLa descente se poursuit ensuite vers la vallée de Binn. Le chemin le plus direct descend en zigzag jusqu'au village de Binn, une alternative populaire pour cette randonnée. Notre parcours, cependant, bifurque à gauche à environ 2 000 m d'altitude, traverse les pentes sur environ 1 km, puis descend abruptement vers les pâturages ouverts de Nacke. Ici, vers 1 800 m, notre chemin tourne à nouveau à gauche et conduit ensuite vers l'est à travers les pentes jusqu'à Imfeld.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables, que ce soit à vélo ou à pied. Pour que tous les utilisateurs puissent en profiter, il est indispensable de respecter cet espace au regard de la nature et de l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. L'emprunt des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nÀ travers le parc paysager de Binn : Imfeld–lac de Mässer–Binn\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée enivrante vers l'Eggerhorn (2503 m) commence dans la vallée du Rhône et se termine par la descente dans la vallée <strong>sauvage</strong> de Binn. Les contrastes tout au long du chemin ainsi que la vue sur les sommets valaisans autour des deux vallées rendent la randonnée inoubliable.\\n\\nLe parcours se trouve entièrement dans le parc paysager de la vallée de Binn, réputé pour ses paysages intacts, sa diversité géologique et sa faune et flore saines. Les villages historiques semblent presque figés dans le temps car ils ont été largement épargnés par la construction des routes modernes et des itinéraires de trafic. Certains des villages ont déjà reçu plusieurs récompenses pour la bonne conservation des bâtiments et constructions.\\n\\nLa randonnée commence à Ernen, l'un des premiers villages de Suisse à avoir obtenu le Prix Wakker pour la préservation du patrimoine architectural. Au cours des dernières années, Ernen s'est fait un nom comme village de musique en proposant tout l'été des concerts d'artistes internationaux de musique classique.\\n\\nAprès la montée constante à travers les forêts au-dessus d'Ernen, le parcours devient un peu plus agréable en montant sur les prairies de l'alpage Frid. Ensuite, le chemin devient à nouveau plus raide, mais vous serez récompensé par le panorama époustouflant depuis le sommet de l'Eggerhorn.\\n\\nEnsuite, la route mène dans un autre monde : la vallée <strong>sauvage</strong> de Binn, qui jusqu'à la construction du tunnel en 1965 était complètement isolée du monde extérieur pendant les mois d'hiver. La disposition historique des chalets et granges en bois traditionnels est pleine de charme. Notre parcours descend de l'Eggerhorn, traverse les pâturages et mène au hameau d'Imfeld (également connu sous le nom de « Fäld »). Une route alternative descend en zigzag plus raide vers Binn. Les deux lieux font partie des villages historiques les mieux conservés du Valais.\\n\\nDepuis le centre du village d'Ernen, le chemin monte constamment à travers la forêt adjacente, puis continue jusqu'aux alpages. Ensuite, on suit l'échine de la montagne en direction de l'est à travers des prairies ouvertes, avant que le parcours ne traverse un dernier segment forestier menant à la limite des arbres. De là, une montée raide mène au sommet de l'Eggerhorn.\\n\\nLa descente se poursuit ensuite vers la vallée de Binn. Le chemin le plus direct descend en zigzag jusqu'au village de Binn, une alternative populaire pour cette randonnée. Notre parcours, cependant, bifurque à gauche à environ 2 000 m d'altitude, traverse les pentes sur environ 1 km, puis descend abruptement vers les pâturages ouverts de Nacke. Ici, vers 1 800 m, notre chemin tourne à nouveau à gauche et conduit ensuite vers l'est à travers les pentes jusqu'à Imfeld.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables, que ce soit à vélo ou à pied. Pour que tous les utilisateurs puissent en profiter, il est indispensable de respecter cet espace au regard de la nature et de l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. L'emprunt des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nÀ travers le parc paysager de Binn : Imfeld–lac de Mässer–Binn\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/11.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 116,
+    "id": 12,
     "name": {
       "fr": "Randonnée géologique au lac de retenue Vieux-Emosson",
       "de": "Randonnée géologique au lac de retenue Vieux-Emosson",
       "en": "Randonnée géologique au lac de retenue Vieux-Emosson"
     },
-    "region": "Finhaut-Emosson",
+    "region": "",
     "difficulty": "Difficile",
-    "category": "Itinéraires randonnées",
-    "duration": "4h40",
-    "distance": 12.29,
+    "category": "Itinéraires",
+    "duration": "4:40 h",
+    "distance": 0,
     "elevation": {
-      "up": 785,
-      "down": 500
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -2157,97 +509,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.2112024267336,
-      7.62318662372027
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Randonnée géologique au lac de retenue Vieux-Emosson",
-      "de": "Wanderung aus valais.ch extrahiert. Randonnée géologique au lac de retenue Vieux-Emosson",
-      "en": "Hike extracted from valais.ch. Randonnée géologique au lac de retenue Vieux-Emosson"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le sentier géologique de Vieux-Emosson vous conduit à l'histoire de la formation des Alpes et aux traces des reptiles du Trias. À l'extrémité sud du Vallon du Vieux-Emosson, une dalle de pierre montre d'anciennes empreintes de reptiles crocodiliens ayant habité la Terre il y a 240 millions d'années. La randonnée commence au barrage d'Emosson, accessible en véhicule privé ou car postal. L'accès par le trio ferroviaire VerticAlp Emosson – fermé en 2022 – est cependant beaucoup plus <strong>spectaculaire</strong>. Le premier train est le funiculaire de Châtelard, avec une pente pouvant atteindre 87 %, le funiculaire bicaisson le plus raide du monde. Arrivés là, les passagers changent pour le Train <strong>panoramique</strong>, qui traverse deux gorges avec une vue <strong>magnifique</strong> sur le massif du Mont-Blanc. La dernière installation est une mini-funiculaire à deux cabines qui conduit jusqu'au barrage à 1'965 mètres d'altitude. Le barrage d'Emosson, ouvert en 1976, est le troisième plus haut du Valais avec ses 180 mètres. Avec une capacité de 225 millions de mètres cubes, il possède le deuxième plus grand réservoir d'eau de Suisse.\\n\\nAu cours de la randonnée, vous pouvez aussi découvrir le barrage de Vieux-Emosson, en service depuis 1955 et qui alimente le réseau ferroviaire suisse en électricité. Dans le cadre d’un projet <strong>spectaculaire</strong>, sa digue a été relevée de 20 mètres et mise en service en 2019. En son cœur, se trouvent une centrale hydraulique souterraine révolutionnaire et deux puits qui dépassent chacun de 100 mètres la hauteur de la tour Eiffel, assurant la circulation de l'eau entre les deux réservoirs. Une énorme salle souterraine abrite six turbines qui peuvent produire de l'électricité ou la stocker en pompant l'eau dans le lac supérieur. Cette flexibilité fait de la centrale Nant de Drance un complément idéal aux énergies vertes, toutes dépendantes de la météo.\\n\\nLa randonnée commence au barrage d'Emosson. Idéalement, on marche de Vieux-Emosson jusqu'au « Site à Empreintes » puis, sur le chemin du retour vers Emosson, à travers les gorges de Veudale. Le sentier débute au barrage et monte ensuite jusqu'à la cabane de montagne Cabane Vieux-Emosson (2'187 m d'altitude). Le chemin continue ensuite jusqu'au barrage suivant et jusqu'au lac du Vieux Emosson à 2'400 m d'altitude. Le retour au point de départ se fait par les gorges sauvages de Veudale, l'endroit le plus intéressant et le plus exigeant de la randonnée.\\n\\nDes variantes plus faciles de la randonnée sont possibles. Vous pouvez reprendre le même chemin pour le retour sans passer par les gorges et/ou suivre la route étroite au bord du lac d'Emosson jusqu'à la cabane de montagne Cabane du Vieux-Emosson.\\n\\nLes traces fossiles sont visibles dès que la neige a disparu, selon les précipitations hivernales environ à partir de la mi-juillet.\\n\\nDe la mi-juillet à la fin août, un expert ou un géologue explique les roches fossiles. Les visites guidées sont très intéressantes et recommandées !\\n\\nTrain jusqu'à Martigny, puis changement pour le Mont Blanc Express. Soit de Finhaut en car postal jusqu'au barrage d'Emosson, soit en Mont-Blanc Express jusqu'à Le Châtelard VS, puis avec le <strong>spectaculaire</strong> VerticAlp Emosson jusqu'au barrage.\\n\\nLes horaires des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables – à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le sentier géologique de Vieux-Emosson vous conduit à l'histoire de la formation des Alpes et aux traces des reptiles du Trias. À l'extrémité sud du Vallon du Vieux-Emosson, une dalle de pierre montre d'anciennes empreintes de reptiles crocodiliens ayant habité la Terre il y a 240 millions d'années. La randonnée commence au barrage d'Emosson, accessible en véhicule privé ou car postal. L'accès par le trio ferroviaire VerticAlp Emosson – fermé en 2022 – est cependant beaucoup plus <strong>spectaculaire</strong>. Le premier train est le funiculaire de Châtelard, avec une pente pouvant atteindre 87 %, le funiculaire bicaisson le plus raide du monde. Arrivés là, les passagers changent pour le Train <strong>panoramique</strong>, qui traverse deux gorges avec une vue <strong>magnifique</strong> sur le massif du Mont-Blanc. La dernière installation est une mini-funiculaire à deux cabines qui conduit jusqu'au barrage à 1'965 mètres d'altitude. Le barrage d'Emosson, ouvert en 1976, est le troisième plus haut du Valais avec ses 180 mètres. Avec une capacité de 225 millions de mètres cubes, il possède le deuxième plus grand réservoir d'eau de Suisse.\\n\\nAu cours de la randonnée, vous pouvez aussi découvrir le barrage de Vieux-Emosson, en service depuis 1955 et qui alimente le réseau ferroviaire suisse en électricité. Dans le cadre d’un projet <strong>spectaculaire</strong>, sa digue a été relevée de 20 mètres et mise en service en 2019. En son cœur, se trouvent une centrale hydraulique souterraine révolutionnaire et deux puits qui dépassent chacun de 100 mètres la hauteur de la tour Eiffel, assurant la circulation de l'eau entre les deux réservoirs. Une énorme salle souterraine abrite six turbines qui peuvent produire de l'électricité ou la stocker en pompant l'eau dans le lac supérieur. Cette flexibilité fait de la centrale Nant de Drance un complément idéal aux énergies vertes, toutes dépendantes de la météo.\\n\\nLa randonnée commence au barrage d'Emosson. Idéalement, on marche de Vieux-Emosson jusqu'au « Site à Empreintes » puis, sur le chemin du retour vers Emosson, à travers les gorges de Veudale. Le sentier débute au barrage et monte ensuite jusqu'à la cabane de montagne Cabane Vieux-Emosson (2'187 m d'altitude). Le chemin continue ensuite jusqu'au barrage suivant et jusqu'au lac du Vieux Emosson à 2'400 m d'altitude. Le retour au point de départ se fait par les gorges sauvages de Veudale, l'endroit le plus intéressant et le plus exigeant de la randonnée.\\n\\nDes variantes plus faciles de la randonnée sont possibles. Vous pouvez reprendre le même chemin pour le retour sans passer par les gorges et/ou suivre la route étroite au bord du lac d'Emosson jusqu'à la cabane de montagne Cabane du Vieux-Emosson.\\n\\nLes traces fossiles sont visibles dès que la neige a disparu, selon les précipitations hivernales environ à partir de la mi-juillet.\\n\\nDe la mi-juillet à la fin août, un expert ou un géologue explique les roches fossiles. Les visites guidées sont très intéressantes et recommandées !\\n\\nTrain jusqu'à Martigny, puis changement pour le Mont Blanc Express. Soit de Finhaut en car postal jusqu'au barrage d'Emosson, soit en Mont-Blanc Express jusqu'à Le Châtelard VS, puis avec le <strong>spectaculaire</strong> VerticAlp Emosson jusqu'au barrage.\\n\\nLes horaires des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables – à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le sentier géologique de Vieux-Emosson vous conduit à l'histoire de la formation des Alpes et aux traces des reptiles du Trias. À l'extrémité sud du Vallon du Vieux-Emosson, une dalle de pierre montre d'anciennes empreintes de reptiles crocodiliens ayant habité la Terre il y a 240 millions d'années. La randonnée commence au barrage d'Emosson, accessible en véhicule privé ou car postal. L'accès par le trio ferroviaire VerticAlp Emosson – fermé en 2022 – est cependant beaucoup plus <strong>spectaculaire</strong>. Le premier train est le funiculaire de Châtelard, avec une pente pouvant atteindre 87 %, le funiculaire bicaisson le plus raide du monde. Arrivés là, les passagers changent pour le Train <strong>panoramique</strong>, qui traverse deux gorges avec une vue <strong>magnifique</strong> sur le massif du Mont-Blanc. La dernière installation est une mini-funiculaire à deux cabines qui conduit jusqu'au barrage à 1'965 mètres d'altitude. Le barrage d'Emosson, ouvert en 1976, est le troisième plus haut du Valais avec ses 180 mètres. Avec une capacité de 225 millions de mètres cubes, il possède le deuxième plus grand réservoir d'eau de Suisse.\\n\\nAu cours de la randonnée, vous pouvez aussi découvrir le barrage de Vieux-Emosson, en service depuis 1955 et qui alimente le réseau ferroviaire suisse en électricité. Dans le cadre d’un projet <strong>spectaculaire</strong>, sa digue a été relevée de 20 mètres et mise en service en 2019. En son cœur, se trouvent une centrale hydraulique souterraine révolutionnaire et deux puits qui dépassent chacun de 100 mètres la hauteur de la tour Eiffel, assurant la circulation de l'eau entre les deux réservoirs. Une énorme salle souterraine abrite six turbines qui peuvent produire de l'électricité ou la stocker en pompant l'eau dans le lac supérieur. Cette flexibilité fait de la centrale Nant de Drance un complément idéal aux énergies vertes, toutes dépendantes de la météo.\\n\\nLa randonnée commence au barrage d'Emosson. Idéalement, on marche de Vieux-Emosson jusqu'au « Site à Empreintes » puis, sur le chemin du retour vers Emosson, à travers les gorges de Veudale. Le sentier débute au barrage et monte ensuite jusqu'à la cabane de montagne Cabane Vieux-Emosson (2'187 m d'altitude). Le chemin continue ensuite jusqu'au barrage suivant et jusqu'au lac du Vieux Emosson à 2'400 m d'altitude. Le retour au point de départ se fait par les gorges sauvages de Veudale, l'endroit le plus intéressant et le plus exigeant de la randonnée.\\n\\nDes variantes plus faciles de la randonnée sont possibles. Vous pouvez reprendre le même chemin pour le retour sans passer par les gorges et/ou suivre la route étroite au bord du lac d'Emosson jusqu'à la cabane de montagne Cabane du Vieux-Emosson.\\n\\nLes traces fossiles sont visibles dès que la neige a disparu, selon les précipitations hivernales environ à partir de la mi-juillet.\\n\\nDe la mi-juillet à la fin août, un expert ou un géologue explique les roches fossiles. Les visites guidées sont très intéressantes et recommandées !\\n\\nTrain jusqu'à Martigny, puis changement pour le Mont Blanc Express. Soit de Finhaut en car postal jusqu'au barrage d'Emosson, soit en Mont-Blanc Express jusqu'à Le Châtelard VS, puis avec le <strong>spectaculaire</strong> VerticAlp Emosson jusqu'au barrage.\\n\\nLes horaires des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables – à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/12.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 117,
-    "name": {
-      "fr": "Fionnay – Col des Otanes - Corbassière",
-      "de": "Fionnay – Col des Otanes - Corbassière",
-      "en": "Fionnay – Col des Otanes - Corbassière"
-    },
-    "region": "Bruson",
-    "difficulty": "Difficile",
-    "category": "Trail running",
-    "duration": "4h03",
-    "distance": 16.46,
-    "elevation": {
-      "up": 808,
-      "down": 252
-    },
-    "altitude": {
-      "min": 1000,
-      "max": 2000
-    },
-    "season": {
-      "fr": "Juin - Octobre",
-      "de": "Juni - Oktober",
-      "en": "June - October"
-    },
-    "coords": [
-      46.33304029632809,
-      7.526217078325862
-    ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
-    "description": {
-      "fr": "Randonnée extraite de valais.ch. Fionnay – Col des Otanes - Corbassière",
-      "de": "Wanderung aus valais.ch extrahiert. Fionnay – Col des Otanes - Corbassière",
-      "en": "Hike extracted from valais.ch. Fionnay – Col des Otanes - Corbassière"
-    },
-    "access": {
-      "fr": "En transport public",
-      "de": "Mit öffentlichen Verkehrsmitteln",
-      "en": "By public transport"
-    },
-    "image": "assets/images/placeholder.jpg"
-  },
-  {
-    "id": 118,
+    "id": 13,
     "name": {
       "fr": "Petit Bisse et Bisse de la Tsandra à Conthey",
       "de": "Petit Bisse et Bisse de la Tsandra à Conthey",
       "en": "Petit Bisse et Bisse de la Tsandra à Conthey"
     },
-    "region": "Les Coteaux du Soleil",
+    "region": "",
     "difficulty": "Facile",
-    "category": "Itinéraires randonnées",
-    "duration": "3h23",
-    "distance": 11.84,
+    "category": "Itinéraires",
+    "duration": "3:23 h",
+    "distance": 0,
     "elevation": {
-      "up": 455,
-      "down": 823
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -2259,46 +553,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.36785321835727,
-      7.536694598711585
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Petit Bisse et Bisse de la Tsandra à Conthey",
-      "de": "Wanderung aus valais.ch extrahiert. Petit Bisse et Bisse de la Tsandra à Conthey",
-      "en": "Hike extracted from valais.ch. Petit Bisse et Bisse de la Tsandra à Conthey"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Les bisses valaisans sont des canaux d'irrigation historiques qui conduisent l'eau des glaciers vers les champs, vergers et vignes. Jusqu'au début du 20e siècle, environ 200 bisses ont été construits à la main sur une longueur de 1800 kilomètres dans le Valais. De nombreux bisses ont été restaurés avec soin ces dernières années et peuvent souvent être découverts lors de randonnées.\\n\\nCette randonnée suit le cours de deux bisses du 15e siècle qui apportaient l'eau aux champs au-dessus de Conthey. Les deux sont alimentés par l'eau du glacier du Tsanfleuron au massif des Diablerets. Chacun des bisses a son propre caractère et le randonneur est récompensé par de belles vues.\\n\\nLa randonnée commence à la source du « Petit Bisse », qui est alimenté par le ruisseau de montagne La Morge. Le bisse est en service en été de juin à octobre et traverse des forêts et des champs. Ce bisse sert même de source à une petite centrale hydroélectrique à Mayens-de-My, avant de se jeter dans le « Bisse de la Tsandra ».\\n\\nL'eau de ce second bisse coule à travers une série de tunnels souterrains. Un sentier thématique suit le cours de l'eau et informe sur 24 panneaux sur l'histoire des bisses dans le Valais.\\n\\nLe chemin est facile et descend en pente douce - un passage plus raide doit seulement être franchi lors du changement du premier au second bisse. Les vues sont impressionnantes - de la gorge <strong>sauvage</strong> du ruisseau La Morge à la vue sur la vallée du Rhône avec ses vergers et vignobles.\\n\\nLa randonnée commence à la source du bisse Petit Bisse à Grand-Zour, où la route vers le col du Sanetsch traverse le ruisseau La Morge. Ici, une courte pause au restaurant est encore possible.\\n\\nLe chemin suit toute la longueur du Petit Bisse jusqu'à Mayens-de-My. Là, le chemin tourne brusquement à gauche et descend de 67 mètres de dénivelé vers le bisse de la Tsandra. Ensuite, le parcours suit les tunnels de ce second bisse jusqu'à Aven.\\n\\nPour les randonneurs arrivant en voiture jusqu'à Grand-Zour, il existe un itinéraire alternatif attrayant : le début de la randonnée jusqu'à Mayens-de-My se fait comme décrit. Au lieu de descendre vers Aven, on peut suivre le bisse de la Tsandra en sens inverse. Vous suivez la première partie du sentier thématique en sens inverse et suivez ainsi le chemin qui revient vers le ruisseau La Morge en dessous de Grand-Zour.\\n\\nLe monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L'utilisation des différents parcours se fait en principe sous votre propre responsabilité.\\n\\nUne brochure illustrée de la randonnée Bisse de la Tsandra est disponible ici au format Pdf\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Les bisses valaisans sont des canaux d'irrigation historiques qui conduisent l'eau des glaciers vers les champs, vergers et vignes. Jusqu'au début du 20e siècle, environ 200 bisses ont été construits à la main sur une longueur de 1800 kilomètres dans le Valais. De nombreux bisses ont été restaurés avec soin ces dernières années et peuvent souvent être découverts lors de randonnées.\\n\\nCette randonnée suit le cours de deux bisses du 15e siècle qui apportaient l'eau aux champs au-dessus de Conthey. Les deux sont alimentés par l'eau du glacier du Tsanfleuron au massif des Diablerets. Chacun des bisses a son propre caractère et le randonneur est récompensé par de belles vues.\\n\\nLa randonnée commence à la source du « Petit Bisse », qui est alimenté par le ruisseau de montagne La Morge. Le bisse est en service en été de juin à octobre et traverse des forêts et des champs. Ce bisse sert même de source à une petite centrale hydroélectrique à Mayens-de-My, avant de se jeter dans le « Bisse de la Tsandra ».\\n\\nL'eau de ce second bisse coule à travers une série de tunnels souterrains. Un sentier thématique suit le cours de l'eau et informe sur 24 panneaux sur l'histoire des bisses dans le Valais.\\n\\nLe chemin est facile et descend en pente douce - un passage plus raide doit seulement être franchi lors du changement du premier au second bisse. Les vues sont impressionnantes - de la gorge <strong>sauvage</strong> du ruisseau La Morge à la vue sur la vallée du Rhône avec ses vergers et vignobles.\\n\\nLa randonnée commence à la source du bisse Petit Bisse à Grand-Zour, où la route vers le col du Sanetsch traverse le ruisseau La Morge. Ici, une courte pause au restaurant est encore possible.\\n\\nLe chemin suit toute la longueur du Petit Bisse jusqu'à Mayens-de-My. Là, le chemin tourne brusquement à gauche et descend de 67 mètres de dénivelé vers le bisse de la Tsandra. Ensuite, le parcours suit les tunnels de ce second bisse jusqu'à Aven.\\n\\nPour les randonneurs arrivant en voiture jusqu'à Grand-Zour, il existe un itinéraire alternatif attrayant : le début de la randonnée jusqu'à Mayens-de-My se fait comme décrit. Au lieu de descendre vers Aven, on peut suivre le bisse de la Tsandra en sens inverse. Vous suivez la première partie du sentier thématique en sens inverse et suivez ainsi le chemin qui revient vers le ruisseau La Morge en dessous de Grand-Zour.\\n\\nLe monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L'utilisation des différents parcours se fait en principe sous votre propre responsabilité.\\n\\nUne brochure illustrée de la randonnée Bisse de la Tsandra est disponible ici au format Pdf\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Les bisses valaisans sont des canaux d'irrigation historiques qui conduisent l'eau des glaciers vers les champs, vergers et vignes. Jusqu'au début du 20e siècle, environ 200 bisses ont été construits à la main sur une longueur de 1800 kilomètres dans le Valais. De nombreux bisses ont été restaurés avec soin ces dernières années et peuvent souvent être découverts lors de randonnées.\\n\\nCette randonnée suit le cours de deux bisses du 15e siècle qui apportaient l'eau aux champs au-dessus de Conthey. Les deux sont alimentés par l'eau du glacier du Tsanfleuron au massif des Diablerets. Chacun des bisses a son propre caractère et le randonneur est récompensé par de belles vues.\\n\\nLa randonnée commence à la source du « Petit Bisse », qui est alimenté par le ruisseau de montagne La Morge. Le bisse est en service en été de juin à octobre et traverse des forêts et des champs. Ce bisse sert même de source à une petite centrale hydroélectrique à Mayens-de-My, avant de se jeter dans le « Bisse de la Tsandra ».\\n\\nL'eau de ce second bisse coule à travers une série de tunnels souterrains. Un sentier thématique suit le cours de l'eau et informe sur 24 panneaux sur l'histoire des bisses dans le Valais.\\n\\nLe chemin est facile et descend en pente douce - un passage plus raide doit seulement être franchi lors du changement du premier au second bisse. Les vues sont impressionnantes - de la gorge <strong>sauvage</strong> du ruisseau La Morge à la vue sur la vallée du Rhône avec ses vergers et vignobles.\\n\\nLa randonnée commence à la source du bisse Petit Bisse à Grand-Zour, où la route vers le col du Sanetsch traverse le ruisseau La Morge. Ici, une courte pause au restaurant est encore possible.\\n\\nLe chemin suit toute la longueur du Petit Bisse jusqu'à Mayens-de-My. Là, le chemin tourne brusquement à gauche et descend de 67 mètres de dénivelé vers le bisse de la Tsandra. Ensuite, le parcours suit les tunnels de ce second bisse jusqu'à Aven.\\n\\nPour les randonneurs arrivant en voiture jusqu'à Grand-Zour, il existe un itinéraire alternatif attrayant : le début de la randonnée jusqu'à Mayens-de-My se fait comme décrit. Au lieu de descendre vers Aven, on peut suivre le bisse de la Tsandra en sens inverse. Vous suivez la première partie du sentier thématique en sens inverse et suivez ainsi le chemin qui revient vers le ruisseau La Morge en dessous de Grand-Zour.\\n\\nLe monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L'utilisation des différents parcours se fait en principe sous votre propre responsabilité.\\n\\nUne brochure illustrée de la randonnée Bisse de la Tsandra est disponible ici au format Pdf\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/13.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 119,
+    "id": 14,
     "name": {
       "fr": "À travers le parc paysager de Binn : Imfeld–lac de Mässer–Binn",
       "de": "À travers le parc paysager de Binn : Imfeld–lac de Mässer–Binn",
       "en": "À travers le parc paysager de Binn : Imfeld–lac de Mässer–Binn"
     },
-    "region": "Binn",
-    "difficulty": "Moyen",
-    "category": "Itinéraires randonnées",
-    "duration": "3h45",
-    "distance": 9.44,
+    "region": "",
+    "difficulty": "Facile",
+    "category": "Itinéraires",
+    "duration": "3:45 h",
+    "distance": 0,
     "elevation": {
-      "up": 631,
-      "down": 211
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -2310,46 +597,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.23386558606164,
-      7.522946188104964
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. À travers le parc paysager de Binn : Imfeld–lac de Mässer–Binn",
-      "de": "Wanderung aus valais.ch extrahiert. À travers le parc paysager de Binn : Imfeld–lac de Mässer–Binn",
-      "en": "Hike extracted from valais.ch. À travers le parc paysager de Binn : Imfeld–lac de Mässer–Binn"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Au cœur du parc paysager de Binn se trouve la vallée qui a donné son nom au parc : la vallée de Binn. Jusqu'à il y a un demi-siècle, la vallée était coupée de l'environnement en hiver. Ce n'est qu'en 1965, avec la construction d'un tunnel, que l'accès est devenu possible toute l'année. Pourtant, la vallée a su conserver son charme originel.\\n\\nLa vallée de Binn est surtout connue pour sa richesse en minéraux. Plus de 200 minéraux différents y ont été découverts – plus de la moitié dans la mine de minéraux de Lengenbach. La randonnée commence sur le fascinant sentier géologique du hameau d'Imfeld (également appelé Fäld) et mène aux portes de la mine de minéraux. Ici, on peut chercher le marbre dolomitique blanc neige appelé narrengold (pyrite).\\n\\nDe la mine de minéraux, le chemin longe le flanc sud de la vallée à travers divers écosystèmes de ce parc naturel si particulier. Depuis l'alpage de Mässer, le chemin monte raide jusqu'au lac <strong>idyllique</strong> de Mässer, avant d'entamer la descente vers les prairies verdoyantes de Manibode. Ce lieu paisible avec ses ruisseaux de montagne sinueux parmi les blocs de roche rouge et les rhododendrons en fleur invite à une halte pique-nique. Le chemin quitte ensuite la haute vallée et traverse des forêts de pins odorants avant de descendre vers le village de Binn.\\n\\nLa vallée de Binn est connue non seulement pour ses gisements minéraux en tant que « vallée des trésors cachés », mais aussi grâce à ses villages historiques magnifiquement préservés. Binn a reçu en 1992 le prix de la protection du patrimoine – le hameau « Fäld » a quant à lui obtenu en 1998 la médaille de la Fondation Archicultura pour son aspect intact, harmonieux et pittoresque. À Binn se trouve l'hôtel historique Ofenhorn, qui a ouvert à l'époque Belle Époque en 1883 et a été restauré en conservant les éléments historiques.\\n\\nLe point de départ est le hameau Imfeld (Fäld), où le parcours traverse le ruisseau de montagne « Binna » avant de monter à la mine de minéraux de Lengenbach. Le parcours suit d'abord brièvement la route. Sur le sentier géologique à thème, vous arrivez ensuite directement à la mine de minéraux. À l'aide de loupes à main, vous pouvez découvrir les différentes pierres de la vallée. Un instrument de musique « pierreux » offre également une halte intéressante.\\n\\nDepuis la mine de minéraux, le chemin monte abruptement jusqu'à l'alpage de Mässer. Dans la zone de Schäre, à une altitude d'environ 2000 mètres, le chemin bifurque ensuite pour une boucle vers le lac de Mässer et Manibode. De retour à Schäre, le parcours s'engage à gauche à travers les pins jusqu'au village de Binn.\\n\\nLiaisons régulières en train avec la Matterhorn Gotthard Bahn jusqu'à Fiesch, puis en car postal jusqu'à Binn. Après un nouveau changement, le bus Alpin vous emmène jusqu'à Imfeld (Fäld). Les horaires détaillés pour les trains et cars postaux sont disponibles sur sbb.ch. Les horaires du bus Alpin sont disponibles ici : Bus Alpin\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Afin que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L'utilisation des différents parcours s'effectue toujours à vos propres risques.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nAscension de l'Eggerhorn et descente dans la vallée de Binn\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Au cœur du parc paysager de Binn se trouve la vallée qui a donné son nom au parc : la vallée de Binn. Jusqu'à il y a un demi-siècle, la vallée était coupée de l'environnement en hiver. Ce n'est qu'en 1965, avec la construction d'un tunnel, que l'accès est devenu possible toute l'année. Pourtant, la vallée a su conserver son charme originel.\\n\\nLa vallée de Binn est surtout connue pour sa richesse en minéraux. Plus de 200 minéraux différents y ont été découverts – plus de la moitié dans la mine de minéraux de Lengenbach. La randonnée commence sur le fascinant sentier géologique du hameau d'Imfeld (également appelé Fäld) et mène aux portes de la mine de minéraux. Ici, on peut chercher le marbre dolomitique blanc neige appelé narrengold (pyrite).\\n\\nDe la mine de minéraux, le chemin longe le flanc sud de la vallée à travers divers écosystèmes de ce parc naturel si particulier. Depuis l'alpage de Mässer, le chemin monte raide jusqu'au lac <strong>idyllique</strong> de Mässer, avant d'entamer la descente vers les prairies verdoyantes de Manibode. Ce lieu paisible avec ses ruisseaux de montagne sinueux parmi les blocs de roche rouge et les rhododendrons en fleur invite à une halte pique-nique. Le chemin quitte ensuite la haute vallée et traverse des forêts de pins odorants avant de descendre vers le village de Binn.\\n\\nLa vallée de Binn est connue non seulement pour ses gisements minéraux en tant que « vallée des trésors cachés », mais aussi grâce à ses villages historiques magnifiquement préservés. Binn a reçu en 1992 le prix de la protection du patrimoine – le hameau « Fäld » a quant à lui obtenu en 1998 la médaille de la Fondation Archicultura pour son aspect intact, harmonieux et pittoresque. À Binn se trouve l'hôtel historique Ofenhorn, qui a ouvert à l'époque Belle Époque en 1883 et a été restauré en conservant les éléments historiques.\\n\\nLe point de départ est le hameau Imfeld (Fäld), où le parcours traverse le ruisseau de montagne « Binna » avant de monter à la mine de minéraux de Lengenbach. Le parcours suit d'abord brièvement la route. Sur le sentier géologique à thème, vous arrivez ensuite directement à la mine de minéraux. À l'aide de loupes à main, vous pouvez découvrir les différentes pierres de la vallée. Un instrument de musique « pierreux » offre également une halte intéressante.\\n\\nDepuis la mine de minéraux, le chemin monte abruptement jusqu'à l'alpage de Mässer. Dans la zone de Schäre, à une altitude d'environ 2000 mètres, le chemin bifurque ensuite pour une boucle vers le lac de Mässer et Manibode. De retour à Schäre, le parcours s'engage à gauche à travers les pins jusqu'au village de Binn.\\n\\nLiaisons régulières en train avec la Matterhorn Gotthard Bahn jusqu'à Fiesch, puis en car postal jusqu'à Binn. Après un nouveau changement, le bus Alpin vous emmène jusqu'à Imfeld (Fäld). Les horaires détaillés pour les trains et cars postaux sont disponibles sur sbb.ch. Les horaires du bus Alpin sont disponibles ici : Bus Alpin\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Afin que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L'utilisation des différents parcours s'effectue toujours à vos propres risques.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nAscension de l'Eggerhorn et descente dans la vallée de Binn\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Au cœur du parc paysager de Binn se trouve la vallée qui a donné son nom au parc : la vallée de Binn. Jusqu'à il y a un demi-siècle, la vallée était coupée de l'environnement en hiver. Ce n'est qu'en 1965, avec la construction d'un tunnel, que l'accès est devenu possible toute l'année. Pourtant, la vallée a su conserver son charme originel.\\n\\nLa vallée de Binn est surtout connue pour sa richesse en minéraux. Plus de 200 minéraux différents y ont été découverts – plus de la moitié dans la mine de minéraux de Lengenbach. La randonnée commence sur le fascinant sentier géologique du hameau d'Imfeld (également appelé Fäld) et mène aux portes de la mine de minéraux. Ici, on peut chercher le marbre dolomitique blanc neige appelé narrengold (pyrite).\\n\\nDe la mine de minéraux, le chemin longe le flanc sud de la vallée à travers divers écosystèmes de ce parc naturel si particulier. Depuis l'alpage de Mässer, le chemin monte raide jusqu'au lac <strong>idyllique</strong> de Mässer, avant d'entamer la descente vers les prairies verdoyantes de Manibode. Ce lieu paisible avec ses ruisseaux de montagne sinueux parmi les blocs de roche rouge et les rhododendrons en fleur invite à une halte pique-nique. Le chemin quitte ensuite la haute vallée et traverse des forêts de pins odorants avant de descendre vers le village de Binn.\\n\\nLa vallée de Binn est connue non seulement pour ses gisements minéraux en tant que « vallée des trésors cachés », mais aussi grâce à ses villages historiques magnifiquement préservés. Binn a reçu en 1992 le prix de la protection du patrimoine – le hameau « Fäld » a quant à lui obtenu en 1998 la médaille de la Fondation Archicultura pour son aspect intact, harmonieux et pittoresque. À Binn se trouve l'hôtel historique Ofenhorn, qui a ouvert à l'époque Belle Époque en 1883 et a été restauré en conservant les éléments historiques.\\n\\nLe point de départ est le hameau Imfeld (Fäld), où le parcours traverse le ruisseau de montagne « Binna » avant de monter à la mine de minéraux de Lengenbach. Le parcours suit d'abord brièvement la route. Sur le sentier géologique à thème, vous arrivez ensuite directement à la mine de minéraux. À l'aide de loupes à main, vous pouvez découvrir les différentes pierres de la vallée. Un instrument de musique « pierreux » offre également une halte intéressante.\\n\\nDepuis la mine de minéraux, le chemin monte abruptement jusqu'à l'alpage de Mässer. Dans la zone de Schäre, à une altitude d'environ 2000 mètres, le chemin bifurque ensuite pour une boucle vers le lac de Mässer et Manibode. De retour à Schäre, le parcours s'engage à gauche à travers les pins jusqu'au village de Binn.\\n\\nLiaisons régulières en train avec la Matterhorn Gotthard Bahn jusqu'à Fiesch, puis en car postal jusqu'à Binn. Après un nouveau changement, le bus Alpin vous emmène jusqu'à Imfeld (Fäld). Les horaires détaillés pour les trains et cars postaux sont disponibles sur sbb.ch. Les horaires du bus Alpin sont disponibles ici : Bus Alpin\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Afin que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L'utilisation des différents parcours s'effectue toujours à vos propres risques.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nAscension de l'Eggerhorn et descente dans la vallée de Binn\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/14.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 120,
+    "id": 15,
     "name": {
       "fr": "Refuges d'Orny et de Trient",
       "de": "Refuges d'Orny et de Trient",
       "en": "Refuges d'Orny et de Trient"
     },
-    "region": "Champex-Lac",
+    "region": "",
     "difficulty": "Difficile",
-    "category": "Itinéraires randonnées",
-    "duration": "5h40",
-    "distance": 13.45,
+    "category": "Itinéraires",
+    "duration": "5:40 h",
+    "distance": 0,
     "elevation": {
-      "up": 790,
-      "down": 232
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -2361,46 +641,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.39682534462047,
-      7.736586152344538
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Refuges d'Orny et de Trient",
-      "de": "Wanderung aus valais.ch extrahiert. Refuges d'Orny et de Trient",
-      "en": "Hike extracted from valais.ch. Refuges d'Orny et de Trient"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La montagne, un lieu de joie à partager et respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables, que ce soit à vélo ou à pied. Afin que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. La pratique sur les différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La montagne, un lieu de joie à partager et respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables, que ce soit à vélo ou à pied. Afin que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. La pratique sur les différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La montagne, un lieu de joie à partager et respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables, que ce soit à vélo ou à pied. Afin que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. La pratique sur les différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/15.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 121,
+    "id": 16,
     "name": {
       "fr": "Randonnée des terrasses viticoles à Martigny",
       "de": "Randonnée des terrasses viticoles à Martigny",
       "en": "Randonnée des terrasses viticoles à Martigny"
     },
-    "region": "Martigny",
+    "region": "",
     "difficulty": "Facile",
-    "category": "Itinéraires randonnées",
-    "duration": "1h45",
-    "distance": 6.39,
+    "category": "Itinéraires",
+    "duration": "1:45 h",
+    "distance": 0,
     "elevation": {
-      "up": 631,
-      "down": 601
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -2412,97 +685,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.338811152506395,
-      7.709801952754477
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Randonnée des terrasses viticoles à Martigny",
-      "de": "Wanderung aus valais.ch extrahiert. Randonnée des terrasses viticoles à Martigny",
-      "en": "Hike extracted from valais.ch. Randonnée des terrasses viticoles à Martigny"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Depuis des générations, la vigne est cultivée sur les terrasses au-dessus de Martigny. En raison de la pente raide du terrain, celles-ci sont aménagées en terrasses et entretenues à la main. La randonnée circulaire est équipée de panneaux d’information qui rapprochent les visiteurs de la culture viticole.\\n\\nEn chemin, vous passerez à côté du château médiéval de Batiaz. Montez au donjon pour une vue <strong>panoramique</strong> à 360°. Au point de retournement sud de la boucle, le village viticole de Plan Cerisier vous attend avec ses chalets en bois traditionnels. L’un de ces chalets est aujourd’hui le plus petit musée de Suisse – il accueille régulièrement des œuvres d’artistes locaux.\\n\\nLe chemin de retour longe la Dranse pour rejoindre la ville de Martigny.\\n\\nTraversez la Dranse sur le pont en bois historique et suivez la route à droite pour atteindre le pied des rochers sous le château de Batiaz. Le chemin serpente en zigzag à travers les rochers jusqu'au château.\\n\\nLa montée suivante passe par les terrasses viticoles, parfois sur un sol caillouteux, parfois sur les chemins agricoles des viticulteurs. Au carrefour avec la route menant au Col de la Forclaz, le point le plus élevé est atteint. Le chemin descend ensuite vers Plan Cerisier, où une pause rafraîchissante vous attend.\\n\\nVous marchez de nouveau à travers les vignes inférieures vers le fond de la vallée, où vous suivez la Dranse pour retourner au point de départ près du pont en bois à Martigny.\\n\\nLa montagne, un lieu de plaisir à partager et respecter. Le milieu montagnard est un endroit de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition. La pratique des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nVous trouverez plus d’informations sur la destination ici :\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Depuis des générations, la vigne est cultivée sur les terrasses au-dessus de Martigny. En raison de la pente raide du terrain, celles-ci sont aménagées en terrasses et entretenues à la main. La randonnée circulaire est équipée de panneaux d’information qui rapprochent les visiteurs de la culture viticole.\\n\\nEn chemin, vous passerez à côté du château médiéval de Batiaz. Montez au donjon pour une vue <strong>panoramique</strong> à 360°. Au point de retournement sud de la boucle, le village viticole de Plan Cerisier vous attend avec ses chalets en bois traditionnels. L’un de ces chalets est aujourd’hui le plus petit musée de Suisse – il accueille régulièrement des œuvres d’artistes locaux.\\n\\nLe chemin de retour longe la Dranse pour rejoindre la ville de Martigny.\\n\\nTraversez la Dranse sur le pont en bois historique et suivez la route à droite pour atteindre le pied des rochers sous le château de Batiaz. Le chemin serpente en zigzag à travers les rochers jusqu'au château.\\n\\nLa montée suivante passe par les terrasses viticoles, parfois sur un sol caillouteux, parfois sur les chemins agricoles des viticulteurs. Au carrefour avec la route menant au Col de la Forclaz, le point le plus élevé est atteint. Le chemin descend ensuite vers Plan Cerisier, où une pause rafraîchissante vous attend.\\n\\nVous marchez de nouveau à travers les vignes inférieures vers le fond de la vallée, où vous suivez la Dranse pour retourner au point de départ près du pont en bois à Martigny.\\n\\nLa montagne, un lieu de plaisir à partager et respecter. Le milieu montagnard est un endroit de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition. La pratique des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nVous trouverez plus d’informations sur la destination ici :\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Depuis des générations, la vigne est cultivée sur les terrasses au-dessus de Martigny. En raison de la pente raide du terrain, celles-ci sont aménagées en terrasses et entretenues à la main. La randonnée circulaire est équipée de panneaux d’information qui rapprochent les visiteurs de la culture viticole.\\n\\nEn chemin, vous passerez à côté du château médiéval de Batiaz. Montez au donjon pour une vue <strong>panoramique</strong> à 360°. Au point de retournement sud de la boucle, le village viticole de Plan Cerisier vous attend avec ses chalets en bois traditionnels. L’un de ces chalets est aujourd’hui le plus petit musée de Suisse – il accueille régulièrement des œuvres d’artistes locaux.\\n\\nLe chemin de retour longe la Dranse pour rejoindre la ville de Martigny.\\n\\nTraversez la Dranse sur le pont en bois historique et suivez la route à droite pour atteindre le pied des rochers sous le château de Batiaz. Le chemin serpente en zigzag à travers les rochers jusqu'au château.\\n\\nLa montée suivante passe par les terrasses viticoles, parfois sur un sol caillouteux, parfois sur les chemins agricoles des viticulteurs. Au carrefour avec la route menant au Col de la Forclaz, le point le plus élevé est atteint. Le chemin descend ensuite vers Plan Cerisier, où une pause rafraîchissante vous attend.\\n\\nVous marchez de nouveau à travers les vignes inférieures vers le fond de la vallée, où vous suivez la Dranse pour retourner au point de départ près du pont en bois à Martigny.\\n\\nLa montagne, un lieu de plaisir à partager et respecter. Le milieu montagnard est un endroit de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition. La pratique des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nVous trouverez plus d’informations sur la destination ici :\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/16.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 122,
+    "id": 17,
     "name": {
       "fr": "Bettmerhorn – pont suspendu Aspi-Titter",
       "de": "Bettmerhorn – pont suspendu Aspi-Titter",
       "en": "Bettmerhorn – pont suspendu Aspi-Titter"
     },
-    "region": "Bettmeralp",
-    "difficulty": "Moyen",
-    "category": "Itinéraires randonnées",
-    "duration": "5h30",
-    "distance": 15.57,
-    "elevation": {
-      "up": 882,
-      "down": 516
-    },
-    "altitude": {
-      "min": 1000,
-      "max": 2000
-    },
-    "season": {
-      "fr": "Juin - Octobre",
-      "de": "Juni - Oktober",
-      "en": "June - October"
-    },
-    "coords": [
-      46.20909921420987,
-      7.330213319160978
-    ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
-    "description": {
-      "fr": "Randonnée extraite de valais.ch. Bettmerhorn – pont suspendu Aspi-Titter",
-      "de": "Wanderung aus valais.ch extrahiert. Bettmerhorn – pont suspendu Aspi-Titter",
-      "en": "Hike extracted from valais.ch. Bettmerhorn – pont suspendu Aspi-Titter"
-    },
-    "access": {
-      "fr": "En transport public",
-      "de": "Mit öffentlichen Verkehrsmitteln",
-      "en": "By public transport"
-    },
-    "image": "assets/images/placeholder.jpg"
-  },
-  {
-    "id": 123,
-    "name": {
-      "fr": "Sentier didactique du safran",
-      "de": "Sentier didactique du safran",
-      "en": "Sentier didactique du safran"
-    },
-    "region": "Mund",
-    "difficulty": "Moyen",
-    "category": "Sentiers découvertes",
-    "duration": "0h00",
+    "region": "",
+    "difficulty": "Difficile",
+    "category": "Itinéraires",
+    "duration": "5:30 h",
     "distance": 0,
     "elevation": {
-      "up": 432,
-      "down": 471
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -2514,148 +729,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.280241453132795,
-      7.721010726947049
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Sentier didactique du safran",
-      "de": "Wanderung aus valais.ch extrahiert. Sentier didactique du safran",
-      "en": "Hike extracted from valais.ch. Sentier didactique du safran"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Par la route cantonale 19 jusqu'à la sortie station de vallée Betten. Montez en téléphérique jusqu'à la Bettmeralp (Aletsch Bahnen AG).\\n\\nAprès la randonnée, retour en transports publics de Bellwald à Fürgangen (téléphérique) puis de Fürgangen à la station de vallée Betten avec le Matterhorn Gotthard Bahn (train).\\n\\nLes montagnes sont un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que toutes les personnes utilisatrices en profitent, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous des recommandations et règles. Évaluez bien vos compétences et votre condition physique. L'emprunt des différents parcours se fait en principe sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nRandonnée circulaire depuis le Bettmerhorn via le lac Märjelen jusqu'à Bettmeralp\\n\\nRandonnée alpine parcours UNESCO du Bettmerhorn à l'Eggishorn\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Par la route cantonale 19 jusqu'à la sortie station de vallée Betten. Montez en téléphérique jusqu'à la Bettmeralp (Aletsch Bahnen AG).\\n\\nAprès la randonnée, retour en transports publics de Bellwald à Fürgangen (téléphérique) puis de Fürgangen à la station de vallée Betten avec le Matterhorn Gotthard Bahn (train).\\n\\nLes montagnes sont un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que toutes les personnes utilisatrices en profitent, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous des recommandations et règles. Évaluez bien vos compétences et votre condition physique. L'emprunt des différents parcours se fait en principe sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nRandonnée circulaire depuis le Bettmerhorn via le lac Märjelen jusqu'à Bettmeralp\\n\\nRandonnée alpine parcours UNESCO du Bettmerhorn à l'Eggishorn\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Par la route cantonale 19 jusqu'à la sortie station de vallée Betten. Montez en téléphérique jusqu'à la Bettmeralp (Aletsch Bahnen AG).\\n\\nAprès la randonnée, retour en transports publics de Bellwald à Fürgangen (téléphérique) puis de Fürgangen à la station de vallée Betten avec le Matterhorn Gotthard Bahn (train).\\n\\nLes montagnes sont un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que toutes les personnes utilisatrices en profitent, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous des recommandations et règles. Évaluez bien vos compétences et votre condition physique. L'emprunt des différents parcours se fait en principe sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nRandonnée circulaire depuis le Bettmerhorn via le lac Märjelen jusqu'à Bettmeralp\\n\\nRandonnée alpine parcours UNESCO du Bettmerhorn à l'Eggishorn\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/17.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 124,
-    "name": {
-      "fr": "Jatzilicku-Trail",
-      "de": "Jatzilicku-Trail",
-      "en": "Jatzilicku-Trail"
-    },
-    "region": "Saas-Almagell",
-    "difficulty": "Difficile",
-    "category": "Trail running",
-    "duration": "5h30",
-    "distance": 23.65,
-    "elevation": {
-      "up": 947,
-      "down": 476
-    },
-    "altitude": {
-      "min": 1000,
-      "max": 2000
-    },
-    "season": {
-      "fr": "Juin - Octobre",
-      "de": "Juni - Oktober",
-      "en": "June - October"
-    },
-    "coords": [
-      46.27091479128996,
-      7.5061857832236845
-    ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
-    "description": {
-      "fr": "Randonnée extraite de valais.ch. Jatzilicku-Trail",
-      "de": "Wanderung aus valais.ch extrahiert. Jatzilicku-Trail",
-      "en": "Hike extracted from valais.ch. Jatzilicku-Trail"
-    },
-    "access": {
-      "fr": "En transport public",
-      "de": "Mit öffentlichen Verkehrsmitteln",
-      "en": "By public transport"
-    },
-    "image": "assets/images/placeholder.jpg"
-  },
-  {
-    "id": 125,
+    "id": 18,
     "name": {
       "fr": "Längfluh / Saas-Fee",
       "de": "Längfluh / Saas-Fee",
       "en": "Längfluh / Saas-Fee"
     },
-    "region": "Saas-Fee",
-    "difficulty": "Moyen",
-    "category": "Itinéraires randonnées",
-    "duration": "2h15",
-    "distance": 6.45,
-    "elevation": {
-      "up": 532,
-      "down": 537
-    },
-    "altitude": {
-      "min": 1000,
-      "max": 2000
-    },
-    "season": {
-      "fr": "Juin - Octobre",
-      "de": "Juni - Oktober",
-      "en": "June - October"
-    },
-    "coords": [
-      46.22696259348435,
-      7.752354829506133
-    ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
-    "description": {
-      "fr": "Randonnée extraite de valais.ch. Längfluh / Saas-Fee",
-      "de": "Wanderung aus valais.ch extrahiert. Längfluh / Saas-Fee",
-      "en": "Hike extracted from valais.ch. Längfluh / Saas-Fee"
-    },
-    "access": {
-      "fr": "En transport public",
-      "de": "Mit öffentlichen Verkehrsmitteln",
-      "en": "By public transport"
-    },
-    "image": "assets/images/placeholder.jpg"
-  },
-  {
-    "id": 126,
-    "name": {
-      "fr": "Scènes sur le parcours de l'eau",
-      "de": "Scènes sur le parcours de l'eau",
-      "en": "Scènes sur le parcours de l'eau"
-    },
-    "region": "Champéry",
-    "difficulty": "Moyen",
-    "category": "Sentiers découvertes",
-    "duration": "0h00",
+    "region": "",
+    "difficulty": "Difficile",
+    "category": "Itinéraires",
+    "duration": "2:15 h",
     "distance": 0,
     "elevation": {
-      "up": 814,
-      "down": 532
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -2667,46 +773,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.29339401362732,
-      7.496728853846761
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Scènes sur le parcours de l'eau",
-      "de": "Wanderung aus valais.ch extrahiert. Scènes sur le parcours de l'eau",
-      "en": "Hike extracted from valais.ch. Scènes sur le parcours de l'eau"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Les montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables, que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. La pratique des différents parcours s’effectue en principe sous votre propre responsabilité.\\n\\nPour plus d'informations sur la destination, consultez ici :\\n\\nGuide de randonnée \"Saas-Fee/Saastal\" (Banzhaf/Retze/Zurbriggen) ISBN 978 -3-907099-32-2\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Les montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables, que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. La pratique des différents parcours s’effectue en principe sous votre propre responsabilité.\\n\\nPour plus d'informations sur la destination, consultez ici :\\n\\nGuide de randonnée \"Saas-Fee/Saastal\" (Banzhaf/Retze/Zurbriggen) ISBN 978 -3-907099-32-2\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Les montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables, que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. La pratique des différents parcours s’effectue en principe sous votre propre responsabilité.\\n\\nPour plus d'informations sur la destination, consultez ici :\\n\\nGuide de randonnée \"Saas-Fee/Saastal\" (Banzhaf/Retze/Zurbriggen) ISBN 978 -3-907099-32-2\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/18.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 128,
+    "id": 19,
     "name": {
       "fr": "Chemin d'Ossona",
       "de": "Chemin d'Ossona",
       "en": "Chemin d'Ossona"
     },
-    "region": "Vernamiège",
+    "region": "",
     "difficulty": "Moyen",
-    "category": "Itinéraires randonnées",
-    "duration": "2h30",
-    "distance": 7.72,
+    "category": "Itinéraires",
+    "duration": "2:30 h",
+    "distance": 0,
     "elevation": {
-      "up": 638,
-      "down": 225
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -2718,46 +817,39 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.38891724252884,
-      7.726492878179709
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Chemin d'Ossona",
-      "de": "Wanderung aus valais.ch extrahiert. Chemin d'Ossona",
-      "en": "Hike extracted from valais.ch. Chemin d'Ossona"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres compétences et votre forme physique. La pratique sur les différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres compétences et votre forme physique. La pratique sur les différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres compétences et votre forme physique. La pratique sur les différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/19.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
-    "id": 129,
+    "id": 20,
     "name": {
       "fr": "Tour autour du lac-réservoir de Mattmark dans le Saastal",
       "de": "Tour autour du lac-réservoir de Mattmark dans le Saastal",
       "en": "Tour autour du lac-réservoir de Mattmark dans le Saastal"
     },
-    "region": "Saas-Almagell",
+    "region": "",
     "difficulty": "Facile",
-    "category": "Itinéraires randonnées",
-    "duration": "2h15",
-    "distance": 8.04,
+    "category": "Itinéraires",
+    "duration": "2:15 h",
+    "distance": 0,
     "elevation": {
-      "up": 528,
-      "down": 814
+      "up": 0,
+      "down": 0
     },
     "altitude": {
       "min": 1000,
@@ -2769,30 +861,903 @@ const HIKES = [
       "en": "June - October"
     },
     "coords": [
-      46.35600899267181,
-      7.61055090494352
+      46.22,
+      7.35
     ],
-    "trail": [
-      [
-        46.2,
-        7.3
-      ],
-      [
-        46.21,
-        7.31
-      ]
-    ],
+    "trail": [],
     "description": {
-      "fr": "Randonnée extraite de valais.ch. Tour autour du lac-réservoir de Mattmark dans le Saastal",
-      "de": "Wanderung aus valais.ch extrahiert. Tour autour du lac-réservoir de Mattmark dans le Saastal",
-      "en": "Hike extracted from valais.ch. Tour autour du lac-réservoir de Mattmark dans le Saastal"
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La route montant dans la vallée de Saas s’achève au plus grand barrage en terre d'Europe, le barrage de Mattmark, à 2200 m d'altitude. C’est ici que débute cette charmante randonnée autour du lac-réservoir. Le parcours suit principalement le rivage du lac et est accessible aux fauteuils roulants sur sa rive ouest.\\n\\nLe lac-réservoir a certes été créé par l’homme, mais le paysage environnant montre toute la beauté naturelle de la vallée de Saas. Les pentes à l’ouest montent vers les puissants glaciers de l’Allalin et du Schwarzberg, qui ornent l’Allalinhorn et les sommets voisins de plus de 4000 mètres. À l’extrémité sud du lac, un sentier monte au col du Monte Moro et à la frontière italienne, marquée par une statue dorée de la Madonna.\\n\\nAu sommet du barrage, le restaurant invite à une courte pause rafraîchissante avant ou après la randonnée. Le centre des visiteurs propose aussi des aperçus intéressants sur les énergies renouvelables. Le barrage retient 100 millions de mètres cubes d’eau et les centrales électriques correspondantes en aval dans la vallée produisent presque assez d’électricité pour tous les ménages valaisans. Grâce à Mattmark et environ 40 autres barrages dans le canton, environ 30 % de l’énergie hydraulique de la Suisse sont produits dans le Valais.\\n\\nLa construction du barrage a cependant exigé un grand tribut. Le 30 août 1965, une partie du glacier d’Allalin au-dessus du chantier s’est détachée. Environ deux millions de mètres cubes de roche et de glace se sont écroulés, ensevelissant sous plus de 50 mètres de débris les cantines et logements des ouvriers. 88 ouvriers ont perdu la vie dans ce tragique accident.\\n\\nAujourd’hui, l’extrémité de la vallée de Saas est un lieu de repos : les randonneurs ont de bonnes chances d’observer des animaux sauvages sur le parcours autour du lac. Prenez des jumelles et une loupe pour observer la faune et la flore.\\n\\nCorrespondances régulières en train depuis toute la Suisse jusqu'à Visp, puis avec le car postal en direction de Saas-Fee. À Saas-Grund, changez pour le car postal en direction du barrage de Mattmark. Les horaires détaillés des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLa montagne est un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontres pour vivre ensemble des moments inoubliables – à vélo ou à pied. Pour que tous les usagers en profitent, il est essentiel de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. La pratique des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La route montant dans la vallée de Saas s’achève au plus grand barrage en terre d'Europe, le barrage de Mattmark, à 2200 m d'altitude. C’est ici que débute cette charmante randonnée autour du lac-réservoir. Le parcours suit principalement le rivage du lac et est accessible aux fauteuils roulants sur sa rive ouest.\\n\\nLe lac-réservoir a certes été créé par l’homme, mais le paysage environnant montre toute la beauté naturelle de la vallée de Saas. Les pentes à l’ouest montent vers les puissants glaciers de l’Allalin et du Schwarzberg, qui ornent l’Allalinhorn et les sommets voisins de plus de 4000 mètres. À l’extrémité sud du lac, un sentier monte au col du Monte Moro et à la frontière italienne, marquée par une statue dorée de la Madonna.\\n\\nAu sommet du barrage, le restaurant invite à une courte pause rafraîchissante avant ou après la randonnée. Le centre des visiteurs propose aussi des aperçus intéressants sur les énergies renouvelables. Le barrage retient 100 millions de mètres cubes d’eau et les centrales électriques correspondantes en aval dans la vallée produisent presque assez d’électricité pour tous les ménages valaisans. Grâce à Mattmark et environ 40 autres barrages dans le canton, environ 30 % de l’énergie hydraulique de la Suisse sont produits dans le Valais.\\n\\nLa construction du barrage a cependant exigé un grand tribut. Le 30 août 1965, une partie du glacier d’Allalin au-dessus du chantier s’est détachée. Environ deux millions de mètres cubes de roche et de glace se sont écroulés, ensevelissant sous plus de 50 mètres de débris les cantines et logements des ouvriers. 88 ouvriers ont perdu la vie dans ce tragique accident.\\n\\nAujourd’hui, l’extrémité de la vallée de Saas est un lieu de repos : les randonneurs ont de bonnes chances d’observer des animaux sauvages sur le parcours autour du lac. Prenez des jumelles et une loupe pour observer la faune et la flore.\\n\\nCorrespondances régulières en train depuis toute la Suisse jusqu'à Visp, puis avec le car postal en direction de Saas-Fee. À Saas-Grund, changez pour le car postal en direction du barrage de Mattmark. Les horaires détaillés des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLa montagne est un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontres pour vivre ensemble des moments inoubliables – à vélo ou à pied. Pour que tous les usagers en profitent, il est essentiel de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. La pratique des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La route montant dans la vallée de Saas s’achève au plus grand barrage en terre d'Europe, le barrage de Mattmark, à 2200 m d'altitude. C’est ici que débute cette charmante randonnée autour du lac-réservoir. Le parcours suit principalement le rivage du lac et est accessible aux fauteuils roulants sur sa rive ouest.\\n\\nLe lac-réservoir a certes été créé par l’homme, mais le paysage environnant montre toute la beauté naturelle de la vallée de Saas. Les pentes à l’ouest montent vers les puissants glaciers de l’Allalin et du Schwarzberg, qui ornent l’Allalinhorn et les sommets voisins de plus de 4000 mètres. À l’extrémité sud du lac, un sentier monte au col du Monte Moro et à la frontière italienne, marquée par une statue dorée de la Madonna.\\n\\nAu sommet du barrage, le restaurant invite à une courte pause rafraîchissante avant ou après la randonnée. Le centre des visiteurs propose aussi des aperçus intéressants sur les énergies renouvelables. Le barrage retient 100 millions de mètres cubes d’eau et les centrales électriques correspondantes en aval dans la vallée produisent presque assez d’électricité pour tous les ménages valaisans. Grâce à Mattmark et environ 40 autres barrages dans le canton, environ 30 % de l’énergie hydraulique de la Suisse sont produits dans le Valais.\\n\\nLa construction du barrage a cependant exigé un grand tribut. Le 30 août 1965, une partie du glacier d’Allalin au-dessus du chantier s’est détachée. Environ deux millions de mètres cubes de roche et de glace se sont écroulés, ensevelissant sous plus de 50 mètres de débris les cantines et logements des ouvriers. 88 ouvriers ont perdu la vie dans ce tragique accident.\\n\\nAujourd’hui, l’extrémité de la vallée de Saas est un lieu de repos : les randonneurs ont de bonnes chances d’observer des animaux sauvages sur le parcours autour du lac. Prenez des jumelles et une loupe pour observer la faune et la flore.\\n\\nCorrespondances régulières en train depuis toute la Suisse jusqu'à Visp, puis avec le car postal en direction de Saas-Fee. À Saas-Grund, changez pour le car postal en direction du barrage de Mattmark. Les horaires détaillés des trains et cars postaux sont disponibles sur sbb.ch.\\n\\nLa montagne est un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontres pour vivre ensemble des moments inoubliables – à vélo ou à pied. Pour que tous les usagers en profitent, il est essentiel de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. La pratique des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
     },
     "access": {
       "fr": "En transport public",
       "de": "Mit öffentlichen Verkehrsmitteln",
       "en": "By public transport"
     },
-    "image": "assets/images/placeholder.jpg"
+    "image": "assets/images/hikes/20.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 21,
+    "name": {
+      "fr": "Sentier des Chamois",
+      "de": "Sentier des Chamois",
+      "en": "Sentier des Chamois"
+    },
+    "region": "",
+    "difficulty": "Difficile",
+    "category": "Itinéraires",
+    "duration": "4:40 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le chamois est l’emblème de la deuxième plus grande réserve naturelle de Suisse. Ce mammifère alpin léger maîtrise aisément les pentes les plus raides et est parfaitement adapté au terrain alpin de la région.\\n\\nCette randonnée saura te captiver par ses paysages sauvages : des alpages en hauteur le long de pentes abruptes jusqu’au lac <strong>idyllique</strong> de Louvie et sa charmante cabane d’alpage, puis en descendant au village de Fionnay dans le fond de la vallée. Le chemin commence à La Chaux, mais tu peux aussi démarrer à Les Ruinettes et visiter le parc de sculptures 3D offrant des œuvres en pleine nature.\\n\\nAu début de la balade, le chemin traverse des pâturages où pâturent souvent des vaches de la race d’Eringer, avant de devenir pierreux et que le paysage devienne peu à peu plus <strong>sauvage</strong>. Avec la montée, la vue devient <strong>spectaculaire</strong> et une bonne stabilité ainsi que l’absence de vertige sont indispensables, surtout au point le plus haut du parcours, le Col Termin.\\n\\nDe là, profites de la vue sur le Haut Val de Bagnes, couronnée par les glaciers du massif du Combin. La descente raide jusqu’au Lac de Louvie avec ses étables en pierre franchit près de 400 mètres de dénivelé sur 1,5 kilomètres. De la cabane, le chemin descend en zigzag jusqu’au village de Fionnay.\\n\\nVariante 1 : Commence la randonnée à la station supérieure Les Ruinettes et suis le parc de sculptures 3D plat jusqu’à La Chaux.\\n\\nVariante 2 : Prends depuis Les Ruinettes le La Chaux Express jusqu’à La Chaux et commence la randonnée ici.\\n\\nDepuis La Chaux, le chemin part en direction de Mintset, puis il monte de plus en plus raide vers l’est en suivant la crête à gauche. Une prudence particulière est requise surtout au Col Termin. La descente vers le Lac de Louvie puis ensuite vers Fionnay est également très raide.\\n\\nLiaisons régulières en train jusqu’à Martigny, où il faut changer pour un train régional en direction de Le Châble. Le téléphérique te conduit de Le Châble via Verbier jusqu’à La Chaux.\\n\\nÀ la fin de la randonnée, le car postal te ramène de Fionnay à Le Châble. Les horaires des trains et cars postaux sont disponibles sur www.sbb.ch\\n\\nL’utilisation des sentiers de randonnée et les informations sur ce site se font à tes propres risques. Les conditions sur place peuvent entraîner des modifications de l’itinéraire. Valais/Wallis Promotion décline toute responsabilité quant à l’exactitude et l’exhaustivité des informations présentées sur ce site.\\n\\nÉvalue bien tes propres capacités et ta condition physique. L’utilisation des différents parcours se fait toujours sous ta propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le chamois est l’emblème de la deuxième plus grande réserve naturelle de Suisse. Ce mammifère alpin léger maîtrise aisément les pentes les plus raides et est parfaitement adapté au terrain alpin de la région.\\n\\nCette randonnée saura te captiver par ses paysages sauvages : des alpages en hauteur le long de pentes abruptes jusqu’au lac <strong>idyllique</strong> de Louvie et sa charmante cabane d’alpage, puis en descendant au village de Fionnay dans le fond de la vallée. Le chemin commence à La Chaux, mais tu peux aussi démarrer à Les Ruinettes et visiter le parc de sculptures 3D offrant des œuvres en pleine nature.\\n\\nAu début de la balade, le chemin traverse des pâturages où pâturent souvent des vaches de la race d’Eringer, avant de devenir pierreux et que le paysage devienne peu à peu plus <strong>sauvage</strong>. Avec la montée, la vue devient <strong>spectaculaire</strong> et une bonne stabilité ainsi que l’absence de vertige sont indispensables, surtout au point le plus haut du parcours, le Col Termin.\\n\\nDe là, profites de la vue sur le Haut Val de Bagnes, couronnée par les glaciers du massif du Combin. La descente raide jusqu’au Lac de Louvie avec ses étables en pierre franchit près de 400 mètres de dénivelé sur 1,5 kilomètres. De la cabane, le chemin descend en zigzag jusqu’au village de Fionnay.\\n\\nVariante 1 : Commence la randonnée à la station supérieure Les Ruinettes et suis le parc de sculptures 3D plat jusqu’à La Chaux.\\n\\nVariante 2 : Prends depuis Les Ruinettes le La Chaux Express jusqu’à La Chaux et commence la randonnée ici.\\n\\nDepuis La Chaux, le chemin part en direction de Mintset, puis il monte de plus en plus raide vers l’est en suivant la crête à gauche. Une prudence particulière est requise surtout au Col Termin. La descente vers le Lac de Louvie puis ensuite vers Fionnay est également très raide.\\n\\nLiaisons régulières en train jusqu’à Martigny, où il faut changer pour un train régional en direction de Le Châble. Le téléphérique te conduit de Le Châble via Verbier jusqu’à La Chaux.\\n\\nÀ la fin de la randonnée, le car postal te ramène de Fionnay à Le Châble. Les horaires des trains et cars postaux sont disponibles sur www.sbb.ch\\n\\nL’utilisation des sentiers de randonnée et les informations sur ce site se font à tes propres risques. Les conditions sur place peuvent entraîner des modifications de l’itinéraire. Valais/Wallis Promotion décline toute responsabilité quant à l’exactitude et l’exhaustivité des informations présentées sur ce site.\\n\\nÉvalue bien tes propres capacités et ta condition physique. L’utilisation des différents parcours se fait toujours sous ta propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le chamois est l’emblème de la deuxième plus grande réserve naturelle de Suisse. Ce mammifère alpin léger maîtrise aisément les pentes les plus raides et est parfaitement adapté au terrain alpin de la région.\\n\\nCette randonnée saura te captiver par ses paysages sauvages : des alpages en hauteur le long de pentes abruptes jusqu’au lac <strong>idyllique</strong> de Louvie et sa charmante cabane d’alpage, puis en descendant au village de Fionnay dans le fond de la vallée. Le chemin commence à La Chaux, mais tu peux aussi démarrer à Les Ruinettes et visiter le parc de sculptures 3D offrant des œuvres en pleine nature.\\n\\nAu début de la balade, le chemin traverse des pâturages où pâturent souvent des vaches de la race d’Eringer, avant de devenir pierreux et que le paysage devienne peu à peu plus <strong>sauvage</strong>. Avec la montée, la vue devient <strong>spectaculaire</strong> et une bonne stabilité ainsi que l’absence de vertige sont indispensables, surtout au point le plus haut du parcours, le Col Termin.\\n\\nDe là, profites de la vue sur le Haut Val de Bagnes, couronnée par les glaciers du massif du Combin. La descente raide jusqu’au Lac de Louvie avec ses étables en pierre franchit près de 400 mètres de dénivelé sur 1,5 kilomètres. De la cabane, le chemin descend en zigzag jusqu’au village de Fionnay.\\n\\nVariante 1 : Commence la randonnée à la station supérieure Les Ruinettes et suis le parc de sculptures 3D plat jusqu’à La Chaux.\\n\\nVariante 2 : Prends depuis Les Ruinettes le La Chaux Express jusqu’à La Chaux et commence la randonnée ici.\\n\\nDepuis La Chaux, le chemin part en direction de Mintset, puis il monte de plus en plus raide vers l’est en suivant la crête à gauche. Une prudence particulière est requise surtout au Col Termin. La descente vers le Lac de Louvie puis ensuite vers Fionnay est également très raide.\\n\\nLiaisons régulières en train jusqu’à Martigny, où il faut changer pour un train régional en direction de Le Châble. Le téléphérique te conduit de Le Châble via Verbier jusqu’à La Chaux.\\n\\nÀ la fin de la randonnée, le car postal te ramène de Fionnay à Le Châble. Les horaires des trains et cars postaux sont disponibles sur www.sbb.ch\\n\\nL’utilisation des sentiers de randonnée et les informations sur ce site se font à tes propres risques. Les conditions sur place peuvent entraîner des modifications de l’itinéraire. Valais/Wallis Promotion décline toute responsabilité quant à l’exactitude et l’exhaustivité des informations présentées sur ce site.\\n\\nÉvalue bien tes propres capacités et ta condition physique. L’utilisation des différents parcours se fait toujours sous ta propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/21.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 22,
+    "name": {
+      "fr": "Chemin des chapelles Visperterminen et suone Bodmeri",
+      "de": "Chemin des chapelles Visperterminen et suone Bodmeri",
+      "en": "Chemin des chapelles Visperterminen et suone Bodmeri"
+    },
+    "region": "",
+    "difficulty": "Facile",
+    "category": "Itinéraires",
+    "duration": "2:45 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Chaque hameau de Visperterminen possède sa propre chapelle et le long des chemins piétons depuis la vallée jusqu'aux sommets, de petites chapelles ou croix d’offrande jalonnent le parcours. Les Sacri Monti ont leur origine au Piémont et en Lombardie. À Visperterminen, une série de dix chapelles historiques conduit jusqu'à la chapelle forestière « Maria Heimsuchung ». Au fil des siècles, les fidèles sont allés de chapelle du rosaire en chapelle suivante. Aujourd'hui, la randonnée vers ce lieu de pèlerinage est l'une des plus belles du Valais.\\n\\nLa deuxième partie de la randonnée circulaire suit l'une des suones historiques. La « Bodmeri » a été construite en 1915 et commence au Muttji, où l'eau est amenée à Visperterminen par un tunnel depuis la vallée de Nanz. La suone est encore utilisée d'avril à mi-septembre.\\n\\nLe chemin mène ensuite jusqu'au croisement avec la Niwa, une suone plus ancienne remplacée par la Bodmeri. La randonnée suit un court tronçon de la Niwa, où les randonneurs passent devant le Hüterhüsi, l'ancien pavillon du gardien.\\n\\nLa randonnée continue à travers la forêt et à travers des clairières, on peut parfois apercevoir la vallée du Rhône et les sommets élevés. Le chemin quitte alors la suone et conduit vers le sud pour retourner au village de Visperterminen.\\n\\nLe chemin commence dans le village de Visperterminen et monte en zigzag le long des chapelles. Arrivé à la chapelle forestière, la randonnée continue un peu plus haut à travers la forêt, avant d'atteindre la suone Bodmeri en direction nord.\\n\\nAu croisement avec la Niwa, le chemin suit un court tronçon de cette ancienne suone avant d'entamer la descente en direction de Visperterminen.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se retrouver et vivre ensemble des moments inoubliables, que ce soit à vélo ou à pied. Afin que tous les usagers puissent en bénéficier, il est indispensable de partager cet espace dans le respect de la nature et de l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres compétences et votre condition physique. La pratique des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nDe Visperterminen à travers la vallée de Nanztal jusqu'au col du Simplon\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Chaque hameau de Visperterminen possède sa propre chapelle et le long des chemins piétons depuis la vallée jusqu'aux sommets, de petites chapelles ou croix d’offrande jalonnent le parcours. Les Sacri Monti ont leur origine au Piémont et en Lombardie. À Visperterminen, une série de dix chapelles historiques conduit jusqu'à la chapelle forestière « Maria Heimsuchung ». Au fil des siècles, les fidèles sont allés de chapelle du rosaire en chapelle suivante. Aujourd'hui, la randonnée vers ce lieu de pèlerinage est l'une des plus belles du Valais.\\n\\nLa deuxième partie de la randonnée circulaire suit l'une des suones historiques. La « Bodmeri » a été construite en 1915 et commence au Muttji, où l'eau est amenée à Visperterminen par un tunnel depuis la vallée de Nanz. La suone est encore utilisée d'avril à mi-septembre.\\n\\nLe chemin mène ensuite jusqu'au croisement avec la Niwa, une suone plus ancienne remplacée par la Bodmeri. La randonnée suit un court tronçon de la Niwa, où les randonneurs passent devant le Hüterhüsi, l'ancien pavillon du gardien.\\n\\nLa randonnée continue à travers la forêt et à travers des clairières, on peut parfois apercevoir la vallée du Rhône et les sommets élevés. Le chemin quitte alors la suone et conduit vers le sud pour retourner au village de Visperterminen.\\n\\nLe chemin commence dans le village de Visperterminen et monte en zigzag le long des chapelles. Arrivé à la chapelle forestière, la randonnée continue un peu plus haut à travers la forêt, avant d'atteindre la suone Bodmeri en direction nord.\\n\\nAu croisement avec la Niwa, le chemin suit un court tronçon de cette ancienne suone avant d'entamer la descente en direction de Visperterminen.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se retrouver et vivre ensemble des moments inoubliables, que ce soit à vélo ou à pied. Afin que tous les usagers puissent en bénéficier, il est indispensable de partager cet espace dans le respect de la nature et de l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres compétences et votre condition physique. La pratique des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nDe Visperterminen à travers la vallée de Nanztal jusqu'au col du Simplon\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Chaque hameau de Visperterminen possède sa propre chapelle et le long des chemins piétons depuis la vallée jusqu'aux sommets, de petites chapelles ou croix d’offrande jalonnent le parcours. Les Sacri Monti ont leur origine au Piémont et en Lombardie. À Visperterminen, une série de dix chapelles historiques conduit jusqu'à la chapelle forestière « Maria Heimsuchung ». Au fil des siècles, les fidèles sont allés de chapelle du rosaire en chapelle suivante. Aujourd'hui, la randonnée vers ce lieu de pèlerinage est l'une des plus belles du Valais.\\n\\nLa deuxième partie de la randonnée circulaire suit l'une des suones historiques. La « Bodmeri » a été construite en 1915 et commence au Muttji, où l'eau est amenée à Visperterminen par un tunnel depuis la vallée de Nanz. La suone est encore utilisée d'avril à mi-septembre.\\n\\nLe chemin mène ensuite jusqu'au croisement avec la Niwa, une suone plus ancienne remplacée par la Bodmeri. La randonnée suit un court tronçon de la Niwa, où les randonneurs passent devant le Hüterhüsi, l'ancien pavillon du gardien.\\n\\nLa randonnée continue à travers la forêt et à travers des clairières, on peut parfois apercevoir la vallée du Rhône et les sommets élevés. Le chemin quitte alors la suone et conduit vers le sud pour retourner au village de Visperterminen.\\n\\nLe chemin commence dans le village de Visperterminen et monte en zigzag le long des chapelles. Arrivé à la chapelle forestière, la randonnée continue un peu plus haut à travers la forêt, avant d'atteindre la suone Bodmeri en direction nord.\\n\\nAu croisement avec la Niwa, le chemin suit un court tronçon de cette ancienne suone avant d'entamer la descente en direction de Visperterminen.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se retrouver et vivre ensemble des moments inoubliables, que ce soit à vélo ou à pied. Afin que tous les usagers puissent en bénéficier, il est indispensable de partager cet espace dans le respect de la nature et de l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres compétences et votre condition physique. La pratique des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nDe Visperterminen à travers la vallée de Nanztal jusqu'au col du Simplon\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/22.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 23,
+    "name": {
+      "fr": "Sentier du Balcon du Mont-Blanc",
+      "de": "Sentier du Balcon du Mont-Blanc",
+      "en": "Sentier du Balcon du Mont-Blanc"
+    },
+    "region": "",
+    "difficulty": "Difficile",
+    "category": "Itinéraires",
+    "duration": "3:10 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La montagne, un espace de plaisir qui se partage et se respecte. La montagne offre un espace pour se retrouver et partager des moments inoubliables, à vélo ou à pied. Pour que tous les amateurs de grand air puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer son loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles mises en place. Bien évaluer sa condition physique et ses capacités. L'utilisation des différents itinéraires se fait toujours à vos propres risques.\\n\\nL'office de tourisme à Finhaut met à disposition des brochures pour la randonnée dans la région.\\n\\nCartes nationales SwissTopo 1:25'000 : 1324 Barberine\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nRandonnée géologique au lac de retenue Vieux-Emosson\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La montagne, un espace de plaisir qui se partage et se respecte. La montagne offre un espace pour se retrouver et partager des moments inoubliables, à vélo ou à pied. Pour que tous les amateurs de grand air puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer son loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles mises en place. Bien évaluer sa condition physique et ses capacités. L'utilisation des différents itinéraires se fait toujours à vos propres risques.\\n\\nL'office de tourisme à Finhaut met à disposition des brochures pour la randonnée dans la région.\\n\\nCartes nationales SwissTopo 1:25'000 : 1324 Barberine\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nRandonnée géologique au lac de retenue Vieux-Emosson\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La montagne, un espace de plaisir qui se partage et se respecte. La montagne offre un espace pour se retrouver et partager des moments inoubliables, à vélo ou à pied. Pour que tous les amateurs de grand air puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer son loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles mises en place. Bien évaluer sa condition physique et ses capacités. L'utilisation des différents itinéraires se fait toujours à vos propres risques.\\n\\nL'office de tourisme à Finhaut met à disposition des brochures pour la randonnée dans la région.\\n\\nCartes nationales SwissTopo 1:25'000 : 1324 Barberine\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nRandonnée géologique au lac de retenue Vieux-Emosson\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/23.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 24,
+    "name": {
+      "fr": "Chemin en altitude Almagelleralp",
+      "de": "Chemin en altitude Almagelleralp",
+      "en": "Chemin en altitude Almagelleralp"
+    },
+    "region": "",
+    "difficulty": "Moyen",
+    "category": "Itinéraires",
+    "duration": "3:15 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée réjouissante combine des vues à couper le souffle ainsi qu’une nature préservée avec une grande aventure. Au début, en cours de route et à la fin de la randonnée, des restaurants de montagne invitent à une petite pause.\\n\\nLa randonnée démarre à la station du téléphérique Kreuzboden, où se trouvent un lac de montagne et une aire de jeux d’aventure. La première moitié du parcours mène vers le sud à environ 2400 à 2550 m d’altitude le long de la vallée de Saas. Les vues sur le massif glaciaire du Mischabel avec le Dom (4545 m), le plus haut sommet entièrement situé sur le territoire suisse, sont magnifiques. À l’endroit où le chemin traverse la crête « Triftgrätji », vous attend la plus belle vue de la randonnée : toute la vallée du lac de retenue de Mattmark jusqu’à Stalden est visible.\\n\\nLe premier tronçon de la randonnée jusqu’au « Triftgrätji » suit la promenade des fleurs alpines (de Kreuzboden à Saas-Grund), qui présente environ 240 espèces de fleurs dont l'edelweiss et la gentiane.\\n\\nEn dessous de la crête, le chemin continue d'abord vers le sud avant de bifurquer à droite dans la <strong>sauvage</strong> vallée d’Almagell. Ici, vous attendent une nature intacte et un calme indescriptible. L’hôtel de montagne entouré de prairies fleuries est idéal pour une courte pause.\\n\\nNotre parcours longe désormais la rivière avant d’atteindre vers le sud le grand point fort de la randonnée : le sentier aventure d'Almagell. Le chemin suit les pentes abruptes et rocheuses de l'Almagellerhorn. Vous y trouverez des passages exposés sécurisés par des prises, rampes et filets. Une bonne stabilité et l'absence de vertige sont requises. Après deux ponts suspendus de 45 m et 60 m de long, le chemin se termine par une descente presque verticale le long de la paroi rocheuse.\\n\\nLe parcours commence à Kreuzboden et emmène les randonneurs à 2500 mètres d'altitude avec vue sur la chaîne du Mischabel à travers la vallée de Saas. Pendant que le chemin contourne la crête du Triftgrätji, vous profitez du panorama sur la vallée jusqu'au barrage de Mattmark et découvrez la diversité des fleurs de montagne. Le sentier continue vers le sud avant de descendre dans la vallée d'Almagell – un véritable joyau avec sa nature préservée. Ensuite, il suit la rivière et atteint le point fort : le sentier aventure Saas-Almagell. Celui-ci traverse les pentes abruptes de l'Almagellerhorn et comporte quelques passages exposés sécurisés par des prises, des rampes et des filets. Cette partie est destinée aux randonneurs sans vertige. Après avoir traversé les deux ponts suspendus de 45 et 60 mètres de long, le chemin se termine par un sentier presque vertical le long de la paroi rocheuse. Si vous préférez un itinéraire moins exposé, prenez directement à droite au croisement du sentier aventure en direction de Saas-Almagell.\\n\\nKreuzboden, station supérieure du téléphérique (2399m)\\n\\nFurggstalden, station supérieure du télésiège (1670m)\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. La pratique des différents itinéraires se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée réjouissante combine des vues à couper le souffle ainsi qu’une nature préservée avec une grande aventure. Au début, en cours de route et à la fin de la randonnée, des restaurants de montagne invitent à une petite pause.\\n\\nLa randonnée démarre à la station du téléphérique Kreuzboden, où se trouvent un lac de montagne et une aire de jeux d’aventure. La première moitié du parcours mène vers le sud à environ 2400 à 2550 m d’altitude le long de la vallée de Saas. Les vues sur le massif glaciaire du Mischabel avec le Dom (4545 m), le plus haut sommet entièrement situé sur le territoire suisse, sont magnifiques. À l’endroit où le chemin traverse la crête « Triftgrätji », vous attend la plus belle vue de la randonnée : toute la vallée du lac de retenue de Mattmark jusqu’à Stalden est visible.\\n\\nLe premier tronçon de la randonnée jusqu’au « Triftgrätji » suit la promenade des fleurs alpines (de Kreuzboden à Saas-Grund), qui présente environ 240 espèces de fleurs dont l'edelweiss et la gentiane.\\n\\nEn dessous de la crête, le chemin continue d'abord vers le sud avant de bifurquer à droite dans la <strong>sauvage</strong> vallée d’Almagell. Ici, vous attendent une nature intacte et un calme indescriptible. L’hôtel de montagne entouré de prairies fleuries est idéal pour une courte pause.\\n\\nNotre parcours longe désormais la rivière avant d’atteindre vers le sud le grand point fort de la randonnée : le sentier aventure d'Almagell. Le chemin suit les pentes abruptes et rocheuses de l'Almagellerhorn. Vous y trouverez des passages exposés sécurisés par des prises, rampes et filets. Une bonne stabilité et l'absence de vertige sont requises. Après deux ponts suspendus de 45 m et 60 m de long, le chemin se termine par une descente presque verticale le long de la paroi rocheuse.\\n\\nLe parcours commence à Kreuzboden et emmène les randonneurs à 2500 mètres d'altitude avec vue sur la chaîne du Mischabel à travers la vallée de Saas. Pendant que le chemin contourne la crête du Triftgrätji, vous profitez du panorama sur la vallée jusqu'au barrage de Mattmark et découvrez la diversité des fleurs de montagne. Le sentier continue vers le sud avant de descendre dans la vallée d'Almagell – un véritable joyau avec sa nature préservée. Ensuite, il suit la rivière et atteint le point fort : le sentier aventure Saas-Almagell. Celui-ci traverse les pentes abruptes de l'Almagellerhorn et comporte quelques passages exposés sécurisés par des prises, des rampes et des filets. Cette partie est destinée aux randonneurs sans vertige. Après avoir traversé les deux ponts suspendus de 45 et 60 mètres de long, le chemin se termine par un sentier presque vertical le long de la paroi rocheuse. Si vous préférez un itinéraire moins exposé, prenez directement à droite au croisement du sentier aventure en direction de Saas-Almagell.\\n\\nKreuzboden, station supérieure du téléphérique (2399m)\\n\\nFurggstalden, station supérieure du télésiège (1670m)\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. La pratique des différents itinéraires se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée réjouissante combine des vues à couper le souffle ainsi qu’une nature préservée avec une grande aventure. Au début, en cours de route et à la fin de la randonnée, des restaurants de montagne invitent à une petite pause.\\n\\nLa randonnée démarre à la station du téléphérique Kreuzboden, où se trouvent un lac de montagne et une aire de jeux d’aventure. La première moitié du parcours mène vers le sud à environ 2400 à 2550 m d’altitude le long de la vallée de Saas. Les vues sur le massif glaciaire du Mischabel avec le Dom (4545 m), le plus haut sommet entièrement situé sur le territoire suisse, sont magnifiques. À l’endroit où le chemin traverse la crête « Triftgrätji », vous attend la plus belle vue de la randonnée : toute la vallée du lac de retenue de Mattmark jusqu’à Stalden est visible.\\n\\nLe premier tronçon de la randonnée jusqu’au « Triftgrätji » suit la promenade des fleurs alpines (de Kreuzboden à Saas-Grund), qui présente environ 240 espèces de fleurs dont l'edelweiss et la gentiane.\\n\\nEn dessous de la crête, le chemin continue d'abord vers le sud avant de bifurquer à droite dans la <strong>sauvage</strong> vallée d’Almagell. Ici, vous attendent une nature intacte et un calme indescriptible. L’hôtel de montagne entouré de prairies fleuries est idéal pour une courte pause.\\n\\nNotre parcours longe désormais la rivière avant d’atteindre vers le sud le grand point fort de la randonnée : le sentier aventure d'Almagell. Le chemin suit les pentes abruptes et rocheuses de l'Almagellerhorn. Vous y trouverez des passages exposés sécurisés par des prises, rampes et filets. Une bonne stabilité et l'absence de vertige sont requises. Après deux ponts suspendus de 45 m et 60 m de long, le chemin se termine par une descente presque verticale le long de la paroi rocheuse.\\n\\nLe parcours commence à Kreuzboden et emmène les randonneurs à 2500 mètres d'altitude avec vue sur la chaîne du Mischabel à travers la vallée de Saas. Pendant que le chemin contourne la crête du Triftgrätji, vous profitez du panorama sur la vallée jusqu'au barrage de Mattmark et découvrez la diversité des fleurs de montagne. Le sentier continue vers le sud avant de descendre dans la vallée d'Almagell – un véritable joyau avec sa nature préservée. Ensuite, il suit la rivière et atteint le point fort : le sentier aventure Saas-Almagell. Celui-ci traverse les pentes abruptes de l'Almagellerhorn et comporte quelques passages exposés sécurisés par des prises, des rampes et des filets. Cette partie est destinée aux randonneurs sans vertige. Après avoir traversé les deux ponts suspendus de 45 et 60 mètres de long, le chemin se termine par un sentier presque vertical le long de la paroi rocheuse. Si vous préférez un itinéraire moins exposé, prenez directement à droite au croisement du sentier aventure en direction de Saas-Almagell.\\n\\nKreuzboden, station supérieure du téléphérique (2399m)\\n\\nFurggstalden, station supérieure du télésiège (1670m)\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. La pratique des différents itinéraires se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/24.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 25,
+    "name": {
+      "fr": "À travers le Vallon de They jusqu'aux sources de la Vièze",
+      "de": "À travers le Vallon de They jusqu'aux sources de la Vièze",
+      "en": "À travers le Vallon de They jusqu'aux sources de la Vièze"
+    },
+    "region": "",
+    "difficulty": "Difficile",
+    "category": "Itinéraires",
+    "duration": "5:23 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le chemin de Morgins aux sources de la rivière Vièze montre les différentes façons dont l'eau a sculpté le paysage. La randonnée passe par des sources riches en minéraux, une cascade, des lacs de montagne et des restaurants et refuges charmants où l'on peut s'arrêter pour profiter du paysage.\\n\\nLe point de départ de la randonnée est le centre de Morgins. Le chemin monte ensuite vers les rives de la Vièze, où l'on découvre rapidement un premier point fort, \"les sources rouges\", dont l'eau ferrugineuse a attiré les premiers touristes à Morgins en 1820.\\n\\nLa randonnée se poursuit le long de la rive, passant devant le restaurant Cantine de They, vers des zones plus élevées de la vallée. Par un sentier en zigzag raide, on monte à droite vers la cascade Fontaine-Blanche – qui donne l'impression que l'eau coule directement de la roche nue.\\n\\nCeci est l'une des nombreuses caractéristiques typiques d'un paysage karstique : des cours d'eau souterrains disparaissant dans des dolines (entonnoirs karstiques) et réapparaissant au pied des rochers sous forme de source, d'aven et de formations rocheuses étranges créées par l'eau.\\n\\nDe plus, le chemin monte jusqu'au Lac de Chésery (alimenté par des cours d'eau souterrains qui nourrissent la Fontaine Blanche) et encore plus haut jusqu'au Lac Vert. Là se trouve le refuge de montagne Refuge de Chésery (1 985 m), une ancienne écurie du XIXe siècle rénovée en 1987. Un point fort est la bonne cuisine et la possibilité de pêcher dans le lac des truites de ruisseau et arc-en-ciel.\\n\\nLa randonnée passe ensuite par deux cols – dont les Portes du Soleil, qui ont donné leur nom à toute la région – avant de descendre à La Tovassière, une fromagerie d'alpage et un restaurant avec des spécialités locales et des plats à base de fromage du terroir.\\n\\nEnfin, on atteint le fond de la vallée et le chemin suit de nouveau la Vièze pour retourner à Morgins.\\n\\nNB Le refuge de montagne Refuge de Chésery est ouvert jusqu'à fin septembre.\\n\\nDepuis l'office du tourisme, suivez d'abord la route en montant vers la vallée avant de bifurquer après 500 m sur un chemin pédestre. Le chemin longe la vallée jusqu'à Sassey, où il commence à monter abruptement vers les sources occidentales de la Vièze – y compris une cascade et deux lacs de montagne – puis passe par le point le plus élevé de la randonnée : le col de montagne Portes de l'hiver.\\n\\nLe chemin descend ensuite jusqu'au deuxième col – les Portes du Soleil – avant de repartir vers le nord, puis de suivre un autre affluent de la Vièze via La Tovassière jusqu'au fond de la vallée, où il rejoint le premier tronçon du parcours.\\n\\nCe parcours n'a pas été approuvé par le canton du Valais selon la loi sur les chemins de loisirs. L'utilisation des parcours et des informations sur ce site est sous la responsabilité de l'utilisateur. Les conditions locales peuvent entraîner des modifications du parcours. Nous déclinons toute responsabilité quant à l'exactitude et l'exhaustivité des informations sur le site.\\n\\nLes montagnes, lieux de joie à partager et à respecter. Le monde montagnard est un lieu de rencontres pour vivre ensemble des instants inoubliables – que ce soit à vélo ou à pied. Pour que tous les utilisateurs en profitent, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le chemin de Morgins aux sources de la rivière Vièze montre les différentes façons dont l'eau a sculpté le paysage. La randonnée passe par des sources riches en minéraux, une cascade, des lacs de montagne et des restaurants et refuges charmants où l'on peut s'arrêter pour profiter du paysage.\\n\\nLe point de départ de la randonnée est le centre de Morgins. Le chemin monte ensuite vers les rives de la Vièze, où l'on découvre rapidement un premier point fort, \"les sources rouges\", dont l'eau ferrugineuse a attiré les premiers touristes à Morgins en 1820.\\n\\nLa randonnée se poursuit le long de la rive, passant devant le restaurant Cantine de They, vers des zones plus élevées de la vallée. Par un sentier en zigzag raide, on monte à droite vers la cascade Fontaine-Blanche – qui donne l'impression que l'eau coule directement de la roche nue.\\n\\nCeci est l'une des nombreuses caractéristiques typiques d'un paysage karstique : des cours d'eau souterrains disparaissant dans des dolines (entonnoirs karstiques) et réapparaissant au pied des rochers sous forme de source, d'aven et de formations rocheuses étranges créées par l'eau.\\n\\nDe plus, le chemin monte jusqu'au Lac de Chésery (alimenté par des cours d'eau souterrains qui nourrissent la Fontaine Blanche) et encore plus haut jusqu'au Lac Vert. Là se trouve le refuge de montagne Refuge de Chésery (1 985 m), une ancienne écurie du XIXe siècle rénovée en 1987. Un point fort est la bonne cuisine et la possibilité de pêcher dans le lac des truites de ruisseau et arc-en-ciel.\\n\\nLa randonnée passe ensuite par deux cols – dont les Portes du Soleil, qui ont donné leur nom à toute la région – avant de descendre à La Tovassière, une fromagerie d'alpage et un restaurant avec des spécialités locales et des plats à base de fromage du terroir.\\n\\nEnfin, on atteint le fond de la vallée et le chemin suit de nouveau la Vièze pour retourner à Morgins.\\n\\nNB Le refuge de montagne Refuge de Chésery est ouvert jusqu'à fin septembre.\\n\\nDepuis l'office du tourisme, suivez d'abord la route en montant vers la vallée avant de bifurquer après 500 m sur un chemin pédestre. Le chemin longe la vallée jusqu'à Sassey, où il commence à monter abruptement vers les sources occidentales de la Vièze – y compris une cascade et deux lacs de montagne – puis passe par le point le plus élevé de la randonnée : le col de montagne Portes de l'hiver.\\n\\nLe chemin descend ensuite jusqu'au deuxième col – les Portes du Soleil – avant de repartir vers le nord, puis de suivre un autre affluent de la Vièze via La Tovassière jusqu'au fond de la vallée, où il rejoint le premier tronçon du parcours.\\n\\nCe parcours n'a pas été approuvé par le canton du Valais selon la loi sur les chemins de loisirs. L'utilisation des parcours et des informations sur ce site est sous la responsabilité de l'utilisateur. Les conditions locales peuvent entraîner des modifications du parcours. Nous déclinons toute responsabilité quant à l'exactitude et l'exhaustivité des informations sur le site.\\n\\nLes montagnes, lieux de joie à partager et à respecter. Le monde montagnard est un lieu de rencontres pour vivre ensemble des instants inoubliables – que ce soit à vélo ou à pied. Pour que tous les utilisateurs en profitent, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le chemin de Morgins aux sources de la rivière Vièze montre les différentes façons dont l'eau a sculpté le paysage. La randonnée passe par des sources riches en minéraux, une cascade, des lacs de montagne et des restaurants et refuges charmants où l'on peut s'arrêter pour profiter du paysage.\\n\\nLe point de départ de la randonnée est le centre de Morgins. Le chemin monte ensuite vers les rives de la Vièze, où l'on découvre rapidement un premier point fort, \"les sources rouges\", dont l'eau ferrugineuse a attiré les premiers touristes à Morgins en 1820.\\n\\nLa randonnée se poursuit le long de la rive, passant devant le restaurant Cantine de They, vers des zones plus élevées de la vallée. Par un sentier en zigzag raide, on monte à droite vers la cascade Fontaine-Blanche – qui donne l'impression que l'eau coule directement de la roche nue.\\n\\nCeci est l'une des nombreuses caractéristiques typiques d'un paysage karstique : des cours d'eau souterrains disparaissant dans des dolines (entonnoirs karstiques) et réapparaissant au pied des rochers sous forme de source, d'aven et de formations rocheuses étranges créées par l'eau.\\n\\nDe plus, le chemin monte jusqu'au Lac de Chésery (alimenté par des cours d'eau souterrains qui nourrissent la Fontaine Blanche) et encore plus haut jusqu'au Lac Vert. Là se trouve le refuge de montagne Refuge de Chésery (1 985 m), une ancienne écurie du XIXe siècle rénovée en 1987. Un point fort est la bonne cuisine et la possibilité de pêcher dans le lac des truites de ruisseau et arc-en-ciel.\\n\\nLa randonnée passe ensuite par deux cols – dont les Portes du Soleil, qui ont donné leur nom à toute la région – avant de descendre à La Tovassière, une fromagerie d'alpage et un restaurant avec des spécialités locales et des plats à base de fromage du terroir.\\n\\nEnfin, on atteint le fond de la vallée et le chemin suit de nouveau la Vièze pour retourner à Morgins.\\n\\nNB Le refuge de montagne Refuge de Chésery est ouvert jusqu'à fin septembre.\\n\\nDepuis l'office du tourisme, suivez d'abord la route en montant vers la vallée avant de bifurquer après 500 m sur un chemin pédestre. Le chemin longe la vallée jusqu'à Sassey, où il commence à monter abruptement vers les sources occidentales de la Vièze – y compris une cascade et deux lacs de montagne – puis passe par le point le plus élevé de la randonnée : le col de montagne Portes de l'hiver.\\n\\nLe chemin descend ensuite jusqu'au deuxième col – les Portes du Soleil – avant de repartir vers le nord, puis de suivre un autre affluent de la Vièze via La Tovassière jusqu'au fond de la vallée, où il rejoint le premier tronçon du parcours.\\n\\nCe parcours n'a pas été approuvé par le canton du Valais selon la loi sur les chemins de loisirs. L'utilisation des parcours et des informations sur ce site est sous la responsabilité de l'utilisateur. Les conditions locales peuvent entraîner des modifications du parcours. Nous déclinons toute responsabilité quant à l'exactitude et l'exhaustivité des informations sur le site.\\n\\nLes montagnes, lieux de joie à partager et à respecter. Le monde montagnard est un lieu de rencontres pour vivre ensemble des instants inoubliables – que ce soit à vélo ou à pied. Pour que tous les utilisateurs en profitent, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à tous de pratiquer leurs loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/25.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 26,
+    "name": {
+      "fr": "Expérience de l’eau magique Grächen",
+      "de": "Expérience de l’eau magique Grächen",
+      "en": "Expérience de l’eau magique Grächen"
+    },
+    "region": "",
+    "difficulty": "Facile",
+    "category": "Itinéraires",
+    "duration": "4:35 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Grâce aux bisses, l'eau du glacier de Ried s'écoule à travers les prairies du Valais. En solo, à deux, pour les amateurs de plein air ou les familles, randonnez de mai à octobre en suivant les panneaux indicateurs et les stèles contenant des symboles magiques, qui rappellent que les droits d'eau étaient autrefois fixés et contrôlés sur des marques en bois entaillées, les \"tesselles\". Le long des bisses de Grächen, cette randonnée vivifiante allie fun et jeux avec l’eau. En balade sur des chemins relativement plats à travers des forêts de mélèzes ombragées, vous serez sans cesse surpris par de nombreux highlights, ainsi que par plusieurs aires de repos et îlots de jeux qui invitent à la détente et à la découverte.\\n\\nLa randonnée part de la place du village de Grächen. Pour rejoindre le porche qui marque le début du parcours, vous avez le choix entre deux possibilités. L’itinéraire no 1 passe par le centre sportif, puis grimpe vers l’aire de jeux forestière « Robis Waldspielpark ». De là, suivez l’eau jusqu’au porche du bisse de Chilcheri. L’itinéraire no 2 passe aussi par le centre sportif, puis longe la route agricole. Après un virage à gauche, vous trouverez le porche d’entrée à 200 mètres environ sur votre droite. La randonnée longe alors le bisse jusqu’au Riedbach. Après une brève montée, vous rejoignez le bisse d’Eggeri et suivez le fil de l’eau jusqu’au chemin du retour, qui redescend vers Grächen via l’alpe d’Äpnet et le lac de Grächen. Le sentier est entièrement balisé.\\n\\nPour conclure la randonnée, faites un détour par les installations Kneipp du lac de Grächen.\\n\\nLa montagne, un espace de plaisir qui se partage et se respecte. La montagne offre un espace pour se retrouver et partager des moments inoubliables, à vélo ou à pied. Pour que tous les amateurs de grand air puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer son loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles mises en place. Bien évaluer sa condition physique et ses capacités. L'utilisation des différents itinéraires se fait toujours à vos propres risques.\\n\\nConsultez la carte randonnées Valais/Wallis pour découvrir les meilleurs itinéraires de la région.\\n\\nL'office du tourisme de Grächen met à votre disposition du matériel d'information et des brochures sur la randonnée dans la destination.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Grâce aux bisses, l'eau du glacier de Ried s'écoule à travers les prairies du Valais. En solo, à deux, pour les amateurs de plein air ou les familles, randonnez de mai à octobre en suivant les panneaux indicateurs et les stèles contenant des symboles magiques, qui rappellent que les droits d'eau étaient autrefois fixés et contrôlés sur des marques en bois entaillées, les \"tesselles\". Le long des bisses de Grächen, cette randonnée vivifiante allie fun et jeux avec l’eau. En balade sur des chemins relativement plats à travers des forêts de mélèzes ombragées, vous serez sans cesse surpris par de nombreux highlights, ainsi que par plusieurs aires de repos et îlots de jeux qui invitent à la détente et à la découverte.\\n\\nLa randonnée part de la place du village de Grächen. Pour rejoindre le porche qui marque le début du parcours, vous avez le choix entre deux possibilités. L’itinéraire no 1 passe par le centre sportif, puis grimpe vers l’aire de jeux forestière « Robis Waldspielpark ». De là, suivez l’eau jusqu’au porche du bisse de Chilcheri. L’itinéraire no 2 passe aussi par le centre sportif, puis longe la route agricole. Après un virage à gauche, vous trouverez le porche d’entrée à 200 mètres environ sur votre droite. La randonnée longe alors le bisse jusqu’au Riedbach. Après une brève montée, vous rejoignez le bisse d’Eggeri et suivez le fil de l’eau jusqu’au chemin du retour, qui redescend vers Grächen via l’alpe d’Äpnet et le lac de Grächen. Le sentier est entièrement balisé.\\n\\nPour conclure la randonnée, faites un détour par les installations Kneipp du lac de Grächen.\\n\\nLa montagne, un espace de plaisir qui se partage et se respecte. La montagne offre un espace pour se retrouver et partager des moments inoubliables, à vélo ou à pied. Pour que tous les amateurs de grand air puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer son loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles mises en place. Bien évaluer sa condition physique et ses capacités. L'utilisation des différents itinéraires se fait toujours à vos propres risques.\\n\\nConsultez la carte randonnées Valais/Wallis pour découvrir les meilleurs itinéraires de la région.\\n\\nL'office du tourisme de Grächen met à votre disposition du matériel d'information et des brochures sur la randonnée dans la destination.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Grâce aux bisses, l'eau du glacier de Ried s'écoule à travers les prairies du Valais. En solo, à deux, pour les amateurs de plein air ou les familles, randonnez de mai à octobre en suivant les panneaux indicateurs et les stèles contenant des symboles magiques, qui rappellent que les droits d'eau étaient autrefois fixés et contrôlés sur des marques en bois entaillées, les \"tesselles\". Le long des bisses de Grächen, cette randonnée vivifiante allie fun et jeux avec l’eau. En balade sur des chemins relativement plats à travers des forêts de mélèzes ombragées, vous serez sans cesse surpris par de nombreux highlights, ainsi que par plusieurs aires de repos et îlots de jeux qui invitent à la détente et à la découverte.\\n\\nLa randonnée part de la place du village de Grächen. Pour rejoindre le porche qui marque le début du parcours, vous avez le choix entre deux possibilités. L’itinéraire no 1 passe par le centre sportif, puis grimpe vers l’aire de jeux forestière « Robis Waldspielpark ». De là, suivez l’eau jusqu’au porche du bisse de Chilcheri. L’itinéraire no 2 passe aussi par le centre sportif, puis longe la route agricole. Après un virage à gauche, vous trouverez le porche d’entrée à 200 mètres environ sur votre droite. La randonnée longe alors le bisse jusqu’au Riedbach. Après une brève montée, vous rejoignez le bisse d’Eggeri et suivez le fil de l’eau jusqu’au chemin du retour, qui redescend vers Grächen via l’alpe d’Äpnet et le lac de Grächen. Le sentier est entièrement balisé.\\n\\nPour conclure la randonnée, faites un détour par les installations Kneipp du lac de Grächen.\\n\\nLa montagne, un espace de plaisir qui se partage et se respecte. La montagne offre un espace pour se retrouver et partager des moments inoubliables, à vélo ou à pied. Pour que tous les amateurs de grand air puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer son loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles mises en place. Bien évaluer sa condition physique et ses capacités. L'utilisation des différents itinéraires se fait toujours à vos propres risques.\\n\\nConsultez la carte randonnées Valais/Wallis pour découvrir les meilleurs itinéraires de la région.\\n\\nL'office du tourisme de Grächen met à votre disposition du matériel d'information et des brochures sur la randonnée dans la destination.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/26.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 27,
+    "name": {
+      "fr": "Sur les échelles d'Albinen de Leukerbad à Albinen",
+      "de": "Sur les échelles d'Albinen de Leukerbad à Albinen",
+      "en": "Sur les échelles d'Albinen de Leukerbad à Albinen"
+    },
+    "region": "",
+    "difficulty": "Facile",
+    "category": "Itinéraires",
+    "duration": "2:00 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le point fort de la randonnée est la traversée des huit échelles en bois qui permettaient de franchir l'unique liaison entre Albinen et Leukerbad. À Albinen, tu trouveras un des villages typiques du Valais avec ses chalets traditionnels noircis par le soleil. La randonnée de deux heures de Leukerbad à Albinen est uniquement adaptée aux randonneurs sans vertige.\\n\\nLa randonnée commence dans le village de Leukerbad, que tu quittes en direction sud. A travers la forêt de Lochwald, tu arrives au début de la partie aventureuse sur les échelles d'Albinen. Ces échelles étaient autrefois la seule liaison entre Leukerbad et Albinen. Surtout les biens agricoles y étaient transportés. Il n'est pas prouvé, mais probable que ces échelles prolongent le passage du Gemmi du val de Kander au val de la Rhône.\\n\\nLes échelles franchissent un dénivelé d'environ 100 mètres et se terminent à la station aval du téléphérique Flachen-Torrentalp. Le restaurant Flaschen invite également à une courte pause rafraîchissante.\\n\\nEnsuite, le chemin traverse en partie la forêt, en partie les champs et prairies, passant au-dessus du hameau de Dorben en direction d'Albinen. Albinen est un village de montagne typique avec de nombreuses fermes et granges valaisannes bien conservées. Seule l'église du village a été reconstruite dans un style moderne après avoir été détruite par un tremblement de terre. La population vivait majoritairement en autonomie jusqu'au 20ème siècle. La route d'accès n'a été construite que dans les années 1960.\\n\\nLa gestion économe du sol a conduit à une densité très élevée de constructions. Comme tous les pignons des maisons d'habitation sont orientés vers la vallée, l'aspect extérieur du village présente une unité remarquable et fait partie des paysages villageois d'importance nationale.\\n\\nDepuis Albinen, la randonnée peut être poursuivie en direction des deux villages de montagne Guttet-Feschel et Erschmatt ou revenir à Leukerbad. Pour ne pas emprunter le même chemin, la randonnée décrite passe par Torrentalp pour revenir au village thermal. Par une autre descente aventureuse, le Wolfstritt, tu rejoins à nouveau le village de Leukerbad.\\n\\nLe chemin passe par la station aval du Torrentbahn jusqu'au Leiterngraben. Après avoir surmonté huit échelles, tu arrives à Flaschen et à la station aval du téléphérique qui te mène à la cabane de chasse de Torrent. De là, le chemin continue au-dessus de la route asphaltée en direction d'Albinen. Si tu en as envie et la force, tu peux, après une pause méritée, poursuivre la randonnée à travers la forêt d'altitude en direction de Guttet-Feschel et Erschmatt ou emprunter le chemin de retour via Torrentalp jusqu'à Leukerbad. En alternative, tu peux prendre le bus pour revenir à Leukerbad ou descendre jusqu'à Leuk.\\n\\nPour ceux qui ont le vertige et souhaitent éviter les échelles, il est possible de rejoindre la route depuis la base des échelles et de passer par le tunnel. Un peu plus loin, tu trouveras le sentier pédestre menant à Albinen.\\n\\nDepuis Albinen, la randonnée peut être poursuivie en direction des deux villages de montagne Guttet-Feschel et Erschmatt ou bien le retour peut s'effectuer vers Leukerbad. Pour ne pas reprendre le même chemin, la randonnée décrite passe par Torrentalp pour revenir au village thermal. Par une autre descente aventureuse, appelée Wolfstritt, tu rejoins à nouveau le village de Leukerbad.\\n\\nDepuis Bâle et Zurich : Autoroute A1 jusqu'à Berne ; A6 jusqu'à Spiez ; direction Kandersteg ; navette automobile Kandersteg – Goppenstein ; direction Gampel ; Leuk – Leukerbad\\n\\nDepuis Genève : Autoroute A1 jusqu'à Lausanne ; direction Sion/Sierre ; Leuk – Leukerbad\\n\\nDepuis Milan : Autoroute A8/A26 direction Simplon ; navette automobile Iselle-Brig ; direction Leuk – Leukerbad\\n\\nDifférents emplacements de parking dans le village de Leukerbad. Suis le système local de guidage pour le stationnement.\\n\\nParkings à Leukerbad : Parking Sportarena, Parking Rathaus, Parking Torrent, Parking Leukerbad Therme, Parking Alpentherme.\\n\\nL'utilisation des sentiers de randonnée et les informations sur ce site se font à tes propres risques. Les conditions sur place peuvent éventuellement entraîner des modifications de l'itinéraire. Nous déclinons toute responsabilité quant à l'exactitude et l'exhaustivité des informations sur ce site.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un endroit pour se retrouver et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informe-toi sur les recommandations et les règles.\\n\\nÉvalue bien tes propres capacités et ta condition physique. L'utilisation des différents parcours se fait toujours sous ta propre responsabilité.\\n\\nL'office du tourisme de Leukerbad met à ta disposition des documents d'information et des brochures sur la randonnée dans la destination et peut fournir des informations détaillées sur le parcours.\\n\\nCette activité vous est proposée par Leukerbad . Valais/Wallis Promotion n'est pas responsable du contenu proposé.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le point fort de la randonnée est la traversée des huit échelles en bois qui permettaient de franchir l'unique liaison entre Albinen et Leukerbad. À Albinen, tu trouveras un des villages typiques du Valais avec ses chalets traditionnels noircis par le soleil. La randonnée de deux heures de Leukerbad à Albinen est uniquement adaptée aux randonneurs sans vertige.\\n\\nLa randonnée commence dans le village de Leukerbad, que tu quittes en direction sud. A travers la forêt de Lochwald, tu arrives au début de la partie aventureuse sur les échelles d'Albinen. Ces échelles étaient autrefois la seule liaison entre Leukerbad et Albinen. Surtout les biens agricoles y étaient transportés. Il n'est pas prouvé, mais probable que ces échelles prolongent le passage du Gemmi du val de Kander au val de la Rhône.\\n\\nLes échelles franchissent un dénivelé d'environ 100 mètres et se terminent à la station aval du téléphérique Flachen-Torrentalp. Le restaurant Flaschen invite également à une courte pause rafraîchissante.\\n\\nEnsuite, le chemin traverse en partie la forêt, en partie les champs et prairies, passant au-dessus du hameau de Dorben en direction d'Albinen. Albinen est un village de montagne typique avec de nombreuses fermes et granges valaisannes bien conservées. Seule l'église du village a été reconstruite dans un style moderne après avoir été détruite par un tremblement de terre. La population vivait majoritairement en autonomie jusqu'au 20ème siècle. La route d'accès n'a été construite que dans les années 1960.\\n\\nLa gestion économe du sol a conduit à une densité très élevée de constructions. Comme tous les pignons des maisons d'habitation sont orientés vers la vallée, l'aspect extérieur du village présente une unité remarquable et fait partie des paysages villageois d'importance nationale.\\n\\nDepuis Albinen, la randonnée peut être poursuivie en direction des deux villages de montagne Guttet-Feschel et Erschmatt ou revenir à Leukerbad. Pour ne pas emprunter le même chemin, la randonnée décrite passe par Torrentalp pour revenir au village thermal. Par une autre descente aventureuse, le Wolfstritt, tu rejoins à nouveau le village de Leukerbad.\\n\\nLe chemin passe par la station aval du Torrentbahn jusqu'au Leiterngraben. Après avoir surmonté huit échelles, tu arrives à Flaschen et à la station aval du téléphérique qui te mène à la cabane de chasse de Torrent. De là, le chemin continue au-dessus de la route asphaltée en direction d'Albinen. Si tu en as envie et la force, tu peux, après une pause méritée, poursuivre la randonnée à travers la forêt d'altitude en direction de Guttet-Feschel et Erschmatt ou emprunter le chemin de retour via Torrentalp jusqu'à Leukerbad. En alternative, tu peux prendre le bus pour revenir à Leukerbad ou descendre jusqu'à Leuk.\\n\\nPour ceux qui ont le vertige et souhaitent éviter les échelles, il est possible de rejoindre la route depuis la base des échelles et de passer par le tunnel. Un peu plus loin, tu trouveras le sentier pédestre menant à Albinen.\\n\\nDepuis Albinen, la randonnée peut être poursuivie en direction des deux villages de montagne Guttet-Feschel et Erschmatt ou bien le retour peut s'effectuer vers Leukerbad. Pour ne pas reprendre le même chemin, la randonnée décrite passe par Torrentalp pour revenir au village thermal. Par une autre descente aventureuse, appelée Wolfstritt, tu rejoins à nouveau le village de Leukerbad.\\n\\nDepuis Bâle et Zurich : Autoroute A1 jusqu'à Berne ; A6 jusqu'à Spiez ; direction Kandersteg ; navette automobile Kandersteg – Goppenstein ; direction Gampel ; Leuk – Leukerbad\\n\\nDepuis Genève : Autoroute A1 jusqu'à Lausanne ; direction Sion/Sierre ; Leuk – Leukerbad\\n\\nDepuis Milan : Autoroute A8/A26 direction Simplon ; navette automobile Iselle-Brig ; direction Leuk – Leukerbad\\n\\nDifférents emplacements de parking dans le village de Leukerbad. Suis le système local de guidage pour le stationnement.\\n\\nParkings à Leukerbad : Parking Sportarena, Parking Rathaus, Parking Torrent, Parking Leukerbad Therme, Parking Alpentherme.\\n\\nL'utilisation des sentiers de randonnée et les informations sur ce site se font à tes propres risques. Les conditions sur place peuvent éventuellement entraîner des modifications de l'itinéraire. Nous déclinons toute responsabilité quant à l'exactitude et l'exhaustivité des informations sur ce site.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un endroit pour se retrouver et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informe-toi sur les recommandations et les règles.\\n\\nÉvalue bien tes propres capacités et ta condition physique. L'utilisation des différents parcours se fait toujours sous ta propre responsabilité.\\n\\nL'office du tourisme de Leukerbad met à ta disposition des documents d'information et des brochures sur la randonnée dans la destination et peut fournir des informations détaillées sur le parcours.\\n\\nCette activité vous est proposée par Leukerbad . Valais/Wallis Promotion n'est pas responsable du contenu proposé.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le point fort de la randonnée est la traversée des huit échelles en bois qui permettaient de franchir l'unique liaison entre Albinen et Leukerbad. À Albinen, tu trouveras un des villages typiques du Valais avec ses chalets traditionnels noircis par le soleil. La randonnée de deux heures de Leukerbad à Albinen est uniquement adaptée aux randonneurs sans vertige.\\n\\nLa randonnée commence dans le village de Leukerbad, que tu quittes en direction sud. A travers la forêt de Lochwald, tu arrives au début de la partie aventureuse sur les échelles d'Albinen. Ces échelles étaient autrefois la seule liaison entre Leukerbad et Albinen. Surtout les biens agricoles y étaient transportés. Il n'est pas prouvé, mais probable que ces échelles prolongent le passage du Gemmi du val de Kander au val de la Rhône.\\n\\nLes échelles franchissent un dénivelé d'environ 100 mètres et se terminent à la station aval du téléphérique Flachen-Torrentalp. Le restaurant Flaschen invite également à une courte pause rafraîchissante.\\n\\nEnsuite, le chemin traverse en partie la forêt, en partie les champs et prairies, passant au-dessus du hameau de Dorben en direction d'Albinen. Albinen est un village de montagne typique avec de nombreuses fermes et granges valaisannes bien conservées. Seule l'église du village a été reconstruite dans un style moderne après avoir été détruite par un tremblement de terre. La population vivait majoritairement en autonomie jusqu'au 20ème siècle. La route d'accès n'a été construite que dans les années 1960.\\n\\nLa gestion économe du sol a conduit à une densité très élevée de constructions. Comme tous les pignons des maisons d'habitation sont orientés vers la vallée, l'aspect extérieur du village présente une unité remarquable et fait partie des paysages villageois d'importance nationale.\\n\\nDepuis Albinen, la randonnée peut être poursuivie en direction des deux villages de montagne Guttet-Feschel et Erschmatt ou revenir à Leukerbad. Pour ne pas emprunter le même chemin, la randonnée décrite passe par Torrentalp pour revenir au village thermal. Par une autre descente aventureuse, le Wolfstritt, tu rejoins à nouveau le village de Leukerbad.\\n\\nLe chemin passe par la station aval du Torrentbahn jusqu'au Leiterngraben. Après avoir surmonté huit échelles, tu arrives à Flaschen et à la station aval du téléphérique qui te mène à la cabane de chasse de Torrent. De là, le chemin continue au-dessus de la route asphaltée en direction d'Albinen. Si tu en as envie et la force, tu peux, après une pause méritée, poursuivre la randonnée à travers la forêt d'altitude en direction de Guttet-Feschel et Erschmatt ou emprunter le chemin de retour via Torrentalp jusqu'à Leukerbad. En alternative, tu peux prendre le bus pour revenir à Leukerbad ou descendre jusqu'à Leuk.\\n\\nPour ceux qui ont le vertige et souhaitent éviter les échelles, il est possible de rejoindre la route depuis la base des échelles et de passer par le tunnel. Un peu plus loin, tu trouveras le sentier pédestre menant à Albinen.\\n\\nDepuis Albinen, la randonnée peut être poursuivie en direction des deux villages de montagne Guttet-Feschel et Erschmatt ou bien le retour peut s'effectuer vers Leukerbad. Pour ne pas reprendre le même chemin, la randonnée décrite passe par Torrentalp pour revenir au village thermal. Par une autre descente aventureuse, appelée Wolfstritt, tu rejoins à nouveau le village de Leukerbad.\\n\\nDepuis Bâle et Zurich : Autoroute A1 jusqu'à Berne ; A6 jusqu'à Spiez ; direction Kandersteg ; navette automobile Kandersteg – Goppenstein ; direction Gampel ; Leuk – Leukerbad\\n\\nDepuis Genève : Autoroute A1 jusqu'à Lausanne ; direction Sion/Sierre ; Leuk – Leukerbad\\n\\nDepuis Milan : Autoroute A8/A26 direction Simplon ; navette automobile Iselle-Brig ; direction Leuk – Leukerbad\\n\\nDifférents emplacements de parking dans le village de Leukerbad. Suis le système local de guidage pour le stationnement.\\n\\nParkings à Leukerbad : Parking Sportarena, Parking Rathaus, Parking Torrent, Parking Leukerbad Therme, Parking Alpentherme.\\n\\nL'utilisation des sentiers de randonnée et les informations sur ce site se font à tes propres risques. Les conditions sur place peuvent éventuellement entraîner des modifications de l'itinéraire. Nous déclinons toute responsabilité quant à l'exactitude et l'exhaustivité des informations sur ce site.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde de la montagne est un endroit pour se retrouver et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informe-toi sur les recommandations et les règles.\\n\\nÉvalue bien tes propres capacités et ta condition physique. L'utilisation des différents parcours se fait toujours sous ta propre responsabilité.\\n\\nL'office du tourisme de Leukerbad met à ta disposition des documents d'information et des brochures sur la randonnée dans la destination et peut fournir des informations détaillées sur le parcours.\\n\\nCette activité vous est proposée par Leukerbad . Valais/Wallis Promotion n'est pas responsable du contenu proposé.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/27.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 28,
+    "name": {
+      "fr": "Randonnée circulaire depuis le Bettmerhorn via le lac Märjelen jusqu'à Bettmeralp",
+      "de": "Randonnée circulaire depuis le Bettmerhorn via le lac Märjelen jusqu'à Bettmeralp",
+      "en": "Randonnée circulaire depuis le Bettmerhorn via le lac Märjelen jusqu'à Bettmeralp"
+    },
+    "region": "",
+    "difficulty": "Difficile",
+    "category": "Itinéraires",
+    "duration": "5:30 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le point de départ de la randonnée est le point de vue Bettmerhorn, à deux minutes de la station de montagne du téléphérique Bettmerhorn (2 647 m). Tu commences par une légère descente via «Uf de Setzu» en direction de Roti Chumma. Le Grand Glacier d'Aletsch est constamment visible sur ce tronçon, tu t’en approches pas à pas. Par un chemin taillé dans la roche avec des marches en pierre, tu continues en direction de Märjela, du lac Märjelen et de la cabane Gletscherstube. De retour sur le plateau ensoleillé de l'Aletsch Arena, tu peux passer par Unneres Tälli ou Oberes Tälli (variante plus courte via le tunnel Tälligrat éclairé d'1 km). Tu marches jusqu'à Salzgäb puis suis le chemin en descente jusqu'à Fiescheralp. La dernière étape de cette <strong>magnifique</strong> randonnée te ramène à Bettmeralp.\\n\\nStation de montagne du téléphérique Bettmerhorn - Roti Chumma - lac Märjelen - Obers Tälli - Fiescheralp - Bettmeralp\\n\\nBettmerhorn, station de montagne téléphérique (2639m)\\n\\nProfite d'une pause dans la Gletscherstube, un refuge idylliquement situé, pour revivre les impressions du Grand Glacier d'Aletsch !\\n\\nEn train depuis Brig ou Oberwald jusqu'à la station inférieure de Bettmeralp. Prendre ensuite le téléphérique de Aletsch Bahnen AG pour monter à Bettmeralp.\\n\\nPar la route cantonale 19 jusqu'à la sortie Bettmeralp station inférieure. Prendre ensuite le téléphérique de Aletsch Bahnen AG pour monter à Bettmeralp.\\n\\nGrand parking/garage payant à la station inférieure de Bettmeralp.\\n\\nLes personnes qui entreprennent cette activité sur la base des informations de ce site web le font à leurs propres risques. Les conditions sur place peuvent entraîner des modifications de l'itinéraire et une augmentation des risques liés aux dangers naturels. Nous déclinons toute responsabilité quant à l'exactitude des informations sur ce site ou concernant les conditions dans lesquelles cette activité est pratiquée. En cas de doute, contacte la destination au préalable.\\n\\nAletsch Arena AGFurkastrasse 39CH-3983 Mörel-Filet+41 27 928 58 58info@aletscharena.ch www.aletscharena.ch\\n\\nAux remontées mécaniques et aux centres d'information de l'Aletsch Arena, tu recevras une carte <strong>panoramique</strong> gratuite.\\n\\nCartes nationales SwissTopo : 1:25 000 : 1269 Aletschgletscher\\n\\nCette activité vous est proposée par Aletsch Arena AG. Valais/Wallis Promotion n'est pas responsable du contenu proposé.\\n\\nRandonnée alpine parcours UNESCO du Bettmerhorn à l'Eggishorn\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le point de départ de la randonnée est le point de vue Bettmerhorn, à deux minutes de la station de montagne du téléphérique Bettmerhorn (2 647 m). Tu commences par une légère descente via «Uf de Setzu» en direction de Roti Chumma. Le Grand Glacier d'Aletsch est constamment visible sur ce tronçon, tu t’en approches pas à pas. Par un chemin taillé dans la roche avec des marches en pierre, tu continues en direction de Märjela, du lac Märjelen et de la cabane Gletscherstube. De retour sur le plateau ensoleillé de l'Aletsch Arena, tu peux passer par Unneres Tälli ou Oberes Tälli (variante plus courte via le tunnel Tälligrat éclairé d'1 km). Tu marches jusqu'à Salzgäb puis suis le chemin en descente jusqu'à Fiescheralp. La dernière étape de cette <strong>magnifique</strong> randonnée te ramène à Bettmeralp.\\n\\nStation de montagne du téléphérique Bettmerhorn - Roti Chumma - lac Märjelen - Obers Tälli - Fiescheralp - Bettmeralp\\n\\nBettmerhorn, station de montagne téléphérique (2639m)\\n\\nProfite d'une pause dans la Gletscherstube, un refuge idylliquement situé, pour revivre les impressions du Grand Glacier d'Aletsch !\\n\\nEn train depuis Brig ou Oberwald jusqu'à la station inférieure de Bettmeralp. Prendre ensuite le téléphérique de Aletsch Bahnen AG pour monter à Bettmeralp.\\n\\nPar la route cantonale 19 jusqu'à la sortie Bettmeralp station inférieure. Prendre ensuite le téléphérique de Aletsch Bahnen AG pour monter à Bettmeralp.\\n\\nGrand parking/garage payant à la station inférieure de Bettmeralp.\\n\\nLes personnes qui entreprennent cette activité sur la base des informations de ce site web le font à leurs propres risques. Les conditions sur place peuvent entraîner des modifications de l'itinéraire et une augmentation des risques liés aux dangers naturels. Nous déclinons toute responsabilité quant à l'exactitude des informations sur ce site ou concernant les conditions dans lesquelles cette activité est pratiquée. En cas de doute, contacte la destination au préalable.\\n\\nAletsch Arena AGFurkastrasse 39CH-3983 Mörel-Filet+41 27 928 58 58info@aletscharena.ch www.aletscharena.ch\\n\\nAux remontées mécaniques et aux centres d'information de l'Aletsch Arena, tu recevras une carte <strong>panoramique</strong> gratuite.\\n\\nCartes nationales SwissTopo : 1:25 000 : 1269 Aletschgletscher\\n\\nCette activité vous est proposée par Aletsch Arena AG. Valais/Wallis Promotion n'est pas responsable du contenu proposé.\\n\\nRandonnée alpine parcours UNESCO du Bettmerhorn à l'Eggishorn\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le point de départ de la randonnée est le point de vue Bettmerhorn, à deux minutes de la station de montagne du téléphérique Bettmerhorn (2 647 m). Tu commences par une légère descente via «Uf de Setzu» en direction de Roti Chumma. Le Grand Glacier d'Aletsch est constamment visible sur ce tronçon, tu t’en approches pas à pas. Par un chemin taillé dans la roche avec des marches en pierre, tu continues en direction de Märjela, du lac Märjelen et de la cabane Gletscherstube. De retour sur le plateau ensoleillé de l'Aletsch Arena, tu peux passer par Unneres Tälli ou Oberes Tälli (variante plus courte via le tunnel Tälligrat éclairé d'1 km). Tu marches jusqu'à Salzgäb puis suis le chemin en descente jusqu'à Fiescheralp. La dernière étape de cette <strong>magnifique</strong> randonnée te ramène à Bettmeralp.\\n\\nStation de montagne du téléphérique Bettmerhorn - Roti Chumma - lac Märjelen - Obers Tälli - Fiescheralp - Bettmeralp\\n\\nBettmerhorn, station de montagne téléphérique (2639m)\\n\\nProfite d'une pause dans la Gletscherstube, un refuge idylliquement situé, pour revivre les impressions du Grand Glacier d'Aletsch !\\n\\nEn train depuis Brig ou Oberwald jusqu'à la station inférieure de Bettmeralp. Prendre ensuite le téléphérique de Aletsch Bahnen AG pour monter à Bettmeralp.\\n\\nPar la route cantonale 19 jusqu'à la sortie Bettmeralp station inférieure. Prendre ensuite le téléphérique de Aletsch Bahnen AG pour monter à Bettmeralp.\\n\\nGrand parking/garage payant à la station inférieure de Bettmeralp.\\n\\nLes personnes qui entreprennent cette activité sur la base des informations de ce site web le font à leurs propres risques. Les conditions sur place peuvent entraîner des modifications de l'itinéraire et une augmentation des risques liés aux dangers naturels. Nous déclinons toute responsabilité quant à l'exactitude des informations sur ce site ou concernant les conditions dans lesquelles cette activité est pratiquée. En cas de doute, contacte la destination au préalable.\\n\\nAletsch Arena AGFurkastrasse 39CH-3983 Mörel-Filet+41 27 928 58 58info@aletscharena.ch www.aletscharena.ch\\n\\nAux remontées mécaniques et aux centres d'information de l'Aletsch Arena, tu recevras une carte <strong>panoramique</strong> gratuite.\\n\\nCartes nationales SwissTopo : 1:25 000 : 1269 Aletschgletscher\\n\\nCette activité vous est proposée par Aletsch Arena AG. Valais/Wallis Promotion n'est pas responsable du contenu proposé.\\n\\nRandonnée alpine parcours UNESCO du Bettmerhorn à l'Eggishorn\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/28.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 29,
+    "name": {
+      "fr": "Sentier des muletiers col de Gries",
+      "de": "Sentier des muletiers col de Gries",
+      "en": "Sentier des muletiers col de Gries"
+    },
+    "region": "",
+    "difficulty": "Difficile",
+    "category": "Itinéraires",
+    "duration": "8:00 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée au cœur des Alpes est aussi un voyage dans le temps. Un chemin historique de muletiers traverse des paysages sauvages vers un trio de cols alpins, qui pourraient raconter une histoire vivante d’échanges d’hier à aujourd’hui.\\n\\nDepuis l’époque romaine, l’Obergoms a accueilli commerçants et voyageurs des deux côtés des Alpes. L’un des principaux cols alpins menait alors par les cols Grimsel et Gries, la connexion la plus courte entre la Suisse et l’Italie à l’époque.\\n\\nLa randonnée commence sur le fond de la vallée du Rhône dans le pittoresque village d’Ulrichen, où jusqu’à 100 bêtes de somme passaient quotidiennement. De là, le parcours suit le chemin historique de muletiers jusqu’à la vallée <strong>sauvage</strong> d’Ägen. L’un des produits commerciaux les plus importants était alors le fromage Sbrinz de Suisse centrale, qui a donné son nom à la randonnée longue distance ViaSbrinz, de Suisse centrale vers l’Italie.\\n\\nLa route commerciale plus moderne suit également cette vallée – la route menant au col du Nufenen qui relie le Valais au Tessin. La randonnée mène vers le sud jusqu’au fond de la vallée, où une curiosité du 21e siècle vous attend : les éoliennes du parc éolien de Gries, le parc éolien le plus haut d’Europe à une altitude de 2500 m. Le site est conçu pour produire de l’électricité pour près de 3000 foyers et constitue un pilier important de la stratégie énergétique valaisanne, qui mise fortement sur les énergies renouvelables.\\n\\nLa randonnée passe au-dessus du scintillant lac de retenue de Gries jusqu’au col à la frontière italienne. À cet endroit paisible, une belle vue sur la Valle di Morasco ainsi que sur les Alpes bernoises et valaisannes vous attend. Ensuite, le parcours passe par le col de Corno, qui relie le Valais au Tessin, et retourne au col du Nufenen.\\n\\nLa randonnée depuis la gare d'Ulrichen jusqu'au col de Gries est bien indiquée.\\n\\nIl est possible de raccourcir la randonnée en évitant soit le col de Gries, soit le col de Corno. Plusieurs raccourcis mènent directement au col du Nufenen.\\n\\nAu sommet du col du Nufenen, un restaurant est disponible pour se rafraîchir. C’est également à cet endroit que se trouve l’arrêt de bus pour le retour.\\n\\nLe parcours de randonnée longue distance ViaSbrinz s’étend sur cinq jours et plus de 110 km, de Stansstad au bord du lac des Quatre-Cantons jusqu’à Ponte dans la Val Formazza en Italie. La randonnée décrite comprend une section de la dernière étape de cette randonnée de plusieurs jours.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde alpin est un endroit pour se réunir et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Afin que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L’utilisation des différentes routes se fait en principe sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée au cœur des Alpes est aussi un voyage dans le temps. Un chemin historique de muletiers traverse des paysages sauvages vers un trio de cols alpins, qui pourraient raconter une histoire vivante d’échanges d’hier à aujourd’hui.\\n\\nDepuis l’époque romaine, l’Obergoms a accueilli commerçants et voyageurs des deux côtés des Alpes. L’un des principaux cols alpins menait alors par les cols Grimsel et Gries, la connexion la plus courte entre la Suisse et l’Italie à l’époque.\\n\\nLa randonnée commence sur le fond de la vallée du Rhône dans le pittoresque village d’Ulrichen, où jusqu’à 100 bêtes de somme passaient quotidiennement. De là, le parcours suit le chemin historique de muletiers jusqu’à la vallée <strong>sauvage</strong> d’Ägen. L’un des produits commerciaux les plus importants était alors le fromage Sbrinz de Suisse centrale, qui a donné son nom à la randonnée longue distance ViaSbrinz, de Suisse centrale vers l’Italie.\\n\\nLa route commerciale plus moderne suit également cette vallée – la route menant au col du Nufenen qui relie le Valais au Tessin. La randonnée mène vers le sud jusqu’au fond de la vallée, où une curiosité du 21e siècle vous attend : les éoliennes du parc éolien de Gries, le parc éolien le plus haut d’Europe à une altitude de 2500 m. Le site est conçu pour produire de l’électricité pour près de 3000 foyers et constitue un pilier important de la stratégie énergétique valaisanne, qui mise fortement sur les énergies renouvelables.\\n\\nLa randonnée passe au-dessus du scintillant lac de retenue de Gries jusqu’au col à la frontière italienne. À cet endroit paisible, une belle vue sur la Valle di Morasco ainsi que sur les Alpes bernoises et valaisannes vous attend. Ensuite, le parcours passe par le col de Corno, qui relie le Valais au Tessin, et retourne au col du Nufenen.\\n\\nLa randonnée depuis la gare d'Ulrichen jusqu'au col de Gries est bien indiquée.\\n\\nIl est possible de raccourcir la randonnée en évitant soit le col de Gries, soit le col de Corno. Plusieurs raccourcis mènent directement au col du Nufenen.\\n\\nAu sommet du col du Nufenen, un restaurant est disponible pour se rafraîchir. C’est également à cet endroit que se trouve l’arrêt de bus pour le retour.\\n\\nLe parcours de randonnée longue distance ViaSbrinz s’étend sur cinq jours et plus de 110 km, de Stansstad au bord du lac des Quatre-Cantons jusqu’à Ponte dans la Val Formazza en Italie. La randonnée décrite comprend une section de la dernière étape de cette randonnée de plusieurs jours.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde alpin est un endroit pour se réunir et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Afin que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L’utilisation des différentes routes se fait en principe sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette randonnée au cœur des Alpes est aussi un voyage dans le temps. Un chemin historique de muletiers traverse des paysages sauvages vers un trio de cols alpins, qui pourraient raconter une histoire vivante d’échanges d’hier à aujourd’hui.\\n\\nDepuis l’époque romaine, l’Obergoms a accueilli commerçants et voyageurs des deux côtés des Alpes. L’un des principaux cols alpins menait alors par les cols Grimsel et Gries, la connexion la plus courte entre la Suisse et l’Italie à l’époque.\\n\\nLa randonnée commence sur le fond de la vallée du Rhône dans le pittoresque village d’Ulrichen, où jusqu’à 100 bêtes de somme passaient quotidiennement. De là, le parcours suit le chemin historique de muletiers jusqu’à la vallée <strong>sauvage</strong> d’Ägen. L’un des produits commerciaux les plus importants était alors le fromage Sbrinz de Suisse centrale, qui a donné son nom à la randonnée longue distance ViaSbrinz, de Suisse centrale vers l’Italie.\\n\\nLa route commerciale plus moderne suit également cette vallée – la route menant au col du Nufenen qui relie le Valais au Tessin. La randonnée mène vers le sud jusqu’au fond de la vallée, où une curiosité du 21e siècle vous attend : les éoliennes du parc éolien de Gries, le parc éolien le plus haut d’Europe à une altitude de 2500 m. Le site est conçu pour produire de l’électricité pour près de 3000 foyers et constitue un pilier important de la stratégie énergétique valaisanne, qui mise fortement sur les énergies renouvelables.\\n\\nLa randonnée passe au-dessus du scintillant lac de retenue de Gries jusqu’au col à la frontière italienne. À cet endroit paisible, une belle vue sur la Valle di Morasco ainsi que sur les Alpes bernoises et valaisannes vous attend. Ensuite, le parcours passe par le col de Corno, qui relie le Valais au Tessin, et retourne au col du Nufenen.\\n\\nLa randonnée depuis la gare d'Ulrichen jusqu'au col de Gries est bien indiquée.\\n\\nIl est possible de raccourcir la randonnée en évitant soit le col de Gries, soit le col de Corno. Plusieurs raccourcis mènent directement au col du Nufenen.\\n\\nAu sommet du col du Nufenen, un restaurant est disponible pour se rafraîchir. C’est également à cet endroit que se trouve l’arrêt de bus pour le retour.\\n\\nLe parcours de randonnée longue distance ViaSbrinz s’étend sur cinq jours et plus de 110 km, de Stansstad au bord du lac des Quatre-Cantons jusqu’à Ponte dans la Val Formazza en Italie. La randonnée décrite comprend une section de la dernière étape de cette randonnée de plusieurs jours.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde alpin est un endroit pour se réunir et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Afin que tous les usagers puissent en profiter, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L’utilisation des différentes routes se fait en principe sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/29.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 30,
+    "name": {
+      "fr": "Parcours de randonnée de la Seya",
+      "de": "Parcours de randonnée de la Seya",
+      "en": "Parcours de randonnée de la Seya"
+    },
+    "region": "",
+    "difficulty": "Moyen",
+    "category": "Itinéraires",
+    "duration": "2:59 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Les vues depuis la crête ouest au-dessus d'Ovronnaz sont superbes. Depuis La Seya (2182 m d'altitude), l’extrémité nord de la crête, les randonneurs jouissent d'une vue <strong>panoramique</strong> à 360° du Finsteraarhorn au Mont-Blanc, incluant 35 sommets de plus de 4000 mètres. Au point Grand Garde (2145 m d'altitude), vous pouvez apprécier la vue sur la vallée du Rhône. Laissez votre regard aller des profondeurs de la vallée du Lötschental jusqu’au scintillant glacier de Trient.\\n\\nLe long de la crête se trouve un chemin botanique où sont expliqués les plantes comme le narcisse des bois, la gentiane, l’orchis sureau ou l’anémone des Alpes.\\n\\nLa randonnée de La Seya débute à la station supérieure du télésiège Jorasse par une montée agréable jusqu'aux pâturages alpins de Petit Pré, puis une montée plus raide jusqu’à l’imposante croix de La Seya, le point le plus élevé de la randonnée. Le chemin continue ensuite vers le sud le long de la crête jusqu’à Grand Garde. Le retour vers Ovronnaz suit le sentier balisé passant par les pâturages de Quieu et Odonne. Juste avant d’atteindre le village d’Ovronnaz, le chemin croise le télésiège et passe devant le centre sportif, fréquemment utilisé pour des camps d’entraînement par des écoles, équipes et associations.\\n\\nLa randonnée commence à la station supérieure du télésiège, où le restaurant de Jorasse avec sa grande terrasse et son aire de jeux pour enfants invite à la détente. En direction sud, le chemin mène aux pâturages de Petit Pré, puis en environ 30 minutes supplémentaires vous traversez des forêts de mélèzes jusqu'au point de vue La Seya.\\n\\nLe chemin bien balisé suit généralement la crête. Pour atteindre le point de vue Grand Garde, il faut franchir un passage rocheux sécurisé par des chaînes. Pour ceux qui ont le vertige, une descente anticipée mène aux pâturages de Quieu. Le dernier tronçon descend agréablement à travers la forêt de pins et les pâturages jusqu'à Ovronnaz.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un espace pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun d’exercer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours se fait toujours à vos propres risques.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Les vues depuis la crête ouest au-dessus d'Ovronnaz sont superbes. Depuis La Seya (2182 m d'altitude), l’extrémité nord de la crête, les randonneurs jouissent d'une vue <strong>panoramique</strong> à 360° du Finsteraarhorn au Mont-Blanc, incluant 35 sommets de plus de 4000 mètres. Au point Grand Garde (2145 m d'altitude), vous pouvez apprécier la vue sur la vallée du Rhône. Laissez votre regard aller des profondeurs de la vallée du Lötschental jusqu’au scintillant glacier de Trient.\\n\\nLe long de la crête se trouve un chemin botanique où sont expliqués les plantes comme le narcisse des bois, la gentiane, l’orchis sureau ou l’anémone des Alpes.\\n\\nLa randonnée de La Seya débute à la station supérieure du télésiège Jorasse par une montée agréable jusqu'aux pâturages alpins de Petit Pré, puis une montée plus raide jusqu’à l’imposante croix de La Seya, le point le plus élevé de la randonnée. Le chemin continue ensuite vers le sud le long de la crête jusqu’à Grand Garde. Le retour vers Ovronnaz suit le sentier balisé passant par les pâturages de Quieu et Odonne. Juste avant d’atteindre le village d’Ovronnaz, le chemin croise le télésiège et passe devant le centre sportif, fréquemment utilisé pour des camps d’entraînement par des écoles, équipes et associations.\\n\\nLa randonnée commence à la station supérieure du télésiège, où le restaurant de Jorasse avec sa grande terrasse et son aire de jeux pour enfants invite à la détente. En direction sud, le chemin mène aux pâturages de Petit Pré, puis en environ 30 minutes supplémentaires vous traversez des forêts de mélèzes jusqu'au point de vue La Seya.\\n\\nLe chemin bien balisé suit généralement la crête. Pour atteindre le point de vue Grand Garde, il faut franchir un passage rocheux sécurisé par des chaînes. Pour ceux qui ont le vertige, une descente anticipée mène aux pâturages de Quieu. Le dernier tronçon descend agréablement à travers la forêt de pins et les pâturages jusqu'à Ovronnaz.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un espace pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun d’exercer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours se fait toujours à vos propres risques.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Les vues depuis la crête ouest au-dessus d'Ovronnaz sont superbes. Depuis La Seya (2182 m d'altitude), l’extrémité nord de la crête, les randonneurs jouissent d'une vue <strong>panoramique</strong> à 360° du Finsteraarhorn au Mont-Blanc, incluant 35 sommets de plus de 4000 mètres. Au point Grand Garde (2145 m d'altitude), vous pouvez apprécier la vue sur la vallée du Rhône. Laissez votre regard aller des profondeurs de la vallée du Lötschental jusqu’au scintillant glacier de Trient.\\n\\nLe long de la crête se trouve un chemin botanique où sont expliqués les plantes comme le narcisse des bois, la gentiane, l’orchis sureau ou l’anémone des Alpes.\\n\\nLa randonnée de La Seya débute à la station supérieure du télésiège Jorasse par une montée agréable jusqu'aux pâturages alpins de Petit Pré, puis une montée plus raide jusqu’à l’imposante croix de La Seya, le point le plus élevé de la randonnée. Le chemin continue ensuite vers le sud le long de la crête jusqu’à Grand Garde. Le retour vers Ovronnaz suit le sentier balisé passant par les pâturages de Quieu et Odonne. Juste avant d’atteindre le village d’Ovronnaz, le chemin croise le télésiège et passe devant le centre sportif, fréquemment utilisé pour des camps d’entraînement par des écoles, équipes et associations.\\n\\nLa randonnée commence à la station supérieure du télésiège, où le restaurant de Jorasse avec sa grande terrasse et son aire de jeux pour enfants invite à la détente. En direction sud, le chemin mène aux pâturages de Petit Pré, puis en environ 30 minutes supplémentaires vous traversez des forêts de mélèzes jusqu'au point de vue La Seya.\\n\\nLe chemin bien balisé suit généralement la crête. Pour atteindre le point de vue Grand Garde, il faut franchir un passage rocheux sécurisé par des chaînes. Pour ceux qui ont le vertige, une descente anticipée mène aux pâturages de Quieu. Le dernier tronçon descend agréablement à travers la forêt de pins et les pâturages jusqu'à Ovronnaz.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un espace pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun d’exercer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours se fait toujours à vos propres risques.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/30.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 31,
+    "name": {
+      "fr": "Chemin du Vin : Venthône – Leuk (Étape 4)",
+      "de": "Chemin du Vin : Venthône – Leuk (Étape 4)",
+      "en": "Chemin du Vin : Venthône – Leuk (Étape 4)"
+    },
+    "region": "",
+    "difficulty": "Moyen",
+    "category": "Itinéraires",
+    "duration": "4:00 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le chemin du vin suit un parcours <strong>panoramique</strong> le long des pentes ensoleillées du versant sud et à travers les charmants villages viticoles de la région viticole du Valais. Le chemin du vin peut être découvert de trois manières – en voiture, à vélo ou à pied. La randonnée de 65 kilomètres, composée de 4 étapes, permet de ne manquer aucun des nombreux sites d’intérêt.\\n\\nEn raison de la situation géologique instable, la Rhône n’a jamais pu être maîtrisée dans la région à la frontière linguistique. Elle suit son cours de manière naturelle avec de nombreuses ramifications – d’où la formation d’îles rocheuses. Sur la rive sud se trouvent les forêts de pins du parc naturel régional Pfyn-Finges. Ce vaste parc naturel est un des points chauds de la biodiversité en Suisse et s’étend de la rive du Rhône jusqu’aux sommets montagneux et aux glaciers. Entre-temps, on trouve les vignobles que notre randonnée traverse.\\n\\nCette étape du chemin du vin traverse la Raspille, qui forme la frontière linguistique entre le Valais germanophone et francophone. Ainsi, l’atmosphère à Venthône et Miège, francophones, est assez différente de celle de Salgesch, Varen et Leuk, également charmants villages le long du parcours.\\n\\nUn point fort du chemin est l’« Espace Terroirs » à Miège. Ce centre de visiteurs novateur présente une exposition sur la gestion des sols de la vigne et l’influence de la viticulture sur le paysage. De plus, le centre offre un petit café-restaurant ainsi qu’une zone de dégustation avec plus de 50 vins à découvrir.\\n\\nOutre la <strong>superbe</strong> vue, vous découvrez aussi l’histoire locale de la région. Le point culminant est la ville historique de Leuk avec ses bâtiments médiévaux ainsi que le château impressionnant, restauré par l’architecte suisse de renom Mario Botta. Aujourd’hui, le château est activement utilisé pour des événements musicaux, du théâtre et des expositions. Leuk est aussi la patrie du plus vieux vin de Suisse : un Cornalin planté en 1798 au cœur de la ville.\\n\\nLa randonnée commence un peu au-dessus de Sierre dans le village de Venthône, accessible en un court trajet en bus (arrêt : Village). La randonnée est bien balisée.\\n\\nÀ Miège se trouve l’« Espace Terroirs », un petit lieu un peu à l'écart du chemin dans le centre du village. C'est également le départ du « Sentier des Terroirs », un parcours thématique sur la géologie et la viticulture de la région. Cette randonnée circulaire se situe entre notre parcours et le Sentier de l’enseignement de la vigne. Ce dernier mène sous le chemin du vin de 4 jours de Sierre à Salgesch et relie les deux sites du Musée valaisan du vin.\\n\\nÀ Varen, un petit détour d'environ 200 m vaut la peine pour accéder à l’église sur la colline – vous y bénéficiez d'une vue sensationnelle sur la <strong>sauvage</strong> Rhône. Toujours à Varen se trouve un charmant chemin sur le thème du vin, le Pfyfoltruweg (Pfyfoltru = papillon).\\n\\nPrenez le temps à Leuk pour admirer la ville historique avec ses nombreux bâtiments médiévaux. Sur le chemin de la gare au bord de la Rhône, vous passerez par la chapelle Ringacker – une des plus belles églises baroques du Valais.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et les règles. Estimez bien vos compétences et votre condition physique. La pratique des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le chemin du vin suit un parcours <strong>panoramique</strong> le long des pentes ensoleillées du versant sud et à travers les charmants villages viticoles de la région viticole du Valais. Le chemin du vin peut être découvert de trois manières – en voiture, à vélo ou à pied. La randonnée de 65 kilomètres, composée de 4 étapes, permet de ne manquer aucun des nombreux sites d’intérêt.\\n\\nEn raison de la situation géologique instable, la Rhône n’a jamais pu être maîtrisée dans la région à la frontière linguistique. Elle suit son cours de manière naturelle avec de nombreuses ramifications – d’où la formation d’îles rocheuses. Sur la rive sud se trouvent les forêts de pins du parc naturel régional Pfyn-Finges. Ce vaste parc naturel est un des points chauds de la biodiversité en Suisse et s’étend de la rive du Rhône jusqu’aux sommets montagneux et aux glaciers. Entre-temps, on trouve les vignobles que notre randonnée traverse.\\n\\nCette étape du chemin du vin traverse la Raspille, qui forme la frontière linguistique entre le Valais germanophone et francophone. Ainsi, l’atmosphère à Venthône et Miège, francophones, est assez différente de celle de Salgesch, Varen et Leuk, également charmants villages le long du parcours.\\n\\nUn point fort du chemin est l’« Espace Terroirs » à Miège. Ce centre de visiteurs novateur présente une exposition sur la gestion des sols de la vigne et l’influence de la viticulture sur le paysage. De plus, le centre offre un petit café-restaurant ainsi qu’une zone de dégustation avec plus de 50 vins à découvrir.\\n\\nOutre la <strong>superbe</strong> vue, vous découvrez aussi l’histoire locale de la région. Le point culminant est la ville historique de Leuk avec ses bâtiments médiévaux ainsi que le château impressionnant, restauré par l’architecte suisse de renom Mario Botta. Aujourd’hui, le château est activement utilisé pour des événements musicaux, du théâtre et des expositions. Leuk est aussi la patrie du plus vieux vin de Suisse : un Cornalin planté en 1798 au cœur de la ville.\\n\\nLa randonnée commence un peu au-dessus de Sierre dans le village de Venthône, accessible en un court trajet en bus (arrêt : Village). La randonnée est bien balisée.\\n\\nÀ Miège se trouve l’« Espace Terroirs », un petit lieu un peu à l'écart du chemin dans le centre du village. C'est également le départ du « Sentier des Terroirs », un parcours thématique sur la géologie et la viticulture de la région. Cette randonnée circulaire se situe entre notre parcours et le Sentier de l’enseignement de la vigne. Ce dernier mène sous le chemin du vin de 4 jours de Sierre à Salgesch et relie les deux sites du Musée valaisan du vin.\\n\\nÀ Varen, un petit détour d'environ 200 m vaut la peine pour accéder à l’église sur la colline – vous y bénéficiez d'une vue sensationnelle sur la <strong>sauvage</strong> Rhône. Toujours à Varen se trouve un charmant chemin sur le thème du vin, le Pfyfoltruweg (Pfyfoltru = papillon).\\n\\nPrenez le temps à Leuk pour admirer la ville historique avec ses nombreux bâtiments médiévaux. Sur le chemin de la gare au bord de la Rhône, vous passerez par la chapelle Ringacker – une des plus belles églises baroques du Valais.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et les règles. Estimez bien vos compétences et votre condition physique. La pratique des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le chemin du vin suit un parcours <strong>panoramique</strong> le long des pentes ensoleillées du versant sud et à travers les charmants villages viticoles de la région viticole du Valais. Le chemin du vin peut être découvert de trois manières – en voiture, à vélo ou à pied. La randonnée de 65 kilomètres, composée de 4 étapes, permet de ne manquer aucun des nombreux sites d’intérêt.\\n\\nEn raison de la situation géologique instable, la Rhône n’a jamais pu être maîtrisée dans la région à la frontière linguistique. Elle suit son cours de manière naturelle avec de nombreuses ramifications – d’où la formation d’îles rocheuses. Sur la rive sud se trouvent les forêts de pins du parc naturel régional Pfyn-Finges. Ce vaste parc naturel est un des points chauds de la biodiversité en Suisse et s’étend de la rive du Rhône jusqu’aux sommets montagneux et aux glaciers. Entre-temps, on trouve les vignobles que notre randonnée traverse.\\n\\nCette étape du chemin du vin traverse la Raspille, qui forme la frontière linguistique entre le Valais germanophone et francophone. Ainsi, l’atmosphère à Venthône et Miège, francophones, est assez différente de celle de Salgesch, Varen et Leuk, également charmants villages le long du parcours.\\n\\nUn point fort du chemin est l’« Espace Terroirs » à Miège. Ce centre de visiteurs novateur présente une exposition sur la gestion des sols de la vigne et l’influence de la viticulture sur le paysage. De plus, le centre offre un petit café-restaurant ainsi qu’une zone de dégustation avec plus de 50 vins à découvrir.\\n\\nOutre la <strong>superbe</strong> vue, vous découvrez aussi l’histoire locale de la région. Le point culminant est la ville historique de Leuk avec ses bâtiments médiévaux ainsi que le château impressionnant, restauré par l’architecte suisse de renom Mario Botta. Aujourd’hui, le château est activement utilisé pour des événements musicaux, du théâtre et des expositions. Leuk est aussi la patrie du plus vieux vin de Suisse : un Cornalin planté en 1798 au cœur de la ville.\\n\\nLa randonnée commence un peu au-dessus de Sierre dans le village de Venthône, accessible en un court trajet en bus (arrêt : Village). La randonnée est bien balisée.\\n\\nÀ Miège se trouve l’« Espace Terroirs », un petit lieu un peu à l'écart du chemin dans le centre du village. C'est également le départ du « Sentier des Terroirs », un parcours thématique sur la géologie et la viticulture de la région. Cette randonnée circulaire se situe entre notre parcours et le Sentier de l’enseignement de la vigne. Ce dernier mène sous le chemin du vin de 4 jours de Sierre à Salgesch et relie les deux sites du Musée valaisan du vin.\\n\\nÀ Varen, un petit détour d'environ 200 m vaut la peine pour accéder à l’église sur la colline – vous y bénéficiez d'une vue sensationnelle sur la <strong>sauvage</strong> Rhône. Toujours à Varen se trouve un charmant chemin sur le thème du vin, le Pfyfoltruweg (Pfyfoltru = papillon).\\n\\nPrenez le temps à Leuk pour admirer la ville historique avec ses nombreux bâtiments médiévaux. Sur le chemin de la gare au bord de la Rhône, vous passerez par la chapelle Ringacker – une des plus belles églises baroques du Valais.\\n\\nLes montagnes, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – à vélo ou à pied. Pour que tous les usagers puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et les règles. Estimez bien vos compétences et votre condition physique. La pratique des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/31.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 32,
+    "name": {
+      "fr": "Tour du Val d’Anniviers : Zinal – Grimentz (Étape 3)",
+      "de": "Tour du Val d’Anniviers : Zinal – Grimentz (Étape 3)",
+      "en": "Tour du Val d’Anniviers : Zinal – Grimentz (Étape 3)"
+    },
+    "region": "",
+    "difficulty": "Difficile",
+    "category": "Itinéraires",
+    "duration": "4:30 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La partie haute de la vallée d’Anniviers se forme de deux vallées : la plus grande, la vallée de Zinal, et la vallée latérale de Moiry.\\n\\nLa randonnée traverse ces deux vallées et commence en haut au téléphérique Zinal-Sorebois. Une vue <strong>magnifique</strong> s’offre alors sur la « Couronne Impériale », la couronne royale. Il s’agit des cinq sommets de plus de 4000 mètres au-dessus de Zinal. Une montée raide vous conduit au col de Sorebois à 2835 m d'altitude. Ensuite, le chemin descend dans la vallée de Moiry.\\n\\nLors de la descente, un nouveau panorama s’ouvre. Devant vous se situe le barrage de Moiry, une construction imposante et architecturale intéressante. L’eau retenue par le barrage est d’un turquoise sublime et forme le lac de retenue de Moiry. Le lac est alimenté par les eaux glaciaires du glacier de Moiry, au milieu de sommets enneigés au fond de la vallée.\\n\\nAu barrage, plusieurs curiosités vous attendent. Notamment le restaurant avec sa terrasse ensoleillée, la via ferrata et des visites guidées à l’intérieur du barrage. La deuxième moitié de la randonnée offre une longue descente paysagère à travers la vallée de Moiry jusqu’à Grimentz. Vous traversez d’abord de beaux alpages puis des zones boisées.\\n\\nLe joli village de Grimentz séduit par ses maisons en bois décorées de fleurs et est particulièrement fier de son histoire riche qu’il partage volontiers avec ses visiteurs. Le sentier pédagogique du géranium informe les visiteurs sur les 34 espèces de cette fleur et leurs formes. Lors d’une visite guidée, les visiteurs peuvent déguster le vin glaciaire local dans un bâtiment du XVIe siècle. De plus, il y a un moulin à eau en état, un sentier historique, un sentier animalier ludique pour les familles ainsi qu’un parcours dédié aux légendes locales. Lors des cours de fabrication de pain, les participants peuvent confectionner leur propre pain de seigle selon la tradition et en profiter ensuite lors d’une fondue conviviale.\\n\\nLe parcours commence à la station supérieure du téléphérique Zinal-Sorebois à 2438 m d'altitude. De là, le chemin monte régulièrement vers le flanc sud-ouest de la Corne de Sorebois. Le chemin passe sous le sommet via le col de Sorebois à 2835 m d'altitude.\\n\\nDe là, le parcours descend en zigzag jusqu'au barrage de Moiry à 2250 m d'altitude. Le restaurant avec sa terrasse ensoleillée est un lieu idéal pour une petite pause.\\n\\nLe chemin traverse ensuite la crête du barrage avant de descendre en direction de la vallée de Moiry. La descente se fait vers le nord à travers la vallée de Moiry et traverse le ruisseau de montagne La Gougra avant Grimentz.\\n\\nVous pouvez prolonger la randonnée en montant à pied de Zinal à Sorebois au lieu d'utiliser le téléphérique.\\n\\nStation supérieure télécabine Zinal-Sorebois (2438 m d'altitude) (1663m)\\n\\nLa montagne est un lieu de joie à partager et à respecter. Le monde alpin est un endroit où l’on se retrouve pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Afin que tous les usagers en profitent, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et les règles. Évaluez bien vos propres capacités et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La partie haute de la vallée d’Anniviers se forme de deux vallées : la plus grande, la vallée de Zinal, et la vallée latérale de Moiry.\\n\\nLa randonnée traverse ces deux vallées et commence en haut au téléphérique Zinal-Sorebois. Une vue <strong>magnifique</strong> s’offre alors sur la « Couronne Impériale », la couronne royale. Il s’agit des cinq sommets de plus de 4000 mètres au-dessus de Zinal. Une montée raide vous conduit au col de Sorebois à 2835 m d'altitude. Ensuite, le chemin descend dans la vallée de Moiry.\\n\\nLors de la descente, un nouveau panorama s’ouvre. Devant vous se situe le barrage de Moiry, une construction imposante et architecturale intéressante. L’eau retenue par le barrage est d’un turquoise sublime et forme le lac de retenue de Moiry. Le lac est alimenté par les eaux glaciaires du glacier de Moiry, au milieu de sommets enneigés au fond de la vallée.\\n\\nAu barrage, plusieurs curiosités vous attendent. Notamment le restaurant avec sa terrasse ensoleillée, la via ferrata et des visites guidées à l’intérieur du barrage. La deuxième moitié de la randonnée offre une longue descente paysagère à travers la vallée de Moiry jusqu’à Grimentz. Vous traversez d’abord de beaux alpages puis des zones boisées.\\n\\nLe joli village de Grimentz séduit par ses maisons en bois décorées de fleurs et est particulièrement fier de son histoire riche qu’il partage volontiers avec ses visiteurs. Le sentier pédagogique du géranium informe les visiteurs sur les 34 espèces de cette fleur et leurs formes. Lors d’une visite guidée, les visiteurs peuvent déguster le vin glaciaire local dans un bâtiment du XVIe siècle. De plus, il y a un moulin à eau en état, un sentier historique, un sentier animalier ludique pour les familles ainsi qu’un parcours dédié aux légendes locales. Lors des cours de fabrication de pain, les participants peuvent confectionner leur propre pain de seigle selon la tradition et en profiter ensuite lors d’une fondue conviviale.\\n\\nLe parcours commence à la station supérieure du téléphérique Zinal-Sorebois à 2438 m d'altitude. De là, le chemin monte régulièrement vers le flanc sud-ouest de la Corne de Sorebois. Le chemin passe sous le sommet via le col de Sorebois à 2835 m d'altitude.\\n\\nDe là, le parcours descend en zigzag jusqu'au barrage de Moiry à 2250 m d'altitude. Le restaurant avec sa terrasse ensoleillée est un lieu idéal pour une petite pause.\\n\\nLe chemin traverse ensuite la crête du barrage avant de descendre en direction de la vallée de Moiry. La descente se fait vers le nord à travers la vallée de Moiry et traverse le ruisseau de montagne La Gougra avant Grimentz.\\n\\nVous pouvez prolonger la randonnée en montant à pied de Zinal à Sorebois au lieu d'utiliser le téléphérique.\\n\\nStation supérieure télécabine Zinal-Sorebois (2438 m d'altitude) (1663m)\\n\\nLa montagne est un lieu de joie à partager et à respecter. Le monde alpin est un endroit où l’on se retrouve pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Afin que tous les usagers en profitent, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et les règles. Évaluez bien vos propres capacités et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La partie haute de la vallée d’Anniviers se forme de deux vallées : la plus grande, la vallée de Zinal, et la vallée latérale de Moiry.\\n\\nLa randonnée traverse ces deux vallées et commence en haut au téléphérique Zinal-Sorebois. Une vue <strong>magnifique</strong> s’offre alors sur la « Couronne Impériale », la couronne royale. Il s’agit des cinq sommets de plus de 4000 mètres au-dessus de Zinal. Une montée raide vous conduit au col de Sorebois à 2835 m d'altitude. Ensuite, le chemin descend dans la vallée de Moiry.\\n\\nLors de la descente, un nouveau panorama s’ouvre. Devant vous se situe le barrage de Moiry, une construction imposante et architecturale intéressante. L’eau retenue par le barrage est d’un turquoise sublime et forme le lac de retenue de Moiry. Le lac est alimenté par les eaux glaciaires du glacier de Moiry, au milieu de sommets enneigés au fond de la vallée.\\n\\nAu barrage, plusieurs curiosités vous attendent. Notamment le restaurant avec sa terrasse ensoleillée, la via ferrata et des visites guidées à l’intérieur du barrage. La deuxième moitié de la randonnée offre une longue descente paysagère à travers la vallée de Moiry jusqu’à Grimentz. Vous traversez d’abord de beaux alpages puis des zones boisées.\\n\\nLe joli village de Grimentz séduit par ses maisons en bois décorées de fleurs et est particulièrement fier de son histoire riche qu’il partage volontiers avec ses visiteurs. Le sentier pédagogique du géranium informe les visiteurs sur les 34 espèces de cette fleur et leurs formes. Lors d’une visite guidée, les visiteurs peuvent déguster le vin glaciaire local dans un bâtiment du XVIe siècle. De plus, il y a un moulin à eau en état, un sentier historique, un sentier animalier ludique pour les familles ainsi qu’un parcours dédié aux légendes locales. Lors des cours de fabrication de pain, les participants peuvent confectionner leur propre pain de seigle selon la tradition et en profiter ensuite lors d’une fondue conviviale.\\n\\nLe parcours commence à la station supérieure du téléphérique Zinal-Sorebois à 2438 m d'altitude. De là, le chemin monte régulièrement vers le flanc sud-ouest de la Corne de Sorebois. Le chemin passe sous le sommet via le col de Sorebois à 2835 m d'altitude.\\n\\nDe là, le parcours descend en zigzag jusqu'au barrage de Moiry à 2250 m d'altitude. Le restaurant avec sa terrasse ensoleillée est un lieu idéal pour une petite pause.\\n\\nLe chemin traverse ensuite la crête du barrage avant de descendre en direction de la vallée de Moiry. La descente se fait vers le nord à travers la vallée de Moiry et traverse le ruisseau de montagne La Gougra avant Grimentz.\\n\\nVous pouvez prolonger la randonnée en montant à pied de Zinal à Sorebois au lieu d'utiliser le téléphérique.\\n\\nStation supérieure télécabine Zinal-Sorebois (2438 m d'altitude) (1663m)\\n\\nLa montagne est un lieu de joie à partager et à respecter. Le monde alpin est un endroit où l’on se retrouve pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Afin que tous les usagers en profitent, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et les règles. Évaluez bien vos propres capacités et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/32.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 33,
+    "name": {
+      "fr": "Gorges de Jolischlucht",
+      "de": "Gorges de Jolischlucht",
+      "en": "Gorges de Jolischlucht"
+    },
+    "region": "",
+    "difficulty": "Moyen",
+    "category": "Itinéraires",
+    "duration": "2:45 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Cette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/33.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 34,
+    "name": {
+      "fr": "De Croix de Culet via le Col de Cou jusqu’à Champéry",
+      "de": "De Croix de Culet via le Col de Cou jusqu’à Champéry",
+      "en": "De Croix de Culet via le Col de Cou jusqu’à Champéry"
+    },
+    "region": "",
+    "difficulty": "Facile",
+    "category": "Itinéraires",
+    "duration": "5:38 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Haut au-dessus de la Val d’Illiez, la frontière avec la France s’étend. Le point de passage frontalier le plus bas est le Col de Cou à 1921 m d’altitude, qui était connu jusqu’aux années 50 comme route de contrebande pour le sucre, le beurre, le tabac et les montres. Pendant la Seconde Guerre mondiale, les habitants aidèrent avec les résistants les réfugiés à franchir la frontière.\\n\\nLes vues le long de cette balade vers le col sont aussi spectaculaires que l'histoire de la région. Au début de la balade, vous prenez le téléphérique de Champéry jusqu’à la station supérieure Croix de Culet, point de départ de la promenade. La terrasse <strong>panoramique</strong> du restaurant de montagne offre une vue impressionnante sur les Dents du Midi.\\n\\nLe chemin forme une large boucle en direction ouest et passe par plusieurs pâturages alpins. À l’Alp Le Lapisa, vous pouvez déguster le fromage de montagne produit chaque jour. À l’automne, des saucisses y sont également fabriquées – tous ces produits locaux sont vendus directement dans le restaurant de montagne.\\n\\nAprès une courte descente, suit la montée vers le venté Col de Cou. La vue sur les montagnes de chaque côté est à couper le souffle, mais un spectacle aérien a aussi lieu : les oiseaux migrateurs montrent leurs formations impressionnantes, rappelant un ballet. La Station Ornithologique Suisse de Sempach mène au voisin Col de Bretolet des études à long terme sur le comportement des oiseaux migrateurs. Chaque année, des bénévoles y baguent entre 10'000 et 20'000 oiseaux d’environ cent espèces.\\n\\nDu Col de Cou, la route suit vers l’est l’arête Arête de Berroi, probablement l’un des chemins les plus passionnants de toute la région. Ensuite, le chemin descend jusqu’à l’<strong>idyllique</strong> plateau de Barme – où un chalet alpin endormi témoigne du passé de contrebande. Suit enfin la descente finale vers Grand Paradis et Champéry.\\n\\nDepuis la station supérieure du téléphérique Croix de Culet, le chemin descend agréablement à travers des pâturages alpins avant de suivre la montée raide vers le Col de Cou.\\n\\nEnsuite, le chemin longe l'arête de Berroi jusqu'à la route entre Champéry et Barme. Pendant la haute saison, cette section est desservie par un service de navette, ce qui permet de raccourcir la balade. Sur le chemin du retour vers Champéry, le parcours passe plusieurs fois à proximité de la route, offrant la possibilité d’utiliser la navette à différents arrêts.\\n\\nLa balade complète descend de l'arête jusqu'à l'Alpe Barme, où quelques petits restaurants de montagne invitent à une pause. Ensuite, le parcours descend vers la vallée en direction du Grand Paradis, où il est possible de revenir soit par la route secondaire directement, soit en passant par le centre historique du village de Champéry.\\n\\nCroix de Culet (station supérieure téléphérique) (1933m)\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables – à vélo ou à pied. Afin que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et les règles. Évaluez bien vos compétences et votre condition physique. La pratique des divers parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Haut au-dessus de la Val d’Illiez, la frontière avec la France s’étend. Le point de passage frontalier le plus bas est le Col de Cou à 1921 m d’altitude, qui était connu jusqu’aux années 50 comme route de contrebande pour le sucre, le beurre, le tabac et les montres. Pendant la Seconde Guerre mondiale, les habitants aidèrent avec les résistants les réfugiés à franchir la frontière.\\n\\nLes vues le long de cette balade vers le col sont aussi spectaculaires que l'histoire de la région. Au début de la balade, vous prenez le téléphérique de Champéry jusqu’à la station supérieure Croix de Culet, point de départ de la promenade. La terrasse <strong>panoramique</strong> du restaurant de montagne offre une vue impressionnante sur les Dents du Midi.\\n\\nLe chemin forme une large boucle en direction ouest et passe par plusieurs pâturages alpins. À l’Alp Le Lapisa, vous pouvez déguster le fromage de montagne produit chaque jour. À l’automne, des saucisses y sont également fabriquées – tous ces produits locaux sont vendus directement dans le restaurant de montagne.\\n\\nAprès une courte descente, suit la montée vers le venté Col de Cou. La vue sur les montagnes de chaque côté est à couper le souffle, mais un spectacle aérien a aussi lieu : les oiseaux migrateurs montrent leurs formations impressionnantes, rappelant un ballet. La Station Ornithologique Suisse de Sempach mène au voisin Col de Bretolet des études à long terme sur le comportement des oiseaux migrateurs. Chaque année, des bénévoles y baguent entre 10'000 et 20'000 oiseaux d’environ cent espèces.\\n\\nDu Col de Cou, la route suit vers l’est l’arête Arête de Berroi, probablement l’un des chemins les plus passionnants de toute la région. Ensuite, le chemin descend jusqu’à l’<strong>idyllique</strong> plateau de Barme – où un chalet alpin endormi témoigne du passé de contrebande. Suit enfin la descente finale vers Grand Paradis et Champéry.\\n\\nDepuis la station supérieure du téléphérique Croix de Culet, le chemin descend agréablement à travers des pâturages alpins avant de suivre la montée raide vers le Col de Cou.\\n\\nEnsuite, le chemin longe l'arête de Berroi jusqu'à la route entre Champéry et Barme. Pendant la haute saison, cette section est desservie par un service de navette, ce qui permet de raccourcir la balade. Sur le chemin du retour vers Champéry, le parcours passe plusieurs fois à proximité de la route, offrant la possibilité d’utiliser la navette à différents arrêts.\\n\\nLa balade complète descend de l'arête jusqu'à l'Alpe Barme, où quelques petits restaurants de montagne invitent à une pause. Ensuite, le parcours descend vers la vallée en direction du Grand Paradis, où il est possible de revenir soit par la route secondaire directement, soit en passant par le centre historique du village de Champéry.\\n\\nCroix de Culet (station supérieure téléphérique) (1933m)\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables – à vélo ou à pied. Afin que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et les règles. Évaluez bien vos compétences et votre condition physique. La pratique des divers parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Haut au-dessus de la Val d’Illiez, la frontière avec la France s’étend. Le point de passage frontalier le plus bas est le Col de Cou à 1921 m d’altitude, qui était connu jusqu’aux années 50 comme route de contrebande pour le sucre, le beurre, le tabac et les montres. Pendant la Seconde Guerre mondiale, les habitants aidèrent avec les résistants les réfugiés à franchir la frontière.\\n\\nLes vues le long de cette balade vers le col sont aussi spectaculaires que l'histoire de la région. Au début de la balade, vous prenez le téléphérique de Champéry jusqu’à la station supérieure Croix de Culet, point de départ de la promenade. La terrasse <strong>panoramique</strong> du restaurant de montagne offre une vue impressionnante sur les Dents du Midi.\\n\\nLe chemin forme une large boucle en direction ouest et passe par plusieurs pâturages alpins. À l’Alp Le Lapisa, vous pouvez déguster le fromage de montagne produit chaque jour. À l’automne, des saucisses y sont également fabriquées – tous ces produits locaux sont vendus directement dans le restaurant de montagne.\\n\\nAprès une courte descente, suit la montée vers le venté Col de Cou. La vue sur les montagnes de chaque côté est à couper le souffle, mais un spectacle aérien a aussi lieu : les oiseaux migrateurs montrent leurs formations impressionnantes, rappelant un ballet. La Station Ornithologique Suisse de Sempach mène au voisin Col de Bretolet des études à long terme sur le comportement des oiseaux migrateurs. Chaque année, des bénévoles y baguent entre 10'000 et 20'000 oiseaux d’environ cent espèces.\\n\\nDu Col de Cou, la route suit vers l’est l’arête Arête de Berroi, probablement l’un des chemins les plus passionnants de toute la région. Ensuite, le chemin descend jusqu’à l’<strong>idyllique</strong> plateau de Barme – où un chalet alpin endormi témoigne du passé de contrebande. Suit enfin la descente finale vers Grand Paradis et Champéry.\\n\\nDepuis la station supérieure du téléphérique Croix de Culet, le chemin descend agréablement à travers des pâturages alpins avant de suivre la montée raide vers le Col de Cou.\\n\\nEnsuite, le chemin longe l'arête de Berroi jusqu'à la route entre Champéry et Barme. Pendant la haute saison, cette section est desservie par un service de navette, ce qui permet de raccourcir la balade. Sur le chemin du retour vers Champéry, le parcours passe plusieurs fois à proximité de la route, offrant la possibilité d’utiliser la navette à différents arrêts.\\n\\nLa balade complète descend de l'arête jusqu'à l'Alpe Barme, où quelques petits restaurants de montagne invitent à une pause. Ensuite, le parcours descend vers la vallée en direction du Grand Paradis, où il est possible de revenir soit par la route secondaire directement, soit en passant par le centre historique du village de Champéry.\\n\\nCroix de Culet (station supérieure téléphérique) (1933m)\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontre pour vivre ensemble des moments inoubliables – à vélo ou à pied. Afin que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et les règles. Évaluez bien vos compétences et votre condition physique. La pratique des divers parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/34.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 35,
+    "name": {
+      "fr": "Parcours de l'éboulement des Diablerets",
+      "de": "Parcours de l'éboulement des Diablerets",
+      "en": "Parcours de l'éboulement des Diablerets"
+    },
+    "region": "",
+    "difficulty": "Facile",
+    "category": "Itinéraires",
+    "duration": "2:05 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le 23 septembre 1714, une catastrophe géologique a frappé la région de Derborence. Une partie de la montagne au-dessus s'est effondrée, anéantissant la faune ainsi que la vie des bergers qui s'y trouvaient. Les habitants croyaient à une œuvre du diable, raison pour laquelle la montagne a été nommée « Les Diablerets » (diable = diable, en français).\\n\\nCette vallée « maudite » a été en grande partie abandonnée, ce qui explique que le second éboulement, encore plus important, survenu 35 ans plus tard, a eu beaucoup moins d'effets sur la population. De gros blocs de pierre ont recouvert le fond de la vallée et ont retenu le ruisseau de montagne. Cela a créé le plus jeune lac naturel de montagne d'Europe. Les scientifiques estiment que l'effondrement comprenait environ 50 millions de mètres cubes de roche. Le paysage ainsi créé est un paradis pour les biologistes, géologues, photographes et visiteurs de tout âge.\\n\\nLa randonnée combine deux parcours : celui de l’éboulement (« Parcours de l'éboulement des Diablerets ») et le tour du lac (« Parcours du Lac de Derborence »). Dans la forêt originelle, tu peux admirer des sapins vieux de 450 ans. Les chances d’apercevoir des animaux sauvages sont grandes – guette les bouquetins, chevreuils, chamois, marmottes et lynx. Dans les airs, tu peux observer des aigles royaux, des tétras lyre et des vautours fauves.\\n\\nEn particulier, les familles peuvent aussi faire une seule des deux randonnées. Un guide avec des activités pour enfants est disponible en téléchargement pour les deux.\\n\\nLe voyage jusqu’à Derborence est déjà une aventure à lui seul. Le seul accès passe par une route étroite et sinueuse longeant les gorges de la Lizerne.\\n\\nLe parcours commence au parking et à l'arrêt de bus près du lac de Derborence. Le parcours débute par la traversée des éboulis de l’éboulement, avant de traverser les pentes et d'atteindre le point le plus élevé au-dessus du réservoir de Godey. De là, la randonnée descend vers l’ancienne forêt d’Ecorcha. Enfin, la randonnée fait le tour du lac de Derborence dans le sens des aiguilles d'une montre.\\n\\nVous pouvez aussi commencer la randonnée au deuxième parking près du réservoir de Godey.\\n\\nSi vous êtes avec des enfants, prévoyez du temps supplémentaire pour les activités proposées dans les guides.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect pour la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nLe bureau du tourisme met à disposition du matériel d'information et des brochures pour la randonnée dans la destination :\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le 23 septembre 1714, une catastrophe géologique a frappé la région de Derborence. Une partie de la montagne au-dessus s'est effondrée, anéantissant la faune ainsi que la vie des bergers qui s'y trouvaient. Les habitants croyaient à une œuvre du diable, raison pour laquelle la montagne a été nommée « Les Diablerets » (diable = diable, en français).\\n\\nCette vallée « maudite » a été en grande partie abandonnée, ce qui explique que le second éboulement, encore plus important, survenu 35 ans plus tard, a eu beaucoup moins d'effets sur la population. De gros blocs de pierre ont recouvert le fond de la vallée et ont retenu le ruisseau de montagne. Cela a créé le plus jeune lac naturel de montagne d'Europe. Les scientifiques estiment que l'effondrement comprenait environ 50 millions de mètres cubes de roche. Le paysage ainsi créé est un paradis pour les biologistes, géologues, photographes et visiteurs de tout âge.\\n\\nLa randonnée combine deux parcours : celui de l’éboulement (« Parcours de l'éboulement des Diablerets ») et le tour du lac (« Parcours du Lac de Derborence »). Dans la forêt originelle, tu peux admirer des sapins vieux de 450 ans. Les chances d’apercevoir des animaux sauvages sont grandes – guette les bouquetins, chevreuils, chamois, marmottes et lynx. Dans les airs, tu peux observer des aigles royaux, des tétras lyre et des vautours fauves.\\n\\nEn particulier, les familles peuvent aussi faire une seule des deux randonnées. Un guide avec des activités pour enfants est disponible en téléchargement pour les deux.\\n\\nLe voyage jusqu’à Derborence est déjà une aventure à lui seul. Le seul accès passe par une route étroite et sinueuse longeant les gorges de la Lizerne.\\n\\nLe parcours commence au parking et à l'arrêt de bus près du lac de Derborence. Le parcours débute par la traversée des éboulis de l’éboulement, avant de traverser les pentes et d'atteindre le point le plus élevé au-dessus du réservoir de Godey. De là, la randonnée descend vers l’ancienne forêt d’Ecorcha. Enfin, la randonnée fait le tour du lac de Derborence dans le sens des aiguilles d'une montre.\\n\\nVous pouvez aussi commencer la randonnée au deuxième parking près du réservoir de Godey.\\n\\nSi vous êtes avec des enfants, prévoyez du temps supplémentaire pour les activités proposées dans les guides.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect pour la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nLe bureau du tourisme met à disposition du matériel d'information et des brochures pour la randonnée dans la destination :\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le 23 septembre 1714, une catastrophe géologique a frappé la région de Derborence. Une partie de la montagne au-dessus s'est effondrée, anéantissant la faune ainsi que la vie des bergers qui s'y trouvaient. Les habitants croyaient à une œuvre du diable, raison pour laquelle la montagne a été nommée « Les Diablerets » (diable = diable, en français).\\n\\nCette vallée « maudite » a été en grande partie abandonnée, ce qui explique que le second éboulement, encore plus important, survenu 35 ans plus tard, a eu beaucoup moins d'effets sur la population. De gros blocs de pierre ont recouvert le fond de la vallée et ont retenu le ruisseau de montagne. Cela a créé le plus jeune lac naturel de montagne d'Europe. Les scientifiques estiment que l'effondrement comprenait environ 50 millions de mètres cubes de roche. Le paysage ainsi créé est un paradis pour les biologistes, géologues, photographes et visiteurs de tout âge.\\n\\nLa randonnée combine deux parcours : celui de l’éboulement (« Parcours de l'éboulement des Diablerets ») et le tour du lac (« Parcours du Lac de Derborence »). Dans la forêt originelle, tu peux admirer des sapins vieux de 450 ans. Les chances d’apercevoir des animaux sauvages sont grandes – guette les bouquetins, chevreuils, chamois, marmottes et lynx. Dans les airs, tu peux observer des aigles royaux, des tétras lyre et des vautours fauves.\\n\\nEn particulier, les familles peuvent aussi faire une seule des deux randonnées. Un guide avec des activités pour enfants est disponible en téléchargement pour les deux.\\n\\nLe voyage jusqu’à Derborence est déjà une aventure à lui seul. Le seul accès passe par une route étroite et sinueuse longeant les gorges de la Lizerne.\\n\\nLe parcours commence au parking et à l'arrêt de bus près du lac de Derborence. Le parcours débute par la traversée des éboulis de l’éboulement, avant de traverser les pentes et d'atteindre le point le plus élevé au-dessus du réservoir de Godey. De là, la randonnée descend vers l’ancienne forêt d’Ecorcha. Enfin, la randonnée fait le tour du lac de Derborence dans le sens des aiguilles d'une montre.\\n\\nVous pouvez aussi commencer la randonnée au deuxième parking près du réservoir de Godey.\\n\\nSi vous êtes avec des enfants, prévoyez du temps supplémentaire pour les activités proposées dans les guides.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un lieu de rencontre pour vivre ensemble des moments inoubliables – à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect pour la nature et l'agriculture. Un comportement respectueux permet à chacun de pratiquer ses loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres capacités et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nLe bureau du tourisme met à disposition du matériel d'information et des brochures pour la randonnée dans la destination :\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/35.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 36,
+    "name": {
+      "fr": "Tour de la falaise de St-Maurice",
+      "de": "Tour de la falaise de St-Maurice",
+      "en": "Tour de la falaise de St-Maurice"
+    },
+    "region": "",
+    "difficulty": "Facile",
+    "category": "Itinéraires",
+    "duration": "2:15 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La charmante ville ancienne de St-Maurice, entourée par sa majestueuse paroi rocheuse et le Rhône, a été construite à l'endroit le plus étroit de la vallée du Rhône.\\n\\nLe chemin pittoresque longe d'abord la paroi rocheuse puis monte jusqu'à un plateau offrant une vue imprenable sur la vallée du Rhône. Après la traversée du plateau en direction opposée, le sentier descend à travers des forêts denses jusqu’à la lisière nord de la petite ville.\\n\\nSur le dernier tronçon, plusieurs secrets sont à découvrir. La grotte des fées fut la première grotte accessible au public en Suisse et, depuis plus de 150 ans, vous pouvez admirer le petit lac souterrain et la cascade lors de la promenade de 500 m à travers les galeries éclairées.\\n\\nPar une porte à l'intérieur de la galerie, on accède également à l'une des trois forteresses d'artillerie souterraines creusées dans la roche de part et d'autre de la rivière. La forteresse de Cindey, restée secrète jusqu'en 1995, se visite aujourd'hui lors de visites guidées. Un peu plus bas longeant le sentier, se trouve le château de St-Maurice, construit entre les XVe et XVIIe siècles, qui abrite aujourd’hui un musée et des expositions consacrées aux arts graphiques.\\n\\nLe dernier point fort du chemin est l’abbaye de St-Maurice, vieille de 1500 ans, avec sa précieuse collection de nombreuses œuvres.\\n\\nDepuis la gare, le chemin mène d'abord vers le nord jusqu'à un passage sous la voie ferrée avant de revenir vers le sud sous la paroi rocheuse. Du hameau Les Cases, le sentier monte en zigzag jusqu'au hameau Les Bassex, situé un peu en dessous du village de Vérossaz. Le chemin continue ensuite vers le nord sur le plateau, en suivant la paroi rocheuse en sens inverse, avant de descendre dans la vallée à travers les forêts (attention, risque de glissade en cas d'humidité). Le sentier de randonnée passe par la grotte des fées et la forteresse de Cindey, puis descend jusqu'au château de St-Maurice surplombant le Rhône. Le dernier tronçon longe la paroi rocheuse en passant devant l'abbaye millénaire avant de revenir à la gare.\\n\\nTrain jusqu'à St-Maurice. Les horaires détaillés des trains sont disponibles sur sbb.ch.\\n\\nL'utilisation des sentiers de randonnée et les informations sur ce site se font à vos risques et périls. Les conditions locales peuvent entraîner des changements d’itinéraire. Valais/Wallis Promotion décline toute responsabilité quant à l'exactitude et la complétude des informations sur ce site. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nL'office du tourisme de St-Maurice met à votre disposition du matériel informatif et des brochures sur la randonnée dans la destination.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La charmante ville ancienne de St-Maurice, entourée par sa majestueuse paroi rocheuse et le Rhône, a été construite à l'endroit le plus étroit de la vallée du Rhône.\\n\\nLe chemin pittoresque longe d'abord la paroi rocheuse puis monte jusqu'à un plateau offrant une vue imprenable sur la vallée du Rhône. Après la traversée du plateau en direction opposée, le sentier descend à travers des forêts denses jusqu’à la lisière nord de la petite ville.\\n\\nSur le dernier tronçon, plusieurs secrets sont à découvrir. La grotte des fées fut la première grotte accessible au public en Suisse et, depuis plus de 150 ans, vous pouvez admirer le petit lac souterrain et la cascade lors de la promenade de 500 m à travers les galeries éclairées.\\n\\nPar une porte à l'intérieur de la galerie, on accède également à l'une des trois forteresses d'artillerie souterraines creusées dans la roche de part et d'autre de la rivière. La forteresse de Cindey, restée secrète jusqu'en 1995, se visite aujourd'hui lors de visites guidées. Un peu plus bas longeant le sentier, se trouve le château de St-Maurice, construit entre les XVe et XVIIe siècles, qui abrite aujourd’hui un musée et des expositions consacrées aux arts graphiques.\\n\\nLe dernier point fort du chemin est l’abbaye de St-Maurice, vieille de 1500 ans, avec sa précieuse collection de nombreuses œuvres.\\n\\nDepuis la gare, le chemin mène d'abord vers le nord jusqu'à un passage sous la voie ferrée avant de revenir vers le sud sous la paroi rocheuse. Du hameau Les Cases, le sentier monte en zigzag jusqu'au hameau Les Bassex, situé un peu en dessous du village de Vérossaz. Le chemin continue ensuite vers le nord sur le plateau, en suivant la paroi rocheuse en sens inverse, avant de descendre dans la vallée à travers les forêts (attention, risque de glissade en cas d'humidité). Le sentier de randonnée passe par la grotte des fées et la forteresse de Cindey, puis descend jusqu'au château de St-Maurice surplombant le Rhône. Le dernier tronçon longe la paroi rocheuse en passant devant l'abbaye millénaire avant de revenir à la gare.\\n\\nTrain jusqu'à St-Maurice. Les horaires détaillés des trains sont disponibles sur sbb.ch.\\n\\nL'utilisation des sentiers de randonnée et les informations sur ce site se font à vos risques et périls. Les conditions locales peuvent entraîner des changements d’itinéraire. Valais/Wallis Promotion décline toute responsabilité quant à l'exactitude et la complétude des informations sur ce site. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nL'office du tourisme de St-Maurice met à votre disposition du matériel informatif et des brochures sur la randonnée dans la destination.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>La charmante ville ancienne de St-Maurice, entourée par sa majestueuse paroi rocheuse et le Rhône, a été construite à l'endroit le plus étroit de la vallée du Rhône.\\n\\nLe chemin pittoresque longe d'abord la paroi rocheuse puis monte jusqu'à un plateau offrant une vue imprenable sur la vallée du Rhône. Après la traversée du plateau en direction opposée, le sentier descend à travers des forêts denses jusqu’à la lisière nord de la petite ville.\\n\\nSur le dernier tronçon, plusieurs secrets sont à découvrir. La grotte des fées fut la première grotte accessible au public en Suisse et, depuis plus de 150 ans, vous pouvez admirer le petit lac souterrain et la cascade lors de la promenade de 500 m à travers les galeries éclairées.\\n\\nPar une porte à l'intérieur de la galerie, on accède également à l'une des trois forteresses d'artillerie souterraines creusées dans la roche de part et d'autre de la rivière. La forteresse de Cindey, restée secrète jusqu'en 1995, se visite aujourd'hui lors de visites guidées. Un peu plus bas longeant le sentier, se trouve le château de St-Maurice, construit entre les XVe et XVIIe siècles, qui abrite aujourd’hui un musée et des expositions consacrées aux arts graphiques.\\n\\nLe dernier point fort du chemin est l’abbaye de St-Maurice, vieille de 1500 ans, avec sa précieuse collection de nombreuses œuvres.\\n\\nDepuis la gare, le chemin mène d'abord vers le nord jusqu'à un passage sous la voie ferrée avant de revenir vers le sud sous la paroi rocheuse. Du hameau Les Cases, le sentier monte en zigzag jusqu'au hameau Les Bassex, situé un peu en dessous du village de Vérossaz. Le chemin continue ensuite vers le nord sur le plateau, en suivant la paroi rocheuse en sens inverse, avant de descendre dans la vallée à travers les forêts (attention, risque de glissade en cas d'humidité). Le sentier de randonnée passe par la grotte des fées et la forteresse de Cindey, puis descend jusqu'au château de St-Maurice surplombant le Rhône. Le dernier tronçon longe la paroi rocheuse en passant devant l'abbaye millénaire avant de revenir à la gare.\\n\\nTrain jusqu'à St-Maurice. Les horaires détaillés des trains sont disponibles sur sbb.ch.\\n\\nL'utilisation des sentiers de randonnée et les informations sur ce site se font à vos risques et périls. Les conditions locales peuvent entraîner des changements d’itinéraire. Valais/Wallis Promotion décline toute responsabilité quant à l'exactitude et la complétude des informations sur ce site. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nL'office du tourisme de St-Maurice met à votre disposition du matériel informatif et des brochures sur la randonnée dans la destination.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/36.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 37,
+    "name": {
+      "fr": "Col de Gibidum",
+      "de": "Col de Gibidum",
+      "en": "Col de Gibidum"
+    },
+    "region": "",
+    "difficulty": "Facile",
+    "category": "Itinéraires",
+    "duration": "3:30 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le chemin de crête Giw – Gspon est une partie du Grand Chemin des Walser, de Zermatt jusqu'à la Kleinwalsertal. Il y a mille ans, les descendants d'un peuple germanique ont colonisé le Haut-Valais. Ce peuple était habitué à la vie en haute montagne et voulait s'étendre pour coloniser de nouveaux habitats en altitude jusqu'alors inoccupés. Le Grand Chemin des Walser ne suit pas les routes migratoires des Valaisans, mais relie différents lieux de la culture walser.\\n\\nLe point de départ de la randonnée est la station supérieure du télésiège de Visperterminen jusqu'à Giw. D'abord, suit une montée raide à travers la forêt puis à travers un terrain découvert jusqu'au col de Gibidum. Un détour par le lac de Gibidum vaut vraiment la peine. Le lac est alimenté par le canal Heido. Grâce à une faible profondeur d'eau de 2 mètres, il se réchauffe rapidement en été et invite à la baignade.\\n\\nLa vue sur le Weisshorn (plus de 4000 mètres) ainsi que sur les presque 4000 mètres du Balfrin et du Bietschhorn, et la vallée de Visp en dessous vous accompagnent tout au long de la randonnée. Le chemin longe la limite forestière et fait parfois des détours dans la forêt de Lochwald et celle de Riedjiwald. En automne, on peut régulièrement entendre le brame des cerfs en rut. Pour apercevoir un cerf dans cette forêt dense, il faut cependant un peu de chance.\\n\\nAu point Sädolti, suit ensuite la descente vers Gspon. Le village de montagne sans voiture a conservé son authenticité et est aussi connu pour le stade de football le plus haut d’Europe, la « Ottmar Hitzfeld Gspon Arena ».\\n\\nLa montée de Visperterminen à Giw s'effectue avec le télésiège, mais peut également être faite à pied si vous le souhaitez. Ensuite, suit la montée raide via Stafel jusqu'au col de Gibidum. Au-dessus de la limite forestière, vous traversez les alpages Sänntum et Sitestafel. Après une courte montée jusqu'à Sädolti, cet endroit offre une pause courte pour profiter de la vue. Enfin, suit la descente vers le village sans voiture de Gspon.\\n\\nLa randonnée peut être prolongée à volonté : par exemple en revenant à Visperterminen par l'un des nombreux autres chemins ou en effectuant la descente vers Stalden à pied au lieu de prendre le téléphérique. Si vous souhaitez parcourir l'ensemble du chemin de crête jusqu'à Saas-Grund, prévoyez environ 7 heures de marche.\\n\\nDes correspondances régulières en train de toute la Suisse jusqu'à Visp. Ensuite, le car postal jusqu'à Visperterminen. Les horaires détaillés des trains et des cars postaux sont disponibles sur sbb.ch.\\n\\nUn ticket combiné est disponible pour le télésiège de Giw, incluant la montée en télésiège ainsi que le retour en téléphérique (Gspon – Stalden) et en car postal (Stalden – Visperterminen).\\n\\nAutoroute A9 et route cantonale 9 vers Visp. Suivez les panneaux pour Visperterminen et prenez la Terbinerstrasse via Unterstalden et Oberstalden jusqu'à Visperterminen.\\n\\nUn ticket combiné est disponible pour le télésiège de Giw, incluant la montée en télésiège ainsi que le retour en téléphérique (Gspon – Stalden) et en car postal (Stalden – Visperterminen).\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde alpin est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et les règles. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nDe Visperterminen à travers la vallée de Nanztal jusqu'au col du Simplon\\n\\nChemin des chapelles Visperterminen et suone Bodmeri\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le chemin de crête Giw – Gspon est une partie du Grand Chemin des Walser, de Zermatt jusqu'à la Kleinwalsertal. Il y a mille ans, les descendants d'un peuple germanique ont colonisé le Haut-Valais. Ce peuple était habitué à la vie en haute montagne et voulait s'étendre pour coloniser de nouveaux habitats en altitude jusqu'alors inoccupés. Le Grand Chemin des Walser ne suit pas les routes migratoires des Valaisans, mais relie différents lieux de la culture walser.\\n\\nLe point de départ de la randonnée est la station supérieure du télésiège de Visperterminen jusqu'à Giw. D'abord, suit une montée raide à travers la forêt puis à travers un terrain découvert jusqu'au col de Gibidum. Un détour par le lac de Gibidum vaut vraiment la peine. Le lac est alimenté par le canal Heido. Grâce à une faible profondeur d'eau de 2 mètres, il se réchauffe rapidement en été et invite à la baignade.\\n\\nLa vue sur le Weisshorn (plus de 4000 mètres) ainsi que sur les presque 4000 mètres du Balfrin et du Bietschhorn, et la vallée de Visp en dessous vous accompagnent tout au long de la randonnée. Le chemin longe la limite forestière et fait parfois des détours dans la forêt de Lochwald et celle de Riedjiwald. En automne, on peut régulièrement entendre le brame des cerfs en rut. Pour apercevoir un cerf dans cette forêt dense, il faut cependant un peu de chance.\\n\\nAu point Sädolti, suit ensuite la descente vers Gspon. Le village de montagne sans voiture a conservé son authenticité et est aussi connu pour le stade de football le plus haut d’Europe, la « Ottmar Hitzfeld Gspon Arena ».\\n\\nLa montée de Visperterminen à Giw s'effectue avec le télésiège, mais peut également être faite à pied si vous le souhaitez. Ensuite, suit la montée raide via Stafel jusqu'au col de Gibidum. Au-dessus de la limite forestière, vous traversez les alpages Sänntum et Sitestafel. Après une courte montée jusqu'à Sädolti, cet endroit offre une pause courte pour profiter de la vue. Enfin, suit la descente vers le village sans voiture de Gspon.\\n\\nLa randonnée peut être prolongée à volonté : par exemple en revenant à Visperterminen par l'un des nombreux autres chemins ou en effectuant la descente vers Stalden à pied au lieu de prendre le téléphérique. Si vous souhaitez parcourir l'ensemble du chemin de crête jusqu'à Saas-Grund, prévoyez environ 7 heures de marche.\\n\\nDes correspondances régulières en train de toute la Suisse jusqu'à Visp. Ensuite, le car postal jusqu'à Visperterminen. Les horaires détaillés des trains et des cars postaux sont disponibles sur sbb.ch.\\n\\nUn ticket combiné est disponible pour le télésiège de Giw, incluant la montée en télésiège ainsi que le retour en téléphérique (Gspon – Stalden) et en car postal (Stalden – Visperterminen).\\n\\nAutoroute A9 et route cantonale 9 vers Visp. Suivez les panneaux pour Visperterminen et prenez la Terbinerstrasse via Unterstalden et Oberstalden jusqu'à Visperterminen.\\n\\nUn ticket combiné est disponible pour le télésiège de Giw, incluant la montée en télésiège ainsi que le retour en téléphérique (Gspon – Stalden) et en car postal (Stalden – Visperterminen).\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde alpin est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et les règles. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nDe Visperterminen à travers la vallée de Nanztal jusqu'au col du Simplon\\n\\nChemin des chapelles Visperterminen et suone Bodmeri\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le chemin de crête Giw – Gspon est une partie du Grand Chemin des Walser, de Zermatt jusqu'à la Kleinwalsertal. Il y a mille ans, les descendants d'un peuple germanique ont colonisé le Haut-Valais. Ce peuple était habitué à la vie en haute montagne et voulait s'étendre pour coloniser de nouveaux habitats en altitude jusqu'alors inoccupés. Le Grand Chemin des Walser ne suit pas les routes migratoires des Valaisans, mais relie différents lieux de la culture walser.\\n\\nLe point de départ de la randonnée est la station supérieure du télésiège de Visperterminen jusqu'à Giw. D'abord, suit une montée raide à travers la forêt puis à travers un terrain découvert jusqu'au col de Gibidum. Un détour par le lac de Gibidum vaut vraiment la peine. Le lac est alimenté par le canal Heido. Grâce à une faible profondeur d'eau de 2 mètres, il se réchauffe rapidement en été et invite à la baignade.\\n\\nLa vue sur le Weisshorn (plus de 4000 mètres) ainsi que sur les presque 4000 mètres du Balfrin et du Bietschhorn, et la vallée de Visp en dessous vous accompagnent tout au long de la randonnée. Le chemin longe la limite forestière et fait parfois des détours dans la forêt de Lochwald et celle de Riedjiwald. En automne, on peut régulièrement entendre le brame des cerfs en rut. Pour apercevoir un cerf dans cette forêt dense, il faut cependant un peu de chance.\\n\\nAu point Sädolti, suit ensuite la descente vers Gspon. Le village de montagne sans voiture a conservé son authenticité et est aussi connu pour le stade de football le plus haut d’Europe, la « Ottmar Hitzfeld Gspon Arena ».\\n\\nLa montée de Visperterminen à Giw s'effectue avec le télésiège, mais peut également être faite à pied si vous le souhaitez. Ensuite, suit la montée raide via Stafel jusqu'au col de Gibidum. Au-dessus de la limite forestière, vous traversez les alpages Sänntum et Sitestafel. Après une courte montée jusqu'à Sädolti, cet endroit offre une pause courte pour profiter de la vue. Enfin, suit la descente vers le village sans voiture de Gspon.\\n\\nLa randonnée peut être prolongée à volonté : par exemple en revenant à Visperterminen par l'un des nombreux autres chemins ou en effectuant la descente vers Stalden à pied au lieu de prendre le téléphérique. Si vous souhaitez parcourir l'ensemble du chemin de crête jusqu'à Saas-Grund, prévoyez environ 7 heures de marche.\\n\\nDes correspondances régulières en train de toute la Suisse jusqu'à Visp. Ensuite, le car postal jusqu'à Visperterminen. Les horaires détaillés des trains et des cars postaux sont disponibles sur sbb.ch.\\n\\nUn ticket combiné est disponible pour le télésiège de Giw, incluant la montée en télésiège ainsi que le retour en téléphérique (Gspon – Stalden) et en car postal (Stalden – Visperterminen).\\n\\nAutoroute A9 et route cantonale 9 vers Visp. Suivez les panneaux pour Visperterminen et prenez la Terbinerstrasse via Unterstalden et Oberstalden jusqu'à Visperterminen.\\n\\nUn ticket combiné est disponible pour le télésiège de Giw, incluant la montée en télésiège ainsi que le retour en téléphérique (Gspon – Stalden) et en car postal (Stalden – Visperterminen).\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde alpin est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace avec respect envers la nature et l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et les règles. Évaluez bien vos capacités et votre condition physique. L’utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\nDe Visperterminen à travers la vallée de Nanztal jusqu'au col du Simplon\\n\\nChemin des chapelles Visperterminen et suone Bodmeri\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/37.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 38,
+    "name": {
+      "fr": "Sentier viticole : Saillon à Sion (étape 2)",
+      "de": "Sentier viticole : Saillon à Sion (étape 2)",
+      "en": "Sentier viticole : Saillon à Sion (étape 2)"
+    },
+    "region": "",
+    "difficulty": "Moyen",
+    "category": "Itinéraires",
+    "duration": "6:45 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le sentier viticole suit un parcours <strong>panoramique</strong> le long des versants ensoleillés du sud de la vallée du Rhône et à travers de charmants villages viticoles de la région vinicole du Valais. Le sentier peut être découvert de trois manières – en voiture, à vélo ou à pied. La randonnée de 65 kilomètres, composée de 4 étapes, vous permet de ne rien manquer des nombreuses curiosités.\\n\\nLa deuxième étape du sentier viticole relie deux lieux fascinants : le village médiéval de Saillon et la capitale du canton, Sion. Les deux possèdent un centre historique au pied de collines rocheuses avec des châteaux et valent donc une visite.\\n\\nPeu après avoir quitté les ruelles sinueuses de Saillon, le chemin traverse la Salentse, surtout connue pour sa gorge légendaire. C’est ici que Joseph-Samuel Farinet, contrefacteur de monnaie suisse surnommé « Robin des Bois », se cachait des autorités. La Salentse est l’un des nombreux ruisseaux traversés lors de cette étape.\\n\\nAu-dessus de Leytron, le chemin passe sous de hautes falaises au-dessus du grand cône de débris à Chamoson. Il s’est formé suite à des chutes de pierres à l’époque préhistorique et a été transformé en vignoble depuis.\\n\\nL’extraordinaire diversité topographique et géologique de la région permet la culture de nombreux cépages différents. Beaucoup de villages viticoles le long du sentier viticole sont connus pour la production de certains vins : par exemple Leytron pour le Humagne ou Vétroz pour l’Amigne. Le long du parcours, de nombreux restaurants et caves charmants invitent à la dégustation de vins de choix et de produits régionaux.\\n\\nAu pied de la colline du centre historique du village de Saillon se trouve l'arrêt de bus « Les Moilles » à proximité du point de départ de la randonnée. Un chemin conduit en direction du centre historique du village jusqu'au départ.\\n\\nLe chemin est bien balisé et facile à suivre. Il passe devant plusieurs attractions intéressantes, comme le Musée suisse de la spéléologie au-dessus de Chamoson. Un joli sentier viticole relie Chamoson au village médiéval de St-Pierre-de-Clages, juste avant Sion. Un sentier naturel vous permet de découvrir la zone de roseaux autour du lac paisible situé sous le Mont d'Orge.\\n\\nLe chemin se termine à la périphérie nord de Sion, où la Sionne émerge du canal souterrain. De là, un bus vous emmène à la gare – mais si le temps et l'énergie le permettent, il est conseillé de rejoindre la gare à pied en traversant le centre historique en dessous des deux célèbres châteaux perchés sur les collines de Sion.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. L’usage des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le sentier viticole suit un parcours <strong>panoramique</strong> le long des versants ensoleillés du sud de la vallée du Rhône et à travers de charmants villages viticoles de la région vinicole du Valais. Le sentier peut être découvert de trois manières – en voiture, à vélo ou à pied. La randonnée de 65 kilomètres, composée de 4 étapes, vous permet de ne rien manquer des nombreuses curiosités.\\n\\nLa deuxième étape du sentier viticole relie deux lieux fascinants : le village médiéval de Saillon et la capitale du canton, Sion. Les deux possèdent un centre historique au pied de collines rocheuses avec des châteaux et valent donc une visite.\\n\\nPeu après avoir quitté les ruelles sinueuses de Saillon, le chemin traverse la Salentse, surtout connue pour sa gorge légendaire. C’est ici que Joseph-Samuel Farinet, contrefacteur de monnaie suisse surnommé « Robin des Bois », se cachait des autorités. La Salentse est l’un des nombreux ruisseaux traversés lors de cette étape.\\n\\nAu-dessus de Leytron, le chemin passe sous de hautes falaises au-dessus du grand cône de débris à Chamoson. Il s’est formé suite à des chutes de pierres à l’époque préhistorique et a été transformé en vignoble depuis.\\n\\nL’extraordinaire diversité topographique et géologique de la région permet la culture de nombreux cépages différents. Beaucoup de villages viticoles le long du sentier viticole sont connus pour la production de certains vins : par exemple Leytron pour le Humagne ou Vétroz pour l’Amigne. Le long du parcours, de nombreux restaurants et caves charmants invitent à la dégustation de vins de choix et de produits régionaux.\\n\\nAu pied de la colline du centre historique du village de Saillon se trouve l'arrêt de bus « Les Moilles » à proximité du point de départ de la randonnée. Un chemin conduit en direction du centre historique du village jusqu'au départ.\\n\\nLe chemin est bien balisé et facile à suivre. Il passe devant plusieurs attractions intéressantes, comme le Musée suisse de la spéléologie au-dessus de Chamoson. Un joli sentier viticole relie Chamoson au village médiéval de St-Pierre-de-Clages, juste avant Sion. Un sentier naturel vous permet de découvrir la zone de roseaux autour du lac paisible situé sous le Mont d'Orge.\\n\\nLe chemin se termine à la périphérie nord de Sion, où la Sionne émerge du canal souterrain. De là, un bus vous emmène à la gare – mais si le temps et l'énergie le permettent, il est conseillé de rejoindre la gare à pied en traversant le centre historique en dessous des deux célèbres châteaux perchés sur les collines de Sion.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. L’usage des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le sentier viticole suit un parcours <strong>panoramique</strong> le long des versants ensoleillés du sud de la vallée du Rhône et à travers de charmants villages viticoles de la région vinicole du Valais. Le sentier peut être découvert de trois manières – en voiture, à vélo ou à pied. La randonnée de 65 kilomètres, composée de 4 étapes, vous permet de ne rien manquer des nombreuses curiosités.\\n\\nLa deuxième étape du sentier viticole relie deux lieux fascinants : le village médiéval de Saillon et la capitale du canton, Sion. Les deux possèdent un centre historique au pied de collines rocheuses avec des châteaux et valent donc une visite.\\n\\nPeu après avoir quitté les ruelles sinueuses de Saillon, le chemin traverse la Salentse, surtout connue pour sa gorge légendaire. C’est ici que Joseph-Samuel Farinet, contrefacteur de monnaie suisse surnommé « Robin des Bois », se cachait des autorités. La Salentse est l’un des nombreux ruisseaux traversés lors de cette étape.\\n\\nAu-dessus de Leytron, le chemin passe sous de hautes falaises au-dessus du grand cône de débris à Chamoson. Il s’est formé suite à des chutes de pierres à l’époque préhistorique et a été transformé en vignoble depuis.\\n\\nL’extraordinaire diversité topographique et géologique de la région permet la culture de nombreux cépages différents. Beaucoup de villages viticoles le long du sentier viticole sont connus pour la production de certains vins : par exemple Leytron pour le Humagne ou Vétroz pour l’Amigne. Le long du parcours, de nombreux restaurants et caves charmants invitent à la dégustation de vins de choix et de produits régionaux.\\n\\nAu pied de la colline du centre historique du village de Saillon se trouve l'arrêt de bus « Les Moilles » à proximité du point de départ de la randonnée. Un chemin conduit en direction du centre historique du village jusqu'au départ.\\n\\nLe chemin est bien balisé et facile à suivre. Il passe devant plusieurs attractions intéressantes, comme le Musée suisse de la spéléologie au-dessus de Chamoson. Un joli sentier viticole relie Chamoson au village médiéval de St-Pierre-de-Clages, juste avant Sion. Un sentier naturel vous permet de découvrir la zone de roseaux autour du lac paisible situé sous le Mont d'Orge.\\n\\nLe chemin se termine à la périphérie nord de Sion, où la Sionne émerge du canal souterrain. De là, un bus vous emmène à la gare – mais si le temps et l'énergie le permettent, il est conseillé de rejoindre la gare à pied en traversant le centre historique en dessous des deux célèbres châteaux perchés sur les collines de Sion.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde montagnard est un endroit pour se rencontrer et vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Pour que tous les usagers en profitent, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer ses activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos compétences et votre condition physique. L’usage des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/38.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 39,
+    "name": {
+      "fr": "Les cols du Grand-St-Bernard",
+      "de": "Les cols du Grand-St-Bernard",
+      "en": "Les cols du Grand-St-Bernard"
+    },
+    "region": "",
+    "difficulty": "Difficile",
+    "category": "Itinéraires",
+    "duration": "4:55 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le Grand Saint-Bernard est depuis l'époque romaine une importante liaison entre l'Europe du Nord et du Sud. Le col historique est également le point de départ de nombreuses randonnées.\\n\\nLa randonnée commence au col et comprend trois montées vers des cols avec des vues variées. Les trois lacs de montagne, les Lacs de Fenêtre, se trouvent sur un plateau fleuri à environ 2500 mètres d'altitude. La vue sur le Mont Blanc et les sommets environnants vous accompagne tout au long de cette randonnée.\\n\\nPour explorer le col avec son hospice historique du XIe siècle, il est indispensable de prévoir du temps. Les points forts sont l’église baroque ainsi qu’un petit musée sur l’histoire et l’environnement naturel du Grand Saint-Bernard. Pendant les mois d'été, les chiens Saint-Bernard sont également présents au col.\\n\\nAu Moyen Âge, des pèlerins traversaient le col en route vers Rome. Aujourd'hui, la Via Francigena offre aux randonneurs un parcours historique de Canterbury à Rome. La dernière partie de la randonnée décrite suit ce chemin historique.\\n\\nLes stars du Grand Saint-Bernard sont sans aucun doute les chiens Saint-Bernard, élevés ici pendant des siècles par des moines. Aujourd'hui, l’élevage est situé à Martigny, mais les chiens de la Fondation Barry passent l’été au col. Les visiteurs peuvent faire des promenades guidées avec les chiens autour du col.\\n\\nDepuis le col du Grand-Saint-Bernard, le parcours suit pendant 100 mètres le côté suisse de la frontière avant que le chemin ne monte raide sur la gauche jusqu'au Col des Chevaux à 2714 m d'altitude. Ensuite, la descente mène dans la vallée latérale de la Combe de Drône, avant que le chemin remonte au Col du Bastillon à 2754 m d'altitude.\\n\\nPar la suite, la route s'approche du premier des trois lacs de montagne, les Lacs de Fenêtre. Après avoir traversé entre le deuxième et le troisième lac, le chemin remonte vers le Fenêtre de Ferret (2694 m d'altitude), qui se situe à la frontière entre la Suisse et l'Italie. En zigzag, la descente continue jusqu'à la route du col, avant d'aborder la quatrième et dernière montée vers le col le long d’un sentier en direction de la frontière suisse.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontres pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Afin que tous les usagers en profitent, il est indispensable de respecter cet espace au sein de la nature et de l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres compétences et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le Grand Saint-Bernard est depuis l'époque romaine une importante liaison entre l'Europe du Nord et du Sud. Le col historique est également le point de départ de nombreuses randonnées.\\n\\nLa randonnée commence au col et comprend trois montées vers des cols avec des vues variées. Les trois lacs de montagne, les Lacs de Fenêtre, se trouvent sur un plateau fleuri à environ 2500 mètres d'altitude. La vue sur le Mont Blanc et les sommets environnants vous accompagne tout au long de cette randonnée.\\n\\nPour explorer le col avec son hospice historique du XIe siècle, il est indispensable de prévoir du temps. Les points forts sont l’église baroque ainsi qu’un petit musée sur l’histoire et l’environnement naturel du Grand Saint-Bernard. Pendant les mois d'été, les chiens Saint-Bernard sont également présents au col.\\n\\nAu Moyen Âge, des pèlerins traversaient le col en route vers Rome. Aujourd'hui, la Via Francigena offre aux randonneurs un parcours historique de Canterbury à Rome. La dernière partie de la randonnée décrite suit ce chemin historique.\\n\\nLes stars du Grand Saint-Bernard sont sans aucun doute les chiens Saint-Bernard, élevés ici pendant des siècles par des moines. Aujourd'hui, l’élevage est situé à Martigny, mais les chiens de la Fondation Barry passent l’été au col. Les visiteurs peuvent faire des promenades guidées avec les chiens autour du col.\\n\\nDepuis le col du Grand-Saint-Bernard, le parcours suit pendant 100 mètres le côté suisse de la frontière avant que le chemin ne monte raide sur la gauche jusqu'au Col des Chevaux à 2714 m d'altitude. Ensuite, la descente mène dans la vallée latérale de la Combe de Drône, avant que le chemin remonte au Col du Bastillon à 2754 m d'altitude.\\n\\nPar la suite, la route s'approche du premier des trois lacs de montagne, les Lacs de Fenêtre. Après avoir traversé entre le deuxième et le troisième lac, le chemin remonte vers le Fenêtre de Ferret (2694 m d'altitude), qui se situe à la frontière entre la Suisse et l'Italie. En zigzag, la descente continue jusqu'à la route du col, avant d'aborder la quatrième et dernière montée vers le col le long d’un sentier en direction de la frontière suisse.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontres pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Afin que tous les usagers en profitent, il est indispensable de respecter cet espace au sein de la nature et de l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres compétences et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Le Grand Saint-Bernard est depuis l'époque romaine une importante liaison entre l'Europe du Nord et du Sud. Le col historique est également le point de départ de nombreuses randonnées.\\n\\nLa randonnée commence au col et comprend trois montées vers des cols avec des vues variées. Les trois lacs de montagne, les Lacs de Fenêtre, se trouvent sur un plateau fleuri à environ 2500 mètres d'altitude. La vue sur le Mont Blanc et les sommets environnants vous accompagne tout au long de cette randonnée.\\n\\nPour explorer le col avec son hospice historique du XIe siècle, il est indispensable de prévoir du temps. Les points forts sont l’église baroque ainsi qu’un petit musée sur l’histoire et l’environnement naturel du Grand Saint-Bernard. Pendant les mois d'été, les chiens Saint-Bernard sont également présents au col.\\n\\nAu Moyen Âge, des pèlerins traversaient le col en route vers Rome. Aujourd'hui, la Via Francigena offre aux randonneurs un parcours historique de Canterbury à Rome. La dernière partie de la randonnée décrite suit ce chemin historique.\\n\\nLes stars du Grand Saint-Bernard sont sans aucun doute les chiens Saint-Bernard, élevés ici pendant des siècles par des moines. Aujourd'hui, l’élevage est situé à Martigny, mais les chiens de la Fondation Barry passent l’été au col. Les visiteurs peuvent faire des promenades guidées avec les chiens autour du col.\\n\\nDepuis le col du Grand-Saint-Bernard, le parcours suit pendant 100 mètres le côté suisse de la frontière avant que le chemin ne monte raide sur la gauche jusqu'au Col des Chevaux à 2714 m d'altitude. Ensuite, la descente mène dans la vallée latérale de la Combe de Drône, avant que le chemin remonte au Col du Bastillon à 2754 m d'altitude.\\n\\nPar la suite, la route s'approche du premier des trois lacs de montagne, les Lacs de Fenêtre. Après avoir traversé entre le deuxième et le troisième lac, le chemin remonte vers le Fenêtre de Ferret (2694 m d'altitude), qui se situe à la frontière entre la Suisse et l'Italie. En zigzag, la descente continue jusqu'à la route du col, avant d'aborder la quatrième et dernière montée vers le col le long d’un sentier en direction de la frontière suisse.\\n\\nLa montagne, un lieu de joie à partager et à respecter. Le monde de la montagne est un lieu de rencontres pour vivre ensemble des moments inoubliables – que ce soit à vélo ou à pied. Afin que tous les usagers en profitent, il est indispensable de respecter cet espace au sein de la nature et de l’agriculture. Un comportement respectueux permet à tous de pratiquer leurs activités de loisirs dans les meilleures conditions. Informez-vous sur les recommandations et règles. Évaluez bien vos propres compétences et votre condition physique. L'utilisation des différents parcours se fait toujours sous votre propre responsabilité.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/39.jpg",
+    "gpxFile": null,
+    "kmlFile": null
+  },
+  {
+    "id": 40,
+    "name": {
+      "fr": "Autour du Mont Gond",
+      "de": "Autour du Mont Gond",
+      "en": "Autour du Mont Gond"
+    },
+    "region": "",
+    "difficulty": "Facile",
+    "category": "Itinéraires",
+    "duration": "4:40 h",
+    "distance": 0,
+    "elevation": {
+      "up": 0,
+      "down": 0
+    },
+    "altitude": {
+      "min": 1000,
+      "max": 2000
+    },
+    "season": {
+      "fr": "Juin - Octobre",
+      "de": "Juni - Oktober",
+      "en": "June - October"
+    },
+    "coords": [
+      46.22,
+      7.35
+    ],
+    "trail": [],
+    "description": {
+      "fr": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Nendaz, Tracouet – Balavaux – Champ Ferret – Dents Rousses – La Tsa – Jardin japonais – Tortin – Siviez\\n\\nLe départ de cette randonnée se trouve au sommet de la télécabine de Tracouet. Depuis cet endroit, suivez la route d’alpage en direction de Prarion. Une fois arrivé à la cabane de Balavaux, suivez la petite route sur votre gauche et longez la chotte où séjournent les vaches de la race d’Hérens durant l’été. Traversez l’alpage de Balavaux où trônent de magnifiques mélèzes millénaires. A la fin de cette route, le chemin se rétrécit et devient plus raide. Continuez votre ascension en direction des Dents Rousses, point culminant de votre randonnée à plus de 2570m d’altitude. De là, amorcez votre descente et rejoignez Tortin. Sur votre chemin, n’oubliez pas de faire une halte rafraichissante au Jardin Japonais. Rejoignez ensuite Siviez, point final de votre marche en traversant l’alpage de Tortin puis, depuis le réservoir, en suivant le chemin pédestre qui longe la Printse.\\n\\nLa montagne, un espace de plaisir qui se partage et se respecte. La montagne offre un espace pour se retrouver et partager des moments inoubliables, à vélo ou à pied. Pour que tous les amateurs de grand air puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer son loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles mises en place. Bien évaluer sa condition physique et ses capacités. L'utilisation des différents itinéraires se fait toujours à vos propres risques.\\n\\nConsultez la carte randonnées Valais/Wallis pour découvrir les meilleurs itinéraires de la région.\\n\\nL'office du tourisme de Nendaz met à votre disposition du matériel d'information et des brochures sur la randonnée dans la destination.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "de": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Nendaz, Tracouet – Balavaux – Champ Ferret – Dents Rousses – La Tsa – Jardin japonais – Tortin – Siviez\\n\\nLe départ de cette randonnée se trouve au sommet de la télécabine de Tracouet. Depuis cet endroit, suivez la route d’alpage en direction de Prarion. Une fois arrivé à la cabane de Balavaux, suivez la petite route sur votre gauche et longez la chotte où séjournent les vaches de la race d’Hérens durant l’été. Traversez l’alpage de Balavaux où trônent de magnifiques mélèzes millénaires. A la fin de cette route, le chemin se rétrécit et devient plus raide. Continuez votre ascension en direction des Dents Rousses, point culminant de votre randonnée à plus de 2570m d’altitude. De là, amorcez votre descente et rejoignez Tortin. Sur votre chemin, n’oubliez pas de faire une halte rafraichissante au Jardin Japonais. Rejoignez ensuite Siviez, point final de votre marche en traversant l’alpage de Tortin puis, depuis le réservoir, en suivant le chemin pédestre qui longe la Printse.\\n\\nLa montagne, un espace de plaisir qui se partage et se respecte. La montagne offre un espace pour se retrouver et partager des moments inoubliables, à vélo ou à pied. Pour que tous les amateurs de grand air puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer son loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles mises en place. Bien évaluer sa condition physique et ses capacités. L'utilisation des différents itinéraires se fait toujours à vos propres risques.\\n\\nConsultez la carte randonnées Valais/Wallis pour découvrir les meilleurs itinéraires de la région.\\n\\nL'office du tourisme de Nendaz met à votre disposition du matériel d'information et des brochures sur la randonnée dans la destination.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n",
+      "en": "✨ <strong>Une aventure inoubliable vous attend !</strong><br><br>Nendaz, Tracouet – Balavaux – Champ Ferret – Dents Rousses – La Tsa – Jardin japonais – Tortin – Siviez\\n\\nLe départ de cette randonnée se trouve au sommet de la télécabine de Tracouet. Depuis cet endroit, suivez la route d’alpage en direction de Prarion. Une fois arrivé à la cabane de Balavaux, suivez la petite route sur votre gauche et longez la chotte où séjournent les vaches de la race d’Hérens durant l’été. Traversez l’alpage de Balavaux où trônent de magnifiques mélèzes millénaires. A la fin de cette route, le chemin se rétrécit et devient plus raide. Continuez votre ascension en direction des Dents Rousses, point culminant de votre randonnée à plus de 2570m d’altitude. De là, amorcez votre descente et rejoignez Tortin. Sur votre chemin, n’oubliez pas de faire une halte rafraichissante au Jardin Japonais. Rejoignez ensuite Siviez, point final de votre marche en traversant l’alpage de Tortin puis, depuis le réservoir, en suivant le chemin pédestre qui longe la Printse.\\n\\nLa montagne, un espace de plaisir qui se partage et se respecte. La montagne offre un espace pour se retrouver et partager des moments inoubliables, à vélo ou à pied. Pour que tous les amateurs de grand air puissent en profiter, il est indispensable de partager cet espace dans le respect de la nature et de l’agriculture. Un comportement respectueux permet à chacun de pratiquer son loisir dans les meilleures conditions. Informez-vous sur les recommandations et règles mises en place. Bien évaluer sa condition physique et ses capacités. L'utilisation des différents itinéraires se fait toujours à vos propres risques.\\n\\nConsultez la carte randonnées Valais/Wallis pour découvrir les meilleurs itinéraires de la région.\\n\\nL'office du tourisme de Nendaz met à votre disposition du matériel d'information et des brochures sur la randonnée dans la destination.\\n\\nCette activité vous est proposée par Valais/Wallis Promotion.\\n\\n"
+    },
+    "access": {
+      "fr": "En transport public",
+      "de": "Mit öffentlichen Verkehrsmitteln",
+      "en": "By public transport"
+    },
+    "image": "assets/images/hikes/40.jpg",
+    "gpxFile": null,
+    "kmlFile": null
   },
   {
     "name": {
