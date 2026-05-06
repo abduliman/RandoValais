@@ -308,9 +308,14 @@ button { cursor: pointer; font-family: var(--font-body); border: none; }
   text-align: center; padding: 1rem; background: var(--beige-light);
   border-radius: var(--radius-sm);
 }
-.info-item .icon { font-size: 1.5rem; margin-bottom: 0.25rem; }
-.info-item .value { font-family: var(--font-head); font-weight: 700; font-size: 1.2rem; color: var(--green-dark); }
-.info-item .label { font-size: 0.75rem; color: var(--gray); }
+.info-item .icon { 
+  font-size: 1.8rem; margin-bottom: 8px; 
+  display: flex; align-items: center; justify-content: center;
+  color: var(--green);
+}
+.info-item .icon i, .info-item .icon svg { width: 32px; height: 32px; stroke-width: 1.5px; }
+.info-item .value { font-family: var(--font-head); font-weight: 700; font-size: 1.1rem; color: var(--dark); }
+.info-item .label { font-size: 0.75rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.5px; }
 
 /* ACTION BUTTONS */
 .action-btns { display: flex; gap: 1rem; margin-bottom: 2rem; }

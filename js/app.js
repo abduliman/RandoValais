@@ -555,14 +555,14 @@ function renderDetail(id) {
     }
 
     document.getElementById('detailInfo').innerHTML = `
-      <div class="info-item"><div class="icon" style="color:#3B82F6"><i data-lucide="timer" class="icon-inline"></i></div><div class="value">${hike.duration}</div><div class="label">${t('hikes.duration')}</div></div>
-      <div class="info-item"><div class="icon" style="color:#10B981"><i data-lucide="map" class="icon-inline"></i></div><div class="value">${hike.distance} km</div><div class="label">${t('hikes.distance')}</div></div>
-      <div class="info-item"><div class="icon" style="color:#F59E0B"><i data-lucide="trending-up" class="icon-inline"></i></div><div class="value">+${hike.elevation.up}m</div><div class="label">${t('hikes.elevation')}</div></div>
-      <div class="info-item"><div class="icon" style="color:#EF4444"><i data-lucide="trending-down" class="icon-inline"></i></div><div class="value">-${hike.elevation.down}m</div><div class="label">${t('hikes.elevation')}</div></div>
-      <div class="info-item"><div class="icon" style="color:#6366F1"><i data-lucide="arrow-down-to-line" class="icon-inline"></i></div><div class="value">${hike.altitude.min}m</div><div class="label">${t('detail.altMin')}</div></div>
-      <div class="info-item"><div class="icon" style="color:#8B5CF6"><i data-lucide="arrow-up-to-line" class="icon-inline"></i></div><div class="value">${hike.altitude.max}m</div><div class="label">${t('detail.altMax')}</div></div>
-      <div class="info-item" style="background:${DIFFICULTY_COLORS[hike.difficulty]}22">
-        <div class="icon" style="color:${DIFFICULTY_COLORS[hike.difficulty]}"><i data-lucide="gauge" class="icon-inline"></i></div>
+      <div class="info-item"><div class="icon" style="color:#3B82F6"><i data-lucide="timer"></i></div><div class="value">${hike.duration}</div><div class="label">${t('hikes.duration')}</div></div>
+      <div class="info-item"><div class="icon" style="color:#10B981"><i data-lucide="map"></i></div><div class="value">${hike.distance} km</div><div class="label">${t('hikes.distance')}</div></div>
+      <div class="info-item"><div class="icon" style="color:#F59E0B"><i data-lucide="trending-up"></i></div><div class="value">+${hike.elevation.up}m</div><div class="label">${t('hikes.elevation')}</div></div>
+      <div class="info-item"><div class="icon" style="color:#EF4444"><i data-lucide="trending-down"></i></div><div class="value">-${hike.elevation.down}m</div><div class="label">${t('hikes.elevation')}</div></div>
+      <div class="info-item"><div class="icon" style="color:#6366F1"><i data-lucide="arrow-down-to-line"></i></div><div class="value">${hike.altitude.min}m</div><div class="label">${t('detail.altMin')}</div></div>
+      <div class="info-item"><div class="icon" style="color:#8B5CF6"><i data-lucide="arrow-up-to-line"></i></div><div class="value">${hike.altitude.max}m</div><div class="label">${t('detail.altMax')}</div></div>
+      <div class="info-item" style="background:${DIFFICULTY_COLORS[hike.difficulty]}15">
+        <div class="icon" style="color:${DIFFICULTY_COLORS[hike.difficulty]}"><i data-lucide="gauge"></i></div>
         <div class="value" style="color:${DIFFICULTY_COLORS[hike.difficulty]}">${hike.difficulty}</div>
         <div class="label">Difficulté</div>
       </div>
@@ -1055,10 +1055,10 @@ async function fetchWeather(hike) {
       <div style="flex:1">
         <div class="big-temp">${Math.round(c.temperature_2m)}°C</div>
         <div class="weather-summary-icons">
-          <div class="ws-item" title="Vent"><img src="assets/images/weather/wind.png" alt="Vent" class="ws-img"> <span>${c.wind_speed_10m} km/h</span></div>
-          <div class="ws-item" title="Précipitations"><img src="assets/images/weather/rain.png" alt="Pluie" class="ws-img"> <span>${data.daily.precipitation_probability_max[0]}%</span></div>
-          <div class="ws-item" title="Soleil"><img src="assets/images/weather/sun.png" alt="Soleil" class="ws-img"> <span>${sunrise}</span></div>
-          <div class="ws-item" title="Nuages"><img src="assets/images/weather/cloud.png" alt="Nuages" class="ws-img"> <span>Variable</span></div>
+          <div class="ws-item" title="Vent"><i data-lucide="wind" style="color:#3B82F6"></i> <span>${c.wind_speed_10m} km/h</span></div>
+          <div class="ws-item" title="Précipitations"><i data-lucide="cloud-rain" style="color:#60A5FA"></i> <span>${data.daily.precipitation_probability_max[0]}%</span></div>
+          <div class="ws-item" title="Soleil"><i data-lucide="sunrise" style="color:#F59E0B"></i> <span>${sunrise}</span></div>
+          <div class="ws-item" title="Coucher"><i data-lucide="sunset" style="color:#8B5CF6"></i> <span>${sunset}</span></div>
         </div>
       </div>
     </div>`;
@@ -1107,22 +1107,22 @@ function renderCalories(hike) {
 
   el.innerHTML = `<div class="calories-grid">
     <div class="calorie-item">
-      <div class="cal-icon" style="color:#EF4444"><i data-lucide="flame" class="icon-inline"></i></div>
+      <div class="cal-icon" style="color:#EF4444"><i data-lucide="flame"></i></div>
       <div class="cal-value">${calories}</div>
       <div class="cal-label">kcal estimées</div>
     </div>
     <div class="calorie-item">
-      <div class="cal-icon" style="color:#3B82F6"><i data-lucide="droplet" class="icon-inline"></i></div>
+      <div class="cal-icon" style="color:#3B82F6"><i data-lucide="droplet"></i></div>
       <div class="cal-value">${water}L</div>
       <div class="cal-label">eau recommandée</div>
     </div>
     <div class="calorie-item">
-      <div class="cal-icon" style="color:#10B981"><i data-lucide="footprints" class="icon-inline"></i></div>
+      <div class="cal-icon" style="color:#10B981"><i data-lucide="footprints"></i></div>
       <div class="cal-value">${(steps/1000).toFixed(1)}k</div>
       <div class="cal-label">pas estimés</div>
     </div>
     <div class="calorie-item">
-      <div class="cal-icon" style="color:#F59E0B"><i data-lucide="history" class="icon-inline"></i></div>
+      <div class="cal-icon" style="color:#F59E0B"><i data-lucide="history"></i></div>
       <div class="cal-value">${hike.duration}</div>
       <div class="cal-label">temps de marche</div>
     </div>
