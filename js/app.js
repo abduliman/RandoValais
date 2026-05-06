@@ -555,14 +555,14 @@ function renderDetail(id) {
     }
 
     document.getElementById('detailInfo').innerHTML = `
-      <div class="info-item"><div class="icon" style="color:#3B82F6"><i data-lucide="timer" class="icon-inline"></i></div><div class="value">${hike.duration}</div><div class="label">${t('hikes.duration')}</div></div>
-      <div class="info-item"><div class="icon" style="color:#10B981"><i data-lucide="map" class="icon-inline"></i></div><div class="value">${hike.distance} km</div><div class="label">${t('hikes.distance')}</div></div>
-      <div class="info-item"><div class="icon" style="color:#F59E0B"><i data-lucide="trending-up" class="icon-inline"></i></div><div class="value">+${hike.elevation.up}m</div><div class="label">${t('hikes.elevation')}</div></div>
-      <div class="info-item"><div class="icon" style="color:#EF4444"><i data-lucide="trending-down" class="icon-inline"></i></div><div class="value">-${hike.elevation.down}m</div><div class="label">${t('hikes.elevation')}</div></div>
-      <div class="info-item"><div class="icon" style="color:#6366F1"><i data-lucide="arrow-down-to-line" class="icon-inline"></i></div><div class="value">${hike.altitude.min}m</div><div class="label">${t('detail.altMin')}</div></div>
-      <div class="info-item"><div class="icon" style="color:#8B5CF6"><i data-lucide="arrow-up-to-line" class="icon-inline"></i></div><div class="value">${hike.altitude.max}m</div><div class="label">${t('detail.altMax')}</div></div>
+      <div class="info-item"><div class="icon"><img src="assets/images/tech/duration.png" alt="Durée" class="tech-img"></div><div class="value">${hike.duration}</div><div class="label">${t('hikes.duration')}</div></div>
+      <div class="info-item"><div class="icon"><img src="assets/images/tech/distance.png" alt="Distance" class="tech-img"></div><div class="value">${hike.distance} km</div><div class="label">${t('hikes.distance')}</div></div>
+      <div class="info-item"><div class="icon"><img src="assets/images/tech/elevation.png" alt="Dénivelé" class="tech-img"></div><div class="value">+${hike.elevation.up}m</div><div class="label">${t('hikes.elevation')}</div></div>
+      <div class="info-item"><div class="icon"><img src="assets/images/tech/elevation.png" alt="Dénivelé" class="tech-img" style="transform: scaleY(-1)"></div><div class="value">-${hike.elevation.down}m</div><div class="label">${t('hikes.elevation')}</div></div>
+      <div class="info-item"><div class="icon"><img src="assets/images/tech/altitude.png" alt="Altitude" class="tech-img" style="filter: hue-rotate(45deg)"></div><div class="value">${hike.altitude.min}m</div><div class="label">${t('detail.altMin')}</div></div>
+      <div class="info-item"><div class="icon"><img src="assets/images/tech/altitude.png" alt="Altitude" class="tech-img"></div><div class="value">${hike.altitude.max}m</div><div class="label">${t('detail.altMax')}</div></div>
       <div class="info-item" style="background:${DIFFICULTY_COLORS[hike.difficulty]}22">
-        <div class="icon" style="color:${DIFFICULTY_COLORS[hike.difficulty]}"><i data-lucide="gauge" class="icon-inline"></i></div>
+        <div class="icon"><img src="assets/images/tech/difficulty.png" alt="Difficulté" class="tech-img"></div>
         <div class="value" style="color:${DIFFICULTY_COLORS[hike.difficulty]}">${hike.difficulty}</div>
         <div class="label">Difficulté</div>
       </div>
