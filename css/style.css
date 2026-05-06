@@ -44,9 +44,10 @@ button { cursor: pointer; font-family: var(--font-body); border: none; }
   transition: var(--transition);
 }
 .nav.scrolled { box-shadow: var(--shadow); padding: 0.25rem 2.5rem; }
-.nav-logo { display: flex; align-items: center; gap: 16px; }
-.nav-logo img { transition: var(--transition); height: 100px; object-fit: contain; }
-.nav.scrolled .nav-logo img { height: 70px !important; }
+.nav-logo { display: flex; align-items: center; gap: 8px; }
+.nav-logo-img { height: 50px; object-fit: contain; transition: var(--transition); }
+.nav-flag { height: 35px; width: auto; margin-right: -4px; border-radius: 4px; }
+.nav.scrolled .nav-logo-img { height: 40px; }
 .nav-subtitle {
   font-family: var(--font-head);
   font-size: 1.1rem;
