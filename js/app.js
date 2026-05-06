@@ -1052,15 +1052,13 @@ async function fetchWeather(hike) {
 
     let html = `<div class="weather-now">
       <div class="big-icon" style="color:#F59E0B">${nowIcon}</div>
-      <div>
+      <div style="flex:1">
         <div class="big-temp">${Math.round(c.temperature_2m)}°C</div>
-        <div class="details">
-          <span style="color:#3B82F6"><i data-lucide="wind" class="icon-inline"></i> ${c.wind_speed_10m} km/h</span> · 
-          <span style="color:#10B981"><i data-lucide="mountain" class="icon-inline"></i> ${alt}m</span>
-        </div>
-        <div class="details" style="margin-top:4px">
-          <span style="color:#F59E0B"><i data-lucide="sunrise" class="icon-inline"></i> ${sunrise}</span> · 
-          <span style="color:#8B5CF6"><i data-lucide="sunset" class="icon-inline"></i> ${sunset}</span>
+        <div class="weather-summary-icons">
+          <div class="ws-item" title="Vent"><i data-lucide="wind" style="color:#3B82F6"></i> <span>${c.wind_speed_10m} km/h</span></div>
+          <div class="ws-item" title="Précipitations"><i data-lucide="cloud-rain" style="color:#60A5FA"></i> <span>${data.daily.precipitation_probability_max[0]}%</span></div>
+          <div class="ws-item" title="Soleil"><i data-lucide="sunrise" style="color:#F59E0B"></i> <span>${sunrise}</span></div>
+          <div class="ws-item" title="Coucher"><i data-lucide="sunset" style="color:#8B5CF6"></i> <span>${sunset}</span></div>
         </div>
       </div>
     </div>`;

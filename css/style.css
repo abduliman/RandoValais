@@ -567,12 +567,16 @@ button { cursor: pointer; font-family: var(--font-body); border: none; }
 .weather-day .temp { font-weight: 700; color: var(--green-dark); font-size: 0.9rem; }
 .weather-day .rain { font-size: 0.7rem; color: var(--blue); }
 .weather-now {
-  display: flex; align-items: center; gap: 1rem; padding: 12px;
-  background: var(--white); border-radius: var(--radius-sm); box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  display: flex; align-items: center; gap: 1.5rem; padding: 1.5rem;
+  background: var(--white); border-radius: var(--radius); 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
-.weather-now .big-icon { font-size: 2.5rem; }
-.weather-now .big-temp { font-size: 2rem; font-weight: 800; color: var(--green-dark); font-family: var(--font-head); }
-.weather-now .details { font-size: 0.8rem; color: var(--gray); }
+.weather-now .big-icon svg { width: 50px; height: 50px; }
+.weather-now .big-temp { font-size: 2.5rem; font-weight: 800; color: var(--dark); font-family: var(--font-head); line-height: 1; }
+.weather-summary-icons { display: flex; gap: 1rem; margin-top: 10px; flex-wrap: wrap; }
+.ws-item { display: flex; align-items: center; gap: 6px; font-size: 0.85rem; color: var(--gray); font-weight: 600; }
+.ws-item svg { width: 16px; height: 16px; }
+.weather-now .details { font-size: 0.85rem; color: var(--gray); }
 
 /* CALORIES WIDGET */
 .calories-grid {
