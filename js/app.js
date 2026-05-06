@@ -292,6 +292,21 @@ function updateNavProfile(user) {
 
 // Ensure first page is rendered even if hash is empty
 function initApp() {
+  const totalHikes = HIKES.length;
+  let totalKm = 0;
+  let totalElev = 0;
+  HIKES.forEach(h => {
+    totalKm += parseFloat(h.distance) || 0;
+    totalElev += parseInt(h.elevation.up) || 0;
+  });
+  
+  const elHikes = document.getElementById('heroStatsHikes');
+  const elKm = document.getElementById('heroStatsKm');
+  const elElev = document.getElementById('heroStatsElev');
+  if (elHikes) elHikes.setAttribute('data-count', totalHikes);
+  if (elKm) elKm.setAttribute('data-count', Math.round(totalKm));
+  if (elElev) elElev.setAttribute('data-count', totalElev);
+
   const user = Storage.getUser();
   if (user) {
     const hash = window.location.hash.slice(1);
