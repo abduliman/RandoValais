@@ -79,6 +79,11 @@ function showPage(page) {
   const navLink = document.querySelector(`.nav-links a[data-page="${navPage}"]`);
   if (navLink) navLink.classList.add('active');
 
+  // Close mobile menu
+  document.getElementById('navLinks').classList.remove('open');
+  document.getElementById('burgerBtn').classList.remove('open');
+  document.body.style.overflow = '';
+
   try {
     if (page === 'home') renderFeatured();
     if (page === 'hikes') renderHikes();
@@ -159,7 +164,11 @@ function setupNav() {
 
 
 function toggleMenu() {
-  document.getElementById('navLinks').classList.toggle('open');
+  const links = document.getElementById('navLinks');
+  const burger = document.getElementById('burgerBtn');
+  links.classList.toggle('open');
+  burger.classList.toggle('open');
+  document.body.style.overflow = links.classList.contains('open') ? 'hidden' : '';
 }
 
 // ===== LANGUAGE =====
