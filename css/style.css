@@ -123,7 +123,7 @@ button { cursor: pointer; font-family: var(--font-body); border: none; }
 .hero:hover .hero-bg { transform: scale(1.05); }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: linear-gradient(180deg, rgba(26,48,9,0.6) 0%, rgba(45,80,22,0.4) 50%, rgba(26,26,46,0.7) 100%);
+  background: linear-gradient(180deg, rgba(26,48,9,0.3) 0%, rgba(45,80,22,0.2) 50%, rgba(26,26,46,0.4) 100%);
 }
 .hero-content { position: relative; z-index: 2; padding: 2rem; max-width: 800px; }
 .hero-badge {
