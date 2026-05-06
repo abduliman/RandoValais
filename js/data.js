@@ -130449,7 +130449,16 @@ const HIKES = [
       46.22935,
       7.35869
     ],
-    "trail": [],
+    "trail": [
+      [
+        46.22935,
+        7.35869
+      ],
+      [
+        46.230349999999994,
+        7.3596900000000005
+      ]
+    ],
     "description": {
       "fr": "✨ Une aventure inoubliable vous attend ! Abandonné depuis longtemps, le Grand Bisse de St-Jean a été réhabilité en 2012 avec beaucoup de goût et en respectant les techniques anciennes. Le bisse capte l’eau du torrent du Marais. Il traverse le village de St-Jean d’en Haut et termine son cours à Mayoux. Des prises d’eau pour l’irrigation par aspersion ont été installées dans de magnifiques répartiteurs en bois. Sur la plus grande partie de son cours, le bisse a été creusé en pleine terre, et renforcé par des dallages ou de grosses pierres. Départ: Grimentz (1'585m d’altitude)Arrivée: Mayoux (1’196m d’altitude)",
       "de": "✨ Une aventure inoubliable vous attend ! Abandonné depuis longtemps, le Grand Bisse de St-Jean a été réhabilité en 2012 avec beaucoup de goût et en respectant les techniques anciennes. Le bisse capte l’eau du torrent du Marais. Il traverse le village de St-Jean d’en Haut et termine son cours à Mayoux. Des prises d’eau pour l’irrigation par aspersion ont été installées dans de magnifiques répartiteurs en bois. Sur la plus grande partie de son cours, le bisse a été creusé en pleine terre, et renforcé par des dallages ou de grosses pierres. Départ: Grimentz (1'585m d’altitude)Arrivée: Mayoux (1’196m d’altitude)",
@@ -135929,7 +135938,16 @@ const HIKES = [
       46.22935,
       7.35869
     ],
-    "trail": [],
+    "trail": [
+      [
+        46.22935,
+        7.35869
+      ],
+      [
+        46.230349999999994,
+        7.3596900000000005
+      ]
+    ],
     "description": {
       "fr": "✨ Une aventure inoubliable vous attend ! Alimenté par la Lienne, il irrigue les prés et vignes d’Icogne, de Lens, Montana et Chermignon. Il quitte les gorges de la rivière par un parcours vertigineux et passe sous le village d’Icogne. Il s’écoule ensuite dans des chéneaux tantôt en béton, tantôt taillées dans la roche, contourne la colline du Châtelard et termine sa course à Diogne. Un chemin fait de planches retenues par des pieux métalliques a été aménagé au-dessus du bisse. Départ: Torrent-Croix (1'159 m d’altitude)Arrivée: Chermignon d’en Bas (1'523 m d’altitude)",
       "de": "✨ Une aventure inoubliable vous attend ! Alimenté par la Lienne, il irrigue les prés et vignes d’Icogne, de Lens, Montana et Chermignon. Il quitte les gorges de la rivière par un parcours vertigineux et passe sous le village d’Icogne. Il s’écoule ensuite dans des chéneaux tantôt en béton, tantôt taillées dans la roche, contourne la colline du Châtelard et termine sa course à Diogne. Un chemin fait de planches retenues par des pieux métalliques a été aménagé au-dessus du bisse. Départ: Torrent-Croix (1'159 m d’altitude)Arrivée: Chermignon d’en Bas (1'523 m d’altitude)",

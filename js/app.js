@@ -524,19 +524,26 @@ function renderDetail(id) {
   heroEl.style.backgroundPosition = 'center';
 
   // Info grid
-  document.getElementById('detailInfo').innerHTML = `
-    <div class="info-item"><div class="icon"><i data-lucide="clock" class="icon-inline"></i></div><div class="value">${hike.duration}</div><div class="label">${t('hikes.duration')}</div></div>
-    <div class="info-item"><div class="icon"><i data-lucide="ruler" class="icon-inline"></i></div><div class="value">${hike.distance} km</div><div class="label">${t('hikes.distance')}</div></div>
-    <div class="info-item"><div class="icon"><i data-lucide="arrow-up" class="icon-inline"></i></div><div class="value">+${hike.elevation.up}m</div><div class="label">${t('hikes.elevation')}</div></div>
-    <div class="info-item"><div class="icon"><i data-lucide="arrow-down" class="icon-inline"></i></div><div class="value">-${hike.elevation.down}m</div><div class="label">${t('hikes.elevation')}</div></div>
-    <div class="info-item"><div class="icon">🔻</div><div class="value">${hike.altitude.min}m</div><div class="label">${t('detail.altMin')}</div></div>
-    <div class="info-item"><div class="icon">🔺</div><div class="value">${hike.altitude.max}m</div><div class="label">${t('detail.altMax')}</div></div>
-    <div class="info-item" style="background:${DIFFICULTY_COLORS[hike.difficulty]}22">
-      <div class="icon" style="color:${DIFFICULTY_COLORS[hike.difficulty]}">●</div>
-      <div class="value" style="color:${DIFFICULTY_COLORS[hike.difficulty]}">${hike.difficulty} = ${SWISS_SCALE[hike.difficulty] || ''}</div>
-      <div class="label">${hike.difficulty}</div>
-    </div>
-  `;
+    let vertigoIcon = '';
+    const nameLower = hike.name.fr.toLowerCase();
+    if (nameLower.includes('ro') || nameLower.includes('torrent-neuf') || nameLower.includes('via ferrata') || (hike.description && hike.description.fr.toLowerCase().includes('vertige'))) {
+      vertigoIcon = `<div class="info-item" style="background:#FFEbee"><div class="icon" style="color:#F44336"><i data-lucide="triangle-alert" class="icon-inline"></i></div><div class="value" style="color:#F44336">Sujet au vertige</div><div class="label">Avertissement</div></div>`;
+    }
+
+    document.getElementById('detailInfo').innerHTML = `
+      <div class="info-item"><div class="icon"><i data-lucide="clock" class="icon-inline"></i></div><div class="value">${hike.duration}</div><div class="label">${t('hikes.duration')}</div></div>
+      <div class="info-item"><div class="icon"><i data-lucide="ruler" class="icon-inline"></i></div><div class="value">${hike.distance} km</div><div class="label">${t('hikes.distance')}</div></div>
+      <div class="info-item"><div class="icon"><i data-lucide="arrow-up" class="icon-inline"></i></div><div class="value">+${hike.elevation.up}m</div><div class="label">${t('hikes.elevation')}</div></div>
+      <div class="info-item"><div class="icon"><i data-lucide="arrow-down" class="icon-inline"></i></div><div class="value">-${hike.elevation.down}m</div><div class="label">${t('hikes.elevation')}</div></div>
+      <div class="info-item"><div class="icon"><i data-lucide="arrow-down-to-line" class="icon-inline"></i></div><div class="value">${hike.altitude.min}m</div><div class="label">${t('detail.altMin')}</div></div>
+      <div class="info-item"><div class="icon"><i data-lucide="arrow-up-to-line" class="icon-inline"></i></div><div class="value">${hike.altitude.max}m</div><div class="label">${t('detail.altMax')}</div></div>
+      <div class="info-item" style="background:${DIFFICULTY_COLORS[hike.difficulty]}22">
+        <div class="icon" style="color:${DIFFICULTY_COLORS[hike.difficulty]}"><i data-lucide="activity" class="icon-inline"></i></div>
+        <div class="value" style="color:${DIFFICULTY_COLORS[hike.difficulty]}">${hike.difficulty}</div>
+        <div class="label">Difficulté</div>
+      </div>
+      ${vertigoIcon}
+    `;
 
   // Like & Fav buttons
   updateDetailButtons(id);
@@ -970,7 +977,32 @@ function sendReservation(event) {
 }
 
 // ===== WEATHER (Open-Meteo API — free, no key) =====
-const WEATHER_ICONS = {0:'☀️',1:'<i data-lucide="sun-dim" class="icon-inline"></i>',2:'⛅',3:'☁️',45:'🌫️',48:'🌫️',51:'🌦️',53:'🌧️',55:'🌧️',61:'🌧️',63:'🌧️',65:'🌧️',71:'🌨️',73:'🌨️',75:'❄️',77:'❄️',80:'🌦️',81:'🌧️',82:'⛈️',85:'🌨️',86:'❄️',95:'⛈️',96:'⛈️',99:'⛈️'};
+const WEATHER_ICONS = {
+  0:'<i data-lucide="sun" class="icon-inline"></i>',
+  1:'<i data-lucide="sun-dim" class="icon-inline"></i>',
+  2:'<i data-lucide="cloud" class="icon-inline"></i>',
+  3:'<i data-lucide="cloudy" class="icon-inline"></i>',
+  45:'<i data-lucide="cloud-fog" class="icon-inline"></i>',
+  48:'<i data-lucide="cloud-fog" class="icon-inline"></i>',
+  51:'<i data-lucide="cloud-drizzle" class="icon-inline"></i>',
+  53:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
+  55:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
+  61:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
+  63:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
+  65:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
+  71:'<i data-lucide="snowflake" class="icon-inline"></i>',
+  73:'<i data-lucide="snowflake" class="icon-inline"></i>',
+  75:'<i data-lucide="snowflake" class="icon-inline"></i>',
+  77:'<i data-lucide="snowflake" class="icon-inline"></i>',
+  80:'<i data-lucide="cloud-drizzle" class="icon-inline"></i>',
+  81:'<i data-lucide="cloud-rain" class="icon-inline"></i>',
+  82:'<i data-lucide="cloud-lightning" class="icon-inline"></i>',
+  85:'<i data-lucide="snowflake" class="icon-inline"></i>',
+  86:'<i data-lucide="snowflake" class="icon-inline"></i>',
+  95:'<i data-lucide="cloud-lightning" class="icon-inline"></i>',
+  96:'<i data-lucide="cloud-lightning" class="icon-inline"></i>',
+  99:'<i data-lucide="cloud-lightning" class="icon-inline"></i>'
+};
 const DAY_NAMES = {fr:['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'],de:['So','Mo','Di','Mi','Do','Fr','Sa'],en:['Sun','Mon','Tue','Wed','Thu','Fri','Sat']};
 
 async function fetchWeather(hike) {
@@ -1026,7 +1058,16 @@ function renderCalories(hike) {
   const el = document.getElementById('caloriesWidget');
   if (!el) return;
 
-  const durationH = parseFloat(hike.duration) || 3;
+  let durationH = 3;
+  if (hike.duration) {
+    let durStr = hike.duration.replace(' h', '').replace('h', '').trim();
+    if (durStr.includes(':')) {
+      const parts = durStr.split(':');
+      durationH = parseInt(parts[0]) + parseInt(parts[1]) / 60;
+    } else {
+      durationH = parseFloat(durStr.replace(',', '.'));
+    }
+  }
   const elevUp = hike.elevation.up || 0;
   const dist = hike.distance || 0;
 
@@ -1097,7 +1138,8 @@ function renderEquipment(hike) {
   const el = document.getElementById('equipmentList');
   if (!el) return;
 
-  const items = EQUIPMENT[hike.difficulty] || [];
+  const allItems = EQUIPMENT[hike.difficulty] || [];
+  const items = allItems.filter(item => item.essential);
   el.innerHTML = '<div class="equip-list">' + items.map(item =>
     `<div class="equip-item">
       <span class="equip-check">✓</span>
@@ -1119,6 +1161,15 @@ function shareHike(method) {
   switch (method) {
     case 'whatsapp':
       window.open(`https://wa.me/?text=${encodeURIComponent(text + url)}`, '_blank');
+      break;
+    case 'facebook':
+      window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank');
+      break;
+    case 'twitter':
+      window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank');
+      break;
+    case 'instagram':
+      navigator.clipboard.writeText(url).then(() => showToast('<i data-lucide="instagram"></i> Lien copié pour Instagram !'));
       break;
     case 'email':
       window.open(`mailto:?subject=${encodeURIComponent('Randonnée: ' + name)}&body=${encodeURIComponent(text + url)}`, '_blank');

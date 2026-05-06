@@ -173,16 +173,15 @@
             <div class="share-bar" id="shareBar" style="margin-bottom:0">
               <span style="font-size:0.85rem;color:var(--gray);font-weight:500">Partager :</span>
               <button class="share-btn whatsapp" onclick="shareHike('whatsapp')" title="WhatsApp"><i data-lucide="message-square"></i></button>
+              <button class="share-btn facebook" onclick="shareHike('facebook')" title="Facebook" style="background:#1877f2"><i data-lucide="facebook"></i></button>
+              <button class="share-btn twitter" onclick="shareHike('twitter')" title="X (Twitter)" style="background:#000000"><i data-lucide="twitter"></i></button>
+              <button class="share-btn instagram" onclick="shareHike('instagram')" title="Instagram" style="background:#e1306c"><i data-lucide="instagram"></i></button>
               <button class="share-btn email" onclick="shareHike('email')" title="Email"><i data-lucide="mail"></i></button>
               <button class="share-btn copy" onclick="shareHike('copy')" title="Copier le lien"><i data-lucide="link"></i></button>
             </div>
           </div>
 
-          <!-- Technical Info -->
-          <div class="info-card" style="margin-bottom:2rem">
-            <h3 style="margin-bottom:1.5rem;color:var(--green-dark)">Informations Techniques</h3>
-            <div class="info-grid" id="detailInfo" style="margin-bottom:0"></div>
-          </div>
+
           <!-- Points of Interest -->
           <div class="info-card poi-section" style="margin-top:2rem">
             <h3><i data-lucide="map-pin"></i> <span data-i18n="poi.title">Points d'intérêt</span></h3>
@@ -212,6 +211,12 @@
             <div id="weatherWidget"><p style="color:var(--gray);font-size:0.85rem">Chargement météo...</p></div>
           </div>
 
+          <!-- Technical Info -->
+          <div class="info-card" style="margin-bottom:2rem">
+            <h3 style="margin-bottom:1.5rem;color:var(--green-dark)">Informations Techniques</h3>
+            <div class="info-grid" id="detailInfo" style="margin-bottom:0"></div>
+          </div>
+          
           <!-- Calories & Stats -->
           <div class="info-card" style="margin-bottom:2rem">
             <h3><i data-lucide="flame" class="icon-inline"></i> Effort estimé</h3>
