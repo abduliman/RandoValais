@@ -434,7 +434,8 @@ function renderHikes(filter) {
     if (search) {
       hikes = hikes.filter(h =>
         tHike(h.name).toLowerCase().includes(search) ||
-        h.region.toLowerCase().includes(search)
+        h.region.toLowerCase().includes(search) ||
+        (h.description && tHike(h.description).toLowerCase().includes(search))
       );
     }
     
@@ -1558,7 +1559,7 @@ function showNearbyWebcams() {
 
   const modal = document.getElementById('webcamsModal');
   const list = document.getElementById('webcamsList');
-  modal.classList.add('active');
+  modal.classList.add('open');
 
   // Calculate distances and find 3 nearest
   const nearby = WEBCAMS.map(w => ({
@@ -1581,7 +1582,7 @@ function showNearbyWebcams() {
 }
 
 function closeWebcams() {
-  document.getElementById('webcamsModal').classList.remove('active');
+  document.getElementById('webcamsModal').classList.remove('open');
 }
 
 function getDistance(lat1, lon1, lat2, lon2) {

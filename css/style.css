@@ -331,6 +331,13 @@ button { cursor: pointer; font-family: var(--font-body); border: none; }
 .btn-fav { background: var(--gray-light); color: var(--dark); }
 .btn-fav.active { background: var(--dark); color: var(--white); }
 .btn-fav:hover { transform: scale(1.02); box-shadow: var(--shadow); }
+.btn-webcam {
+  flex: 1; padding: 12px; border-radius: var(--radius-sm);
+  font-weight: 600; font-size: 0.9rem; display: flex; align-items: center;
+  justify-content: center; gap: 8px; transition: var(--transition);
+  background: var(--green); color: var(--white); border: none; cursor: pointer;
+}
+.btn-webcam:hover { transform: scale(1.02); background: var(--green-light); box-shadow: var(--shadow); }
 
 /* COMMENTS */
 .comments-section { margin-top: 2rem; }
