@@ -636,6 +636,8 @@ button { cursor: pointer; font-family: var(--font-body); border: none; }
 .dl-btn.gpx:hover { background: var(--green-light); }
 .dl-btn.kml { background: var(--blue); color: var(--white); }
 .dl-btn.kml:hover { background: #3A7BD5; }
+.dl-btn.webcam { background: #F59E0B; color: var(--white); }
+.dl-btn.webcam:hover { background: #D97706; }
 
 /* SIMILAR HIKES */
 .similar-section h3 { color: var(--green-dark); margin-bottom: 0.5rem; font-size: 1.3rem; }
