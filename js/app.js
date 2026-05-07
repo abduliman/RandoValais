@@ -12,6 +12,21 @@ let hikesMap = null;
 let hikesMapMarkers = [];
 const EMOJI_HIKES = ['<i data-lucide="mountain" class="icon-inline"></i>','🌲','<i data-lucide="mountain-snow" class="icon-inline"></i>','🏞️','🌄','🍃','🦅','🌿','🏕️','🍇','💎','🌉'];
 const SWISS_SCALE = { 'Facile': 'T1', 'Moyen': 'T2 / T3', 'Difficile': 'T4+' };
+const DIFFICULTY_COLORS = {
+  "Facile": "#4CAF50", "Moyen": "#2196F3", "Difficile": "#FF9800"
+};
+const CATEGORY_COLORS = {
+  "Itinéraires randonnées": "#1B6B3A",
+  "Bisses": "#3B82F6",
+  "Tours": "#8E44AD",
+  "Sentiers découvertes": "#F39C12",
+  "Trail running": "#E74C3C"
+};
+const DIFFICULTY_LABELS = {
+  "Facile": { fr: "Facile", de: "Leicht", en: "Easy" },
+  "Moyen": { fr: "Moyen", de: "Mittel", en: "Medium" },
+  "Difficile": { fr: "Difficile", de: "Schwer", en: "Hard" }
+};
 
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
@@ -45,7 +60,8 @@ function showPage(page) {
   const pageMap = {
     home: 'homePage', hikes: 'hikesPage', map: 'mapPage',
     favorites: 'favoritesPage', profile: 'profilePage',
-    detail: 'detailPage', admin: 'adminPage', login: 'loginPage'
+    detail: 'detailPage', admin: 'adminPage', login: 'loginPage',
+    contact: 'contactPage', shop: 'shopPage'
   };
   
   const targetId = pageMap[page];
@@ -91,6 +107,8 @@ function showPage(page) {
     if (page === 'favorites') renderFavorites();
     if (page === 'profile') renderProfile();
     if (page === 'admin') renderAdmin();
+    if (page === 'contact') setTimeout(() => renderContactMap(), 100);
+    if (page === 'shop') renderShop();
     window.scrollTo(0,0);
   } catch (err) {
     console.error("Error rendering page content:", err);
@@ -135,8 +153,8 @@ function setupNav() {
     } else if (hash === 'bisses') {
       currentCategory = 'Bisses';
       showPage('hikes');
-    } else if (['home','hikes','map','favorites','profile','admin'].includes(hash)) {
-      if (hash === 'hikes') currentCategory = 'all'; // reset if going to normal hikes
+    } else if (['home','hikes','map','favorites','profile','admin','contact','shop'].includes(hash)) {
+      if (hash === 'hikes') currentCategory = 'all'; 
       showPage(hash);
     }
   });
@@ -325,7 +343,7 @@ function initApp() {
        const id = parseInt(hash.split('-')[1]);
        showPage('detail');
        renderDetail(id);
-    } else if (hash && ['home','hikes','map','favorites','profile','admin'].includes(hash)) {
+    } else if (hash && ['home','hikes','map','favorites','profile','admin','contact','shop'].includes(hash)) {
        showPage(hash);
     } else {
        showPage('home');
@@ -1471,6 +1489,52 @@ function shareLocation() {
   } else {
     showToast('Géolocalisation non supportée.');
   }
+}
+
+// ===== SHOP =====
+function renderShop() {
+  const container = document.getElementById('shopGrid');
+  if (!container) return;
+
+  if (typeof PRODUCTS === 'undefined' || !PRODUCTS.length) {
+    container.innerHTML = '<p style="text-align:center;color:var(--gray);grid-column:1/-1;padding:3rem">La boutique arrive bientôt !</p>';
+    return;
+  }
+
+  container.innerHTML = PRODUCTS.map(p => `
+    <div class="product-card fade-in">
+      <div class="product-img">
+        <img src="${p.image}" alt="${p.name}">
+        <span class="product-badge">${p.platform}</span>
+      </div>
+      <div class="product-body">
+        <h3>${p.name}</h3>
+        <p class="product-desc">${p.description}</p>
+        <div class="product-footer">
+          <span class="product-price">${p.price} €</span>
+          <a href="${p.url}" target="_blank" class="product-btn">Voir sur ${p.platform}</a>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ===== CONTACT MAP =====
+function renderContactMap() {
+  const container = document.getElementById('contactMap');
+  if (!container || !L) return;
+  // Initialize map if not already done
+  if (container._leaflet_id) return; 
+
+  const contactMap = L.map('contactMap').setView([46.2295, 7.3620], 15);
+  L.tileLayer('https://wmts.geo.admin.ch/1.0.0/ch.swisstopo.pixelkarte-farbe/default/current/3857/{z}/{x}/{y}.jpeg', {
+    attribution: '&copy; <a href="https://www.swisstopo.admin.ch/">swisstopo</a>',
+    maxZoom: 18
+  }).addTo(contactMap);
+
+  L.marker([46.2295, 7.3620]).addTo(contactMap)
+    .bindPopup('<b>Siège RandoValais</b><br>Sion, Valais')
+    .openPopup();
 }
 
 // Auto dark mode on load
