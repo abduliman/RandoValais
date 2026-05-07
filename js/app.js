@@ -816,6 +816,26 @@ function initMiniMap(hike) {
     miniMap.fitBounds(L.polyline(hike.trail).getBounds().pad(0.2));
   }
   L.marker(hike.coords).addTo(miniMap);
+
+  // Add nearby webcams to map
+  const nearby = getNearbyWebcams(hike);
+  const webcamIcon = L.divIcon({
+    html: '<div style="background:white; border-radius:50%; width:30px; height:30px; display:flex; align-items:center; justify-content:center; border:2px solid #10B981; box-shadow:0 2px 4px rgba(0,0,0,0.2); font-size:16px">📷</div>',
+    className: 'webcam-map-icon',
+    iconSize: [30, 30],
+    iconAnchor: [15, 15]
+  });
+
+  nearby.forEach(w => {
+    L.marker([w.lat, w.lng], { icon: webcamIcon }).addTo(miniMap)
+      .bindPopup(`
+        <div style="font-family:inherit; min-width:120px">
+          <strong style="display:block;margin-bottom:5px">${w.name}</strong>
+          <img src="${w.img}" style="width:100%; border-radius:4px; margin-bottom:5px">
+          <a href="${w.url}" target="_blank" style="display:block; text-align:center; background:#10B981; color:white; text-decoration:none; padding:4px; border-radius:4px; font-size:0.8rem">Voir le live</a>
+        </div>
+      `, { maxWidth: 200 });
+  });
 }
 
 // ===== FAVORITES =====
@@ -1573,21 +1593,11 @@ function renderContactMap() {
 }
 
 // ===== WEBCAMS =====
-function showNearbyWebcams() {
-  const hike = HIKES.find(h => h.id === currentHikeId);
-  if (!hike) return;
-
-  console.log("Opening webcams for hike:", hike.id);
-  const modal = document.getElementById('webcamsModal');
-  const list = document.getElementById('webcamsList');
-  modal.classList.add('open');
-  showToast('🔍 Recherche de webcams...');
-
-  // Calculate minimum distance to any point on the trail
-  const nearby = WEBCAMS.map(w => {
+function getNearbyWebcams(hike) {
+  if (typeof WEBCAMS === 'undefined') return [];
+  return WEBCAMS.map(w => {
     let minDist = Infinity;
     if (hike.trail && hike.trail.length > 0) {
-      // Step through trail points (skip some for performance if very long)
       const step = hike.trail.length > 500 ? 5 : 1;
       for (let i = 0; i < hike.trail.length; i += step) {
         const d = getDistance(hike.trail[i][0], hike.trail[i][1], w.lat, w.lng);
@@ -1598,6 +1608,19 @@ function showNearbyWebcams() {
     }
     return { ...w, dist: minDist };
   }).sort((a, b) => a.dist - b.dist).slice(0, 3);
+}
+
+function showNearbyWebcams() {
+  const hike = HIKES.find(h => h.id === currentHikeId);
+  if (!hike) return;
+
+  console.log("Opening webcams for hike:", hike.id);
+  const modal = document.getElementById('webcamsModal');
+  const list = document.getElementById('webcamsList');
+  modal.classList.add('open');
+  showToast('🔍 Recherche de webcams...');
+
+  const nearby = getNearbyWebcams(hike);
 
   list.innerHTML = nearby.map(w => `
     <div class="hike-card" style="cursor:default; height: auto;">
