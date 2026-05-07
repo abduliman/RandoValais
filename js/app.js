@@ -909,11 +909,15 @@ async function renderPOIs(hikeId) {
   const filtersEl = document.getElementById('poiFilters');
   if (!container) return;
 
-  // Get static POIs
-  const staticPois = (typeof HIKE_POIS !== 'undefined' && HIKE_POIS[hikeId]) ? HIKE_POIS[hikeId] : [];
+  const hike = HIKES.find(h => h.id === hikeId);
+  if (!hike) return;
 
-  // Show static immediately
-  currentPOIs = [...staticPois];
+  // Get static POIs and filter by trail proximity (20m)
+  const staticPois = (typeof HIKE_POIS !== 'undefined' && HIKE_POIS[hikeId]) ? HIKE_POIS[hikeId] : [];
+  const filteredStatic = staticPois.filter(p => isPoiOnTrail(hike, p.coords));
+
+  // Show filtered static immediately
+  currentPOIs = [...filteredStatic];
   renderPOIList(currentPOIs, container);
   renderPOIFilters(currentPOIs, filtersEl);
 
@@ -921,14 +925,29 @@ async function renderPOIs(hikeId) {
   if (typeof fetchNearbyPOIs === 'function') {
     try {
       const autoPois = await fetchNearbyPOIs(hikeId);
+      // Filter dynamic POIs by trail proximity
+      const filteredAuto = autoPois.filter(p => isPoiOnTrail(hike, p.coords));
+      
       // Deduplicate by name
-      const existing = new Set(staticPois.map(p => p.name.toLowerCase()));
-      const unique = autoPois.filter(p => !existing.has(p.name.toLowerCase()));
-      currentPOIs = [...staticPois, ...unique];
+      const existing = new Set(filteredStatic.map(p => p.name.toLowerCase()));
+      const unique = filteredAuto.filter(p => !existing.has(p.name.toLowerCase()));
+      
+      currentPOIs = [...filteredStatic, ...unique];
       renderPOIList(currentPOIs, container);
       renderPOIFilters(currentPOIs, filtersEl);
-    } catch(e) { /* static POIs already shown */ }
+    } catch(e) { /* filtered static POIs already shown */ }
   }
+}
+
+function isPoiOnTrail(hike, poiCoords) {
+  if (!hike.trail || hike.trail.length < 2) return true; // Keep if no trail data to avoid empty lists
+  const MAX_DIST_KM = 0.02; // 20 meters
+  // To avoid performance issues on huge trails, check all points but efficiently
+  for (let i = 0; i < hike.trail.length; i++) {
+    const d = getDistance(hike.trail[i][0], hike.trail[i][1], poiCoords[0], poiCoords[1]);
+    if (d <= MAX_DIST_KM) return true;
+  }
+  return false;
 }
 
 function renderPOIFilters(pois, container) {

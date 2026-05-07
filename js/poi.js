@@ -113,7 +113,7 @@ async function fetchNearbyPOIs(hikeId) {
   if (!hike) return [];
 
   const [lat, lon] = hike.coords;
-  const radius = 2000; // 2km around center
+  const radius = 5000; // 5km around center to cover most trails
 
   const query = `[out:json][timeout:10];(
     node["tourism"="viewpoint"](around:${radius},${lat},${lon});
