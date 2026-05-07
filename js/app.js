@@ -227,10 +227,24 @@ function updateI18n() {
 function initSlideshow() {
   const container = document.getElementById('heroSlideshow');
   const indicators = document.getElementById('heroIndicators');
-  if (!container || typeof HIKES === 'undefined') return;
+  if (!container) return;
 
-  // Add hero panorama + all hike images
-  const images = ['assets/images/hero.png', ...HIKES.map(h => h.image)];
+  // Selected high-quality images to wow the user
+  const images = [
+    'assets/images/hero.png',
+    'assets/images/bisse-clavau.png',
+    'assets/images/bisse-torrent-neuf.png',
+    'assets/images/bisses-nendaz.png',
+    'assets/images/lac-bleu-arolla.png',
+    'assets/images/lac-derborence.png',
+    'assets/images/5-seenweg.png',
+    'assets/images/pont-randa.png',
+    'assets/images/tour-muverans.png',
+    'assets/images/cabane-dent-blanche.png',
+    'assets/images/chemin-chamois.png',
+    'assets/images/gorges-dala.png',
+    'assets/images/mont-noble.png'
+  ];
 
   images.forEach((img, i) => {
     const slide = document.createElement('div');
@@ -376,7 +390,7 @@ function createHikeCard(hike) {
         <div class="region"><i data-lucide="map-pin" style="color:var(--gray)"></i> ${hike.region}</div>
         <div class="hike-meta">
           <span><i data-lucide="timer" style="color:#3B82F6"></i> ${hike.duration}</span>
-          <span><i data-lucide="map" style="color:#10B981"></i> ${hike.distance} km</span>
+          <span><i data-lucide="ruler" style="color:#10B981"></i> ${hike.distance} km</span>
           <span><i data-lucide="trending-up" style="color:#F59E0B"></i> +${hike.elevation.up}m</span>
         </div>
       </div>
@@ -576,7 +590,7 @@ function renderDetail(id) {
 
     document.getElementById('detailInfo').innerHTML = `
       <div class="info-item"><div class="icon" style="color:#3B82F6"><i data-lucide="timer"></i></div><div class="value">${hike.duration}</div><div class="label">${t('hikes.duration')}</div></div>
-      <div class="info-item"><div class="icon" style="color:#10B981"><i data-lucide="map"></i></div><div class="value">${hike.distance} km</div><div class="label">${t('hikes.distance')}</div></div>
+      <div class="info-item"><div class="icon" style="color:#10B981"><i data-lucide="ruler"></i></div><div class="value">${hike.distance} km</div><div class="label">${t('hikes.distance')}</div></div>
       <div class="info-item"><div class="icon" style="color:#F59E0B"><i data-lucide="trending-up"></i></div><div class="value">+${hike.elevation.up}m</div><div class="label">${t('hikes.elevation')}</div></div>
       <div class="info-item"><div class="icon" style="color:#EF4444"><i data-lucide="trending-down"></i></div><div class="value">-${hike.elevation.down}m</div><div class="label">${t('hikes.elevation')}</div></div>
       <div class="info-item"><div class="icon" style="color:#6366F1"><i data-lucide="arrow-down-to-line"></i></div><div class="value">${hike.altitude.min}m</div><div class="label">${t('detail.altMin')}</div></div>
