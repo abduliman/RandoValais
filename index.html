@@ -32,8 +32,8 @@
           <a href="#bisses" data-page="bisses" onclick="goToBisses(event)">Les Bisses</a>
         </div>
       </div>
-      <a href="#map" data-page="map" data-i18n="nav.map">Carte</a>
       <a href="#favorites" data-page="favorites" data-i18n="nav.favorites">Favoris</a>
+      <a href="#contact" data-page="contact">Contact</a>
       <a href="#admin" data-page="admin" id="navAdminLink" style="display:none;color:var(--red)"><i data-lucide="settings" class="icon-inline"></i> Admin</a>
     </div>
     <div class="nav-right">
@@ -338,6 +338,71 @@
       <div><i data-lucide="map-pin"></i></div>
       <div><a href="#" onclick="shareLocation()">Partager ma position</a><br><span>Envoyer par SMS</span></div>
     </div>
+  </div>
+
+  <!-- CONTACT PAGE -->
+  <div class="page" id="contactPage" style="padding-top:100px; min-height:100vh;">
+    <section class="section">
+      <div class="section-header">
+        <h2>Contactez-nous</h2>
+        <p>Une question ? Une suggestion ? Nous sommes à votre écoute.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="contact-container" style="display:grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+        <div class="contact-form-card" style="background:var(--white); padding: 2.5rem; border-radius: var(--radius); box-shadow: var(--shadow-lg);">
+          <form id="contactForm" onsubmit="event.preventDefault(); alert('Message envoyé avec succès !');">
+            <div style="margin-bottom:1.5rem">
+              <label style="display:block; margin-bottom:0.5rem; font-weight:600;">Nom complet</label>
+              <input type="text" placeholder="Votre nom" required style="width:100%; padding:12px; border-radius:10px; border:1px solid var(--beige-dark); background:var(--snow);">
+            </div>
+            <div style="margin-bottom:1.5rem">
+              <label style="display:block; margin-bottom:0.5rem; font-weight:600;">Email</label>
+              <input type="email" placeholder="votre@email.com" required style="width:100%; padding:12px; border-radius:10px; border:1px solid var(--beige-dark); background:var(--snow);">
+            </div>
+            <div style="margin-bottom:1.5rem">
+              <label style="display:block; margin-bottom:0.5rem; font-weight:600;">Sujet</label>
+              <select style="width:100%; padding:12px; border-radius:10px; border:1px solid var(--beige-dark); background:var(--snow);">
+                <option>Information générale</option>
+                <option>Signaler un problème sur un bisse</option>
+                <option>Partenariat</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div style="margin-bottom:2rem">
+              <label style="display:block; margin-bottom:0.5rem; font-weight:600;">Message</label>
+              <textarea placeholder="Comment pouvons-nous vous aider ?" required style="width:100%; padding:12px; border-radius:10px; border:1px solid var(--beige-dark); background:var(--snow); min-height:150px;"></textarea>
+            </div>
+            <button type="submit" style="width:100%; padding:15px; background:#E8A200; color:white; border-radius:12px; font-weight:700; font-size:1.1rem; box-shadow: 0 4px 15px rgba(232,162,0,0.3);">Envoyer le message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <div id="contactMap" style="height: 400px; width: 100%; border-radius: var(--radius); border: 1px solid var(--beige-dark); margin-bottom: 2rem;"></div>
+          <div class="contact-details" style="display:grid; gap:1.5rem;">
+            <div style="display:flex; gap:1rem; align-items:center;">
+              <div style="background:#E8A200; width:45px; height:45px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white;"><i data-lucide="map-pin"></i></div>
+              <div>
+                <h4 style="margin:0">Siège RandoValais</h4>
+                <p style="margin:0; color:var(--gray)">Rue du Grand-Pont 12, 1950 Sion, Valais</p>
+              </div>
+            </div>
+            <div style="display:flex; gap:1rem; align-items:center;">
+              <div style="background:#E8A200; width:45px; height:45px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white;"><i data-lucide="mail"></i></div>
+              <div>
+                <h4 style="margin:0">Email</h4>
+                <p style="margin:0; color:var(--gray)">hello@randovalais.ch</p>
+              </div>
+            </div>
+            <div style="display:flex; gap:1rem; align-items:center;">
+              <div style="background:#E8A200; width:45px; height:45px; border-radius:50%; display:flex; align-items:center; justify-content:center; color:white;"><i data-lucide="phone"></i></div>
+              <div>
+                <h4 style="margin:0">Téléphone</h4>
+                <p style="margin:0; color:var(--gray)">+41 27 322 00 00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
   <!-- FOOTER -->

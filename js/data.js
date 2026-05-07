@@ -9,15 +9,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Itinéraires",
-    "duration": "4:40 h",
+    "duration": "4:16 h",
     "distance": 12.8,
     "elevation": {
-      "up": 884,
-      "down": 1160
+      "up": 642,
+      "down": 918
     },
     "altitude": {
-      "min": 1323,
-      "max": 2158
+      "min": 1324,
+      "max": 2153
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -2642,15 +2642,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Facile",
     "category": "Itinéraires",
-    "duration": "3:17 h",
+    "duration": "2:51 h",
     "distance": 7,
     "elevation": {
-      "up": 919,
-      "down": 856
+      "up": 657,
+      "down": 594
     },
     "altitude": {
-      "min": 1894,
-      "max": 2407
+      "min": 1900,
+      "max": 2398
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -6683,11 +6683,11 @@ const HIKES = [
     "region": "",
     "difficulty": "Difficile",
     "category": "Itinéraires",
-    "duration": "7:14 h",
+    "duration": "6:59 h",
     "distance": 20.3,
     "elevation": {
-      "up": 1291,
-      "down": 1287
+      "up": 1149,
+      "down": 1100
     },
     "altitude": {
       "min": 1603,
@@ -8876,11 +8876,11 @@ const HIKES = [
     "region": "",
     "difficulty": "Difficile",
     "category": "Itinéraires",
-    "duration": "7:05 h",
+    "duration": "6:43 h",
     "distance": 18.9,
     "elevation": {
-      "up": 1412,
-      "down": 1407
+      "up": 1200,
+      "down": 1195
     },
     "altitude": {
       "min": 1612,
@@ -10933,11 +10933,11 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Itinéraires",
-    "duration": "4:30 h",
+    "duration": "4:13 h",
     "distance": 13.2,
     "elevation": {
-      "up": 725,
-      "down": 1450
+      "up": 546,
+      "down": 1271
     },
     "altitude": {
       "min": 1471,
@@ -13546,15 +13546,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Difficile",
     "category": "Itinéraires",
-    "duration": "6:08 h",
+    "duration": "5:54 h",
     "distance": 16.8,
     "elevation": {
-      "up": 1165,
-      "down": 861
+      "up": 1019,
+      "down": 1103
     },
     "altitude": {
-      "min": 2146,
-      "max": 2917
+      "min": 2062,
+      "max": 2913
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -27419,7 +27419,7 @@ const HIKES = [
     "duration": "4:33 h",
     "distance": 12.3,
     "elevation": {
-      "up": 892,
+      "up": 883,
       "down": 892
     },
     "altitude": {
@@ -29669,14 +29669,14 @@ const HIKES = [
     "region": "",
     "difficulty": "Facile",
     "category": "Itinéraires",
-    "duration": "3:39 h",
+    "duration": "3:38 h",
     "distance": 11.7,
     "elevation": {
       "up": 427,
-      "down": 933
+      "down": 907
     },
     "altitude": {
-      "min": 939,
+      "min": 965,
       "max": 1478
     },
     "season": {
@@ -31898,10 +31898,10 @@ const HIKES = [
     "region": "",
     "difficulty": "Facile",
     "category": "Itinéraires",
-    "duration": "3:30 h",
+    "duration": "3:31 h",
     "distance": 9.2,
     "elevation": {
-      "up": 728,
+      "up": 727,
       "down": 839
     },
     "altitude": {
@@ -34447,10 +34447,10 @@ const HIKES = [
     "region": "",
     "difficulty": "Difficile",
     "category": "Itinéraires",
-    "duration": "5:04 h",
+    "duration": "5:02 h",
     "distance": 12.8,
     "elevation": {
-      "up": 1121,
+      "up": 1099,
       "down": 1121
     },
     "altitude": {
@@ -37068,7 +37068,7 @@ const HIKES = [
     "distance": 6.4,
     "elevation": {
       "up": 394,
-      "down": 394
+      "down": 369
     },
     "altitude": {
       "min": 469,
@@ -39941,14 +39941,14 @@ const HIKES = [
     "region": "",
     "difficulty": "Difficile",
     "category": "Itinéraires",
-    "duration": "4:19 h",
+    "duration": "4:18 h",
     "distance": 14.6,
     "elevation": {
       "up": 392,
-      "down": 1483
+      "down": 1478
     },
     "altitude": {
-      "min": 1560,
+      "min": 1565,
       "max": 2651
     },
     "season": {
@@ -45395,10 +45395,10 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Itinéraires",
-    "duration": "2:44 h",
+    "duration": "2:42 h",
     "distance": 7.7,
     "elevation": {
-      "up": 483,
+      "up": 461,
       "down": 655
     },
     "altitude": {
@@ -48544,10 +48544,10 @@ const HIKES = [
     "distance": 8,
     "elevation": {
       "up": 359,
-      "down": 368
+      "down": 359
     },
     "altitude": {
-      "min": 2165,
+      "min": 2167,
       "max": 2268
     },
     "season": {
@@ -52349,14 +52349,14 @@ const HIKES = [
     "region": "",
     "difficulty": "Difficile",
     "category": "Itinéraires",
-    "duration": "4:23 h",
+    "duration": "4:06 h",
     "distance": 11.5,
     "elevation": {
-      "up": 909,
-      "down": 1667
+      "up": 733,
+      "down": 1471
     },
     "altitude": {
-      "min": 1496,
+      "min": 1516,
       "max": 2644
     },
     "season": {
@@ -58047,7 +58047,7 @@ const HIKES = [
     "distance": 8.3,
     "elevation": {
       "up": 927,
-      "down": 185
+      "down": 167
     },
     "altitude": {
       "min": 1247,
@@ -60200,15 +60200,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Itinéraires",
-    "duration": "3:15 h",
+    "duration": "3:09 h",
     "distance": 10.7,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 290,
+      "down": 905
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1787,
+      "max": 2513
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -62797,15 +62797,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Difficile",
     "category": "Itinéraires",
-    "duration": "5:23 h",
+    "duration": "5:25 h",
     "distance": 16.4,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 792,
+      "down": 780
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1316,
+      "max": 2072
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -65402,15 +65402,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Facile",
     "category": "Itinéraires",
-    "duration": "4:35 h",
+    "duration": "4:24 h",
     "distance": 14.7,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 438,
+      "down": 433
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1552,
+      "max": 1830
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -68007,15 +68007,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Facile",
     "category": "Itinéraires",
-    "duration": "2:00 h",
+    "duration": "2:25 h",
     "distance": 6.2,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 525,
+      "down": 646
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1288,
+      "max": 1538
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -71636,15 +71636,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Difficile",
     "category": "Itinéraires",
-    "duration": "5:30 h",
+    "duration": "4:20 h",
     "distance": 15.2,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 318,
+      "down": 978
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1950,
+      "max": 2610
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -73301,15 +73301,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Difficile",
     "category": "Itinéraires",
-    "duration": "8:00 h",
+    "duration": "7:47 h",
     "distance": 19.3,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 1770,
+      "down": 636
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1345,
+      "max": 2562
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -75850,15 +75850,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Itinéraires",
-    "duration": "2:59 h",
+    "duration": "2:34 h",
     "distance": 7.9,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 355,
+      "down": 865
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1417,
+      "max": 2172
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -78051,15 +78051,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Itinéraires",
-    "duration": "4:00 h",
+    "duration": "3:48 h",
     "distance": 12.7,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 377,
+      "down": 579
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 618,
+      "max": 870
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -81048,15 +81048,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Difficile",
     "category": "Itinéraires",
-    "duration": "4:30 h",
+    "duration": "5:44 h",
     "distance": 14.1,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 1327,
+      "down": 1370
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1600,
+      "max": 2867
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -83901,15 +83901,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Itinéraires",
-    "duration": "2:45 h",
+    "duration": "3:23 h",
     "distance": 7.9,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 844,
+      "down": 814
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 636,
+      "max": 1090
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -85066,15 +85066,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Facile",
     "category": "Itinéraires",
-    "duration": "5:38 h",
+    "duration": "4:55 h",
     "distance": 16.9,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 416,
+      "down": 1258
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1082,
+      "max": 1925
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -87471,15 +87471,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Facile",
     "category": "Itinéraires",
-    "duration": "2:05 h",
+    "duration": "2:18 h",
     "distance": 6.6,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 390,
+      "down": 391
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1343,
+      "max": 1552
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -90684,15 +90684,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Facile",
     "category": "Itinéraires",
-    "duration": "2:15 h",
+    "duration": "2:39 h",
     "distance": 7.3,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 491,
+      "down": 493
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 420,
+      "max": 776
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -94189,15 +94189,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Facile",
     "category": "Itinéraires",
-    "duration": "3:30 h",
+    "duration": "3:50 h",
     "distance": 11.5,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 577,
+      "down": 645
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1891,
+      "max": 2348
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -96482,15 +96482,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Itinéraires",
-    "duration": "6:45 h",
+    "duration": "6:40 h",
     "distance": 21.2,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 820,
+      "down": 730
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 488,
+      "max": 708
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -98807,15 +98807,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Difficile",
     "category": "Itinéraires",
-    "duration": "4:55 h",
+    "duration": "4:29 h",
     "distance": 11.7,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 936,
+      "down": 903
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 2385,
+      "max": 2741
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -100304,15 +100304,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Facile",
     "category": "Itinéraires",
-    "duration": "4:40 h",
+    "duration": "4:27 h",
     "distance": 13.9,
     "elevation": {
-      "up": 0,
-      "down": 0
+      "up": 590,
+      "down": 1026
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1752,
+      "max": 2593
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -102928,15 +102928,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Facile",
     "category": "Bisses",
-    "duration": "2h20",
+    "duration": "1:40 h",
     "distance": 5.9,
     "elevation": {
-      "up": 129,
-      "down": 650
+      "up": 116,
+      "down": 614
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1037,
+      "max": 1537
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -106459,15 +106459,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Bisses",
-    "duration": "2h30",
+    "duration": "2:56 h",
     "distance": 8,
     "elevation": {
-      "up": 345,
-      "down": 345
+      "up": 564,
+      "down": 564
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1652,
+      "max": 1924
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -110422,15 +110422,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Bisses",
-    "duration": "3h15",
+    "duration": "3:50 h",
     "distance": 11.4,
     "elevation": {
-      "up": 160,
-      "down": 440
+      "up": 592,
+      "down": 844
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1475,
+      "max": 1911
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -113391,15 +113391,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Bisses",
-    "duration": "4h",
+    "duration": "4:06 h",
     "distance": 14.6,
     "elevation": {
-      "up": 60,
-      "down": 830
+      "up": 269,
+      "down": 1054
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1461,
+      "max": 2272
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -115474,15 +115474,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Bisses",
-    "duration": "5h40",
+    "duration": "5:19 h",
     "distance": 17.4,
     "elevation": {
-      "up": 425,
-      "down": 1220
+      "up": 580,
+      "down": 1377
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 524,
+      "max": 1683
     },
     "season": {
       "fr": "Juin - Octobre",
@@ -117465,15 +117465,15 @@ const HIKES = [
     "region": "",
     "difficulty": "Moyen",
     "category": "Bisses",
-    "duration": "3h25 (aller-retour)",
+    "duration": "5:26 h",
     "distance": 17.1,
     "elevation": {
-      "up": 350,
-      "down": 550
+      "up": 695,
+      "down": 651
     },
     "altitude": {
-      "min": 1000,
-      "max": 2000
+      "min": 1500,
+      "max": 1956
     },
     "season": {
       "fr": "Juin - Octobre",
