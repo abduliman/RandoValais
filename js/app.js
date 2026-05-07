@@ -1594,20 +1594,21 @@ function renderContactMap() {
 
 // ===== WEBCAMS =====
 function getNearbyWebcams(hike) {
-  if (typeof WEBCAMS === 'undefined') return [];
+  if (typeof WEBCAMS === 'undefined' || !hike) return [];
   return WEBCAMS.map(w => {
     let minDist = Infinity;
     if (hike.trail && hike.trail.length > 0) {
       const step = hike.trail.length > 500 ? 5 : 1;
       for (let i = 0; i < hike.trail.length; i += step) {
+        if (!hike.trail[i] || hike.trail[i].length < 2) continue;
         const d = getDistance(hike.trail[i][0], hike.trail[i][1], w.lat, w.lng);
         if (d < minDist) minDist = d;
       }
-    } else {
+    } else if (hike.coords && hike.coords.length >= 2) {
       minDist = getDistance(hike.coords[0], hike.coords[1], w.lat, w.lng);
     }
     return { ...w, dist: minDist };
-  }).sort((a, b) => a.dist - b.dist).slice(0, 3);
+  }).filter(w => w.dist !== Infinity).sort((a, b) => a.dist - b.dist).slice(0, 3);
 }
 
 function showNearbyWebcams() {
