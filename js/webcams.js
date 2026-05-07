@@ -79,5 +79,37 @@ const WEBCAMS = [
     img: "https://images.unsplash.com/photo-1464278533981-50106e6176b1?auto=format&fit=crop&q=80&w=400",
     lat: 46.1660,
     lng: 6.8430
+  },
+  {
+    id: 11,
+    name: "Grimentz - Bendolla",
+    url: "https://www.valais.ch/fr/lieux/val-danniviers/grimentz/webcams/grimentz-bendolla",
+    img: "https://webcam.v-buddy.at/api/v1/webcams/1001/image",
+    lat: 46.1680,
+    lng: 7.5590
+  },
+  {
+    id: 12,
+    name: "Moiry - Barrage",
+    url: "https://www.valais.ch/fr/lieux/val-danniviers/grimentz/webcams/moiry-barrage",
+    img: "https://webcam.v-buddy.at/api/v1/webcams/1002/image",
+    lat: 46.1330,
+    lng: 7.5750
+  },
+  {
+    id: 13,
+    name: "Nendaz - Tracouet",
+    url: "https://www.nendaz.ch/fr/webcams/",
+    img: "https://images.unsplash.com/photo-1454496522485-0a63e7320601?auto=format&fit=crop&q=80&w=400",
+    lat: 46.1770,
+    lng: 7.2880
+  },
+  {
+    id: 14,
+    name: "Veysonnaz - Thyon 2000",
+    url: "https://www.veysonnaz.ch/fr/webcams/",
+    img: "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?auto=format&fit=crop&q=80&w=400",
+    lat: 46.1750,
+    lng: 7.3750
   }
 ];

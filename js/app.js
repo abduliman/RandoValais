@@ -1620,9 +1620,14 @@ function showNearbyWebcams() {
   const modal = document.getElementById('webcamsModal');
   const list = document.getElementById('webcamsList');
   modal.classList.add('open');
-  showToast('🔍 Recherche de webcams...');
-
+  
   const nearby = getNearbyWebcams(hike);
+  
+  if (nearby.length > 0) {
+    showToast(`🔍 ${nearby.length} webcams trouvées à proximité !`);
+  } else {
+    showToast('⚠️ Aucune webcam dans un rayon de 10km.');
+  }
 
   if (nearby.length === 0) {
     list.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: var(--gray);">
