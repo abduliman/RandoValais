@@ -34,6 +34,7 @@
         </div>
       </div>
       <a href="#favorites" data-page="favorites" data-i18n="nav.favorites">Favoris</a>
+      <a href="#shop" data-page="shop" data-i18n="nav.shop">Boutique</a>
       <a href="#contact" data-page="contact">Contact</a>
       <a href="#admin" data-page="admin" id="navAdminLink" style="display:none;color:var(--red)"><i data-lucide="settings" class="icon-inline"></i> Admin</a>
     </div>
@@ -168,6 +169,7 @@
             <div class="action-btns" style="margin-top:1.5rem">
               <button class="btn-like" id="detailLikeBtn" onclick="toggleDetailLike()">❤️ <span data-i18n="detail.like">J'aime</span> <span id="detailLikeCount"></span></button>
               <button class="btn-fav" id="detailFavBtn" onclick="toggleDetailFav()">⭐ <span id="detailFavText" data-i18n="detail.addFav">Favoris</span></button>
+              <button class="btn-webcam" onclick="showNearbyWebcams()"><i data-lucide="camera" class="icon-inline"></i> Webcams</button>
             </div>
             <!-- Share buttons -->
             <div class="share-bar" id="shareBar" style="margin-bottom:0">
@@ -312,6 +314,16 @@
     </div>
   </div>
 
+  <!-- WEBCAMS MODAL -->
+  <div class="modal-overlay" id="webcamsModal">
+    <div class="modal-card" style="max-width:800px">
+      <button class="modal-close" onclick="closeWebcams()">✕</button>
+      <h3><i data-lucide="camera"></i> Webcams à proximité</h3>
+      <p style="color:var(--gray);margin-bottom:1.5rem">Découvrez les conditions météo en direct.</p>
+      <div id="webcamsList" class="hikes-grid" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1rem;"></div>
+    </div>
+  </div>
+
   <!-- TOAST -->
   <div class="toast" id="toast"></div>
 
@@ -339,6 +351,18 @@
       <div><i data-lucide="map-pin"></i></div>
       <div><a href="#" onclick="shareLocation()">Partager ma position</a><br><span>Envoyer par SMS</span></div>
     </div>
+  </div>
+
+  <!-- SHOP PAGE -->
+  <div class="page" id="shopPage" style="padding-top:100px; min-height:100vh;">
+    <section class="section">
+      <div class="section-header">
+        <h2 data-i18n="nav.shop">Boutique RandoValais</h2>
+        <p>Équipements et souvenirs sélectionnés pour vos aventures en Valais.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="hikes-grid" id="shopGrid"></div>
+    </section>
   </div>
 
   <!-- CONTACT PAGE -->
@@ -416,7 +440,9 @@
   <script src="js/data.js"></script>
   <script src="js/i18n.js"></script>
   <script src="js/storage.js"></script>
+  <script src="js/webcams.js"></script>
   <script src="js/poi.js"></script>
+  <script src="js/shop.js"></script>
   <script src="js/app.js"></script>
   <script>lucide.createIcons();</script>
 </body>

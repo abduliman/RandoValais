@@ -1551,8 +1551,53 @@ function renderContactMap() {
     .openPopup();
 }
 
+// ===== WEBCAMS =====
+function showNearbyWebcams() {
+  const hike = HIKES.find(h => h.id === currentHikeId);
+  if (!hike) return;
+
+  const modal = document.getElementById('webcamsModal');
+  const list = document.getElementById('webcamsList');
+  modal.classList.add('active');
+
+  // Calculate distances and find 3 nearest
+  const nearby = WEBCAMS.map(w => ({
+    ...w,
+    dist: getDistance(hike.coords[0], hike.coords[1], w.lat, w.lng)
+  })).sort((a, b) => a.dist - b.dist).slice(0, 3);
+
+  list.innerHTML = nearby.map(w => `
+    <div class="hike-card" style="cursor:default">
+      <img src="${w.img}" alt="${w.name}" style="width:100%; height:120px; object-fit:cover; border-radius:8px">
+      <div style="padding:10px">
+        <h4 style="font-size:0.9rem;margin-bottom:5px">${w.name}</h4>
+        <div style="font-size:0.8rem;color:var(--gray)">Distance: ${w.dist.toFixed(1)} km</div>
+        <a href="${w.url}" target="_blank" class="btn-submit" style="display:block; margin-top:10px; text-align:center; padding:5px; font-size:0.8rem">Voir le live</a>
+      </div>
+    </div>
+  `).join('');
+  
+  if (typeof lucide !== 'undefined') lucide.createIcons();
+}
+
+function closeWebcams() {
+  document.getElementById('webcamsModal').classList.remove('active');
+}
+
+function getDistance(lat1, lon1, lat2, lon2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+  const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+            Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+            Math.sin(dLon/2) * Math.sin(dLon/2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  return R * c;
+}
+
 // Auto dark mode on load
 if (localStorage.getItem('rv_dark_mode') === 'true') {
   document.body.classList.add('dark-mode');
-  document.getElementById('darkToggle').textContent = '☀️';
+  const toggle = document.getElementById('darkToggle');
+  if (toggle) toggle.textContent = '☀️';
 }

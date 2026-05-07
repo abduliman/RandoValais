@@ -3,7 +3,7 @@ const I18N = {
   fr: {
     siteTitle: "RandoValais",
     subtitle: "Randonner en Valais, c'est magique !",
-    nav: { home: "Accueil", hikes: "Randonnées", favorites: "Favoris", map: "Carte", profile: "Profil" },
+    nav: { home: "Accueil", hikes: "Randonnées", favorites: "Favoris", map: "Carte", profile: "Profil", shop: "Boutique" },
     hero: { cta: "Découvrir les randonnées", stats_hikes: "Randonnées", stats_km: "km de sentiers", stats_elev: "dénivelation [m]", description: "Découvrez les plus beaux bisses des Alpes suisses. Un guide complet avec itinéraires détaillés, cartes interactives et conseils d'expert pour vos randonnées en Valais." },
     hikes: { title: "Nos Randonnées", search: "Rechercher une randonnée...", filterAll: "Toutes", duration: "Durée", elevation: "Dénivelé", distance: "Distance", difficulty: "Difficulté", sort: "Trier par", sortPop: "Popularité", sortDiff: "Difficulté", sortDur: "Durée", region: "Région", noResults: "Aucune randonnée trouvée" },
     detail: { info: "Informations", description: "Description", access: "Accès", comments: "Commentaires", photos: "Photos", like: "J'aime", liked: "Aimé", addFav: "Ajouter aux favoris", removeFav: "Retirer des favoris", altMin: "Alt. min", altMax: "Alt. max", season: "Saison", back: "Retour" },
@@ -19,7 +19,7 @@ const I18N = {
   de: {
     siteTitle: "RandoValais",
     subtitle: "Wandern im Wallis ist magisch!",
-    nav: { home: "Startseite", hikes: "Wanderungen", favorites: "Favoriten", map: "Karte", profile: "Profil" },
+    nav: { home: "Startseite", hikes: "Wanderungen", favorites: "Favoriten", map: "Karte", profile: "Profil", shop: "Shop" },
     hero: { cta: "Wanderungen entdecken", stats_hikes: "Wanderungen", stats_km: "km Wanderwege", stats_elev: "m Höhenunterschied", description: "Entdecken Sie die schönsten Suonen der Schweizer Alpen. Ein vollständiger Führer mit detaillierten Routen, interaktiven Karten und Expertentipps für Ihre Wanderungen im Wallis." },
     hikes: { title: "Unsere Wanderungen", search: "Wanderung suchen...", filterAll: "Alle", duration: "Dauer", elevation: "Höhenunterschied", distance: "Distanz", difficulty: "Schwierigkeit", sort: "Sortieren", sortPop: "Beliebtheit", sortDiff: "Schwierigkeit", sortDur: "Dauer", region: "Region", noResults: "Keine Wanderung gefunden" },
     detail: { info: "Informationen", description: "Beschreibung", access: "Zugang", comments: "Kommentare", photos: "Fotos", like: "Gefällt mir", liked: "Gefällt", addFav: "Zu Favoriten", removeFav: "Aus Favoriten", altMin: "Min. Höhe", altMax: "Max. Höhe", season: "Saison", back: "Zurück" },
@@ -35,7 +35,7 @@ const I18N = {
   en: {
     siteTitle: "RandoValais",
     subtitle: "Hiking in Valais is magical!",
-    nav: { home: "Home", hikes: "Hikes", favorites: "Favorites", map: "Map", profile: "Profile" },
+    nav: { home: "Home", hikes: "Hikes", favorites: "Favorites", map: "Map", profile: "Profile", shop: "Shop" },
     hero: { cta: "Discover hikes", stats_hikes: "Hikes", stats_km: "km of trails", stats_elev: "m elevation", description: "Discover the most beautiful bisses of the Swiss Alps. A complete guide with detailed itineraries, interactive maps and expert advice for your hikes in Valais." },
     hikes: { title: "Our Hikes", search: "Search a hike...", filterAll: "All", duration: "Duration", elevation: "Elevation", distance: "Distance", difficulty: "Difficulty", sort: "Sort by", sortPop: "Popularity", sortDiff: "Difficulty", sortDur: "Duration", region: "Region", noResults: "No hikes found" },
     detail: { info: "Information", description: "Description", access: "Access", comments: "Comments", photos: "Photos", like: "Like", liked: "Liked", addFav: "Add to favorites", removeFav: "Remove from favorites", altMin: "Min alt.", altMax: "Max alt.", season: "Season", back: "Back" },
