@@ -1564,11 +1564,21 @@ function showNearbyWebcams() {
   modal.classList.add('open');
   showToast('🔍 Recherche de webcams...');
 
-  // Calculate distances and find 3 nearest
-  const nearby = WEBCAMS.map(w => ({
-    ...w,
-    dist: getDistance(hike.coords[0], hike.coords[1], w.lat, w.lng)
-  })).sort((a, b) => a.dist - b.dist).slice(0, 3);
+  // Calculate minimum distance to any point on the trail
+  const nearby = WEBCAMS.map(w => {
+    let minDist = Infinity;
+    if (hike.trail && hike.trail.length > 0) {
+      // Step through trail points (skip some for performance if very long)
+      const step = hike.trail.length > 500 ? 5 : 1;
+      for (let i = 0; i < hike.trail.length; i += step) {
+        const d = getDistance(hike.trail[i][0], hike.trail[i][1], w.lat, w.lng);
+        if (d < minDist) minDist = d;
+      }
+    } else {
+      minDist = getDistance(hike.coords[0], hike.coords[1], w.lat, w.lng);
+    }
+    return { ...w, dist: minDist };
+  }).sort((a, b) => a.dist - b.dist).slice(0, 3);
 
   list.innerHTML = nearby.map(w => `
     <div class="hike-card" style="cursor:default; height: auto;">
