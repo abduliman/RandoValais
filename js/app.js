@@ -432,10 +432,11 @@ function renderHikes(filter) {
     const search = searchInput ? searchInput.value.toLowerCase() : '';
     
     if (search) {
+      const searchRegex = search.length <= 4 ? new RegExp(`\\b${search}\\b`, 'i') : new RegExp(search, 'i');
       hikes = hikes.filter(h =>
-        tHike(h.name).toLowerCase().includes(search) ||
-        h.region.toLowerCase().includes(search) ||
-        (h.description && tHike(h.description).toLowerCase().includes(search))
+        searchRegex.test(tHike(h.name)) ||
+        searchRegex.test(h.region) ||
+        (h.description && searchRegex.test(tHike(h.description)))
       );
     }
     
@@ -1568,12 +1569,12 @@ function showNearbyWebcams() {
   })).sort((a, b) => a.dist - b.dist).slice(0, 3);
 
   list.innerHTML = nearby.map(w => `
-    <div class="hike-card" style="cursor:default">
+    <div class="hike-card" style="cursor:default; height: auto;">
       <img src="${w.img}" alt="${w.name}" style="width:100%; height:120px; object-fit:cover; border-radius:8px">
       <div style="padding:10px">
-        <h4 style="font-size:0.9rem;margin-bottom:5px">${w.name}</h4>
+        <h4 style="font-size:0.9rem;margin-bottom:5px;color:var(--dark)">${w.name}</h4>
         <div style="font-size:0.8rem;color:var(--gray)">Distance: ${w.dist.toFixed(1)} km</div>
-        <a href="${w.url}" target="_blank" class="btn-submit" style="display:block; margin-top:10px; text-align:center; padding:5px; font-size:0.8rem">Voir le live</a>
+        <a href="${w.url}" target="_blank" class="btn-submit" style="display:block; margin-top:10px; text-align:center; padding:8px; font-size:0.8rem; text-decoration:none; color:white;">Voir le live</a>
       </div>
     </div>
   `).join('');
