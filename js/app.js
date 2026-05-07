@@ -1595,6 +1595,7 @@ function renderContactMap() {
 // ===== WEBCAMS =====
 function getNearbyWebcams(hike) {
   if (typeof WEBCAMS === 'undefined' || !hike) return [];
+  const MAX_RADIUS_KM = 10;
   return WEBCAMS.map(w => {
     let minDist = Infinity;
     if (hike.trail && hike.trail.length > 0) {
@@ -1608,7 +1609,7 @@ function getNearbyWebcams(hike) {
       minDist = getDistance(hike.coords[0], hike.coords[1], w.lat, w.lng);
     }
     return { ...w, dist: minDist };
-  }).filter(w => w.dist !== Infinity).sort((a, b) => a.dist - b.dist).slice(0, 3);
+  }).filter(w => w.dist <= MAX_RADIUS_KM).sort((a, b) => a.dist - b.dist).slice(0, 3);
 }
 
 function showNearbyWebcams() {
@@ -1623,16 +1624,23 @@ function showNearbyWebcams() {
 
   const nearby = getNearbyWebcams(hike);
 
-  list.innerHTML = nearby.map(w => `
-    <div class="hike-card" style="cursor:default; height: auto;">
-      <img src="${w.img}" alt="${w.name}" style="width:100%; height:120px; object-fit:cover; border-radius:8px">
-      <div style="padding:10px">
-        <h4 style="font-size:0.9rem;margin-bottom:5px;color:var(--dark)">${w.name}</h4>
-        <div style="font-size:0.8rem;color:var(--gray)">Distance: ${w.dist.toFixed(1)} km</div>
-        <a href="${w.url}" target="_blank" class="btn-submit" style="display:block; margin-top:10px; text-align:center; padding:8px; font-size:0.8rem; text-decoration:none; color:white;">Voir le live</a>
+  if (nearby.length === 0) {
+    list.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: var(--gray);">
+      <div style="font-size: 2rem; margin-bottom: 1rem;">📷</div>
+      <p>Aucune webcam trouvée dans un rayon de 10 km autour de cet itinéraire.</p>
+    </div>`;
+  } else {
+    list.innerHTML = nearby.map(w => `
+      <div class="hike-card" style="cursor:default; height: auto;">
+        <img src="${w.img}" alt="${w.name}" style="width:100%; height:120px; object-fit:cover; border-radius:8px">
+        <div style="padding:10px">
+          <h4 style="font-size:0.9rem;margin-bottom:5px;color:var(--dark)">${w.name}</h4>
+          <div style="font-size:0.8rem;color:var(--gray)">Distance: ${w.dist.toFixed(1)} km</div>
+          <a href="${w.url}" target="_blank" class="btn-submit" style="display:block; margin-top:10px; text-align:center; padding:8px; font-size:0.8rem; text-decoration:none; color:white;">Voir le live</a>
+        </div>
       </div>
-    </div>
-  `).join('');
+    `).join('');
+  }
   
   if (typeof lucide !== 'undefined') lucide.createIcons();
 }
