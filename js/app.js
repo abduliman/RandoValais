@@ -1558,9 +1558,11 @@ function showNearbyWebcams() {
   const hike = HIKES.find(h => h.id === currentHikeId);
   if (!hike) return;
 
+  console.log("Opening webcams for hike:", hike.id);
   const modal = document.getElementById('webcamsModal');
   const list = document.getElementById('webcamsList');
   modal.classList.add('open');
+  showToast('🔍 Recherche de webcams...');
 
   // Calculate distances and find 3 nearest
   const nearby = WEBCAMS.map(w => ({
