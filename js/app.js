@@ -1595,7 +1595,7 @@ function renderContactMap() {
 // ===== WEBCAMS =====
 function getNearbyWebcams(hike) {
   if (typeof WEBCAMS === 'undefined' || !hike) return [];
-  const MAX_RADIUS_KM = 10;
+  const MAX_RADIUS_KM = 5;
   return WEBCAMS.map(w => {
     let minDist = Infinity;
     if (hike.trail && hike.trail.length > 0) {
@@ -1626,13 +1626,13 @@ function showNearbyWebcams() {
   if (nearby.length > 0) {
     showToast(`🔍 ${nearby.length} webcams trouvées à proximité !`);
   } else {
-    showToast('⚠️ Aucune webcam dans un rayon de 10km.');
+    showToast('⚠️ Aucune webcam dans un rayon de 5km.');
   }
 
   if (nearby.length === 0) {
     list.innerHTML = `<div style="grid-column: 1/-1; text-align: center; padding: 2rem; color: var(--gray);">
       <div style="font-size: 2rem; margin-bottom: 1rem;">📷</div>
-      <p>Aucune webcam trouvée dans un rayon de 10 km autour de cet itinéraire.</p>
+      <p>Aucune webcam trouvée dans un rayon de 5 km autour de cet itinéraire.</p>
     </div>`;
   } else {
     list.innerHTML = nearby.map(w => `

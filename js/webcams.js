@@ -37,8 +37,8 @@ const WEBCAMS = [
     name: "Verbier - Mont-Fort",
     url: "https://www.verbier.ch/fr/webcams/",
     img: "https://images.unsplash.com/photo-1551829142-d9b812bb3d2f?auto=format&fit=crop&q=80&w=400",
-    lat: 46.0820,
-    lng: 7.3180
+    lat: 46.0960,
+    lng: 7.3320
   },
   {
     id: 6,
@@ -111,5 +111,21 @@ const WEBCAMS = [
     img: "https://images.unsplash.com/photo-1491555103944-7c647fd857e6?auto=format&fit=crop&q=80&w=400",
     lat: 46.1750,
     lng: 7.3750
+  },
+  {
+    id: 15,
+    name: "Grande Dixence - Barrage",
+    url: "https://www.grande-dixence.ch/fr/webcams",
+    img: "https://webcam.v-buddy.at/api/v1/webcams/1003/image",
+    lat: 46.0805,
+    lng: 7.4025
+  },
+  {
+    id: 16,
+    name: "Arolla - Village",
+    url: "https://www.arolla.com/fr/webcams",
+    img: "https://webcam.v-buddy.at/api/v1/webcams/1004/image",
+    lat: 46.0230,
+    lng: 7.4850
   }
 ];
